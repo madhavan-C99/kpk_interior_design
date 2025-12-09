@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;    
+}
+
+:root{
+    --box-background-color:#8D9B6A66;
+    --robotofont-font-family:"Roboto Serif", serif;
+    --lorafont-font-family:"Lora" ,serif;
+}
+
+/* key design title  */
+
+.key_feature_head3{
+    height: 430px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* title head h1 tag */
+
+.key_feature_head3 h1{
+    width: 50%;
+    font-size: 2.5rem;
+    text-align:center;
+    font-weight: 600;
+    line-height: 58px;
+    margin-top: 60px;
+    margin-bottom: 13px;
+    font-family: var(--robotofont-font-family);
+}
+
+/* title descrption paragraph/ */
+
+.key_feature_head3 p{
+    width:75%;
+    font-size: 28px;
+    text-align: center;
+    line-height: 41px;
+    letter-spacing:30%;
+    font-family: var(--lorafont-font-family);    
+}
+
+
+/* kitchen table disigns */
+
+.key_feature_body3{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0rem;
+}
+
+/* card design */
+
+.key_feature_box3{
+    height: 300px;
+    width: 170px;
+    background-color: var(--box-background-color);
+    text-align: center;
+    padding-top:1.5rem ;
+    flex-direction: column;
+    border-radius: 15px;
+
+}
+
+/* card images  */
+
+.key_feature_img3 img{
+    height: 85px;
+    width: 112px;
+}
+.key_feature_box3 h4{
+    font-size: 1.0rem;
+    font-weight:550;
+    margin-top: 10px;
+}
+
+.key_feature_box3 p{
+    width: 90%;
+    /* padding-left:1rem;  */
+    font-size: 0.92rem;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+/* large tablet view media */
+
+@media (min-width:992px)and (max-width:1199px) {
+    .key_feature_head3{
+        margin: 0;
+        height: fit-content;
+    }
+        .key_feature_head3 h1{
+        font-size:2.6rem;
+        width: 90%;
+        line-height: 50px;
+    }
+    .key_feature_head3 p{
+        width: 80%;
+        font-size: 1.5rem;
+        line-height: 36px;
+    }
+    .key_feature_body3 {
+        margin-top: 5%;
+        /* display: flex; */
+        justify-content: space-evenly;
+        padding: 0rem 5rem;
+    }    
+
+}
+
+/* tablet view media */
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .key_feature_head3{
+        margin: 0;
+        height: fit-content;
+    }
+    .key_feature_head3 h1{
+        font-size:2rem;
+        /* font-size: 24px; */
+        width: 80%;
+        line-height: 50px;
+    }
+    .key_feature_head3 p{
+        width: 83%;
+        font-size: 1.3rem;
+        line-height: 31px;
+    }
+    .key_feature_body3 {
+        /* display: flex; */
+        margin-top: 5%;
+        justify-content: space-evenly;
+        padding: 0rem 5rem;
+    }  
+
+}
+
+/* mobile view media/ */
+
+@media (min-width:576px) and (max-width:767.99px) {
+    .key_feature_head3 h1{
+        font-size: 32px;
+        width: 80%;
+        height: 30%;
+        line-height: 40px;
+    }
+        .key_feature_head3 p{
+        width: 80%;
+        height: 80%;
+        font-size: 1.3rem;
+        line-height: 28px;
+    }    
+    .key_feature_body3{
+        padding: 0rem 2rem;
+    }
+ 
+    
+}
+
+/* mobile view size */
+
+@media (max-width:575px) {
+
+    .key_feature_head3{
+        height: 40%;
+    }
+        .key_feature_head3 h1{
+        font-size: 20px;
+        width: 80%;
+        height: 15%;
+        line-height: 30px;
+    }
+        .key_feature_head3 p{
+        width: 90%;
+        height: 60%;
+        font-size: 1.1rem;
+        line-height: 30px;
+    } 
+
+    .key_feature_body3{
+        margin-top: 20px;
+    }
+        .key_feature_box3{
+            height: 300px;
+            width: 150px;
+    }
+    .key_feature_box3 h4{
+        padding: 0rem 0.5rem;
+        font-size: 1rem;
+    }
+    .key_feature_box3 p{
+        font-size: 0.8rem;
+    }
+}

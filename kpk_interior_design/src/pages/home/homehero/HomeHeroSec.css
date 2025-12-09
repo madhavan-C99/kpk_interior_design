@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --robotofont-font-family:"Roboto Serif", serif;
+    --lorafont-font-family:"Lora" ,serif; 
+    --btnbg-background-color:#8D9B6A;   
+}
+
+/* Reset and Box Sizing */
+* {box-sizing: border-box}
+
+/* Slideshow container - MODIFIED FOR FULL SCREEN */
+.home_slideshow__container3 {
+  max-width: 100%; /* Use full viewport width */
+  height: 750px; /* Use full viewport height */
+  position: relative;
+  /* margin-top:10%; Remove margin */
+  border-radius: 0; 
+  overflow: hidden;
+  box-shadow: none; 
+}
+
+/* Individual Slides */
+.home_mySlides3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  transition: opacity 1.5s ease; /* Fading transition */
+}
+.home_mySlides3 .home_slide_img3 {
+  width:100%;
+  height:fit-content;
+  object-fit: cover; /* Ensures images cover the full screen */
+  vertical-align: middle;
+}
+
+/* Next & previous buttons */
+.home_prev3, .home_next3 {
+  cursor: pointer;
+  position: absolute;
+  top: 44%;
+  /* left: 2%; */
+  height: 6.5%;
+  width:3%;
+  padding:10px;
+  margin-top: -22px;
+  color: rgb(13, 12, 12);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: rgba(241, 237, 237, 0.5);
+  z-index: 10;
+}
+
+/* Position the "next button" to the right */
+.home_next3 {
+  right: 6%; /* Added slight offset from the edge */
+  /* border-radius: 3px 0 0 3px; */
+  border-radius: 50%;
+}
+.home_prev3 {
+  left: 6%; /* Added slight offset from the edge */
+  /* border-radius: 0 3px 3px 0; */
+  border-radius: 50%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.home_prev3:hover, .home_next3:hover {
+  background-color:#ffffff;
+}
+
+/* Caption text */
+.home_hero_title3 {
+  color: #f2f2f2;
+  font-size: 72px; /* Increased size for full screen */
+  padding: 1rem 2rem;
+  position: absolute;
+  /* bottom: 210px;  */
+  bottom: 28%;
+  width: 100%;
+  font-weight: 500;
+  font-family: var(--robotofont-font-family);
+  text-align: center;
+  /* background: rgba(0, 0, 0, 0.5);  */
+}
+
+.home_hero_button3{
+    color: #f2f2f2;
+  font-size: 30px;
+  border: none;
+  padding: 8px 6%;
+  font-weight: 530;
+  border-radius: 10px;
+  position: absolute;
+  left: 400px;
+  font-family: var(--robotofont-font-family);
+  /* bottom:160px; */
+  bottom: 22%;
+  text-align: center;
+  background: var(--btnbg-background-color);
+
+  /* z-index: 11; */
+}
+
+.home_grantie_logo3{
+  position: absolute;
+  top: 17%;
+  right: 10%;
+  height: 230px;
+  width: 250px;
+}
+
+/* The dots/bullets/indicators container */
+.home_dot_container3 {
+    text-align:center; 
+    padding: 10px 0;
+    position: absolute; /* Fixed position at the bottom of the screen */
+    /* bottom: 100px;  */
+    bottom: 14%;
+    width: 100%;
+    z-index: 15;
+}
+.home_dot3 {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px; 
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease, transform 0.3s;
+}
+
+.home_dot3.active, .home_dot3:hover {
+  background-color: #717171;
+  transform: scale(1.1);
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .home_prev3, .home_next3 {padding: 10px; font-size: 14px;}
+  .home_hero_title3 {font-size: 1rem; padding: 0.5rem 1rem; bottom: 40px;}
+  .home_dot3 {height: 10px; width: 10px;}
+}

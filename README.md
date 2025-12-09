@@ -1,1 +1,0 @@
-# kpk_interior_design

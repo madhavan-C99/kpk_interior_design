@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --robotofont-font-family:"Roboto Serif", serif;
+    --lorafont-font-family:"Lora" ,serif;
+    --interfont-font-family:"Inter";
+    --textcolor-color:#ffffff;
+}
+
+.home_rate__con3{
+    height: 376px; 
+    width: 100vw;
+    border: 1px solid;
+    margin-top: 5%;
+    background-color: #3A2E27;
+    background-image: url('D:\codd99\kpk_interior_design\kpk_interior_design\src\assets\home\images\Vector 289.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.home_rate_head3{
+    margin-top: 5%;
+    padding: 0rem 16rem;
+    text-align: center;
+}
+.home_rate_title3{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--interfont-font-family);
+    color: var(--textcolor-color);
+}
+
+.home_rate_body3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    margin-top: 3.8%;
+}
+
+
+.home_rating3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 230px;
+}
+
+.home_rating3_num {
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: var(--interfont-font-family);
+    line-height: 1;
+    color:#ffffffc8;
+}
+
+.home_rating3 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 5px;
+    font-family: var(--interfont-font-family);
+    color: var(--textcolor-color);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .home_rate__con3 {
+        padding: 40px 5%;
+        height: auto;
+    }
+    .home_rate_title3 {
+        font-size: 28px;
+    }
+    .home_rate_body3 {
+        flex-wrap: wrap;
+        gap: 30px 10%;
+    }
+    .home_rating3 {
+        flex: none; /* Reset flex */
+        width: 45%; /* Two items per row */
+    }
+    .home_rating3_num {
+        font-size: 3rem;
+    }
+    .home_rating3 p {
+        font-size: 1.1rem;
+    }
+}
+
+

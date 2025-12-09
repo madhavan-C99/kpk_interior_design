@@ -4,6 +4,7 @@
 }
 
 header {
+  height:fit-content;
   font-family: var(--heading-font);
   font-size: 24px;
   font-weight: 500;
@@ -12,7 +13,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  height:90px;
+  height:80px;
   /* background-color: white; */
   /* background-color: aqua; */
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
@@ -22,6 +23,7 @@ header {
 
 /* Base navbar layout */
 .navbar {
+  height:fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -153,9 +155,9 @@ header {
   justify-content: center;
   gap: 12px;
   padding: 24px 32px;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
   /* background-color: aqua; */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.15); */
 }
 
 .mobile-link {
@@ -203,7 +205,10 @@ header {
   .primary-outline-btns{
     font-size: 18px;
   }
-  
+    .header{
+      height:450px;
+
+  }
   .hamburger {
     display: inline-flex;
     flex-direction: column;
@@ -225,7 +230,10 @@ header {
   .navbar {
     padding: 12px 20px;
   }
+  .header{
+      height:400px;
 
+  }
   .navbar-center {
     display: none;
   }
@@ -242,8 +250,11 @@ header {
   }
 
   .navbar-mobile-menu {
-    padding: 20px 24px;
+    width: 100vw;
+    background-color: white;
+    padding:10px 24px;
     gap: 10px;
+    transform: translateY(-10px);
   }
 
   .mobile-link {

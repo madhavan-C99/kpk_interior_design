@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --robotofont-font-family:"Roboto Serif", serif;
+    --lorafont-font-family:"Lora" ,serif;
+    --interfont-font-family:"Inter"
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --robotofont-font-family: "Roboto Serif", serif;
+    --lorafont-font-family: "Lora", serif;
+    --interfont-font-family: "Inter";
+    --brand-color: #5D9C59; /* A nice green tone */
+    --card-bg: #f9f9f9;
+}
+
+/* --- Container & Header Styles --- */
+.home_rank__con3 {
+    width: 100vw;
+    min-height: 540px;
+    padding: 50px 0;
+    background-color: #fff;
+}
+.home_rank_head3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+    padding: 0 5%;
+    margin-bottom: 40px;
+}
+
+.home_rank_tittle3{
+    font-size: 37px;
+    width: 70%;
+    font-weight: 600;
+    font-family: var(--robotofont-font-family);
+    line-height: 50px;
+}
+
+.home_rank_caption3{
+    width: 90%;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: var(--lorafont-font-family);
+    line-height: 42px;
+ 
+}
+/* --- Carousel Body and Animation --- */
+
+/* Keyframes for infinite scroll */
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Move exactly one copy of the slides (10 cards * 320px width + 40px gap = 3600px) */
+        /* Since we duplicate the list, we need to scroll one full list width */
+        transform: translateX(calc(-3600px - (10 * 40px))); 
+    }
+}
+
+.home_rank_body3 {
+    display: flex;
+    width: max-content; /* Allows all duplicated cards to be in one row */
+    gap: 40px;
+    padding: 20px 0;
+    animation: infinite-scroll 45s linear infinite; /* Adjust speed here */
+    animation-play-state: running;
+}
+
+.home_rank_body3:hover {
+    animation-play-state: paused; /* Pause on hover for better readability */
+}
+
+/* --- Card Styles --- */
+.home_rank__card3 {
+    /* Base dimensions */
+    min-height: 180px;
+    min-width: 200px; /* Base width */
+    max-width: 200px;
+    
+    /* Layout and aesthetics */
+    padding: 0rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+    /* Styling */
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    
+    /* Hover/Zoom effect setup */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+/* Mouse Hover Zoom Effect */
+.home_rank__card3:hover {
+    transform: scale(1.05); /* Zoom in */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+    border-color: var(--brand-color);
+}
+
+.home_rank__icon3 {
+    width: 60px;
+    height: 60px;
+    color: var(--brand-color); /* Icon color */
+}
+
+.home_rank__card3 h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--interfont-font-family);
+    color: #333;
+    margin-top: 10px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1200px) {
+    .home_rank_tittle3 { font-size: 32px; }
+    .home_rank_caption3 { font-size: 18px; padding: 0 20px; }
+}
+
+@media (max-width: 768px) {
+    .home_rank_tittle3 { font-size: 28px; line-height: 1.2; }
+    .home_rank_caption3 { font-size: 16px; line-height: 1.4; }
+    .home_rank__card3 { min-width: 250px; max-width: 250px; } /* Slightly smaller cards */
+    
+    /* Recalculate animation based on smaller size */
+    @keyframes infinite-scroll {
+        from { transform: translateX(0); }
+        /* 10 cards * 250px width + 10 gaps * 40px = 2900px total scroll width */
+        to { transform: translateX(calc(-2500px - (10 * 40px))); } 
+    }
+}
+
