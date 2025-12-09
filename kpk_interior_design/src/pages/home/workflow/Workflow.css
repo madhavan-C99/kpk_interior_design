@@ -1,0 +1,15 @@
+
+
+.workflow-container{
+    background-color: #D4BC91;
+    height: 709px;
+    width: 100%;
+}
+
+.workflow-title{
+    font-family: var();
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 600;
+    letter-spacing: 3%;
+}

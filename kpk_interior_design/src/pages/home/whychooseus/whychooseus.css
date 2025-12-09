@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --roboto:"Roboto serif",serif;
+    --lora:"Lora",serif;
+    --inter:"Inter",sans-serif;
+}
+
+.whychooseus_container2{
+    margin-top: 2rem;
+}
+
+.wcutext_container2{
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wcu_subtitle2{
+    margin: 0.5rem 0;
+    height: 37px;
+    width: 208px;
+    color: white;
+    background-color: #8D9B6A;
+    font-family: var(--lora);
+    font-size: 21px;
+    line-height: 22px;
+    letter-spacing: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.wcu_maintitle2{
+    margin: 0.5rem 0;
+    width: 65%;
+    font-family: var(--roboto);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 3%;
+}
+
+.wcu_descrition2{
+    margin: 0.5rem 0;
+    text-align: center;    
+    width: 75%;
+    font-family: var(--lora);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 44px;
+    letter-spacing: 3%;
+}
+
+.wcu_reasons_grid2{
+    margin: 1rem 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+}
+
+.wcu_reason_card2{
+    padding-right: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    text-align: center;
+}
+
+.wcu_reason_card2::after{
+    content: "";
+    display: block;
+    height: 200px;
+    position: absolute;
+    right:0px;
+    border-left: 2px dashed;
+    width: 1px;
+    color: #000000;
+}
+
+.wcu_reason_card2:last-child::after{
+    display: none;
+}
+
+.wcu_reason_img2{
+    height: 72px;
+    width: 91.7px;
+}
+
+.wcu_reason_title2{
+    width: 197px;
+    font-family: var(--inter);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 3%;
+    text-align: center;
+}
+
+.wcu_reason_description2{
+    width: 210px;
+    font-family: var(--inter);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 3%;
+    font-weight: 500;
+}

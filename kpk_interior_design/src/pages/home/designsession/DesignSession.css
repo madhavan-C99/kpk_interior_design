@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --roboto:"Roboto Serif",serif;
+    --lora:"Lora",serif;
+    --inter:"Inter",sans-serif;
+}
+
+.designsession_container2{
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.designsession_text2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.design_badge2{
+    margin: 0.5rem 0;
+    width: 208px;
+    font-family: var(--lora);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 22px;
+    color: white;
+    height: 37px;
+    border-radius: 50px;
+    background-color: #8D9B6A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designsession_title2{
+    margin: 0.5rem 0;
+    width: 65%;
+    font-family: var(--roboto);
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 3%;
+    font-weight: 600;
+}
+
+.designsession_des2{
+    margin: 0.5rem 0;
+    width: 73%;
+    font-size: 28px;
+    line-height: 44px;
+    font-weight: 400;
+    letter-spacing: 3%;
+    font-family: var(--lora);
+}
+
+.steps_sectiongrid2{
+    margin: 2rem 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.steps_card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.steps_card2:nth-child(1) .sesscard_img2{
+    height: 191px;
+    width: 188px;
+}
+
+.steps_card2:nth-child(2) .sesscard_img2{
+    height: 186px;
+    width: 238px;
+}
+
+.steps_card2:nth-child(3) .sesscard_img2{
+    height: 185px;
+    width: 250px;
+}
+
+.steps_card2:nth-child(4) .sesscard_img2{
+    height: 182px;
+    width: 218px;
+}
+
+.sesscard_title2{
+    font-family: var(--lora);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 3%;
+}
+
+.session_btnwrapper2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.session_btn2{
+    margin: 1rem 0;
+    width: 421px;
+    border: none;
+    color: white;
+    font-family: var(--roboto);
+    font-size: 24px;
+    font-weight: 600;
+    height: 50px;
+    background-color: #3A2E27;
+    border-radius: 8px;
+}
