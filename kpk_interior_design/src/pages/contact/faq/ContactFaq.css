@@ -1,0 +1,90 @@
+/* faq */
+/* Roboto Serif */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+.contact-faq > div {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.contact-faq div p {
+    background-color: #8D9B6A;
+    text-align: center;
+    border-radius: 50px;
+    width: 145px;
+    font-size: 21px;
+    color: #FFFFFF;
+    font-family: Lora;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 10px;
+    margin: auto;
+}
+
+.contact-faq h2 {
+    font-size: 44px;
+    font-weight: 500;
+    font-family: Roboto Serif;
+}
+
+/* ------ */
+.contact-faq-cateogries {
+    text-align: center;
+}
+
+.contact-faq_active {
+    border: 2px solid rgba(141, 155, 106, 1);
+    border-radius: 7.24px;
+    padding: 13px 18px;
+    font-family: Roboto Serif;
+    font-size: 16px;
+    letter-spacing: 3%;
+    line-height: 22px;
+    font-weight: 600;
+    margin: 0px 10px 30px 10px;
+    align-items: center;
+}
+
+.contact-faq_list {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-faq-box {
+    background-color: rgba(234, 241, 218, 1);
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 7.24px;
+}
+
+.contact-faq-ques {
+    color: rgba(0, 0, 0, 1);
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-faq-ans {
+    background-color: rgba(234, 241, 218, 1);
+    text-align: left;
+    font-family: Lora;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 3%;
+}
+
+.contact-faq_icon {
+    text-align: right;
+}
+
+.contact-faq-ques,
+.contact-faq-ans {
+  cursor: pointer;
+}

@@ -1,0 +1,139 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.contact-hero_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     justify-content: center;
+     margin: 20px 0px 30px 0px;
+}
+.contact-hero_page h2{
+    font-size: 85px;
+    font-weight: 500;
+    font-family: Roboto Serif;
+    margin: 0px;
+}
+.contact-hero_img{
+    height: 617.01171875px;
+    width: 100%;
+}
+.contact-img_set{
+    margin: auto;
+}
+/* contact form */
+.contact-form_sect{
+    background-image: url(../../../src/assets/contact/contact-form-back.png);
+    padding: 200px 50px;
+    border: 4px solid white;
+    margin-top: 150px;
+    /* width: 60%; */
+    
+
+}
+.contact-form_details{
+    display: flex;
+    margin: auto;
+    border: 4px solid;
+    border-radius: 15px;
+    border-image-source: linear-gradient(177.68deg, #FFFFFF -7.2%, #999999 96.67%);
+    backdrop-filter: blur(17.504783630371094px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(153, 153, 153, 0.4) 100%);
+    border: 4px solid  white;
+    /* border-image-source: linear-gradient(177.68deg, #FFFFFF -7.2%, #999999 96.67%); */
+    width: 95%;
+    
+    
+    
+
+}
+.contact-form_det{
+    /* background: rgba(57, 58, 62, 0.3); */
+    color: white;
+    padding: 50px;
+     width: 50%;
+     align-items: center;
+     text-align: center;
+     
+}
+.contact-form_det h2{
+  font-size: 37px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 100%;
+  font-family: Inter;
+}
+.contact-form_det-set div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    
+
+}
+
+.contact-form_det-set div i{
+    color: rgba(212, 188, 145, 1);
+    font-size: 33.68208312988281px;
+    height: 45px;
+    width: 45px;
+
+}
+.contact-form_det-set div p{
+    color: white;
+    font-size: 28px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: left;
+}
+
+/* Here we start form */
+.contact-form-des{
+  
+  height: 620px;
+    width: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(153, 153, 153, 0.4) 100%);
+    /* border: 4px solid; */
+    border-image-source: linear-gradient(177.68deg, #FFFFFF -7.2%, #999999 96.67%);
+    padding: 50px 10px 40px 30px;
+    overflow: hidden;
+}
+.contact-form-des form div{
+    display: flex;
+    flex-direction: column;
+    /* color: rgba(255, 255, 255, 1); */
+    font-size: 29px;
+    font-weight: 500;
+    font-family: Inter;
+    margin: 10px 0px;
+}
+.contact-form-des form div label{
+    color: rgba(255, 255, 255, 1);
+}
+.contact-form-des form div input{
+    /* border-bottom: 2px solid rgba(255, 255, 255, 1); */
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    padding: 10px 8px 8px 0px;
+    width: 90%;
+}
+
+.contact-form-des div button{
+    color: white;
+    background-color: rgba(58, 46, 39, 1);
+    border: none;
+    padding: 10px 60px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Roboto Serif;
+    text-align: right;
+    margin-right: 30px;
+}
+/* arrow img */
+.contact-form_arrow{
+      transform: translate(-97px, 10px);
+
+}

@@ -1,0 +1,267 @@
+/* Fonts (only once) */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap'); */
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* robort sherif */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* ------------------------------------- */
+/* Container */
+.portfolio-gallery-wrapper {
+  display: grid;
+  gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(413px, 1fr));
+  padding: 0;
+}
+
+/* whole box padding wrapper (optional) */
+.portfolio-gallery-whole-box {
+  padding: 50px;
+}
+
+/* Single gallery box */
+.portfolio-single-gallery {
+  width: 413px;
+  height: 513px;
+  border-radius: 15px;
+  background: rgba(234, 241, 218, 1);
+  padding: 15px;
+  box-sizing: border-box;
+  /* default css vars (can be overridden inline) */
+  --speed: 12s;
+  --distance: -384px; /* negative value means translate left; override per gallery */
+}
+
+/* Text */
+.portfolio-gallery-title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 8px 0;
+}
+
+.portfolio-gallery-description {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 23px;
+  margin: 0 0 12px 0;
+}
+
+/* line */
+
+.portfolio-gallery-line {
+  /* width: 100%; */
+   width: 384.01171875px;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgba(166, 164, 164, 1);
+  margin: 12px 0;
+}
+
+/* button */
+.portfolio-gallery-button {
+  margin-top: 30px;
+  color: white;
+  width: 384px;
+  height: 40px;
+  border-radius: 8px;
+  /* padding: 8px 112px; */
+  font-family: "Roboto Serif";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+  background: rgba(58, 46, 39, 1);
+  border: none;
+  cursor: pointer;
+}
+
+/* Scroll wrapper */
+.portfolio-scroll-area {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+/* Track for moving images */
+.portfolio-scroll-track {
+  display: flex;
+  /* gap: 15px; */
+  padding: 10px;
+  will-change: transform;
+  /* animation uses css vars set on parent (.single-gallery) */
+  animation: slide var(--speed) linear infinite;
+  animation-direction: alternate; /* ANIMATE forward then back */
+}
+
+/* Pause animation on hover */
+.portfolio-single-gallery:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+/* Each image */
+.portfolio-scroll-img {
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+  width: 384px;
+  height: 306px;
+  /* border-radius: 15px; */
+  display: block;
+}
+
+.portfolio-scroll-img:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframes use the dynamic distance variable.
+   --distance should be a LENGTH (e.g. -384px or -800px).
+   Using alternate direction makes the animation go back-and-forth. */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(var(--distance));
+  }
+}
+/* circle */
+/* .portfolio-image-circle{
+} */
+.portfolio-image-circle div :hover{
+  /* display: flex; */
+  cursor: pointer;
+}
+.portfolio-image-circle{
+  
+}
+.portfolio-image-circle-1{
+   width: 9px;
+  height: 9px;
+  opacity: 1;
+  padding: 1px;
+  gap: 15px;
+  border-radius: 50%;
+  position: absolute;
+  background: rgba(255, 255, 255, 1);
+  transform: translate(170px, -41px);
+
+}
+.portfolio-image-circle-2{
+  width: 9px;
+  height: 9px;
+  opacity: 1;
+  padding: 1px;
+  gap: 15px;
+  border-radius: 50%;
+  transform: translate(1685%,-370%);
+  position: absolute;
+  background: rgba(213, 213, 213, 1);
+
+}
+/* Overlay */
+.portfolio-overlay {
+  position: fixed;
+  inset: 0;
+  background:  rgba(255, 255, 255, 1);
+  width: 1440;
+  height: 4798;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+  z-index: 999;
+}
+
+.portfolio-overlay-grid {
+  width: 90%;
+  margin: auto;
+  overflow: scroll;
+  scrollbar-width: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.portfolio-overlay-img {
+  /* width: 1249; */
+  width: 90%;
+  height: 852;
+  opacity: 1;
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.portfolio-close-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.portfolio-close-btn-1{
+opacity: 1;
+top: 25px;
+left: 1297px;
+width: 80.51422237615306px;
+height: 80.51422237615306px;
+transform: rotate(-39.16%);
+opacity: 1;
+top: 40.44px;
+right: 40.47px;
+border: none;
+background-color: white;
+position: absolute;
+}
+/* --------------journey------------ */
+
+/*  */
+ .portfolio-journey-background {
+    background-image: url(../../assets/Price_img/interior-design.png);
+    height: 470px;
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-position: center; 
+  
+    padding: 100px 50px;
+    text-align: left;
+    margin-top: 80px;
+}
+
+/* ----------- */
+.portfolio-journey-background h2{
+    width: 50%;
+    color: #FFFFFF;
+    font-size: 70px;
+    font-weight:600;
+    line-height: 72px;
+}
+.portfolio-journey-background p{
+    width:50%;
+    font-size: 12.68px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 23px;
+    line-height: 37px;
+}
+.portfolio-journey-background button{
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: 600;
+    background-color: #8D9B6A;
+    font-family: Roboto Serif;
+    width: 320px;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 30px;
+}
