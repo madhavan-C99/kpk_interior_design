@@ -1,0 +1,364 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --roboto:"Roboto Serif",serif;
+    --lora:"Lora",serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    font-family:var(--roboto)
+}
+
+.comparison_container2{
+    margin-top: 6rem;
+}
+
+.table_header_content2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comparison_main_title2{
+    text-align: center;
+    font-family: var(--roboto);
+    width: 949px;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 56px;
+}
+
+.comparison_subtitle2{
+    margin-top: 1rem;
+    font-family: var(--lora);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 3%;
+    width: 75%;
+    text-align: center;
+}
+
+.comparison_table_wrapper2{
+    width: 100vw;
+    max-width: 1170px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.kitchen_comparison_table2{
+    font-family:var(--lora);
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.comparison_header_row2 {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 5%;
+}
+
+.header_layout_cell2 {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.header_feature_cell2{
+    background-color: white;
+    border: white;
+}
+
+.comparison_header_row2 th:nth-child(2){
+    background-color:#C5D2A7;
+}
+.comparison_header_row2 th:nth-child(3){
+    background-color: #DFEDBE;
+}
+.comparison_header_row2 th:nth-child(4){
+    background-color: #F7FFE3;
+
+}
+
+.layout_cell2 {
+    padding: 16px;
+    text-align: left; 
+    line-height: 24px;
+    color: var(--color-text-dark);
+    font-size: 16px;
+    letter-spacing: 1%;
+    font-weight: 400;
+}
+
+tr,td,th{
+    border: 0.5px solid black;
+}
+
+.header_feature_cell2_hide{
+    border: none;
+}
+
+.feature_cell2 {
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 5%;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-dark);
+}
+
+.feature_cell2 img{
+    text-align: center;
+    height: 32px;
+    width: 32px;
+}
+
+.feature_cell2 p{
+    margin: auto;
+    width: 100px;
+}
+
+.comparison_header_row2 th:nth-child(2){
+    border-top-left-radius: 15px;
+}
+
+.comparison_header_row2 th:last-child {
+    border-top-right-radius: 15px; 
+}
+
+tbody tr:first-child td:first-child {
+    border-top-left-radius: 15px;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .comparison_subtitle2{
+        width: 90%;
+    }
+
+    .comparison_table_wrapper2{
+        width: 90%;
+    }
+
+    .feature_cell2{
+        padding: 14px;
+    }
+
+    .layout_cell2{
+        padding: 14px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .comparison_main_title2{
+        font-size: 32px;
+        line-height: 48px;
+        width: 70%;
+    }
+
+    .comparison_subtitle2{
+        font-size: 24px;
+        line-height: 40px;
+        width: 72%;
+    }
+
+    .comparison_table_wrapper2{
+        width: 90%;
+    }
+
+    .header_layout_cell2{
+        font-size: 13.15px;
+        padding: 11.8px 28px;
+    }
+
+    .feature_cell2{
+        padding: 8px;
+        height: 49px;
+        width: 77px;
+    }
+
+    .feature_cell2 img{
+        height: 21px;
+        width: 21px;
+    }
+
+    .feature_cell2 p{
+        font-size: 9.2px;
+        letter-spacing: 5%;
+    }
+
+    .layout_cell2{
+        padding: 9px;
+        font-size: 10.5px;
+        line-height: 15.7px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .comparison_main_title2{
+        font-size: 32px;
+        line-height: 48px;
+        width: 70%;
+    }
+
+    .comparison_subtitle2{
+        font-size: 24px;
+        line-height: 40px;
+        width: 72%;
+    }
+
+    .comparison_table_wrapper2{
+        width: 90%;
+    }
+
+    .header_layout_cell2{
+        font-size: 13.15px;
+        padding: 11.8px 0px;
+    }
+
+    .feature_cell2{
+        padding: 8px;
+        height: 49px;
+        width: 77px;
+    }
+
+    .feature_cell2 img{
+        height: 21px;
+        width: 21px;
+    }
+
+    .feature_cell2 p{
+        font-size: 9.2px;
+        letter-spacing: 5%;
+    }
+
+    .layout_cell2{
+        padding: 9px;
+        font-size: 10.5px;
+        line-height: 15.7px;
+    } 
+}
+
+
+@media (max-width: 575px){
+
+    .comparison_container2{
+        background-color: white;
+        margin-top: 3rem;
+    }
+    .comparison_main_title2{
+        font-size: 20px;
+        line-height: 28px;
+        width: 55%;
+        min-width: 75%;
+    }
+
+    .comparison_subtitle2{
+        font-size: 16px;
+        line-height: 24px;
+        width: 56%;
+    }
+
+    .kitchen_comparison_table2{
+        width: 750px;
+        min-width: 100%;
+        padding-left: 5%;
+        margin-bottom: 0.3rem;
+    }
+
+    .comparison_table_wrapper2{
+        background-color: white;
+        overflow-x: auto;
+        padding-right: 60px;
+    }
+
+    .header_layout_cell2{
+        font-size: 9.25px;
+        padding: 6px;
+        z-index: 9;
+    }
+
+    .header_feature_cell2_hide{
+        background-color: white;
+        position: sticky;
+        left:5%;
+        z-index: 100;
+    }
+
+    .feature_cell2{
+        background-color: white;
+        position: sticky;
+        left: 5%;
+        z-index: 5;
+        padding: 16.73px 8.6px;
+        width: 66px;
+    }
+
+    .feature_cell2 img{
+        height: 14.7px;
+        width: 12.84px;
+    }
+
+    .feature_cell2 p{
+        font-size: 6.47px;
+        width: 54px;
+    }
+
+    .comparison_table_row2{
+        overflow-x: auto;
+    }
+
+    .layout_cell2{
+        z-index: 1;
+        font-size: 7.4px;
+        line-height: 11.09px;
+        padding:8px;
+        width: 135px;
+    }
+
+    .kitchen_comparison_table2{
+        min-width: 541px;
+    }
+}
+
+@media (max-width: 375px){
+    .comparison_main_title2{
+        width: 80%;
+    }
+
+    .comparison_subtitle2{
+        width: 82%;
+    }
+
+    .comparison_table_wrapper2{
+        padding-right: 25px;
+    }
+
+    .kitchen_comparison_table2{
+        min-width: 541px;
+    }
+}

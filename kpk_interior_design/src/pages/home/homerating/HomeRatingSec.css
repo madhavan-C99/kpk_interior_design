@@ -49,14 +49,17 @@
 }
 
 
-.home_rating3 {
+.home__rating3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 230px;
+   
+
 }
 
 .home_rating3_num {
+   
     font-size: 5rem;
     font-weight: 900;
     font-family: var(--interfont-font-family);

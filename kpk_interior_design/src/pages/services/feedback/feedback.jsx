@@ -12,31 +12,32 @@ export default function FeedBack() {
 const CARD_DATA = [
   { 
     id: 1, 
-    name: 'MR. NAMRA', 
-    title: 'MD- Aysha Construction Solutions', 
-    text: 'I had the pleasure of working with vibrant spaces. Their team of designers exceeded all expectations from our initial meetings to the final designs of my home.', 
-    image:feedimg1
+    name: 'Mr. Vignesh ', 
+    title: 'House Owner', 
+    text: '“Their custom wardrobe with soft-close fittings and factory-finish shutters looks premium. They listened patiently to our needs and delivered more than expected. Easily one of the most professional interior designers in Pondicherry.”', 
+    image:feedimg2
+
 },
   { 
     id: 2, 
-    name: 'AYSHA NAMRA', 
-    title: 'Chief Design Officer', 
-    text: 'Working with the Aysha team was seamless. The quality of materials and attention to detail in the final execution were truly world-class and breathtaking.', 
-    image:feedimg2
+    name: 'Mr. Aravind ', 
+    title: 'MD- Aysha Construction Solutions', 
+    text:'“The custom TV unit completely transformed my living room. The factory-finish panels look elegant and durable. Their professionalism, design clarity, and clean installation make them one of the best interior designers in Pondicherry.”', 
+    image:feedimg1
   },
   { 
     id: 3, 
-    name: 'MR. RAHIM', 
+    name: 'Mr. Surya ', 
     title: 'Home Owner', 
-    text: 'The result is exactly what we envisioned—a perfect blend of elegance and functionality. I highly recommend their interior design services to anyone.', 
+    text: '“They created a serene pooja unit and a stylish wardrobe for our bedroom. Excellent factory finish, neat execution, and kind communication. Truly the best home interior designers in Pondicherry for customized work.”', 
     image:feedimg3
   },
   { 
     id: 4, 
-    name: 'MS. ZARA', 
-    title: 'Interior Enthusiast', 
-    text: 'From concept to completion, the process was managed professionally. They delivered a stunning kitchen design ahead of schedule and under budget.', 
-    image:feedimg2
+    name: 'Mrs. Priya ', 
+    title: 'Home Owner', 
+    text: '“Our new TV unit with storage feels like a luxury showroom piece. The factory-finish quality, colors, and detailing were outstanding. Definitely the most affordable interior designers in Pondicherry without compromising quality or commitment.”', 
+    image:feedimg1
   },
 ];
     const originalFeedback = [

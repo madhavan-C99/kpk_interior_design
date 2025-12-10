@@ -1,0 +1,27 @@
+import React from "react";
+import './Consultation.css'
+
+
+function Consultation(){
+    return(
+        <>
+            <div className="consultation_wrapper2">
+                <div className="consultation title2">
+                    <h2 className="consult_titletext2">
+                        BOOK YOUR PERSONALIZED INTERIOR CONSULTATION TODAY
+                    </h2>
+                </div>
+                <div className="consultation_des2">
+                    <p className="consult_destext2">
+                        Our designers bring strategic planning and artistic thinking together
+                    </p>
+                </div>
+                <div className="consultation_btnwrap2">
+                    <button className="consult_btn2">Build My Dream Interior</button>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Consultation

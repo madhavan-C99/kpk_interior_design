@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+:root{
+    --roboto:"Roboto Serif",serif;
+    --lora:"Lora",serif;
+    --meri:"Merriweather",serif;
+}
+
+.consultation_wrapper2{
+    margin: 4rem 0;
+    background-color: black;
+    height: 417px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.consult_titletext2{
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    color: white;
+    font-family: var(--meri);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+}
+
+.consult_destext2{
+    margin:1rem 0 ;
+    font-family: var(--meri);
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.consult_btn2{
+    margin: 1rem 0;
+    font-family: var(--roboto);
+    font-size: 32px;
+    font-weight: 600;
+    height: 60px;
+    width: 440px;
+    border: none;
+    background-color: #8D9B6A;
+    color: white;
+    border-radius: 10px;
+}
+
