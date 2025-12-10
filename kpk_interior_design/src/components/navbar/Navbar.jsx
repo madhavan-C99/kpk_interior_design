@@ -1,4 +1,6 @@
-// import logo from '../../assets/navbar/logo.png'
+
+import logo from '../../assets/navbar/logo.png'
+
 import { useState } from 'react'
 import './Navbar.css'
 
@@ -11,7 +13,9 @@ function Navbar() {
     <header>
         <div className="navbar">
       <div className="navbar-left">
-        {/* <img src={logo} alt="KPK Enterprise" className="logo" /> */}
+
+        <img src={logo} alt="KPK Enterprise" className="logo" />
+
       </div>
 
       {/* desktop center nav */}
@@ -22,6 +26,7 @@ function Navbar() {
         <a href="/portfolio" className="nav-link">Portfolio</a>
         <a href="/price" className="nav-link">Pricing</a>
         <a href="/contact" className="nav-link">Contact</a>
+
       </nav>
 
       <div className="navbar-right">

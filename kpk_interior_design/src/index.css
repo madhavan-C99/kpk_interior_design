@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -66,3 +67,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+=======
+
+/* Ensure Google Fonts loads ALL weights */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+>>>>>>> c5f57f330fde2c38710e13c3d6a128d4b848a0fb
