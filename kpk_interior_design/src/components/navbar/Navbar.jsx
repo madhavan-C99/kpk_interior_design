@@ -1,5 +1,6 @@
 import logo from '../../assets/services/images/logo.png'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 
@@ -17,12 +18,12 @@ function Navbar() {
 
       {/* desktop center nav */}
       <nav className="navbar-center">
-        <a href="#home" className="nav-link active">Home</a>
-        <a href="#about" className="nav-link">About</a>
-        <a href="#services" className="nav-link">Services</a>
-        <a href="#portfolio" className="nav-link">Portfolio</a>
-        <a href="#pricing" className="nav-link">Pricing</a>
-        <a href="#contact" className="nav-link">Contact</a>
+        <a href="#home" className="nav-link active"><Link to={'/'}>Home</Link></a>
+        <a href="#about" className="nav-link"><Link to={'/about'}>About</Link></a>
+        <a href="#services" className="nav-link"><Link to={'/services'}>Services</Link></a>
+        <a href="#portfolio" className="nav-link"><Link to={'/portfolio'}>Portfolio</Link></a>
+        <a href="#pricing" className="nav-link"><Link to={'/pricing'}>Pricing</Link></a>
+        <a href="#contact" className="nav-link"><Link to={'/contact'}>Contact</Link></a>
       </nav>
 
       <div className="navbar-right">
