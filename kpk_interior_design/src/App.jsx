@@ -11,18 +11,22 @@ import DesignSession from './pages/home/designsession/DesignSession'
 import Consultation from './pages/home/consultation/Consultation'
 import TopCategory from './pages/home/topcategory/TopCategory'
 import CreativeDesign from './pages/home/creativedesign/CreativeDesign'
+import Workflow from './pages/home/workflow/Workflow'
+import Footer from './components/footer/Footer'
 
 function App() {
 
   return (
     <>
     {/* home page */}
-      {/* <WhyChooseUs/>
+      <WhyChooseUs/>
       <CraftingSpace/>
+      <Workflow/>
       <DesignSession/>
       <Consultation/>
+      <CreativeDesign/>
       <TopCategory/>
-      <CreativeDesign/> */}
+      
 
       {/* service page */}
       {/* <ContactForm/>
@@ -30,6 +34,8 @@ function App() {
       <ProjectGallery/>
       <AccessoriesGallery/>
       <KitchenDesigns/> */}
+
+      {/* <Footer/> */}
     </>
   )
 }

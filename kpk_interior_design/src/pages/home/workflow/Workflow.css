@@ -1,15 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-.workflow-container{
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root{
+    --roboto:"Roboto Serif",serif;
+    --lora:"Lora",serif;
+    --dm:"DM Serif Display", serif;
+}
+
+.workflow_container{
     background-color: #D4BC91;
-    height: 709px;
+    height: 700px;
     width: 100%;
 }
 
-.workflow-title{
-    font-family: var();
+.workflow_innerwrapper2{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.workflow_title{
+    margin-top: 3rem;
+    width: 60%;
+    font-family: var(--roboto);
     font-size: 40px;
     line-height: 52px;
     font-weight: 600;
     letter-spacing: 3%;
+}
+
+.workflow_steps_list{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+}
+
+.step_item{
+    padding: 0 2rem;
+    position: relative;
+    overflow: visible;
+}
+
+.step_circle{
+    height: 151px;
+    width: 151px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+.step_circle.active{
+    background-color: #3A2E27;
+}
+
+.step_number_overlay{
+    font-family: var(--dm);
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    position: absolute;
+    top: -80px;
+    left: 10px;
+}
+
+.step_circle_img2{
+    height: auto;
+    width: 92px;
+}
+
+.step_title{
+    margin: 2rem 0;
+    font-family: var(--roboto);
+    font-size: 23.15px;
+    font-weight: 400;
+    letter-spacing: 2%;
+}
+
+.progress_line_wrapper{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.progress_base{
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.progress_filled{
+    background-color:#3A2E27;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.content_section{
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fade_animation 1.5s ease-in-out;
+}
+
+.content_heading{
+    font-family: var(--roboto);
+    font-size: 29.75px;
+    font-weight: 600;
+    letter-spacing: 2%;
+    transition: all 1.5s ease-in-out;
+}
+
+.content_body{
+    margin-top: 1rem;
+    width: 80%;
+    font-family: var(--roboto);
+    font-size: 19.8px;
+    font-weight: 400;
+    line-height: 39.6px;
+    letter-spacing: 2%;
+    transition: all 1.5s ease-in-out;
+}
+
+@keyframes fade_animation {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
 }

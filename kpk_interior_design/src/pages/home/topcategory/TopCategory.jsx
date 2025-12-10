@@ -1,8 +1,8 @@
 import React from "react";
 import './TopCategory.css'
 import homeimg from '../../../assets/home/images/Frame 1000012638.png'
-import shopimg from '../../../assets/home/images/Frame 1000012639.png'
-import apartmentimg from '../../../assets/home/images/Frame 1000012640.png'
+import apartmentimg from '../../../assets/home/images/Frame 1000012639.png'
+import shopimg from '../../../assets/home/images/Frame 1000012640.png'
 import businessimg from '../../../assets/home/images/Frame 1000012641.png'
 import factoryimg from '../../../assets/home/images/Frame 1000012642.png'
 

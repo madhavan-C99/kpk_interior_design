@@ -63,7 +63,7 @@ function Footer(){
                         </div>
                         <div className="footer_links2">
                             <h4 className="links_heading2">Quick Links</h4>
-                            <ul>
+                            <ul className="footer_quicklinks2">
                                 {quicklinks.map((data,index)=>(
                                     <li key={index}><a href="">{data}</a></li>
                                 ))}
