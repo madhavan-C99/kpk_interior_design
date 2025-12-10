@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+::-webkit-scrollbar{
+  display: none;
+}
+.price-hero{
+  background-image: url(../../assets/Price_img/price-hero-price.png);
+  background-size: cover;    /* FULL IMAGE COVER */
+    background-position: center; 
+    /* background-color: #3A2E27; */
+    color: white;
+    height: 450px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    margin-top: 100px;
+    border-radius: 32px;
+    padding: 20px 60px;
+    margin-bottom: 120px;
+    border-radius: 32px;
+}
+.price-hero-title-1{
+    font-family: Roboto Serif ;
+    font-size: 55px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 200px;
+    line-height: 76px;
+    /* width: 70%; */
+}
+/* hero section image */
+/* .pricehero-img{
+    position: relative;
+    height: 500px;
+    width: 300px;
+    top: -149px;
+    right: -280px;
+} */
+
+.price-table-title{
+  margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.price-table-title h2{
+    font-size: 44px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+    width: 30%;
+    text-align: center;
+    font-family: Roboto Serif;
+    line-height: 56px;
+}
+.price-table-title p{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 0px;
+    width: 50%;
+    font-family: Roboto Serif;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 3%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+/* wrapper gives outer rounded corners and clipping */
+.price-table-wrapper {
+  width: 90%;   
+  margin: 20px auto;
+  border-radius: 18px;    /* outer radius like design */
+  overflow: hidden;       /* important to clip inner corners */
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+
+/* base table */
+.price-table__table {
+  width: 100%;
+  border-collapse: collapse;   /* inner cell borders collapse */
+  table-layout: fixed;
+  font-family: Roboto Serif; /* or your chosen font */
+}
+
+/* header row */
+/* .price-table__head-row{
+  padding: 5px 15px;
+  } */
+.price-table__head-row th { 
+  background: rgba(141,155,106,1);
+  color: white;
+  font-weight: 600;
+  font-size: 22.61px;
+  text-align: center;
+  border-bottom: 1px solid rgba(141,155,106,0.9);
+  padding: 20px !important;
+}
+.price-table__head-row td{
+  font-weight: 500;
+  font-family: Roboto Serif;
+}
+/* round the top corners of the header cells */
+.price-table__head-row th:first-child {
+  border-top-left-radius: 18px;
+}
+.price-table__head-row th:last-child {
+  border-top-right-radius: 18px;
+}
+
+/* body rows */
+.price-table__table tbody tr {
+  background: rgba(223,237,190,1); 
+}
+
+/* common td/th inner borders (horizontal) */
+.price-table__table th,
+.price-table__table td {
+  border-bottom: 1px solid rgba(141,155,106,0.45); 
+  /* padding: 10px; */
+  padding: 6px 4px;
+  text-align: center;
+  font-size: 20px;
+  /* width: 85px; */
+  vertical-align: middle;
+  border-right-color:rgba(141, 155, 106, 1);
+}
+.price-table__table td {
+    color: #000;
+    font-weight: 500;
+    font-size: 22.61px;
+    font-family: Roboto Serif;
+    line-height: 37.08px;
+}
+/* leftmost label column style */
+.price-table__label{
+ 
+   width: 220px;
+}
+.price-table__td.price-table__label {
+  font-weight: 600;
+  /* width: 50%; */
+  
+  font-family: Roboto Serif;
+  font-size: 22.61px;
+}
+
+/* icon cells: center icon, round black circle background like design */
+.price-table__icon {
+  text-align: center;
+  font-size: 18px;
+  /* width: 24%; */
+}
+
+/* style the react-icons inside icon cells to look like black filled circle with white check */
+.price-table__icon svg {
+  width: 31.666677474975586px;
+  height: 31.666677474975586px;
+  border-radius: 50%;
+  color: black;
+  
+  /* padding: 6px; */
+  box-sizing: content-box;
+  display: inline-block;
+}
+
+
+/* vertical separators: create gradient vertical line between columns */
+/* Apply to all td except last-child to create right divider using border-image */
+.price-table__table td:not(:last-child),
+.price-table__table th:not(:last-child) {
+  /* border-right: 1.09px solid #8d9b6a; 
+  border-image-source: linear-gradient(
+    180.04deg,
+    #ffffff 0.03%,
+    #ffffff 5.76%,
+    #8d9b6a 8.92%
+  ); */
+  border-image-slice: 1;
+  border-right: 1.09px solid;
+
+border-image-source: linear-gradient(180.04deg, #FFFFFF 0.03%, #FFFFFF 5.76%, #8D9B6A 8.92%);
+
+
+}
+
+/* remove extra border on last row bottom and round bottom corners */
+.price-table__footer-row td:first-child {
+  border-bottom-left-radius: 18px;
+}
+.price-table__footer-row td:last-child {
+  border-bottom-right-radius: 18px;
+}
+/* --------------------- */
+/* ensure table respects widths */
+.price-table__table {
+  table-layout: fixed; /* already set but reaffirm */
+}
+
+/* make first column wider (th + td in first column) */
+.price-table__table th:first-child,
+.price-table__table td:first-child {
+  width: 400px;       
+  min-width: 100px;    
+  max-width: 35%;      
+  text-align: left;    
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* if you want the label cells to use your label class specifically */
+.price-table__td.price-table__label {
+  width: 220px;
+  min-width: 100px;
+  /* padding: 12px 24px; increase left/right padding for visual length */
+}
+
+
+
+/*  */
+ .Price-background {
+    background-image: url(../../assets/Price_img/interior-design.png);
+    height: 470px;
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-position: center; 
+  
+    padding: 100px 50px;
+    text-align: left;
+    margin-top: 130px;
+}
+
+/* ----------- */
+.Price-background h2{
+    width: 50%;
+    color: #FFFFFF;
+    font-size: 70px;
+    font-weight:600;
+    line-height: 72px;
+}
+.Price-background p{
+    width:50%;
+    font-size: 12.68px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 23px;
+    line-height: 37px;
+}
+.Price-background button{
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: 600;
+    background-color: #8D9B6A;
+    font-family: Roboto Serif;
+    width: 320px;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 30px;
+}
+/* faq */
+.price-faq>div {
+text-align: center;
+margin-top: 130px;
+}
+
+.price-faq div p{
+    background-color: #8D9B6A;
+    text-align: center;
+    border-radius: 50px;
+    width: 145px;
+    font-size: 21px;
+    color: #FFFFFF;
+    font-family: Lora;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 10px;
+    margin: auto;
+
+}
+.price-faq h2{
+    font-size: 44px;
+    font-weight: 500;
+    font-family: Roboto Serif;
+}
+/* ------ */
+.price-faq-cateogries{
+    text-align: center;    
+}
+.Price-faq_active{
+
+    border: 2px solid rgba(141, 155, 106, 1);
+    border-radius: 7.24px;
+    padding: 13px 18px;
+    font-family: Roboto Serif;
+    font-size: 16px;
+    letter-spacing: 3%;
+    line-height: 22px;
+    font-weight: 600;
+    margin: 0px 10px 30px 10px;  
+    align-items: center;
+}
+.price-faq_list{
+width: 80%;
+margin: auto;
+   
+}
+.price-faq-box{
+    background-color: rgba(234, 241, 218, 1); 
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 7.24px;
+}
+.price-faq-ques{
+    color: rgba(0, 0, 0, 1);
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 3%;
+     display: flex;
+    justify-content: space-between;
+}
+.price-faq-ans{
+    background-color: rgba(234, 241, 218, 1);
+    text-align: left;
+    font-family: Lora;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 3%;
+}
+.price-faq_icon{
+    text-align: right;
+}
+.price-faq-ques, .price-faq-ans{
+  cursor: pointer;
+}

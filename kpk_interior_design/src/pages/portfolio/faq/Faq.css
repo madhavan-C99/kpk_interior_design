@@ -1,0 +1,75 @@
+.portfolio-price-faq>div {
+  text-align: center;
+  margin-top: 130px;
+}
+
+.portfolio-price-faq div p{
+  background-color: #8D9B6A;
+  text-align: center;
+  border-radius: 50px;
+  width: 145px;
+  font-size: 21px;
+  color: #FFFFFF;
+  font-family: Lora;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 10px;
+  margin: auto;
+}
+.portfolio-price-faq h2{
+  font-size: 44px;
+  font-weight: 500;
+  font-family: Roboto Serif;
+}
+/* ------ */
+.portfolio-price-faq-cateogries{
+  text-align: center;    
+}
+.portfolio-Price-faq_active{
+  border: 2px solid rgba(141, 155, 106, 1);
+  border-radius: 7.24px;
+  padding: 13px 18px;
+  font-family: Roboto Serif;
+  font-size: 16px;
+  letter-spacing: 3%;
+  line-height: 22px;
+  font-weight: 600;
+  margin: 0px 10px 30px 10px;  
+  align-items: center;
+}
+.portfolio-price-faq_list{
+  width: 80%;
+  margin: auto;
+}
+.portfolio-price-faq-box{
+  background-color: rgba(234, 241, 218, 1); 
+  width: 100%;
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: 7.24px;
+}
+.portfolio-price-faq-ques{
+  color: rgba(0, 0, 0, 1);
+  font-family: Roboto Serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio-price-faq-ans{
+  background-color: rgba(234, 241, 218, 1);
+  text-align: left;
+  font-family: Lora;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 3%;
+}
+.portfolio-price-faq_icon{
+  text-align: right;
+}
+.portfolio-price-faq-ques, .portfolio-price-faq-ans{
+  cursor: pointer;
+}
