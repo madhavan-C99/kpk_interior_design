@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --roboto:"Roboto Serif",serif;
+}
+.crafting_container2{
+    margin: 8rem 0;
+    overflow: hidden;
+    width: 100%;
+    height: 417px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crafting_text2{
+    height: 100%;
+    width: 50%;
+    flex: 1;
+    color: white;
+    background-color: #3A2E27;
+    background-image: url('../../../assets/home/images/Vector\ 320.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.crafting-title2{
+    font-family: var(--roboto);
+    margin-top: 58px;
+    margin-left: 38px;
+    width: 628px;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 600;
+}
+
+.crafting_image2{
+    width: 50%;
+    flex: 1;
+}

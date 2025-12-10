@@ -30,6 +30,7 @@
     min-height: 540px;
     padding: 50px 0;
     background-color: #fff;
+        overflow: hidden;
 }
 .home_rank_head3 {
     text-align: center;
@@ -73,6 +74,7 @@
 }
 
 .home_rank_body3 {
+
     display: flex;
     width: max-content; /* Allows all duplicated cards to be in one row */
     gap: 40px;
