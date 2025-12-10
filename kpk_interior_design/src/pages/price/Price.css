@@ -6,6 +6,11 @@
 ::-webkit-scrollbar{
   display: none;
 }
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 .price-hero{
   background-image: url(../../assets/Price_img/price-hero-price.png);
   background-size: cover;    /* FULL IMAGE COVER */
@@ -13,12 +18,12 @@
     /* background-color: #3A2E27; */
     color: white;
     height: 450px;
-    width: 85%;
+    width: 100%;
     margin: auto;
     display: flex;
     margin-top: 100px;
     border-radius: 32px;
-    padding: 20px 60px;
+    padding: 0px 60px;
     margin-bottom: 120px;
     border-radius: 32px;
 }
@@ -43,6 +48,7 @@
 .price-table-title{
   margin-top: 50px;
     display: flex;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -55,16 +61,18 @@
     text-align: center;
     font-family: Roboto Serif;
     line-height: 56px;
+    
 }
 .price-table-title p{
     font-size: 28px;
     font-weight: 400;
     margin-top: 0px;
-    width: 50%;
+    width: 55%;
     font-family: Roboto Serif;
     line-height: 44px;
     text-align: center;
     letter-spacing: 3%;
+    margin-bottom: 20px;
     /* display: flex;
     justify-content: center;
     align-items: center;
@@ -225,14 +233,17 @@ border-image-source: linear-gradient(180.04deg, #FFFFFF 0.03%, #FFFFFF 5.76%, #8
 /*  */
  .Price-background {
     background-image: url(../../assets/Price_img/interior-design.png);
-    height: 470px;
+    height: 745px;
     background-size: cover;    
     background-repeat: no-repeat;
     background-position: center; 
   
-    padding: 100px 50px;
+    padding: 130px 50px;
     text-align: left;
     margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 /* ----------- */
@@ -257,15 +268,30 @@ border-image-source: linear-gradient(180.04deg, #FFFFFF 0.03%, #FFFFFF 5.76%, #8
     font-weight: 600;
     background-color: #8D9B6A;
     font-family: Roboto Serif;
-    width: 320px;
+    /* width: 320px; */
     padding: 10px;
     border-radius: 7px;
     margin-top: 30px;
+    width: 346px;
+  height: 50px;
+  gap: 10px;
+  opacity: 1;
+  border-radius: 7px;
+  top: 554px;
+  left: 49px;
+  padding-top: 6px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+
 }
 /* faq */
 .price-faq>div {
-text-align: center;
-margin-top: 130px;
+  text-align: center;
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .price-faq div p{
@@ -282,10 +308,12 @@ margin-top: 130px;
     margin: auto;
 
 }
-.price-faq h2{
+.price-faq div h2{
     font-size: 44px;
     font-weight: 500;
     font-family: Roboto Serif;
+    margin: 30px;
+    width: 40%;
 }
 /* ------ */
 .price-faq-cateogries{
@@ -337,6 +365,9 @@ margin: auto;
 }
 .price-faq_icon{
     text-align: right;
+    width: 20px;
+    height: 40px;
+
 }
 .price-faq-ques, .price-faq-ans{
   cursor: pointer;

@@ -114,7 +114,7 @@ export default function Gallery() {
           <p>Access easy, transparent pricing for modular kitchen, wardrobe and home interiors. Get accurate cost guidance and customized options for Pondicherry & Cuddalore.</p>
           <button>Start My Interior Plan</button>
         </section>
-      <Faq/>
+      {/* <Faq/> */}
     </>
   );
 }

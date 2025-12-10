@@ -27,31 +27,7 @@ import HouseCraftman from '../../assets/about/house-craftsmanship.png'
 import NoCost from '../../assets/about/no-cost.png'
 import Timeline from '../../assets/about/timeline.png'
 import Transport from '../../assets/about/transport.png'
-// const Trust=[
-//     first=[
-//             {
-//             title:"End-to-End Design Support",
-//             description:"We handle every step, ensuring your project stays effortless and stress-free",
-//             Image:Support,
-//             },
-//             {
-//                 title:"Quality-Controlled In-House Craftsmanship",
-//                 description:"Every detail is produced internally, ensuring consistency and reliability.",
-//                 Image:Support,
-//             },
-//             {
-//                 title:"No-Cost Design Visualization",
-//                 description:"Get a clear picture of your interiors with expert-curated design samples.",
-//                 Image:Support,
-//             },
-//         ],
-//     second=[
 
-//     ],
-//     third=[
-
-//     ]
-// ]
 const Cycle=[
     {
         img:Personal,
@@ -400,7 +376,7 @@ const  pauseAfterWord = 500
                                 {/* --------------------------------------------- */}
                         </div>
                     </section>
-                    {/* ------------------------------------------------------------------------------------- */}
+                    {/* ---------------------------------our Design Process---------------------------------------------------- */}
                     <div className="about-design">
                         <h2>Our Design Process</h2>
                         <p>How We Shape Your Interior Journey</p>
@@ -434,6 +410,7 @@ const  pauseAfterWord = 500
                                     <img src={CtaLeft}/>
                                     <h2>Trusted by  <span>1000+</span>Happy Clients – KPK Enterprise   Satisfied Clients</h2>
                                     <p>With over 1000 happy clients in Pondicherry, KPK Enterprise has earned a reputation for delivering stylish, functional, and client-focused interior solutions across homes and commercial spaces.</p>
+                                    <button>Build My Dream Interior</button>
                                 </div>
                     </section>
                     {/* ----------------------FAQ---------------------------------------------- */}
@@ -441,7 +418,7 @@ const  pauseAfterWord = 500
                         <section className='about-faq'>
                             <div>
                                 <p>FAQ</p>
-                                <h2>Frequently Asked Questions</h2>
+                                <h2>Frequently Asked <br></br> Questions</h2>
                             </div>
                         </section>
                         {/* -------------------- */}

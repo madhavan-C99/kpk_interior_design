@@ -7,7 +7,11 @@
 ::-webkit-scrollbar{
   display: none;
 }
-
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 /* ------------------------------------- */
 /* Container */
 .portfolio-gallery-wrapper {
@@ -228,14 +232,17 @@ position: absolute;
 /*  */
  .portfolio-journey-background {
     background-image: url(../../assets/Price_img/interior-design.png);
-    height: 470px;
+    height: 745px;
     background-size: cover;    
     background-repeat: no-repeat;
     background-position: center; 
   
-    padding: 100px 50px;
+    padding: 180px 50px;
     text-align: left;
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /* ----------- */
@@ -260,7 +267,7 @@ position: absolute;
     font-weight: 600;
     background-color: #8D9B6A;
     font-family: Roboto Serif;
-    width: 320px;
+    width: 346px;
     padding: 10px;
     border-radius: 7px;
     margin-top: 30px;

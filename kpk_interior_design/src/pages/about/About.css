@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 /* Lora */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-/* Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 .about-hero_viedo{
     background-image: url(../../assets/../assets/about/hero-viedo.png);
     height: 815px;
@@ -45,17 +47,20 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 58px;
+    margin-bottom: 30px;
 }
 .about-experts-right div p{
     font-family: Lora;
     font-size: 28px;
     font-weight: 400;
     line-height: 44px;
+    padding: 10px;
 }
 /* count down box */
 .about-experts-right_num{
     display: flex;
      gap: 50px;
+     margin: 10px;
 
 }
 .about-experts-right_num div{
@@ -74,6 +79,7 @@
 }
 .about-experts-right_num div p{
     margin: 0px;
+    padding: 0px;
     font-family: Lora;
     font-size: 18px;
     font-weight: 500;
@@ -98,7 +104,7 @@ margin-top: 50px;
     font-weight: 600;
     font-family: Roboto Serif;
     line-height: 56px;
-    width: 50%;
+    width: 60%;
     margin: auto;
     padding-bottom: 40px;
     
@@ -115,7 +121,9 @@ margin-top: 50px;
     padding-bottom: 80px;
 }
 .about-trust-box{
-   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 .about-trust-box_row-1{
     display: flex;
@@ -139,29 +147,32 @@ margin-top: 50px;
     background-color: rgba(209, 215, 195, 1);
     border-radius: 25px;
     width: 410px;
-    height: 137px;
-    text-align: center; 
+    height: 186px;
+    text-align: right; 
     display: flex;
     flex-direction: column;
+    font-family: 'Lora';
 
 }
 .about-trust_support h3{
     font-size: 24px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
+    margin: 5px;
     font-family: Inter;
-    font-weight: 700;
-    line-height: 100%;
+    font-weight: 600;
+    /* line-height: 100%; */
     font-style: Bold;
-    margin: 0px;
-    text-align: center;
+    /* margin: 0px; */
+    text-align: left;
 }
 .about-trust_support p{
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     font-weight: 500;
     font-family: Inter;
     line-height: 34px;
     width: 100%;
+    margin: 5px;
 }
 .about-trust_support-img{
     position: absolute;
@@ -170,7 +181,7 @@ margin-top: 50px;
     height: 69px;
     width: 69px;
     position: relative;
-    transform: translate(470%,100%);
+    transform: translate(430%,100%);
 }
 /* ----------KPK enterprise animation-------------- */
 .about-kpk{
@@ -287,19 +298,29 @@ margin-top: 50px;
     line-height: 56px;
     
 }
-.about-design p{
+.about-design>p{
     /* text-align: center; */
     font-family: Lora;
     font-size: 28px;
     font-weight: 400;
     line-height: 44px;
+    margin: 30px;
+}
+.about-design_cycle-des>h4{
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 28.7px;
+    letter-spacing: 0%;
+    text-align: center;
 }
 .about-design_cycle_line{
     width: 80%;
     height: 10px;
     background: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%);
     position: absolute;
-    transform: translate(-0%,300%);
+    transform: translate(-0%,100%);
     z-index: 3;
     /* background-color: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%); */
     /* border: 10px solid #3A2E27; */
@@ -322,8 +343,8 @@ margin-top: 50px;
     border-radius: 100%;
     background-color: rgba(212, 188, 145, 1);
     padding: 20px 20px 25px 20px;
-    height: 45px;
-    width: 45px;
+    height: 84.81159210205078px;
+    width: 84.81159210205078px;
     margin: auto;
 }
 .about-design_cycle div img{
@@ -339,9 +360,10 @@ margin-top: 50px;
     font-size: 20px;
     line-height: 28.7px;
     font-weight: 600;
-    width: 70%;
+    /* width: 70%; */
     text-align: center;
     margin: auto;
+    margin: 10px;
 }
 
 .about-design_cycle div p{
@@ -401,6 +423,34 @@ margin-top: 50px;
     letter-spacing: 0%;
     text-align: center;
 }
+.about-client-rigth{
+    align-items: center;
+}
+.about-client-rigth button{
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    /* text-align: center; */
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(141, 155, 106, 1);
+    border: none;
+    width: 70%;
+    height: 50px;
+    align-items: center;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 8px;
+    padding-top: 14px;
+    padding-right: 68px;
+    padding-bottom: 14px;
+    padding-left: 68px;
+    margin: 10px;
+
+}
 /* --------FAQ--------- */
 /* faq */
 .about-faq > div {
@@ -423,9 +473,16 @@ margin-top: 50px;
 }
 
 .about-faq h2 {
-    font-size: 44px;
-    font-weight: 500;
     font-family: Roboto Serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 44px;
+    /* width: 40%; */
+    margin: auto;
+    line-height: 56px;
+    letter-spacing: 3%;
+    text-align: center;
+    margin: 20px 0px 50px 0px;
 }
 
 /* ------ */
@@ -482,6 +539,8 @@ margin-top: 50px;
 
 .about-faq_icon {
     text-align: right;
+    height: 41px;
+    width: 41px;
 }
 
 .about-faq-ques,

@@ -1,6 +1,10 @@
 /* font family */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 .contact-hero_page{
     display: flex;
     flex-direction: column;
@@ -42,7 +46,7 @@
     border: 4px solid  white;
     /* border-image-source: linear-gradient(177.68deg, #FFFFFF -7.2%, #999999 96.67%); */
     width: 95%;
-    
+    height: 701px;
     
     
 
@@ -62,6 +66,12 @@
   font-weight: 700;
   line-height: 100%;
   font-family: Inter;
+}
+.contact-form_det-set{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
 }
 .contact-form_det-set div{
     display: flex;
@@ -91,7 +101,7 @@
 /* Here we start form */
 .contact-form-des{
   
-  height: 620px;
+  height: 701px;
     width: 50%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(153, 153, 153, 0.4) 100%);
     /* border: 4px solid; */

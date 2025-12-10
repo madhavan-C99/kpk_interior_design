@@ -52,7 +52,7 @@ export default function PortfolioHero(){
       timeouts.current.forEach((id) => clearTimeout(id));
       timeouts.current = [];
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, []);
 
   const clearAllTimeouts = () => {
@@ -133,7 +133,7 @@ return(
                         <span className={activeIndex === 0 ? "portfolio-hero-active-num" : "portfolio-hero-num"}>
                             01
                         </span>
-                        <div className="portfolio-hero-item_des">
+                        <div className="portfolio-hero-item_des" >
                             <h4>Exotic Jellyfish</h4>
                             <p>EVERY TUESDAY | 6PM</p>
                         </div>
