@@ -5,7 +5,7 @@ import Component37 from '../../../assets/services/images/Component37.png'
 function ContactForm(){
     return (
         <>
-            <div className="contact_overall_container">
+            <div className="contact_overall_container2">
                 <div className="detail_text_block2"> 
                     <h2 className="section_title2">Create the Perfect Modular Kitchen with Ideal Layouts</h2> 
                     <p className="detail_description2"> 

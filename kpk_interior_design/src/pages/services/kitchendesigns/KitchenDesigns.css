@@ -74,14 +74,14 @@
     width: 384px;
 }
 
-.slide_cont{
+.slide_cont2{
     width: 200%;
     height: 100%;
     display: flex;
     animation:fadeInSlide 8s infinite alternate;
 }
 
-.slide_img{
+.slide_img2{
   width: 50%;
   height: 100%;
   object-fit: cover;
@@ -89,7 +89,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.design_image_wrapper2:hover .slide_cont{
+.design_image_wrapper2:hover .slide_cont2{
   animation-play-state: paused;
 }
 
@@ -159,7 +159,7 @@
     width: 100%;
   }
 
-  .slide_img{
+  .slide_img2{
     height: 100%;
     width: 100%;
   }
@@ -205,16 +205,16 @@
     padding: 18px 13px;
   }
 
-  .slide_img{
+  .slide_img2{
     margin: auto;
     width: 90%;
     height: 100%;
   }
 
-  .slide_image img{
+  /* .slide_image2 img{
     height: 100%;
     width: 100%;
-  }
+  } */
 
   .card_title2{
     font-size: 14.3px;
@@ -258,12 +258,12 @@
     padding: 18px 13px;
   }
 
-  .slide_image{
+  .slide_image2{
     width: 344px;
     height: 274px;
   }
 
-  .slide_image img{
+  .slide_image2 img{
     height: 100%;
     width: 100%;
   }
@@ -319,12 +319,12 @@
         border-radius: 15px;
     }
 
-    .slide_image{
+    .slide_image2{
         height: 100%;
         width: 100%;
     }
 
-    .slide_image img{
+    .slide_image2 img{
         height: 100%;
         width: 100%;
         border-radius: 10px;

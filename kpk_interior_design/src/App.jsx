@@ -28,14 +28,14 @@ function App() {
       <TopCategory/>
       
 
-      {/* service page */}
+      {/* service page  */}
       {/* <ContactForm/>
       <ServiceSteps/>
       <ProjectGallery/>
       <AccessoriesGallery/>
       <KitchenDesigns/> */}
 
-      {/* <Footer/> */}
+       {/* <Footer/>  */}
     </>
   )
 }

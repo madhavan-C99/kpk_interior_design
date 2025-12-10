@@ -64,9 +64,9 @@ function KitchenDesigns(){
                     {designdata.map((data)=>(
                         <div className="design_card2" key={data.id}>
                             <div className="design_image_wrapper2">
-                                <div className="slide_cont">
-                                   <img src={data.image[0]} alt="" className="slide_img"/>
-                                    <img src={data.image[1]} alt="" className="slide_img" />
+                                <div className="slide_cont2">
+                                   <img src={data.image[0]} alt="" className="slide_img2"/>
+                                    <img src={data.image[1]} alt="" className="slide_img2" />
                                 </div>
                             </div>
                             <div className="card_content2">

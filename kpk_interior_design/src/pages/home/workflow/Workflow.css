@@ -10,7 +10,7 @@
     --dm:"DM Serif Display", serif;
 }
 
-.workflow_container{
+.workflow_container2{
     background-color: #D4BC91;
     height: 700px;
     width: 100%;
@@ -27,7 +27,7 @@
     overflow: visible;
 }
 
-.workflow_title{
+.workflow_title2{
     margin-top: 3rem;
     width: 60%;
     font-family: var(--roboto);
@@ -37,7 +37,7 @@
     letter-spacing: 3%;
 }
 
-.workflow_steps_list{
+.workflow_steps_list2{
     margin-top: 2rem;
     width: 100%;
     display: flex;
@@ -46,13 +46,13 @@
     padding-top: 45px;
 }
 
-.step_item{
+.step_item2{
     padding: 0 2rem;
     position: relative;
     overflow: visible;
 }
 
-.step_circle{
+.step_circle2{
     height: 151px;
     width: 151px;
     background-color: white;
@@ -63,11 +63,11 @@
     transition: all 1s ease-in-out;
 }
 
-.step_circle.active{
+.step_circle2.active{
     background-color: #3A2E27;
 }
 
-.step_number_overlay{
+.step_number_overlay2{
     font-family: var(--dm);
     -webkit-text-stroke: 2px black;
     color: transparent;
@@ -84,7 +84,7 @@
     width: 92px;
 }
 
-.step_title{
+.step_title2{
     margin: 2rem 0;
     font-family: var(--roboto);
     font-size: 23.15px;
@@ -92,12 +92,12 @@
     letter-spacing: 2%;
 }
 
-.progress_line_wrapper{
+.progress_line_wrapper2{
     margin-top: 1rem;
     width: 100%;
 }
 
-.progress_base{
+.progress_base2{
     border-radius: 10px;
     height: 10px;
     width: 100%;
@@ -105,7 +105,7 @@
     position: relative;
 }
 
-.progress_filled{
+.progress_filled2{
     background-color:#3A2E27;
     height: 100%;
     position: absolute;
@@ -114,7 +114,7 @@
     border-radius: 10px;
 }
 
-.content_section{
+.content_section2{
     width: 100%;
     margin-top: 1.5rem;
     display: flex;
@@ -124,7 +124,7 @@
     animation: fade_animation 1.5s ease-in-out;
 }
 
-.content_heading{
+.content_heading2{
     font-family: var(--roboto);
     font-size: 29.75px;
     font-weight: 600;
@@ -132,7 +132,7 @@
     transition: all 1.5s ease-in-out;
 }
 
-.content_body{
+.content_body2{
     margin-top: 1rem;
     width: 80%;
     font-family: var(--roboto);

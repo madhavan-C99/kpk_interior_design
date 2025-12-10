@@ -7,7 +7,7 @@ function CraftingSpace(){
         <>
             <div className="crafting_container2">
                 <div className="crafting_text2">
-                    <h2 className="crafting-title">
+                    <h2 className="crafting-title2">
                     Walk into our Crafting Space,
                     where top interior designers in
                     Pondicherry craft premium

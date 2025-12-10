@@ -87,7 +87,7 @@ function CreativeDesign(){
     };
 
     // get the active button id to change the color
-    const getButtonClass = (id) => id === activeCategoryId ? 'category-button active' : 'creativedesign_catbtn';
+    const getButtonClass = (id) => id === activeCategoryId ? 'category_button2 active' : 'creativedesign_catbtn2';
 
     return(
         <>
@@ -116,7 +116,7 @@ function CreativeDesign(){
                     {activeCategory.images.map(data=>(
                         <div className="creativedesign_card2">
                             <img src={data.img} alt="" className="creativedesign_img2" />
-                            <p className="creativedesign_cardtitle">{data.name}</p>
+                            <p className="creativedesign_cardtitle2">{data.name}</p>
                         </div>
                     ))}
                 </div>

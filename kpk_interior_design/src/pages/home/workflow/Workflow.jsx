@@ -90,42 +90,42 @@ if (isResetting) {
 }
 
   return (
-    <div className="workflow_container">
+    <div className="workflow_container2">
       <div className="workflow_innerwrapper2">
-        <h2 className="workflow_title">
+        <h2 className="workflow_title2">
           Seamless Project Workflow for Stress-Free Interiors
         </h2>
 
-        <div className="workflow_steps_list">
+        <div className="workflow_steps_list2">
           {steps.map((step) => {
 
             const isActive =!isResetting && step.id === activeId;
             const isCompleted =!isResetting && step.id < activeId;
             return(
-              <div key={step.number} className="step_item">
-                <p className="step_number_overlay">{step.number}</p>
+              <div key={step.number} className="step_item2">
+                <p className="step_number_overlay2">{step.number}</p>
                 
-                <div className={`step_circle ${isActive? 'active' : ''}`}>
+                <div className={`step_circle2 ${isActive? 'active' : ''}`}>
                     <img src={isActive? step.fillicon : step.strokeicon} alt={step.title} className="step_circle_img2" />
                 </div>
 
-                <p className="step_title">
+                <p className="step_title2">
                   {step.title}
                 </p>
               </div>)}
           )}
         </div>
 
-        <div className="progress_line_wrapper">
-            <div className="progress_base">
-              <div className="progress_filled" style={{ width: progressLineTargetWidth,transitionDuration: isResetting ? '0s' : '1.5s'}}></div>
+        <div className="progress_line_wrapper2">
+            <div className="progress_base2">
+              <div className="progress_filled2" style={{ width: progressLineTargetWidth,transitionDuration: isResetting ? '0s' : '1.5s'}}></div>
             </div>
         </div>
 
         {activeStep && activeStep.content && (
-          <div className="content_section" key={activeStep.id}>
-              <h3 className="content_heading">{activeStep.content.heading}</h3>
-              <p className="content_body">{activeStep.content.body}</p>
+          <div className="content_section2" key={activeStep.id}>
+              <h3 className="content_heading2">{activeStep.content.heading}</h3>
+              <p className="content_body2">{activeStep.content.body}</p>
           </div>
         )}
       </div>
