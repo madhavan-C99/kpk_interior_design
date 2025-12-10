@@ -9,6 +9,9 @@
     --lorafont-font-family:"Lora" ,serif; 
     --btnbg-background-color:#8D9B6A;   
 }
+body{
+  overflow-x: hidden;
+}
 
 /* Reset and Box Sizing */
 * {box-sizing: border-box}
@@ -22,6 +25,7 @@
   border-radius: 0; 
   overflow: hidden;
   box-shadow: none; 
+  margin-top: 10%;
 }
 
 /* Individual Slides */
@@ -44,11 +48,11 @@
 .home_prev3, .home_next3 {
   cursor: pointer;
   position: absolute;
-  top: 44%;
+  top: 43%;
   /* left: 2%; */
-  height: 6.5%;
-  width:3%;
-  padding:10px;
+  height:40px;
+  width:40px;
+  padding:7px 13px;
   margin-top: -22px;
   color: rgb(13, 12, 12);
   font-weight: bold;
@@ -67,7 +71,6 @@
 }
 .home_prev3 {
   left: 6%; /* Added slight offset from the edge */
-  /* border-radius: 0 3px 3px 0; */
   border-radius: 50%;
 }
 
