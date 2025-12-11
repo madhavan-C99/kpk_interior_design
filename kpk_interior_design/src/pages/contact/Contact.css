@@ -1,5 +1,8 @@
 /* font family */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Roboto Serif */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 *{
   margin:0;
   padding:0;
@@ -7,10 +10,375 @@
 }
 .contact-hero_page{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
      justify-content: center;
-     margin: 20px 0px 30px 0px;
+     margin: 100px 0px 30px 0px;
+}
+.contact-hero_page h2{
+    font-size: 85px;
+    font-weight: 500;
+    font-family: Roboto Serif;
+    margin: 0px;
+}
+.contact-hero_img{
+    height: 617.01171875px;
+    width: 100%;
+}
+.contact-img_set{
+    margin: auto;
+}
+/* contact form */
+.contact-form_sect{
+    background-image: url(../../../src/assets/contact/contact-form-back.png);
+    padding: 200px 50px;
+    border: 4px solid white;
+    margin-top: 150px;
+    
+
+}
+.contact-form_details{
+    display: flex;
+    margin: auto;
+    border: 4px solid;
+    border-radius: 15px;
+    border-image-source: linear-gradient(177.68deg, #FFFFFF -7.2%, #999999 96.67%);
+    backdrop-filter: blur(17.504783630371094px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(153, 153, 153, 0.4) 100%);
+    border: 4px solid  white;
+    /* border-image-source: linear-gradient(177.68deg, #FFFFFF -7.2%, #999999 96.67%); */
+    width: 95%;
+    height: 720px;
+    
+    
+
+}
+.contact-form_det{
+    background: rgba(57, 58, 62, 0.3);
+    color: white;
+    padding: 50px;
+     width: 50%;
+     align-items: center;
+     text-align: center;
+     
+}
+.contact-form_det h2{
+  font-size: 37px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 100%;
+  font-family: 'Lora';
+
+}
+.contact-form_det-set{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+}
+.contact-form_det-set div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    
+
+}
+
+.contact-form_det-set div i{
+    color: rgba(212, 188, 145, 1);
+    font-size: 33.68208312988281px;
+    height: 45px;
+    width: 45px;
+
+}
+.contact-form_det-set div p{
+    color: white;
+    font-size: 28px;
+    font-family: 'Lora';
+    font-weight: 400;
+    line-height: 100%;
+    text-align: left;
+}
+
+/* Here we start form */
+.contact-form-des{
+  
+  height: 710px;
+    width: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(153, 153, 153, 0.4) 0%);
+    /* border: 4px solid; */
+    border-image-source: linear-gradient(177.68deg, #FFFFFF -7.2%, #999999 96.67%);
+    padding: 50px 10px 40px 30px;
+    overflow: hidden;
+}
+.contact-form-des form div{
+    display: flex;
+    flex-direction: column;
+    /* color: rgba(255, 255, 255, 1); */
+    font-size: 29px;
+    font-weight: 500;
+    font-family: 'Lora';
+    margin: 10px 0px;
+}
+.contact-form-des form div label{
+    color: rgba(255, 255, 255, 1);
+    /* font-family: 'Lora'; */
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 29px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+.contact-form-des form div input{
+    /* border-bottom: 2px solid rgba(255, 255, 255, 1); */
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    padding: 10px 8px 8px 0px;
+    width: 90%;
+}
+
+.contact-form-des div button{
+    color: white;
+    background-color: rgba(58, 46, 39, 1);
+    border: none;
+    padding: 10px 60px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Roboto Serif;
+    text-align: right;
+    margin-right: 30px;
+}
+/* arrow img */
+.contact-form_arrow{
+      transform: translate(-97px, 10px);
+
+}
+/* -----------------responsive------------------- */
+/* SIX DIFFERENT SCREEN SIZES FOR RESPONSIVENESS */
+
+/* X-Small (xs) - Mobile portrait and smaller devices */
+@media (max-width: 575.98px) {
+/*   Your styles for small mobile devices */
+.contact-hero_page h2 {
+    font-size: 35.06px;
+} 
+.contact-hero_img {
+    width: 340.7453918457031px;
+    height: 182.33494567871094px;
+
+}
+.contact-form_sect {
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    padding: 50px 20px;
+}
+.contact-form_details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+}
+.contact-form_det{
+    width: 100%;
+    padding: 10px;
+}
+.contact-form-des{
+    width: 100%;
+}
+.contact-form_det-set div {
+        gap: 5px;
+        display: flex;
+        justify-content: start;
+        align-self: baseline;
+}
+.contact-form_det-set-icon{
+    width: 20.532958984375px;
+    height: 20.532958984375px;
+    opacity: 1;
+
+}
+.contact-form_det-set div p{
+    font-family: 'Lora';
+    font-size: 16px;
+}
+.contact-form-des form div label{
+    font-family: Lora;
+    font-size: 15px;
+}
+.contact-form-des div button{
+    font-size: 10.95px;
+    /* margin-top: 20px; */
+}
+.contact-form_arrow{
+   width: 150.84874725341797px;
+   height: 200.31595611572266px;
+
+
+}
+}
+
+/* Small (sm) - Mobile landscape and larger phones */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .contact-form_det h2 {
+        font-size: 37px;
+}    .contact-hero_page h2{
+    font-family: Roboto Serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 80px;
+}
+/* images */
+.contact-img_set {
+        margin: auto;
+        padding: 60px;
+    }
+
+/* Form */
+.contact-form_det-set div i{
+    color: rgba(212, 188, 145, 1);
+    font-size: 33.68208312988281px;
+    height: 45px;
+    width: 45px;
+
+}
+.contact-form_det-set div p{
+    font-family: 'Lora';
+    font-size: 20px ;
+
+}
+.contact-form_sect {
+        margin-top: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px 50px;
+}
+.contact-form_details{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+}
+.contact-form_det{
+    width: 100%;
+}
+.contact-form-des{
+    width: 100%;
+}
+.contact-form-des form div label{
+    font-family: Lora;
+    font-size: 20px;
+}
+.contact-form_arrow{
+        width: 267.04248046875px;
+        height: 224.23602294921875px;
+        opacity: 1;
+}
+}
+
+/* Medium (md) - Tablets and medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+/* images */
+.contact-img_set {
+        margin: auto;
+        padding: 60px;
+}
+/*form  */
+.contact-form_sect{
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-form_details{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+}
+.contact-form_det{
+    width: 100%;
+}
+.contact-form-des{
+    width: 100%;
+}
+/* .contact-form-des div button {
+    transform: translate(234px, -203px);
+} */
+.contact-form_arrow {
+    transform: translate(-185px, 55px);
+}
+/* arrow box */
+.contact-form-arrow-box{
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+/* arrow img */
+.contact-form_arrow{
+      transform: translate(-197px, 10px);
+      position: relative;
+
+}
+
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* Large (lg) - Desktops and laptop screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+/*   Styles for desktops/laptops */
+
+/* images */
+.contact-img_set {
+        margin: auto;
+        padding: 60px;
+    }
+
+/* right side box */
+.contact-form_det{
+    padding: 60px 22px;
+}
+.contact-form_det-set div i{
+    color: rgba(212, 188, 145, 1);
+   
+    width: 33.68208312988281px;
+    height: 33.6818733215332px;
+    opacity: 1;
+}
+.contact-form_det-set div p{
+    font-size: 22px;
+}
+
+/* left side box */
+
+
+}
+/* ------------------------------------------------------------------------ */
+/* Extra Large (xl) - Large desktops */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+/*   Styles for large desktops and high-res screens */
+/* images */
+.contact-img_set {
+        margin: auto;
+        padding: 60px;
+    }
+}
+
+/* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
+@media (min-width: 1400px) {
+/*   Styles for very large screens */
+.contact-hero_page{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+     justify-content: center;
+     margin: 100px 0px 30px 0px;
 }
 .contact-hero_page h2{
     font-size: 85px;
@@ -46,15 +414,15 @@
     border: 4px solid  white;
     /* border-image-source: linear-gradient(177.68deg, #FFFFFF -7.2%, #999999 96.67%); */
     width: 95%;
-    height: 701px;
+    height: 720px;
     
     
 
 }
 .contact-form_det{
-    /* background: rgba(57, 58, 62, 0.3); */
+    background: rgba(57, 58, 62, 0.3);
     color: white;
-    padding: 50px;
+    padding: 60px;
      width: 50%;
      align-items: center;
      text-align: center;
@@ -65,7 +433,7 @@
   text-align: center;
   font-weight: 700;
   line-height: 100%;
-  font-family: Inter;
+  font-family: 'Lora';
 }
 .contact-form_det-set{
     display: flex;
@@ -92,18 +460,19 @@
 .contact-form_det-set div p{
     color: white;
     font-size: 28px;
-    font-family: Inter;
+    font-family: 'Lora';
     font-weight: 400;
     line-height: 100%;
     text-align: left;
+
 }
 
 /* Here we start form */
 .contact-form-des{
   
-  height: 701px;
+  height: 710px;
     width: 50%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(153, 153, 153, 0.4) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(153, 153, 153, 0.4) 0%);
     /* border: 4px solid; */
     border-image-source: linear-gradient(177.68deg, #FFFFFF -7.2%, #999999 96.67%);
     padding: 50px 10px 40px 30px;
@@ -115,11 +484,18 @@
     /* color: rgba(255, 255, 255, 1); */
     font-size: 29px;
     font-weight: 500;
-    font-family: Inter;
+    font-family: 'Lora';
     margin: 10px 0px;
 }
 .contact-form-des form div label{
     color: rgba(255, 255, 255, 1);
+    font-family: 'Lora';
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 29px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 .contact-form-des form div input{
     /* border-bottom: 2px solid rgba(255, 255, 255, 1); */
@@ -146,4 +522,5 @@
 .contact-form_arrow{
       transform: translate(-97px, 10px);
 
+}
 }

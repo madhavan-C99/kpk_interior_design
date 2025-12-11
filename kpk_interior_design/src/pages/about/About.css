@@ -187,6 +187,9 @@ margin-top: 50px;
 .about-kpk{
     margin-top: 100px;
 }
+.about-kpk-text{
+    text-align: center;
+}
 .about-kpk-text_map{
     /* font-size: 100px; */
      text-align: center;
@@ -195,6 +198,7 @@ margin-top: 50px;
     /* display: inline-block; */
 }
 .about-kpk-text_ani{
+    
     font-family: Lora;
     font-weight: 900;
     font-style: Black;
@@ -223,7 +227,7 @@ margin-top: 50px;
   color: rgba(141, 155, 106, 1);
   margin: 0;
   line-height: 1;
-      transform: translate(520px, -120px);
+      transform: translate(-30px, -85px);
   /* position: absolute; */
   /* transform: translate(100%,-200%); */
 }
@@ -375,6 +379,7 @@ margin-top: 50px;
 /* ----------------about-happyclient-------------------- */
 .about-happyclient{
     display: flex;
+    width: 100%;
 }
 .about-client-left{
     height: 740px;
@@ -438,7 +443,7 @@ margin-top: 50px;
     color: rgba(255, 255, 255, 1);
     background: rgba(141, 155, 106, 1);
     border: none;
-    width: 70%;
+    /* width: 70%; */
     height: 50px;
     align-items: center;
     gap: 10px;

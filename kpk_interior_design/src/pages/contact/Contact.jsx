@@ -27,25 +27,25 @@ export default function Contact() {
     </section>
     {/* contact form */}
     <section className='contact-form_sect'>
-        {/* right side */}
         <div className='contact-form_details'>
+            {/* right side */}
                 <div className='contact-form_det'>
                     <h2>Contact Information</h2>
                     <div className='contact-form_det-set'>
                         <div>
-                            <i><FaPhone/></i>
+                            <i><FaPhone className='contact-form_det-set-icon'/></i>
                             <p>+91 87648 39262 </p>
                         </div>
                         <div>
-                            <i><FaEnvelope/></i>
+                            <i><FaEnvelope className='contact-form_det-set-icon'/></i>
                             <p>kpkenterprisespdy@gmail.com</p>
                         </div>
                         <div>
-                            <i><FaInstagram/></i>
+                            <i><FaInstagram className='contact-form_det-set-icon'/></i>
                             <p>_kpk_enterprises</p>
                         </div>
                         <div>
-                            <i><FaMapMarkerAlt/></i>
+                            <i><FaMapMarkerAlt className='contact-form_det-set-icon'/></i>
                             <p style={{lineHeight:"40px"}}>VPR Garden, No.151/41, Bypass Road, Vanur, T.K, Auroville, Pondicherry, Tamil Nadu 605101</p>
                         </div>
                     </div>
@@ -77,12 +77,14 @@ export default function Contact() {
                 </form>
                 <div style={{textAlign:"right",marginTop:"40px"}}>
                     <button>Send Message</button>
-                    <img src={ContactForm} className='contact-form_arrow'/>
+                    <div className='contact-form-arrow-box'>
+                        <img src={ContactForm} className='contact-form_arrow'/>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <ContactFaq/>
+    {/* <ContactFaq/> */}
     </>
   )
 }

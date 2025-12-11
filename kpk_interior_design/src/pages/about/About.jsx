@@ -64,25 +64,59 @@ export default function About(){
     //present data are shown setopen
     const [open, setOpen] = useState(null);
      
-    //Count down number
-    const [num1,setnum1]=useState(0);
-    const [num2,setnum2]=useState(0);
-    const [num3,setnum3]=useState(0);
+    // //Count down number
+    // const [num1,setnum1]=useState(0);
+    // const [num2,setnum2]=useState(0);
+    // const [num3,setnum3]=useState(0);
    
-     useEffect(()=>{
-        let count1=0, count2=0, count3=0
-        const interval=setInterval(()=>{
-            if(count1<1000) count1++,setnum1(count1);
-            if(count2<6) count2++,setnum2(count2);
-            if(count3<150) count3++,setnum3(count3);
-            //stop when they completed
-            if(count1==1000 && count2==6 && count3==150){
-                clearInterval(interval)
-            }
-        },5);
-        return()=>clearInterval(interval);
-    },[]);
-    
+    //  useEffect(()=>{
+    //     let count1=700, count2=0, count3=0
+    //     const interval=setInterval(()=>{
+    //         if(count1<1000) count1++,setnum1(count1);
+    //         if(count2<6) count2++,setnum2(count2);
+    //         if(count3<150) count3++,setnum3(count3);
+    //         //stop when they completed
+    //         if(count1==1000 && count2==6 && count3==150){
+    //             clearInterval(interval)
+    //         }
+    //     },5);
+    //     return()=>clearInterval(interval);
+    // },[]);
+    const [count1, setCount1] = useState(0);
+    const [count2, setCount2] = useState(0);
+    const [count3, setCount3] = useState(0);
+
+    useEffect(() => {
+        let interval = setInterval(() => {
+
+        setCount1(prev => {
+            if (prev >= 1000) return 1000;
+            return prev + 10;
+        });
+
+        setCount2(prev => {
+            if (prev >= 6) return 6;
+            return prev + 1;
+        });
+
+        setCount3(prev => {
+            if (prev >= 150) return 150;
+            return prev + 2;
+        });
+
+        }, 30);
+
+        //  STOP INTERVAL WHEN ALL TARGETS REACH
+        return () => clearInterval(interval);
+
+    }, []);
+
+    // Monitor and clear interval when all counts reach target
+    useEffect(() => {
+        if (count1 === 1000 && count2 === 6 && count3 === 150) {
+        console.log("All animations completed!");
+        }
+    }, [count1, count2, count3]);
     
     const faqs = {
         Designs: [
@@ -152,8 +186,8 @@ export default function About(){
                 ],
         };
  const words = ["Modular Kitchen", "WARDROBE", "POOJA UNIT","TV UNIT","Modular Kitchen"]
- const typeSpeed = 250
- const eraseSpeed = 250
+ const typeSpeed = 300
+ const eraseSpeed = 300
 const  pauseAfterWord = 500
 
   const [wordIndex, setWordIndex] = useState(0);   // which word
@@ -220,15 +254,15 @@ const  pauseAfterWord = 500
                                     {/* Count down Numbers */}
                                     <div className="about-experts-right_num">
                                         <div>
-                                            <h4>{num1}+</h4>
+                                            <h4>{count1}+</h4>
                                             <p>Homes Designed</p>
                                         </div>
                                         <div>
-                                            <h4>{num2}+</h4>
+                                            <h4>{count2}+</h4>
                                             <p>Years Experience</p>
                                         </div>
                                         <div>
-                                            <h4>{num3}+</h4>
+                                            <h4>{count3}+</h4>
                                             <p>Client Satisfaction</p>
                                         </div>
                                     </div>
@@ -336,16 +370,16 @@ const  pauseAfterWord = 500
                     {/* -----------------KPK Enterpraise text animation--------------------------------------- */}
                     <section className="about-kpk">
                         <div className="about-kpk-text">
-                            {Letters.map((Letter,idx) =>(
+                            {/* {Letters.map((Letter,idx) =>(
                                 <div className="about-kpk-text_map" key={idx}>
                                     {word.split("").map((char,i)=>(
                                     <h1 key={i} className="about-kpk-text_ani">{char}</h1>        
                                     ))}
                             </div>
-                            ))}
-                            {/* <div>
+                            ))} */}
+                            <div>
                                 <h1 className="about-kpk-text_ani">KPK ENTERPRISES</h1>
-                            </div> */}
+                            </div>
                             {/* ---------------newly added-----------------------    */}
                                 <div className="about-typewriter" aria-live="polite">
                                     <h1 className="about-typewriter__text">

@@ -3,6 +3,7 @@ import React from 'react'
 import '../../pages/price/Price.css';
 //image
 import Pricehero from '../../assets/Price_img/price-hero-price.png'
+import Pricetoday from '../../assets/Price_img/price-today.png'
 // import Priceback from '../../pages/price/price-hero-price.png'
 //icons
 import {  FaCheckCircle, FaChevronDown,FaChevronUp } from "react-icons/fa";
@@ -225,10 +226,15 @@ const faqs = {
         </div>
     </section>
     {/* --------------- */}
-        <section className='Price-background'>  
-            <h2>Get Your Interior Design Price Today</h2>
-            <p>Access easy, transparent pricing for modular kitchen, wardrobe and home interiors. Get accurate cost guidance and customized options for Pondicherry & Cuddalore.</p>
-            <button>Start My Interior Plan</button>
+        <section className='Pice-today_sect' >  
+           <div className='Price-background'>
+                <h2>Get Your Interior Design Price Today</h2>
+                <p>Access easy, transparent pricing for modular kitchen, wardrobe and home interiors. Get accurate cost guidance and customized options for Pondicherry & Cuddalore.</p>
+                <button>Start My Interior Plan</button>
+           </div>
+           <div className='Price-today-img'>
+                <img src={Pricetoday} alt="" />
+           </div>
         </section>
         {/* --------------faq------- */}
         <section className='price-faq'>
