@@ -19,9 +19,9 @@ export default function Home(){
     return(
         <>
     <HomeHeroSec/>
-    <HomeRankSec/>
+     <HomeRankSec/>
     <HomeRatingSec/>
-    <HomeOurService/>
+   <HomeOurService/>
     <HomeAboutUs/>
     <HomeRateSec/>
     <WhyChooseUs/>

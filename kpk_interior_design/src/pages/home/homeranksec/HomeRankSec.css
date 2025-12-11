@@ -44,7 +44,7 @@
 }
 
 .home_rank_tittle3{
-    font-size: 37px;
+    font-size: 40px;
     width: 70%;
     font-weight: 600;
     font-family: var(--robotofont-font-family);
@@ -137,14 +137,28 @@
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 1200px) {
-    .home_rank_tittle3 { font-size: 32px; }
-    .home_rank_caption3 { font-size: 18px; padding: 0 20px; }
+    .home_rank_tittle3 { 
+        font-size: 37px;
+        width: 90%; }
+    .home_rank_caption3 { 
+        font-size: 26px;
+         padding: 0 20px; 
+        width: 90%;}
 }
 
-@media (max-width: 768px) {
-    .home_rank_tittle3 { font-size: 28px; line-height: 1.2; }
-    .home_rank_caption3 { font-size: 16px; line-height: 1.4; }
-    .home_rank__card3 { min-width: 250px; max-width: 250px; } /* Slightly smaller cards */
+@media (min-width: 768px) and (max-width:991px) {
+    .home_rank_tittle3 
+    { font-size: 32px; 
+    line-height: 1.2; 
+    width: 95%;}
+
+    .home_rank_caption3 {
+         font-size: 24px;
+          line-height:40px; 
+        width: 100%;}
+    .home_rank__card3 
+     { min-width: 250px;
+     max-width: 250px; } /* Slightly smaller cards */
     
     /* Recalculate animation based on smaller size */
     @keyframes infinite-scroll {
@@ -154,3 +168,47 @@
     }
 }
 
+@media (min-width:576px) and (max-width:767.98px) {
+      .home_rank_tittle3 
+    { font-size: 32px; 
+    line-height: 1.2; 
+    width: 95%;}
+
+    .home_rank_caption3 {
+    font-size: 24px;
+    line-height:40px; 
+    width: 100%;}
+    .home_rank__card3 
+     { min-width: 250px;
+     max-width: 250px; } /* Slightly smaller cards */
+    
+    /* Recalculate animation based on smaller size */
+    @keyframes infinite-scroll {
+        from { transform: translateX(0); }
+        /* 10 cards * 250px width + 10 gaps * 40px = 2900px total scroll width */
+        to { transform: translateX(calc(-2500px - (10 * 40px))); } 
+    }  
+}
+
+@media (max-width:575px) {
+    .home_rank_tittle3 
+    { font-size: 20px; 
+    line-height: 1.2; 
+    width: 95%;}
+
+    .home_rank_caption3 {
+    font-size: 16px;
+    line-height:24px; 
+    width: 100%;}
+    .home_rank__card3 
+     { min-width: 150px;
+     max-width: 145px; } /* Slightly smaller cards */
+    
+    /* Recalculate animation based on smaller size */
+    @keyframes infinite-scroll {
+        from { transform: translateX(0); }
+        /* 10 cards * 250px width + 10 gaps * 40px = 2900px total scroll width */
+        to { transform: translateX(calc(-2500px - (10 * 40px))); } 
+    }  
+    
+}
