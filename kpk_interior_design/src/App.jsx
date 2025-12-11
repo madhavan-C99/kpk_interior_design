@@ -19,13 +19,13 @@ function App() {
   return (
     <>
     {/* home page */}
-      <WhyChooseUs/>
-      <CraftingSpace/>
+      {/* <WhyChooseUs/> */}
+      {/* <CraftingSpace/> */}
       <Workflow/>
-      <DesignSession/>
-      <Consultation/>
-      <CreativeDesign/>
-      <TopCategory/>
+      {/* <DesignSession/> */}
+      {/* <Consultation/> */}
+      {/* <CreativeDesign/> */}
+      {/* <TopCategory/> */}
       
 
       {/* service page  */}

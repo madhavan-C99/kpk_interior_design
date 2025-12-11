@@ -10,6 +10,12 @@
     --inter:"Inter",sans-serif;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .whychooseus_container2{
     margin-top: 2rem;
 }
@@ -39,6 +45,7 @@
 }
 
 .wcu_maintitle2{
+    text-align: center;
     margin: 0.5rem 0;
     width: 65%;
     font-family: var(--roboto);
@@ -62,6 +69,7 @@
 .wcu_reasons_grid2{
     margin: 1rem 4%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 19px;
@@ -84,7 +92,7 @@
     height: 200px;
     position: absolute;
     right:0px;
-    border-left: 2px dashed;
+    border-left: 1.5px dashed;
     width: 1px;
     color: #000000;
 }
@@ -116,3 +124,122 @@
     letter-spacing: 3%;
     font-weight: 500;
 }
+
+@media (min-width: 1200px){
+    .wcu_reasons_grid2{
+        margin: 1rem 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .wcu_reason_title2{
+        width: 100%;
+    }
+
+    .wcu_reason_description2{
+        width: 100%;
+    }
+
+    .wcu_reason_card2{
+        width: 18%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .wcutext_container2{
+        margin: 0;
+    }
+
+    .wcu_subtitle2{
+        height: 26px;
+        width: 160px;
+        font-size: 16px;
+    }
+
+    .wcu_maintitle2{
+        width: 75%;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .wcu_descrition2{
+        width: 80%;
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .wcu_reasons_grid2{
+        margin: 1rem;
+        gap: 5rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .wcu_maintitle2{
+        width: 95%;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .wcu_descrition2{
+        width: 95%;
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+ @media (max-width: 575px) {
+    .wcutext_container2{
+        margin: 0;
+    }
+
+    .wcu_subtitle2{
+        width: 79px;
+        height: 16px;
+        font-size: 8px;
+        line-height: 8.7px;
+    }
+
+    .wcu_maintitle2{
+        width: 60%;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .wcu_descrition2{
+        width: 80%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .wcu_reasons_grid2{
+        margin: 0;
+    }
+
+    .wcu_reason_card2{
+        padding-right: 0px;
+        padding-bottom: 16px;
+        position: relative;
+        margin: 0 2rem;
+    }
+
+    .wcu_reason_card2::after{
+        content: "";
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom:0px;
+        left: 0;
+        border-bottom: 1.5px dashed;
+        height: 1px;
+        color: #000000;
+    }
+
+    .wcu_reason_card2:last-child::after{
+        display: none;
+    }
+ }
+
+
+
