@@ -20,6 +20,7 @@ export default function HomeAboutUs(){
         <section>
             <div className="home_about__con3">
                 <div className="home_about__head3">
+                    <div className="home_about_us_head3">
                     <div className="home_about_dot_card3">
                         <img src={dotimg} alt="" className='home_about_dot3' />
                     </div>
@@ -28,6 +29,7 @@ export default function HomeAboutUs(){
                     </div>
                     <div className="home_about_large_card3">
                         <img src={largeimg} alt="" className='home_about_large_img3'/>
+                    </div>
                     </div>
                 </div>
 

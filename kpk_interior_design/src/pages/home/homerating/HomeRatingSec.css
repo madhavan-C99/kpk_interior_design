@@ -36,7 +36,7 @@
 .home_rate_title3{
     font-size: 40px;
     font-weight: 600;
-    font-family: var(--interfont-font-family);
+    font-family: var(--robotofont-font-family);
     color: var(--textcolor-color);
 }
 
@@ -54,7 +54,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 230px;
-   
+    
 
 }
 
@@ -71,33 +71,116 @@
     font-size: 1.5rem;
     font-weight: 400;
     margin-top: 5px;
+    text-align: center;
     font-family: var(--interfont-font-family);
     color: var(--textcolor-color);
 }
 
-/* --- Responsive Adjustments --- */
-@media (max-width: 768px) {
-    .home_rate__con3 {
-        padding: 40px 5%;
-        height: auto;
+@media (min-width:1200px) {
+    .home_rate_head3{
+        width: 100%;
+        padding: 0rem 12rem;
+        /* background-color: red; */
     }
-    .home_rate_title3 {
-        font-size: 28px;
+    .home_rate_title3{
+        font-size: 38px;
+
     }
-    .home_rate_body3 {
-        flex-wrap: wrap;
-        gap: 30px 10%;
+    
+}
+
+@media (min-width:992px) and (max-width:1199.98px) {
+        .home_rate_head3{
+        width: 100%;
+        padding: 0rem 7rem;
+        margin-top: 7%;
     }
-    .home_rating3 {
-        flex: none; /* Reset flex */
-        width: 45%; /* Two items per row */
+    .home_rate_title3{
+        font-size: 38px;
+
     }
-    .home_rating3_num {
-        font-size: 3rem;
+    .home_rate_body3{
+        gap: 5%;
+        margin-top: 5%;
     }
-    .home_rating3 p {
-        font-size: 1.1rem;
+    .home_rating3_num{
+        font-size: 4rem;
+    }
+    
+}
+
+
+@media (min-width:768px) and (max-width:991.98px) {
+            .home_rate_head3{
+        width: 100%;
+        padding: 0rem 8rem;
+        margin-top: 5%;
+    }
+    .home_rate_title3{
+        font-size: 36px;
+
+    }
+    .home_rate_body3{
+        gap: 5%;
+        margin-top: 7%;
+    }
+    .home_rating3_num{
+        font-size: 4rem;
+    }
+    .home_rating3 p{
+        font-size: 14px;
     }
 }
 
+@media (min-width:576px) and (max-width:767.98px) {
+            .home_rate_head3{
+        width: 100%;
+        padding: 0rem 3rem;
+        margin-top: 5%;
+    }
+    .home_rate_title3{
+        font-size: 36px;
+
+    }
+    .home_rate_body3{
+        gap: 4%;
+        margin-top: 7%;
+    }
+    .home_rating3_num{
+        font-size: 3.3rem;
+    }
+    .home_rating3 p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:575px) {
+    .home_rate__con3{
+        height: 424px;
+    }
+        .home_rate_head3{
+        width: 100%;
+        padding: 1.5rem;
+        margin-top: 2%;
+    }
+    .home_rate_title3{
+        font-size: 20px;
+
+    }
+    .home_rate_body3{
+    flex-wrap: wrap;        
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5%;
+        gap: 5%;
+    }
+    .home_rating3_num{
+        font-size: 2.4rem;
+        margin-bottom: 15%;
+    }
+    .home_rating3 p{
+        font-size: 12px;
+        margin-bottom: 8%;
+    }
+}
 
