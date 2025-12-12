@@ -1,0 +1,66 @@
+/* Roboto Serif */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.about-hero_viedo{
+    background-image: url(../../../assets/../assets/about/hero-viedo.png);
+    height: 815px;
+    width: 100%;
+}
+.about-hero_viedo div{
+    text-align: center;
+    transform: translate(0%,680%);
+}
+.about-hero_viedo div h2{
+    font-family: Roboto Serif;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 100%;
+    text-align: center;
+    color: white;
+}
+/* SIX DIFFERENT SCREEN SIZES FOR RESPONSIVENESS */
+
+/* X-Small (xs) - Mobile portrait and smaller devices */
+@media (max-width: 575.98px) {
+}
+
+/* Small (sm) - Mobile landscape and larger phones */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium (md) - Tablets and medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+        .about-hero_viedo div {
+        text-align: center;
+        transform: translate(5%, 734%);
+        width: 95%;
+    }
+    .about-hero_viedo {
+        height: 469.4129638671875px;
+    }
+    .about-hero_viedo div {
+    text-align: center;
+    transform: translate(0%, 487%);
+}
+.about-hero_viedo div h2 {
+    font-size: 25.92px;
+}
+}
+
+/* Large (lg) - Desktops and laptop screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra Large (xl) - Large desktops */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
+@media (min-width: 1400px) {
+}

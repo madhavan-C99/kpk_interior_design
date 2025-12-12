@@ -236,17 +236,19 @@ border-image-source: linear-gradient(180.04deg, #FFFFFF 0.03%, #FFFFFF 5.76%, #8
   background-color: rgba(58, 46, 39, 1);
   width: 100%;
 }
-
+.Price-today-img img{
+  
+}
  .Price-background {
 
     height: 745px;
     text-align: left;
-    margin-top: 130px;
+    /* margin-top: 130px; */
     display: flex;
     flex-direction: column;
     gap: 50px;
     text-align: left;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 /* ----------- */
@@ -287,6 +289,9 @@ border-image-source: linear-gradient(180.04deg, #FFFFFF 0.03%, #FFFFFF 5.76%, #8
   padding-bottom: 6px;
   padding-left: 12px;
 
+}
+.Price-today-img img{
+  
 }
 /* faq */
 .price-faq>div {

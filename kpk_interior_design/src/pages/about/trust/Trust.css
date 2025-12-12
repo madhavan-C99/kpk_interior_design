@@ -1,0 +1,202 @@
+
+/* --------------Trusted Interior------------ */
+.about-trust {
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+align-items: center;
+text-align: center;
+margin-top: 50px;
+
+
+}
+.about-trust h2{
+    font-size: 44px;
+    font-weight: 600;
+    font-family: Roboto Serif;
+    line-height: 56px;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 40px;
+    
+}
+.about-trust p{
+    font-family: Lora;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    letter-spacing: 3%;
+    padding-bottom: 80px;
+}
+.about-trust-box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.about-trust-box_row-1{
+    display: flex;
+    gap: 20px;
+    padding: 10px 50px;
+}
+.about-trust-box_row-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 50px;
+}
+.about-trust-box_row-3{
+    display: flex;
+    gap: 20px;
+    padding: 10px 50px;
+}
+.about-trust_support{
+    padding: 20px 20px ;
+    background-color: rgba(209, 215, 195, 1);
+    border-radius: 25px;
+    width: 410px;
+    height: 186px;
+    text-align: right; 
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lora';
+
+}
+.about-trust_support h3{
+    font-size: 24px;
+    /* padding-top: 10px; */
+    margin: 5px;
+    font-family: Inter;
+    font-weight: 600;
+    /* line-height: 100%; */
+    font-style: Bold;
+    /* margin: 0px; */
+    text-align: left;
+}
+.about-trust_support p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter;
+    line-height: 34px;
+    width: 100%;
+    margin: 5px;
+}
+.about-trust_support-img{
+    position: absolute;
+}
+.about-trust_support-img img{
+    height: 69px;
+    width: 69px;
+    position: relative;
+    transform: translate(430%,100%);
+}
+.about-trust_responsive{
+    display: none;
+}
+.about-trust-responsive{
+    display: none;
+}
+/* SIX DIFFERENT SCREEN SIZES FOR RESPONSIVENESS */
+
+/* X-Small (xs) - Mobile portrait and smaller devices */
+@media (max-width: 575.98px) {
+}
+
+/* Small (sm) - Mobile landscape and larger phones */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium (md) - Tablets and medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+.about-trust h2 {
+    font-size: 32px;
+    line-height: 48px;
+}
+.about-trust p {
+    font-family: Lora;
+    font-size: 13.59px;
+    line-height: 28.88px;
+}
+.about-trust_support {
+    width: 348.2795715332031px;
+    height: 158px;
+    opacity: 1;
+    border-radius: 21.24px;
+
+}
+.about-trust_support-img img {
+      height: 58.51px;
+    width: 58.61px;
+    position: relative;
+    transform: translate(430%, 122%); 
+
+}
+.about-trust_support h3 {
+    font-size: 20.39px;
+}
+
+.about-trust-box{
+    display: none;
+}
+.about-trust-responsive{
+    display: block;
+    display: grid;
+}
+    
+.about-trust-box_row-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    padding: 10px 20px;
+}
+
+
+}
+
+/* Large (lg) - Desktops and laptop screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .about-experts-right div p {
+        font-size: 21.84px;
+    }
+    .about-experts-left img {
+        height: 605px;
+        width: 325.272858px;
+    }
+    .about-trust-box{
+        display: none;
+    }
+    .about-trust-responsive{
+        display: block;
+        display: grid;
+        
+    }
+    
+    .about-trust-box_row-1 {
+        
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+        gap: 20px;
+}
+}
+/* Extra Large (xl) - Large desktops */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .about-experts-left img {
+        /* height: 525.4556579589844px; */
+        width: 400.4556579589844px;
+    }
+    .about-trust_support {
+        height: 200px;
+        width: 360px;
+    }
+    .about-trust_support-img img {
+        transform: translate(376%, 100%);
+    }
+}
+
+/* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
+@media (min-width: 1400px) {
+}

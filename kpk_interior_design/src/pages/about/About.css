@@ -7,10 +7,10 @@
   padding:0;
   box-sizing: border-box;
 }
-.about-hero_viedo{
+/* .about-hero_viedo{
     background-image: url(../../assets/../assets/about/hero-viedo.png);
     height: 815px;
-
+    width: 100%;
 }
 .about-hero_viedo div{
     text-align: center;
@@ -23,7 +23,7 @@
     line-height: 100%;
     text-align: center;
     color: white;
-}
+} */
 /* ---------about-experts----------- */
 .about-experts{
     display: flex;
@@ -87,295 +87,8 @@
     text-align: center;
 }
 
-/* --------------Trusted Interior------------ */
-.about-trust {
-    /* display: flex; */
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-align-items: center;
-text-align: center;
-margin-top: 50px;
 
 
-}
-.about-trust h2{
-    font-size: 44px;
-    font-weight: 600;
-    font-family: Roboto Serif;
-    line-height: 56px;
-    width: 60%;
-    margin: auto;
-    padding-bottom: 40px;
-    
-}
-.about-trust p{
-    font-family: Lora;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 44px;
-    margin: auto;
-    width: 70%;
-    text-align: center;
-    letter-spacing: 3%;
-    padding-bottom: 80px;
-}
-.about-trust-box{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.about-trust-box_row-1{
-    display: flex;
-    gap: 20px;
-    padding: 10px 50px;
-}
-.about-trust-box_row-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 50px;
-}
-.about-trust-box_row-3{
-    display: flex;
-    gap: 20px;
-    padding: 10px 50px;
-}
-.about-trust_support{
-    padding: 20px 20px ;
-    background-color: rgba(209, 215, 195, 1);
-    border-radius: 25px;
-    width: 410px;
-    height: 186px;
-    text-align: right; 
-    display: flex;
-    flex-direction: column;
-    font-family: 'Lora';
-
-}
-.about-trust_support h3{
-    font-size: 24px;
-    /* padding-top: 10px; */
-    margin: 5px;
-    font-family: Inter;
-    font-weight: 600;
-    /* line-height: 100%; */
-    font-style: Bold;
-    /* margin: 0px; */
-    text-align: left;
-}
-.about-trust_support p{
-    text-align: left;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: Inter;
-    line-height: 34px;
-    width: 100%;
-    margin: 5px;
-}
-.about-trust_support-img{
-    position: absolute;
-}
-.about-trust_support-img img{
-    height: 69px;
-    width: 69px;
-    position: relative;
-    transform: translate(430%,100%);
-}
-/* ----------KPK enterprise animation-------------- */
-.about-kpk{
-    margin-top: 100px;
-}
-.about-kpk-text{
-    text-align: center;
-}
-.about-kpk-text_map{
-    /* font-size: 100px; */
-     text-align: center;
-     padding: 40px 45px;
-    
-    /* display: inline-block; */
-}
-.about-kpk-text_ani{
-    
-    font-family: Lora;
-    font-weight: 900;
-    font-style: Black;
-    line-height: 100%;
-   align-items: center;
-     font-size: 110px;
-    color: white;
-     display: inline;
-  -webkit-text-stroke: 2px rgba(141, 155, 106, 1);
-  
-
-}
-/* --------- */
-/* Root wrapper */
-.about-typewriter {
-  display: inline-block;
-  
-}
-
-/* Heading text */
-.about-typewriter__text {
-  font-family: Lora;
-  font-size: 60px;
-  font-weight: 900;
-  line-height: 100%;
-  color: rgba(141, 155, 106, 1);
-  margin: 0;
-  line-height: 1;
-      transform: translate(-30px, -85px);
-  /* position: absolute; */
-  /* transform: translate(100%,-200%); */
-}
-
-/* Base letter style */
-.ta-letter {
-  display: inline-block;
-  white-space: pre;
-  transform-origin: center bottom;
-  will-change: transform, opacity;
-}
-
-/* Typing animation */
-/* @keyframes ta-ascend { */
-  /* 0%   { transform: translateY(16px) scale(0.92); opacity: 0; filter: blur(2px); }
-  60%  { transform: translateY(-4px) scale(1.05); opacity: 1; filter: blur(0); }
-  100% { transform: translateY(0) scale(1); opacity: 1; } */
-/* } */
-
-/* Erasing animation */
-/* @keyframes ta-descend { */
-  /* 0%   { transform: translateY(0) rotateX(0deg); opacity: 1; }
-  60%  { transform: translateY(10px) rotateX(10deg); opacity: 0.6; }
-  100% { transform: translateY(22px) rotateX(20deg); opacity: 0; } */
-/* } */
-
-/* Classes applied */
-.ta-enter {
-  animation-name: ta-ascend;
-  animation-duration: 260ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(.2, .9, .2, 1);
-}
-
-.ta-exit {
-  animation-name: ta-descend;
-  animation-duration: 200ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
-}
-
-/* Cursor */
-.ta-cursor {
-  display: inline-block;
-  margin-left: 6px;
-  animation: ta-blink 900ms steps(2, start) infinite;
-  font-weight: 600;
-}
-
-@keyframes ta-blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-
-/* ----------about-design-------------- */
-.about-design{
-   
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-}
-.about-design h2{
-     text-align: center;
-    font-family: Roboto Serif;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 56px;
-    
-}
-.about-design>p{
-    /* text-align: center; */
-    font-family: Lora;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 44px;
-    margin: 30px;
-}
-.about-design_cycle-des>h4{
-    font-family: Roboto Serif;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 20px;
-    line-height: 28.7px;
-    letter-spacing: 0%;
-    text-align: center;
-}
-.about-design_cycle_line{
-    width: 80%;
-    height: 10px;
-    background: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%);
-    position: absolute;
-    transform: translate(-0%,100%);
-    z-index: 3;
-    /* background-color: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%); */
-    /* border: 10px solid #3A2E27; */
-
-/* border-image-source: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%); */
-
-
-}
-.about-design_cycle{
-    z-index: 5;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px 100px;
-}
-.about-design_cycle_img{
-    text-align: center;
-    border-radius: 100%;
-    background-color: rgba(212, 188, 145, 1);
-    padding: 20px 20px 25px 20px;
-    height: 84.81159210205078px;
-    width: 84.81159210205078px;
-    margin: auto;
-}
-.about-design_cycle div img{
-    
-    /* height: 64.81159210205078px;
-    width: 64.81159210205078px; */
-    height: 50px;
-    width: 50px;
-    
-}
-.about-design_cycle h4{
-    font-size: Roboto Serif;
-    font-size: 20px;
-    line-height: 28.7px;
-    font-weight: 600;
-    /* width: 70%; */
-    text-align: center;
-    margin: auto;
-    margin: 10px;
-}
-
-.about-design_cycle div p{
-    font-family: Lora;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-}
 /* ----------------about-happyclient-------------------- */
 .about-happyclient{
     display: flex;
@@ -551,4 +264,69 @@ margin-top: 50px;
 .about-faq-ques,
 .about-faq-ans {
     cursor: pointer;
+}
+/* SIX DIFFERENT SCREEN SIZES FOR RESPONSIVENESS */
+
+/* X-Small (xs) - Mobile portrait and smaller devices */
+@media (max-width: 575.98px) {
+}
+
+/* Small (sm) - Mobile landscape and larger phones */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+/* Medium (md) - Tablets and medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about-experts {
+        padding: 10px 20px;
+    }
+    .about-experts-right_num {
+        display: flex;
+        gap: 0px;
+    }
+    .about-experts-right_num div h4 {
+        height: 33.07px;
+    }
+    .about-experts-left img {
+    height: 363.8169250488281px;
+    width: 322.2728576660156px;
+}
+.about-experts-right div p {
+    font-family: Lora;
+    font-size: 16.84px;
+    font-weight: 400;
+    line-height: 26.46px;
+    padding: 10px;
+}
+}
+
+/* Large (lg) - Desktops and laptop screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .about-experts-right div p {
+        font-size: 21.84px;
+    }
+    .about-experts-left img {
+        height: 605px;
+        width: 367.272858px;
+    }
+}
+
+/* Extra Large (xl) - Large desktops */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .about-experts-left img {
+        /* height: 525.4556579589844px; */
+        width: 425.4556579589844px;
+    }
+    .about-trust_support {
+        height: 200px;
+        width: 360px;
+    }
+    .about-trust_support-img img {
+        transform: translate(376%, 100%);
+    }
+}
+
+/* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
+@media (min-width: 1400px) {
 }
