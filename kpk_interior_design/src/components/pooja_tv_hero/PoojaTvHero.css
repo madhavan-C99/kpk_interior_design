@@ -1,0 +1,196 @@
+.pooja-tv-hero {
+  width: 100%;
+  height: 700px; /* matches your screenshot proportions */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 115px;
+}
+
+/* Dark overlay for text readability */
+.pooja-tv-hero-overlay {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 2px 6px rgba(0,0,0,0.8);
+}
+
+/* Title (same style as screenshot: large, bold, center) */
+.pooja-tv-hero-title {
+  font-size: 65px;
+  font-weight: 700;
+  max-width: 85%;
+  margin: 0 auto 20px auto;
+  line-height: 1.2;
+  font-family: Roboto Serif;
+  margin-top: 20%;
+}
+
+/* Button styling */
+.pooja-tv-hero-btn {
+  padding: 12px 38px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #8D9B6A; /* your exact color */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  font-family: Roboto Serif;
+  margin-top: 1%;
+  letter-spacing: 2px;
+}
+
+.pooja-tv-hero-btn:hover {
+  opacity: 0.85;
+}
+
+
+
+
+
+
+
+/* RESPONSIVENESS */
+/* X-Small (xs) - Mobile portrait and smaller devices */
+@media (max-width: 575.98px) {
+  .pooja-tv-hero {
+    height: 420px;
+    margin-top: 80px;
+    background-position: center 30%;
+  }
+
+  .pooja-tv-hero-title {
+    font-size: 26px;
+    max-width: 92%;
+    margin-top: 45%;
+    line-height: 1.15;
+  }
+
+  .pooja-tv-hero-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+
+/* Small (sm) - Mobile landscape and larger phones */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pooja-tv-hero {
+    height: 470px;
+    margin-top: 90px;
+    background-position: center 28%;
+  }
+
+  .pooja-tv-hero-title {
+    font-size: 32px;
+    max-width: 88%;
+    margin-top: 30%;
+    line-height: 1.18;
+  }
+
+  .pooja-tv-hero-btn {
+    padding: 9px 24px;
+    font-size: 15px;
+  }
+}
+
+/* Medium (md) - Tablets and medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pooja-tv-hero {
+    height: 540px;
+    margin-top: 100px;
+    background-position: center 22%;
+  }
+
+  .pooja-tv-hero-title {
+    font-size: 42px;
+    max-width: 85%;
+    margin-top: 30%;
+  }
+
+  .pooja-tv-hero-btn {
+    padding: 10px 30px;
+    font-size: 17px;
+  }
+}
+
+/* Large (lg) - Desktops and laptop screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .pooja-tv-pooja-tv-hero {
+    height: 620px;
+    margin-top: 110px;
+  }
+
+  .pooja-tv-hero-title {
+    font-size: 55px;
+    margin-top: 24%;
+  }
+
+  .pooja-tv-hero-btn {
+    padding: 12px 34px;
+    font-size: 18px;
+  }
+}
+
+/* Extra Large (xl) - Large desktops */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .pooja-tv-hero {
+    height: 700px;
+    margin-top: 115px;
+  }
+
+  .pooja-tv-hero-title {
+    font-size: 65px;
+    margin-top: 23%;
+  }
+
+  .pooja-tv-hero-btn {
+    padding: 12px 38px;
+    font-size: 20px;
+  }
+}
+
+/* Extra Extra Large (xxl) - Very large screens */
+@media (min-width: 1400px) {
+  .pooja-tv-hero {
+    height: 700px;
+    margin-top: 125px;
+  }
+
+  .pooja-tv-hero-title {
+    font-size: 72px;
+    margin-top: 22%;
+  }
+
+  .pooja-tv-hero-btn {
+    padding: 14px 44px;
+    font-size: 22px;
+  }
+}
+
+/* Ultra Wide Screens (1800px and above) */
+@media (min-width: 1800px) {
+  .pooja-tv-hero {
+    height: 820px;
+    margin-top: 140px;
+    background-position: center 20%;
+  }
+
+  .pooja-tv-hero-title {
+    font-size: 82px;
+    max-width: 75%;
+    margin-top: 20%;
+    line-height: 1.15;
+  }
+
+  .pooja-tv-hero-btn {
+    padding: 16px 52px;
+    font-size: 24px;
+    letter-spacing: 2.5px;
+  }
+}
