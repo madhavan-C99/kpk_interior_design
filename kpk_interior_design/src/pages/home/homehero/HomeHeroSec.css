@@ -23,7 +23,6 @@ body{
   position: relative;
   border-radius: 0; 
   overflow: hidden;
-  background-color: red;
   box-shadow: none; 
   margin-top: 10%;
 }
@@ -49,7 +48,6 @@ body{
   cursor: pointer;
   position: absolute;
   top: 43%;
-  /* left: 2%; */
   height:40px;
   width:40px;
   padding:7px 13px;
@@ -84,7 +82,7 @@ body{
   font-size: 70px; /* Increased size for full screen */
   padding: 1rem 2rem;
   position: absolute;
-  bottom: 33%;
+  bottom: 15%;
   width: 100%;
   font-weight: 600;
   font-family: var(--robotofont-font-family);
@@ -101,7 +99,7 @@ body{
   position: absolute;
   left: 400px;
   font-family: var(--robotofont-font-family);
-  bottom: 26%;
+  bottom: 8%;
   text-align: center;
   background: var(--btnbg-background-color);
 
@@ -121,7 +119,7 @@ body{
     padding: 10px 0;
     position: absolute; /* Fixed position at the bottom of the screen */
     /* bottom: 100px;  */
-    bottom: 18%;
+    bottom: 2%;
     width: 100%;
     z-index: 15;
 }

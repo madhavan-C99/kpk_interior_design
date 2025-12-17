@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 * {
@@ -13,21 +12,20 @@
 :root{
     --robotofont-font-family:"Roboto Serif", serif;
     --lorafont-font-family:"Lora" ,serif;
-    --interfont-font-family:"Inter";
     --textcolor-color:#ffffff;
 }
 
 
 .home_about__con3{
-
     display: flex;
-    margin-top: 6.1%;
+    margin-top: 10%;
     position: relative;
+    margin-bottom: 3%;
 }
 
 .home_about__head3{
     flex: 0.95;
-    height: 746px;
+    height: 786px;
     overflow: hidden;
 
 }
@@ -377,7 +375,8 @@
         text-align: center;
     }
     .home_about_body_title3{
-        font-size: 8px;
+        font-size: 12px;
+        width: 30%;
         position: absolute;
         top: 10px;
         left: 38%;

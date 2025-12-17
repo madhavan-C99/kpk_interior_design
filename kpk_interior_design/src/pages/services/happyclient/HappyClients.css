@@ -23,7 +23,7 @@
     display: flex;
     width: 100vw;
     flex-wrap: wrap;
-    margin-top: 10%;
+    margin-top: 5%;
 
 }
 
@@ -233,11 +233,12 @@
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
+        margin-top: 3%;
        
 
     } 
     .happyclients__img3{
-        padding: 1rem;
+        /* padding: 1rem; */
         height: 500px;
         width:100%;
     }
@@ -254,9 +255,9 @@
     width: 85px;
 } 
     .happyclients_head3 h1{
-        width: 75%;
+        width: 80%;
         font-size: 1.3rem;
-        height:42%;
+        height:45%;
         line-height: 38px;
     }
     .happyclients_head3 h1 span{
@@ -267,8 +268,8 @@
         margin-top: 0;
       font-size: 0.93rem;
      line-height: 30px;
-     width: 85%;
-     height:39%;
+     width: 88%;
+     height:46%;
     }
     .happyclients_head3 button{
         font-size: 1rem;

@@ -17,7 +17,7 @@
 /* faq */
 .price-faq>div {
 text-align: center;
-margin-top: 130px;
+margin-top: 100px;
 }
 
 .price-faq div p{
@@ -57,15 +57,14 @@ margin-top: 130px;
     line-height: 22px;
     font-weight: 600;
     margin: 0px 10px 30px 10px;  
-    /* align-items:center; */
 }
 .price-faq_list{
 width: 80%;
 margin: auto;
+margin-bottom: 7%;
    
 }
 .price-faq-box{
-    /* background-color: rgba(234, 241, 218, 1);  */
     background-color: var(--faqqus-background-color);
     width: 100%;
     margin: 10px 0px;
@@ -79,27 +78,34 @@ margin: auto;
     font-family:var(--robotofont-font-family);
     font-weight: 600;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 26px;
     letter-spacing: 3%;
     display: flex;
     height: 18%;
-    margin-bottom: 2%;
-    justify-content: space-between;
+    /* margin-bottom: 2%; */
+    align-items:start;
+    justify-content: space-around;
   
 }
+
+.price_faq_ques_card3{
+    flex: 0.95;
+}
 .price-faq-ans{
-    /* background-color: rgba(234, 241, 218, 1); */
     text-align: left;
-    /* margin-top: 2%/; */
+    margin-top: 2%;
     font-family: var(--lorafont-font-family);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
     letter-spacing: 3%;
+    padding: 0rem 0.5rem;
 }
 .price-faq_icon{
-    height:8.45%;
-    text-align: right;
+    font-size: 1rem;
+    height:10.45%;
+    flex: 1;
+    text-align:center;
 }
 .price-faq-ques, .price-faq-ans{
   cursor: pointer;
@@ -113,6 +119,7 @@ margin: auto;
 }
 .price-faq-ques{
     font-size: 16px;
+     line-height: 20px;
 }
 }
 
@@ -127,6 +134,7 @@ margin: auto;
 }
 .price-faq-ques{
     font-size: 12px;
+     line-height: 20px;
 }
 .price-faq-box{
     padding: 7px;
@@ -146,14 +154,18 @@ margin: auto;
 width: 90%;
 margin: auto;
 }
+.price_faq_ques_card3{
+    flex: 0.9;
+}
 .price-faq-ques{
     font-size: 9px;
+     line-height: 20px;
 }
 .price-faq-box{
-    padding: 7px;
+    padding: 5px;
 }
 .price-faq-ans{
-    font-size: 6px;
+    font-size: 8px;
     line-height: 12px;
 }
 

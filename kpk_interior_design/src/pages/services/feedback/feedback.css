@@ -292,18 +292,25 @@
     .feedback_sec_head3 h1{
     width:90% ;
     height: 23%;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .feedback_sec_head3 p{
     width: 90%;
     height: 70%;
     line-height: 28px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 
     .carousel__card3{
-    max-width: 350px;
+    max-width: 250px;
+}
+.feedback__text3{
+    font-size: 0.7rem;
+}
+
+.client__title3{
+    font-size: 0.7rem;
 }
 }

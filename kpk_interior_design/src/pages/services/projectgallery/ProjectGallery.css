@@ -66,6 +66,7 @@ body{
     border-spacing: 0;
     border-radius: 15px;
     font-size: 14px;
+
 }
 
 .comparison_header_row2 {
@@ -286,14 +287,16 @@ tbody tr:last-child td:last-child {
     .kitchen_comparison_table2{
         width: 750px;
         min-width: 100%;
-        padding-left: 5%;
+
         margin-bottom: 0.3rem;
+        
     }
 
     .comparison_table_wrapper2{
-        background-color: white;
+        width: 93%;
         overflow-x: auto;
-        padding-right: 60px;
+        margin:0rem 1rem;
+  
     }
 
     .header_layout_cell2{
@@ -305,14 +308,15 @@ tbody tr:last-child td:last-child {
     .header_feature_cell2_hide{
         background-color: white;
         position: sticky;
-        left:5%;
+        left:0%;
+        width: 100px;
         z-index: 100;
     }
 
     .feature_cell2{
         background-color: white;
         position: sticky;
-        left: 5%;
+        left: 0%;
         z-index: 5;
         padding: 16.73px 8.6px;
         width: 66px;

@@ -6,9 +6,12 @@ import hybridmodular from '../../../assets/services/images/Frame 1000012429.png'
 import openshelf from '../../../assets/services/images/Frame 1000012430.png'
 import multifunction from '../../../assets/services/images/Frame 10000128.png'
 import premiumstone from '../../../assets/services/images/Frame 10012428.png'
+import ImageHeroSec from "../../imageview/imageherosec/ImageHeroSec";
+import ImageShow from "../../imageview/ImageShow";
 
 function KitchenDesigns(){
 
+    
     const designdata = [
     { 
       id: 1, 
@@ -47,6 +50,34 @@ function KitchenDesigns(){
       description: 'A rich stone counter that blends luxury with durability.' 
     }]
 
+      const [currentView, setCurrentView] = useState('list'); 
+
+        const [selectedIdea, setSelectedIdea] = useState(designdata[0]);
+
+
+
+  // 1. Switches to the Detail View and stores the selected data
+  const handleCardClick = (idea) => {
+    setSelectedIdea(idea); // Save the full idea object
+    setCurrentView('detail'); // "Redirect" to the new page
+  };
+
+  // 2. Switches back to the List View
+  const handleBackClick = () => {
+    setCurrentView('list');
+  };
+
+   if (currentView === 'detail'){
+    return (
+        <>
+        <div className="min-h-screen bg-gray-100 p-4 sm:p-8 font-inter">
+
+        <ImageShow image={selectedIdea}/>
+        </div>
+        </>
+    )
+   }
+
     return(
         <>
             <div className="kitchen_design_section2">
@@ -64,7 +95,7 @@ function KitchenDesigns(){
                     {designdata.map((data)=>(
                         <div className="design_card2" key={data.id}>
                             <div className="design_image_wrapper2">
-                                <div className="slide_cont2">
+                                <div className="slide_cont2"  onClick={() => handleCardClick(data)} >
                                    <img src={data.image[0]} alt="" className="slide_img2"/>
                                     <img src={data.image[1]} alt="" className="slide_img2" />
                                 </div>
@@ -74,13 +105,17 @@ function KitchenDesigns(){
                                 <p className="card_description2">{data.description}</p>
                             </div>
                             <hr />
-                            <button className="design_button2">Get This Design</button>
+                            <button onClick={() => handleCardClick(data)} className="design_button2">Get This Design</button>
                         </div>
                     ))}
                 </div>
             </div>
+
+  
         </>
     )
 }
 
 export default KitchenDesigns
+
+              

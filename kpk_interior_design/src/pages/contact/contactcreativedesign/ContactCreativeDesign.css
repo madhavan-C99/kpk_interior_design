@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --roboto: "Roboto Serif", serif;
+    --lora: "Lora", serif;
+}
+
+.contactcreative_textwrap2 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contactcreative_title2 {
+    width: 60%;
+    font-family: var(--roboto);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+.contactcreative_desc2 {
+    margin: 1rem 0;
+    width: 73%;
+    font-family: var(--lora);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.contactcreative_btnswrapper2 {
+    margin: 1.5rem 0;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 10px 0;
+}
+
+.contactcreative_catbtn2 {
+    font-family: var(--lora);
+    font-size: 16px;
+    font-weight: 500;
+    height: 45px;
+    min-width: 195px;
+    background-color: white;
+    border: 2px solid #8d9b6a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category_button2.active {
+    font-family: var(--lora);
+    font-size: 16px;
+    background-color: #8D9B6A;
+    color: white;
+    height: 45px;
+    min-width: 195px;
+    border: 2px solid #8d9b6a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactcreative_grid2 {
+    text-align: center;
+    margin: 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contactcreative_card2 {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.contactcreative_img2 {
+    width: 100%;
+    display: block;
+}
+
+.contactcreative_cardtitle2 {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: white;
+    font-family: var(--lora);
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 10;
+}
+
+@media (min-width: 1200px){
+    .contactcreative_btnswrapper2{
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .contactcreative_grid2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactcreative_title2{
+        font-size: 32px;
+        line-height: 48px;
+        width: 90%;
+    }
+    .contactcreative_desc2 {
+        font-size: 24px;
+        line-height: 40px;
+        width: 85%;
+    }
+
+    .contactcreative_btnswrapper2{
+        justify-content: start;
+    }
+
+    .contactcreative_catbtn2{
+        font-size: 14px;
+        height: 45px;
+        width: 156px;
+    }
+
+    .contactcategory_button2.active{
+        font-size: 14px;
+        height: 45px;
+        width: 156px;
+    }
+
+    .contactcreative_card2 {
+        width: 30%; 
+    }
+
+    .contactcreative_cardtitle2{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:576px) and (max-width:765px){
+    .contactcreative_grid2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactcreative_title2{
+        font-size: 32px;
+        line-height: 48px;
+        width: 90%;
+    }
+    .contactcreative_desc2 {
+        font-size: 24px;
+        line-height: 40px;
+        width: 85%;
+    }
+
+    .contactcreative_card2{
+        width: 31%;
+    }
+
+    .contactcreative_btnswrapper2{
+        width: 80%;
+        margin: auto;
+        justify-content: start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+
+        /* for hide scrollbar */
+        &::-webkit-scrollbar {
+            display: none; 
+        }
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .contactcreative_catbtn2{
+        font-size: 14px;
+        height: 45px;
+        flex-shrink: 0;
+    }
+
+    .contactcreative_cardtitle2{
+        font-size: 12px;
+    }
+}
+
+/* --- Mobile Specific View (5 Cards One by One) --- */
+@media (max-width: 575px) {
+    .contactcreative_title2 {
+        width: 90%;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .contactcreative_desc2 {
+        width: 90%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contactcreative_btnswrapper2{
+        width: 90%;
+        justify-content: start;
+        margin: auto;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+
+        /* for hide scrollbar */
+        &::-webkit-scrollbar {
+            display: none; 
+        }
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .contactcreative_catbtn2{
+        font-size: 14px;
+        height: 45px;
+        flex-shrink: 0;
+    }
+
+    .contactcategory_button2.active{
+        font-size: 14px;
+        height: 45px;
+        flex-shrink: 0;
+    }
+
+    .contactcreative_btnswrapper2::-webkit-scrollbar { 
+        display: none; 
+    }
+
+    .contactcreative_catbtn2, .category_button2.active {
+        width: 150px;
+        flex-shrink: 0;
+    }
+
+    .contactcreative_grid2 {
+        display: flex;
+        flex-direction: column; /* Stacked one by one */
+        align-items: center;
+        margin: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .contactcreative_card2 {
+        width: 90%; 
+    }
+
+    .contactcreative_cardtitle2{
+        font-size: 15px;
+    }
+}
+

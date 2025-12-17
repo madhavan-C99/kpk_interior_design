@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 * {
@@ -13,7 +12,6 @@
 :root{
     --robotofont-font-family:"Roboto Serif", serif;
     --lorafont-font-family:"Lora" ,serif;
-    --interfont-font-family:"Inter";
     --textcolor-color:#ffffff;
 }
 
@@ -21,7 +19,7 @@
     height: 376px; 
     width: 100vw;
     border: 1px solid;
-    margin-top: 5%;
+    margin-top: 4%;
     background-color: #3A2E27;
     background-image: url('D:\codd99\kpk_interior_design\kpk_interior_design\src\assets\home\images\Vector 289.png');
     background-size: 100% 100%;
@@ -62,7 +60,7 @@
    
     font-size: 5rem;
     font-weight: 900;
-    font-family: var(--interfont-font-family);
+    font-family: var(--robotofont-font-family);
     line-height: 1;
     color:#ffffffc8;
 }
@@ -72,7 +70,7 @@
     font-weight: 400;
     margin-top: 5px;
     text-align: center;
-    font-family: var(--interfont-font-family);
+    font-family: var(--lorafont-font-family);
     color: var(--textcolor-color);
 }
 
