@@ -3,12 +3,32 @@ import PoojaHeroBg from "../assets/pooja_tv_hero_images/PoojaHeroBg.png";
 import PoojaTvCta_Image from "../assets/pooja_tv_cta_images/PoojaTvCta_Image.png";
 
 // importing gallery images
-import PoojaGallery_1 from "../assets/pooja_tv_gallery_images/PoojaGallery_1.png";
-import PoojaGallery_2 from "../assets/pooja_tv_gallery_images/PoojaGallery_2.png";
-import PoojaGallery_3 from "../assets/pooja_tv_gallery_images/PoojaGallery_3.png";
-import PoojaGallery_4 from "../assets/pooja_tv_gallery_images/PoojaGallery_4.png";
-import PoojaGallery_5 from "../assets/pooja_tv_gallery_images/PoojaGallery_5.png";
-import PoojaGallery_6 from "../assets/pooja_tv_gallery_images/PoojaGallery_6.png";
+import PoojaGallery_1_1 from "../assets/pooja_tv_gallery_images/PoojaGallery_1.1.png";
+import PoojaGallery_1_2 from "../assets/pooja_tv_gallery_images/PoojaGallery_1.2.png";
+import PoojaGallery_1_3 from "../assets/pooja_tv_gallery_images/PoojaGallery_1.3.png";
+import PoojaGallery_1_4 from "../assets/pooja_tv_gallery_images/PoojaGallery_1.4.png";
+
+import PoojaGallery_2_1 from "../assets/pooja_tv_gallery_images/PoojaGallery_2.1.png";
+import PoojaGallery_2_2 from "../assets/pooja_tv_gallery_images/PoojaGallery_2.2.png";
+import PoojaGallery_2_3 from "../assets/pooja_tv_gallery_images/PoojaGallery_2.3.png";
+
+import PoojaGallery_3_1 from "../assets/pooja_tv_gallery_images/PoojaGallery_3.1.png";
+import PoojaGallery_3_2 from "../assets/pooja_tv_gallery_images/PoojaGallery_3.2.png";
+import PoojaGallery_3_3 from "../assets/pooja_tv_gallery_images/PoojaGallery_3.3.png";
+import PoojaGallery_3_4 from "../assets/pooja_tv_gallery_images/PoojaGallery_3.4.png";
+
+import PoojaGallery_4_1 from "../assets/pooja_tv_gallery_images/PoojaGallery_4.1.png";
+import PoojaGallery_4_2 from "../assets/pooja_tv_gallery_images/PoojaGallery_4.2.png";
+import PoojaGallery_4_3 from "../assets/pooja_tv_gallery_images/PoojaGallery_4.3.png";
+
+import PoojaGallery_5_1 from "../assets/pooja_tv_gallery_images/PoojaGallery_5.1.png";
+import PoojaGallery_5_2 from "../assets/pooja_tv_gallery_images/PoojaGallery_5.2.png";
+import PoojaGallery_5_3 from "../assets/pooja_tv_gallery_images/PoojaGallery_5.3.png";
+import PoojaGallery_5_4 from "../assets/pooja_tv_gallery_images/PoojaGallery_5.4.png";
+
+import PoojaGallery_6_1 from "../assets/pooja_tv_gallery_images/PoojaGallery_6.1.png";
+import PoojaGallery_6_2 from "../assets/pooja_tv_gallery_images/PoojaGallery_6.2.png";
+import PoojaGallery_6_3 from "../assets/pooja_tv_gallery_images/PoojaGallery_6.3.png";
 
 // importing feedback images
 import PoojaTvFeedback_1 from "../assets/pooja_tv_feedback_images/PoojaTvFeedback_1.png";
@@ -69,8 +89,8 @@ gallery: {
       type: "image",
       title: "Modern Wall-Mounted Pooja Unit",
       description:
-        "A sleek wall-mounted pooja unit designed with premium materials and space-saving elegance.",
-      images: [PoojaGallery_1, PoojaGallery_2, PoojaGallery_3]
+        "A compact spiritual corner designed with serene simplicity.",
+      images: [PoojaGallery_1_1, PoojaGallery_1_2, PoojaGallery_1_3, PoojaGallery_1_4]
     },
 
     {
@@ -82,8 +102,8 @@ gallery: {
       type: "image",
       title: "Compact Corner Pooja Setup",
       description:
-        "Perfectly designed corner pooja units that blend spirituality with smart space utilization.",
-      images: [PoojaGallery_4, PoojaGallery_5, PoojaGallery_6]
+        "Perfectly suited for small apartments, yet graceful in presence.",
+      images: [PoojaGallery_2_1, PoojaGallery_2_2, PoojaGallery_2_3,]
     },
 
     {
@@ -95,32 +115,32 @@ gallery: {
       type: "image",
       title: "Backlit Meditation Niche",
       description:
-        "Soft backlighting enhances the sacred ambience, creating a peaceful meditation space.",
-      images: [PoojaGallery_1, PoojaGallery_2, PoojaGallery_3]
+        " Soft glow lighting for peaceful and calming moments.",
+      images: [PoojaGallery_3_1, PoojaGallery_3_2, PoojaGallery_3_3, PoojaGallery_3_4]
     },
 
     {
       type: "image",
       title: "Traditional Carved Pooja Mandap",
       description:
-        "Hand-carved pooja mandaps inspired by timeless traditional craftsmanship.",
-      images: [PoojaGallery_4, PoojaGallery_5, PoojaGallery_6]
+        " Intricate woodwork bringing divine charm into your home.",
+      images: [PoojaGallery_4_1, PoojaGallery_4_2, PoojaGallery_4_3] 
     },
 
     {
       type: "image",
-      title: "Built-In Pooja Room",
+      title: "Jaali Panel Pooja Space",
       description:
-        "Seamlessly integrated pooja rooms designed as part of your home’s architecture.",
-      images: [PoojaGallery_1, PoojaGallery_2, PoojaGallery_3]
+        "Artistic patterns that enhance the sacred ambiance.",
+      images: [PoojaGallery_5_1, PoojaGallery_5_2, PoojaGallery_5_3, PoojaGallery_5_4]
     },
 
     {
       type: "image",
-      title: "Ornate Corner Pooja Setup",
+      title: "Compact Corner Pooja Setup",
       description:
-        "Elegantly ornamented corner pooja designs that elevate spiritual aesthetics.",
-      images: [PoojaGallery_4, PoojaGallery_5, PoojaGallery_6]
+        " Perfectly suited for small apartments, yet graceful in presence.",
+      images: [PoojaGallery_6_1, PoojaGallery_6_2, PoojaGallery_6_3]
     },
 
     {

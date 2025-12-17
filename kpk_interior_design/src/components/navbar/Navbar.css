@@ -1,4 +1,3 @@
-/* Global header text style */
 :root {
   --heading-font: "Roboto Serif";
 }
@@ -12,15 +11,11 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  height:90px;
-  /* background-color: white; */
-  /* background-color: aqua; */
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
+  height: 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+              rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-/* Base navbar layout */
 .navbar {
   display: flex;
   align-items: center;
@@ -29,110 +24,103 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background-color:  #ffffff;
-  /* background-color: brown; */
+  background-color: #ffffff;
   width: 100%;
 }
 
-/* Logo */
-/* 
-.navbar-left{
-  background-color: aqua;
-} */
 .navbar-left .logo {
   height: 52px;
   object-fit: contain;
 }
 
-/* Mobile menu container */
-.navbar-content {
-  position: absolute;
-  /* top: 100%; */
-  left: 0;
-  width: 100%;
-  /* background-color: red; */
-  /* background-color: #ffffff; */
-    background: rgba(255, 255, 255, 0.25);
-  /* backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); */
-  animation: navbar-content 0.3s ease-out;
-  /* z-index: 998; */
-  font-weight: 500;
-  
-}
-
-/* Navbar content animation */
-@keyframes navbar-content {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-    z-index: -1;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-     z-index: -1;
-  }
-}
-
-/* Desktop center menu */
+/* DESKTOP CENTER NAV */
 .navbar-center {
   display: flex;
   gap: 32px;
-  /* background-color: green; */
 }
 
 .nav-link {
   color: #2a1d14;
   text-decoration: none;
-  letter-spacing: 0.01em;
-  
-  font-weight: 500;
-  /* background-color: aqua; */
-}
-
-.nav-link.active {
   font-weight: 500;
 }
 
-.nav-caret {
-  font-size: 10px;
-  margin-left: 4px;
+/* ===== SERVICES (COMMON TYPOGRAPHY FIX) ===== */
+.nav-services-toggle,
+.mobile-services-toggle {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
 }
 
-/* Right side: button + (optionally) hamburger */
+/* DESKTOP SERVICES DROPDOWN */
+.nav-services-wrapper {
+  position: relative;
+}
+
+.nav-services-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-services-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.dropdown-link {
+  padding: 10px 18px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #2a1d14;
+}
+
+.dropdown-link:hover {
+  background-color: rgba(74, 52, 41, 0.08);
+}
+
+/* RIGHT */
 .navbar-right {
   display: flex;
   align-items: center;
   gap: 16px;
-  /* background-color: chartreuse; */
 }
 
-.primary-outline-btn,.primary-outline-btns{
+.primary-outline-btn,
+.primary-outline-btns {
   padding: 10px 22px;
   border-radius: 10px;
   border: none;
   background-color: #4a3429;
   color: #ffffff;
   font-family: "Roboto Serif";
-  letter-spacing: 1.2px;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
 }
 
-/* Hamburger icon (hidden on desktop) */
+/* HAMBURGER */
 .hamburger {
   display: none;
   width: 32px;
   height: 32px;
-  padding: 0;
-  border: none;
   background: transparent;
+  border: none;
   cursor: pointer;
-  /* margin-top: -50px; */
-  transform: translateY(-20%);
 }
 
 .hamburger span {
@@ -140,155 +128,239 @@ header {
   width: 100%;
   height: 3px;
   background-color: #2a1d14;
-  border-radius: 2px;
   margin: 4px 0;
-  transition: 0.3s;
 }
 
-/* Mobile menu styles */
+/* MOBILE MENU */
+.navbar-content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.25);
+}
+
 .navbar-mobile-menu {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  justify-content: center;
   gap: 12px;
   padding: 24px 32px;
-  /* background-color: #ffffff; */
-  /* background-color: aqua; */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #fff;
 }
 
 .mobile-link {
-  color: #2a1d14;
   text-decoration: none;
-  font-family: "Roboto Serif";
+  font-size: 20px;
+  color: #2a1d14;
+}
+
+.mobile-services-toggle {
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.mobile-submenu {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.submenu-link {
+  text-decoration: none;
   font-size: 16px;
-  padding: 8px 0;
+  color: #4a3429;
 }
 
-.mobile-link:hover {
-  text-decoration: underline;
-}
+/* RESPONSIVE RULES */
 
-/* Tablet: hide center menu, show hamburger, adjust padding/button */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .navbar {
-    padding: 18px 32px;
-  }
-
+/* BELOW 1025px — HAMBURGER */
+@media (max-width: 1024px) {
   .navbar-center {
     display: none;
+  }
+
+  .primary-outline-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .nav-services-dropdown {
+    display: none;
+  }
+}
+
+/* ABOVE 1025px — DESKTOP */
+@media (min-width: 1025px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navbar-content {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE LAYOUT REFINEMENTS
+   (Add this BELOW your existing CSS – no overrides upstream)
+========================================================= */
+
+/* -----------------------------
+   TABLET (768px – 1024px)
+------------------------------ */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .navbar {
+    padding: 18px 32px;
   }
 
   .navbar-right {
     gap: 12px;
   }
 
-  .navbar-center {
-    display: none;
-  }
-
-  /* .primary-outline-btn {
-    padding: 8px 20px;
-    font-size: 14px;
-    letter-spacing: 2px;
-  } */
-
-
-  .primary-outline-btn{
-    display: none;
-
-  }
-
-  .primary-outline-btns{
-    font-size: 18px;
-  }
-  
-  .hamburger {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
+  /* Typography consistency */
+  .nav-link,
   .mobile-link {
     font-size: 20px;
   }
 
-  /* .primary-outline-btn{
-    display:none;
-  } */
-  
+  /* Mobile menu spacing */
+  .navbar-mobile-menu {
+    padding: 22px 28px;
+    gap: 12px;
+  }
+
+  /* CTA button inside mobile menu */
+  .primary-outline-btns {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  /* Dropdown safety */
+  .nav-services-dropdown {
+    max-width: 90vw;
+  }
 }
 
-/* Mobile: same idea, slightly smaller spacing */
+
+/* -----------------------------
+   MOBILE (≤ 767.9px)
+------------------------------ */
 @media (max-width: 767.9px) {
+
   .navbar {
     padding: 12px 20px;
   }
 
-  .navbar-center {
-    display: none;
+  .navbar-right {
+    gap: 10px;
   }
 
-  .primary-outline-btn {
-    font-size: 13px;
-    padding: 8px 16px;
-  }
-
-  .hamburger {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
+  /* Mobile menu layout */
   .navbar-mobile-menu {
     padding: 20px 24px;
     gap: 10px;
   }
 
+  /* Typography */
   .mobile-link {
-    font-size: 20px;
-  }
-    .primary-outline-btn{
-    display:none;
-  }
-}
-
-@media (min-width: 1025px) and (max-width:1257px) {
-  .hamburger {
-    display: none;
-  }
-  .navbar-content{
-    display: none;
-  }
-
- .navbar-center{
-  font-size: 20px;
- }
- 
- .primary-outline-btn{
-  font-size: 14px;
-  padding:8px 16px;
- }
-
-}
-
-
-
-/* Desktop: hide hamburger */
-@media (min-width: 1025px) {
-  .hamburger {
-    display: none;
-  }
-  .navbar-content{
-    display: none;
-  }
-}
-
-@media (max-width: 350px){
-  .primary-outline-btns{
     font-size: 18px;
   }
-}
-  
 
+  .submenu-link {
+    font-size: 15px;
+  }
+
+  /* CTA button inside mobile menu */
+  .primary-outline-btns {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+}
+
+
+/* -----------------------------
+   SMALL MOBILE (≤ 350px)
+------------------------------ */
+@media (max-width: 350px) {
+
+  .navbar {
+    padding: 10px 16px;
+  }
+
+  .mobile-link {
+    font-size: 16px;
+  }
+
+  .submenu-link {
+    font-size: 14px;
+  }
+
+  .primary-outline-btns {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+
+
+/* -----------------------------
+   DESKTOP COMPACT (1025px – 1257px)
+------------------------------ */
+@media (min-width: 1025px) and (max-width: 1257px) {
+
+  .navbar {
+    padding: 18px 40px;
+  }
+
+  .navbar-center {
+    gap: 24px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .primary-outline-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  /* Dropdown alignment */
+  .nav-services-dropdown {
+    min-width: 200px;
+  }
+}
+
+
+/* -----------------------------
+   LARGE DESKTOP (≥ 1258px)
+------------------------------ */
+@media (min-width: 1258px) {
+
+  .navbar {
+    padding: 18px 52px;
+  }
+
+  .navbar-center {
+    gap: 32px;
+  }
+
+  .nav-services-dropdown {
+    min-width: 220px;
+  }
+}

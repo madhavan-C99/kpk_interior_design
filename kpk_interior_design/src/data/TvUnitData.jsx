@@ -57,72 +57,72 @@ const TvUnitData = {
 
 // gallery section
 gallery: {
-  heading: "Your Home’s Spiritual Heart, Beautifully Designed",
+  heading: "Stylish TV Units for Modern Homes",
   description:
-    "If you’re seeking luxury pooja unit interiors in Pondicherry, KPK Enterprise stands out. Our designs feature premium finishes, modular layouts, and handcrafted details. With expert designers and 1000+ happy clients, we create elegant, functional spiritual spaces.",
+    "KPK Enterprise designs stylish TV units for modern homes in Pondicherry, blending elegance, functionality, and premium materials. Each unit is customized for optimal space usage, aesthetic appeal, and lasting durability.",
 
   items: [
     {
       type: "image",
-      title: "Modern Wall-Mounted Pooja Unit",
+      title: "Glossy Modern Entertainment Hub",
       description:
-        "A sleek wall-mounted pooja unit designed with premium materials and space-saving elegance.",
+        "Smooth, modern finishes that blend beautifully with bedroom A high-gloss finish that enhances the room’s contemporary feel.",
       images: [TvGallery_1, TvGallery_2, TvGallery_3]
     },
 
     {
       type: "text",
-      text: "A compact spiritual corner designed with serene simplicity."
+      text: "Soft lighting adds depth and elevates the TV zone instantly."
     },
 
     {
       type: "image",
-      title: "Compact Corner Pooja Setup",
+      title: "Floating Panel Elegance",
       description:
-        "Perfectly designed corner pooja units that blend spirituality with smart space utilization.",
+        " A sleek wall-mounted TV panel crafted for a modern, clutter-free look.",
       images: [TvGallery_4, TvGallery_5, TvGallery_6]
     },
 
     {
       type: "text",
-      text: "Intricate woodwork brings divine charm into your home."
+      text: "A perfect blend of open shelves and closed cabinets for neat organization."
     },
 
     {
       type: "image",
-      title: "Backlit Meditation Niche",
+      title: "Dual-Tone Media Wall",
       description:
-        "Soft backlighting enhances the sacred ambience, creating a peaceful meditation space.",
+        "Contrasting finishes add character and strong visual appeal.",
       images: [TvGallery_1, TvGallery_2, TvGallery_3]
     },
 
     {
       type: "image",
-      title: "Traditional Carved Pooja Mandap",
+      title: "Minimal Media Console",
       description:
-        "Hand-carved pooja mandaps inspired by timeless traditional craftsmanship.",
+        "Clean lines and balanced storage bring harmony to your living room.  ",
       images: [TvGallery_4, TvGallery_5, TvGallery_6]
     },
 
     {
       type: "image",
-      title: "Built-In Pooja Room",
+      title: "Contemporary Storage Console",
       description:
-        "Seamlessly integrated pooja rooms designed as part of your home’s architecture.",
+        "A perfect blend of open shelves and closed cabinets for neat organization",
       images: [TvGallery_1, TvGallery_2, TvGallery_3]
     },
 
     {
       type: "image",
-      title: "Ornate Corner Pooja Setup",
+      title: "Designer TV Statement Panel",
       description:
-        "Elegantly ornamented corner pooja designs that elevate spiritual aesthetics.",
+        "Crafted to stand out with bold textures and precise detailing",
       images: [TvGallery_4, TvGallery_5, TvGallery_6]
     },
 
     {
       type: "text",
-      text: "Soft glow lighting for peaceful and calming moments."
+      text: "A high-gloss finish that enhances the room’s contemporary feel."
     }
   ]
 },
