@@ -92,7 +92,13 @@ const dynamicStyles = {
                                 />
                                 </div>
                             </section>
-
+                              <div className="scrubber_handle_line3" style={{ left: `${sliderPos}%` }}>
+                                <div className="scrubber_handle_icon3">
+                                  <a href="" className="design_left_icon3">&#10094;</a>
+                                  <a href="">|</a>
+                                   <a href="" className="design_right_icon3">&#10095;</a> 
+                                </div>
+                            </div>
                             {/* Range Input Slider */}
                             <input 
                                 type="range" 

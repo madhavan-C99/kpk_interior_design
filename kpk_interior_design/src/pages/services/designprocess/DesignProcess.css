@@ -36,7 +36,7 @@
     /* content title */
 
 .design_process_head3 h1{
-    width: 64%;
+    width: 66%;
     /* font-size: 2.38rem; */
     font-size: 44px;
     text-align:center;
@@ -111,12 +111,49 @@
 
 }
 
+/* --- Scrubber Handle Styling (Uses inline 'left' style) --- */
+.scrubber_handle_line3 {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%); /* Center the line */
+    height: 100%;
+    width: 50px; /* The vertical line */
+    /* background-color: white; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    z-index:99; 
+    pointer-events: none; 
+}
+
+.scrubber_handle_icon3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    /* background-color: rgb(50, 48, 48); */
+   background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px; /* Size for the Unicode arrow */
+    font-weight: 700;
+}
+
+.design_left_icon3,.design_right_icon3{
+    text-decoration: none;
+    color: black;
+}
+
 /* WebKit (Chrome, Safari) Thumb Style */
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  inline-size: 0.25em; /* Width of the divider line */
-  block-size: 102svb; /* Height of the divider line (viewport height) */
+   -webkit-appearance: none;  
+  appearance:none;
+  width: 2%;
+  color: #ffffff;
+  inline-size: 0.25em; 
+  block-size: 91svb; 
   background-color: currentColor; /* The color of the divider line */
 }
 
@@ -167,9 +204,6 @@ font-size: 1.45rem;
     font-size: 1rem;
 }
 
-.design_form_input3::placeholder {
-    color: white;
-}
 
 .design_form_button3 {
   font-size: 1.26rem;
@@ -195,12 +229,23 @@ font-size: 1.45rem;
 .design_form_button3{
     font-size: 1.04rem;
 }
+input[type="range"]::-webkit-slider-thumb {
+  block-size: 95svb; /* Height of the divider line (viewport height) */
+}
+input[type="range"]::-moz-range-thumb {
+    block-size: 95svb; /* Height of the divider line (viewport height) */
+}
+
 
 }
 
     /* laptop view media */
 
 @media (min-width:992px) and (max-width:1199px) {
+    .design_process_head3 h1{
+        width: 80%;
+    }
+
     .design_form3 h1{
     width: 90%;
     font-size: 1.2rem;
@@ -209,6 +254,13 @@ font-size: 1.45rem;
 .design_form_button3{
     font-size: 0.9rem;
     padding: 0.5rem 2.5rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  block-size: 99svb; /* Height of the divider line (viewport height) */
+}
+input[type="range"]::-moz-range-thumb {
+    block-size: 99svb; /* Height of the divider line (viewport height) */
 }
 }
 
@@ -235,10 +287,10 @@ font-size: 1.45rem;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  block-size: 66svb; /* Height of the divider line (viewport height) */
+  block-size: 64svb; /* Height of the divider line (viewport height) */
 }
 input[type="range"]::-moz-range-thumb {
-    block-size: 66svb; /* Height of the divider line (viewport height) */
+    block-size: 64svb; /* Height of the divider line (viewport height) */
 }
 
     .design_form3 h1{
@@ -297,10 +349,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  block-size: 66svb; /* Height of the divider line (viewport height) */
+  block-size: 63svb; /* Height of the divider line (viewport height) */
 }
 input[type="range"]::-moz-range-thumb {
-    block-size: 66svb; /* Height of the divider line (viewport height) */
+    block-size: 63svb; /* Height of the divider line (viewport height) */
 }
 
     .design_form3 h1{
@@ -365,13 +417,15 @@ input[type="range"]::-moz-range-thumb {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-
-  block-size: 59svb; /* Height of the divider line (viewport height) */
+    /* color: white; */
+  block-size: 57svb; /* Height of the divider line (viewport height) */
 }
 input[type="range"]::-moz-range-thumb {
-    block-size: 66svb; /* Height of the divider line (viewport height) */
+    block-size: 57svb; /* Height of the divider line (viewport height) */
 }
-
+    .design_form3{
+        max-width: 400px;
+    }
 
     .design_form3 h1{
     /* width: 80%;/ */

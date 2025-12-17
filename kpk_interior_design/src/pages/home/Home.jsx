@@ -1,10 +1,11 @@
-import DesignProcess from "../services/designprocess/DesignProcess";
-import Faq from "../services/faq/Faq";
+
 import HappyClients from "../services/happyclient/HappyClients";
+import Consultation from "./consultation/Consultation";
 import CraftingSpace from "./craftingspace/CraftingSpace";
 import CreativeDesign from "./creativedesign/CreativeDesign";
 import DesignSession from "./designsession/DesignSession";
 import HomeAboutUs from "./homeaboutus/HomeAboutUs";
+import HomeFaq from "./homefaq/HomeFaq";
 import HomeHeroSec from "./homehero/HomeHeroSec";
 import HomeOurService from "./homeourservice/HomeOurService";
 import HomeRankSec from "./homeranksec/HomeRankSec";
@@ -28,10 +29,11 @@ export default function Home(){
    <CraftingSpace/>
     <Workflow/>
     <DesignSession/>
+    <Consultation/>
     <CreativeDesign/>
     <TopCategory/>
     <HappyClients/>
-     <Faq/>
+     <HomeFaq/>
         </>
     )
 }

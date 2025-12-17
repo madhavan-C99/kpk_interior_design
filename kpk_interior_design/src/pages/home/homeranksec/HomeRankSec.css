@@ -2,13 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root{
-    --robotofont-font-family:"Roboto Serif", serif;
-    --lorafont-font-family:"Lora" ,serif;
-    --interfont-font-family:"Inter"
-}
+
 
 * {
     padding: 0;
@@ -19,18 +14,17 @@
 :root {
     --robotofont-font-family: "Roboto Serif", serif;
     --lorafont-font-family: "Lora", serif;
-    --interfont-font-family: "Inter";
     --brand-color: #5D9C59; /* A nice green tone */
     --card-bg: #f9f9f9;
 }
 
 /* --- Container & Header Styles --- */
 .home_rank__con3 {
+    margin-top: 5%;
     width: 100vw;
     min-height: 540px;
     padding: 50px 0;
-    background-color: #fff;
-        overflow: hidden;
+    overflow: hidden;
 }
 .home_rank_head3 {
     text-align: center;
@@ -130,7 +124,7 @@
 .home_rank__card3 h4 {
     font-size: 1.2rem;
     font-weight: 600;
-    font-family: var(--interfont-font-family);
+    font-family: var(--lorafont-font-family);
     color: #333;
     margin-top: 10px;
 }
@@ -204,6 +198,9 @@
      { min-width: 150px;
      max-width: 145px; } /* Slightly smaller cards */
     
+    .home_rank__card3 h4{
+        font-size: 16px;
+    }
     /* Recalculate animation based on smaller size */
     @keyframes infinite-scroll {
         from { transform: translateX(0); }

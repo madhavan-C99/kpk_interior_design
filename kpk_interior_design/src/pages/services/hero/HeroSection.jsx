@@ -1,8 +1,10 @@
 
-import Main from '../../../assets/services/images/Main.png'
+// import Main from '../../../assets/services/images/Main.png'
+import modular_video from '../../../assets/services/videos/modular_hero_video .mp4'
 import './HeroSection.css'
 export default function HeroSection(){
 
+    
     return(
         <>
         <section className="herosection3">
@@ -13,7 +15,8 @@ export default function HeroSection(){
                     <button>Start My Interior Plan </button>
                 </div>
                 <div className="hero_img3">
-                    <img src={Main} alt="" />
+                      <video autoPlay muted loop src={modular_video} id="modularvid2"></video>
+                  
                 </div>
             </div>     
         </section>

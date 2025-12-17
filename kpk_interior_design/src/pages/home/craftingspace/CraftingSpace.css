@@ -10,12 +10,11 @@
     height: 417px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 .crafting_text2{
     height: 100%;
-    width: 50%;
     flex: 1;
     color: white;
     background-color: #3A2E27;
@@ -27,14 +26,113 @@
 .crafting-title2{
     font-family: var(--roboto);
     margin-top: 58px;
-    margin-left: 38px;
+    margin-left: 8%;
+    margin-right: 38px;
     width: 628px;
     font-size: 40px;
     line-height: 56px;
     font-weight: 600;
 }
 
-.crafting_image2{
-    width: 50%;
+.crafting_video2{
     flex: 1;
+    height: 100%;
+    overflow: hidden;
 }
+
+#craftingvid2{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.02);
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .crafting-title2{
+        width: 90%;
+    }
+
+   #craftingvid2{
+        transform: scale(1.02);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .crafting_container2{
+        height: 356px;
+    }
+
+    .crafting_text2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crafting-title2{
+        width: 80%;
+        margin: 0;
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .crafting_container2{
+        height: 356px;
+    }
+
+    .crafting_text2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .crafting-title2{
+        width: 80%;
+        margin: 0;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+   #craftingvid2{
+        transform: scale(1.02);
+    }
+}
+
+ @media (max-width: 575px) {
+    .crafting_container2{
+        height: 530px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .crafting_text2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .crafting-title2{
+        width: 60%;
+        margin: 0;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    #craftingvid2{
+        height: 100%;
+        transform: scale(1.02);
+    }
+ }
+
+ @media (max-width: 375px) {
+    .crafting-title2{
+        width: 80%;
+        margin: 0;
+        font-size: 20px;
+        line-height: 40px;
+    }
+ }
+
+
+

@@ -3,7 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 * {
@@ -14,14 +13,13 @@
 :root{
     --robotofont-font-family:"Roboto Serif", serif;
     --lorafont-font-family:"Lora" ,serif;
-    --interfont-font-family:"Inter";
     --textcolor-color:#ffffff;
 }
 
         /* rate section main container */
 
 .home_rate_sec__con3{
-    height:380px ;
+    /* height:400px ; */
     background-image: url('D:\codd99\kpk_interior_design\kpk_interior_design\src\assets\home\images\Frame 1000012608.png');
     background-size: 100%  100%;
     background-repeat: no-repeat;
@@ -29,7 +27,7 @@
     text-align: center;
     line-height: 70px;
     padding: 4rem 0rem;
-    margin-top: 4%;
+    margin-top: 1%;
 }
 
             /* section heading */
@@ -37,7 +35,7 @@
 .home_rate_sec__con3 h1{
     color: white;
     font-size: 53px;
-    font-family: var(--interfont-font-family);
+    font-family: var(--robotofont-font-family);
     letter-spacing: 3%;
 }
 

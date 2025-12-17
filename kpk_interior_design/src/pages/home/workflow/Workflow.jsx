@@ -58,6 +58,20 @@ const Workflow = () => {
     const [activeId, setActiveId] = useState(0);
     const [isResetting, setIsResetting] = useState(false);
 
+    // 1. NEW STATE: Track the current screen width
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    // 2. NEW EFFECT: Listen for screen size changes
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    // END NEW EFFECT
+
     useEffect(() => {
       const totalSteps = steps.length;
 
@@ -89,6 +103,15 @@ if (isResetting) {
     progressLineTargetWidth = '2%'; 
 }
 
+  const isMobileView = screenWidth <= 575;
+    
+    const progressStyle = {
+        [isMobileView ? 'height' : 'width']: progressLineTargetWidth,
+        
+        transitionDuration: isResetting ? '0s' : '1.5s',
+        transformOrigin: isMobileView ? 'top' : 'center right'
+    };
+
   return (
     <div className="workflow_container2">
       <div className="workflow_innerwrapper2">
@@ -100,7 +123,6 @@ if (isResetting) {
           {steps.map((step) => {
 
             const isActive =!isResetting && step.id === activeId;
-            const isCompleted =!isResetting && step.id < activeId;
             return(
               <div key={step.number} className="step_item2">
                 <p className="step_number_overlay2">{step.number}</p>
@@ -112,17 +134,24 @@ if (isResetting) {
                 <p className="step_title2">
                   {step.title}
                 </p>
+
+                {isActive && isMobileView && step.content && (
+                                    <div className="content_section2 mobile-inline-content" key={`content-${step.id}`}>
+                                        <p className="content_body2">{step.content.body}</p>
+                                    </div>
+                )}
+
               </div>)}
           )}
         </div>
 
         <div className="progress_line_wrapper2">
             <div className="progress_base2">
-              <div className="progress_filled2" style={{ width: progressLineTargetWidth,transitionDuration: isResetting ? '0s' : '1.5s'}}></div>
+              <div className="progress_filled2" style={progressStyle}></div>
             </div>
         </div>
 
-        {activeStep && activeStep.content && (
+        {activeStep && !isMobileView && activeStep.content && (
           <div className="content_section2" key={activeStep.id}>
               <h3 className="content_heading2">{activeStep.content.heading}</h3>
               <p className="content_body2">{activeStep.content.body}</p>

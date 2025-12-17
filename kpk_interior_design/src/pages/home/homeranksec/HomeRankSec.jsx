@@ -42,6 +42,7 @@ export default function HomeRankSec(){
                 </div>
             </div>
 
+
         </section>
         </>
     )

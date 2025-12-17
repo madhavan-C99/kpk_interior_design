@@ -21,7 +21,7 @@ const slides = [
 ];
 
 // --- 3. React Component Logic (Now includes Auto-Play/Infinite Scroll) ---
-export default function HomeHeroSec ({autoPlayInterval = 400000} ) {
+export default function HomeHeroSec ({autoPlayInterval = 3000} ) {
   const [slideIndex, setSlideIndex] = useState(0); 
   const totalSlides = slides.length;
 
@@ -91,17 +91,3 @@ export default function HomeHeroSec ({autoPlayInterval = 400000} ) {
   );
 };
 
-// Main App Component
-// const App = () => {
-//     return (
-//         <div style={{ fontFamily: 'Verdana, sans-serif' }}>
-//              {/* Inject Custom CSS */}
-//              <style>
-//                 {CustomStyles}
-//              </style>
-//              <ImageSlider slides={slides} autoPlayInterval={4000} /> {/* Auto-play every 4 seconds */}
-//         </div>
-//     );
-// };
-
-// export default App;
