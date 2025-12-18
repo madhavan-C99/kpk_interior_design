@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --robotofont-font-family:"Roboto Serif", serif;
+    --lorafont-font-family:"Lora" ,serif;
+    --textcolor-color:#ffffff;
+}
+
+        /* rate section main container */
+
+.home_rate_sec__con3{
+    /* height:400px ; */
+    background-image: url('D:\codd99\kpk_interior_design\kpk_interior_design\src\assets\home\images\Frame 1000012608.png');
+    background-size: 100%  100%;
+    background-repeat: no-repeat;
+    background-color: #3A2E27;
+    text-align: center;
+    line-height: 70px;
+    padding: 4rem 0rem;
+    margin-top: 1%;
+}
+
+            /* section heading */
+
+.home_rate_sec__con3 h1{
+    color: white;
+    font-size: 53px;
+    font-family: var(--robotofont-font-family);
+    letter-spacing: 3%;
+}
+
+
+.home_rate_sec__con3 button{
+    font-size:24px ;
+    font-weight: 600;
+    padding: 0.3rem 3rem;
+    font-family: var(--robotofont-font-family);
+    margin-top: 5%;
+    background-color: #8D9B6A;
+    border: none;
+    border-radius: 8px;
+    color: var(--textcolor-color);
+}
+
+
+        /* tablet view media */
+
+@media (min-width:768px) and (max-width:991.98px) {
+    .home_rate_sec__con3 h1{
+        font-size: 36px;
+        width: 60%;
+        margin: auto;
+        line-height:45px ;
+
+    }
+    .home_rate_sec__con3 button{
+        font-size: 20px;
+    }
+    
+}
+        /* small tablet view media */
+
+@media (min-width:576px) and (max-width:767.98px) {
+    .home_rate_sec__con3 h1{
+        font-size: 36px;
+        width: 60%;
+        margin: auto;
+        line-height:45px ;
+         margin-bottom: 3%;
+
+    }
+    .home_rate_sec__con3 button{
+        font-size: 20px;
+    }
+    
+}
+        /* mobile view media */
+
+@media  (max-width:575.98px) {
+    .home_rate_sec__con3{
+        height: 470px;
+    }
+    .home_rate_sec__con3 h1{
+        font-size: 28px;
+        width: 80%;
+        margin: auto;
+        line-height:45px ;
+         margin-bottom: 3%;
+    }
+    .home_rate_sec__con3 button{
+        font-size: 20px;
+    }
+    
+}

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --robotofont-font-family:"Roboto Serif", serif;
+    --lorafont-font-family:"Lora" ,serif;
+    --textcolor-color:#ffffff;
+}
+
+.home_rate__con3{
+    height: 376px; 
+    width: 100vw;
+    border: 1px solid;
+    margin-top: 4%;
+    background-color: #3A2E27;
+    background-image: url('D:\codd99\kpk_interior_design\kpk_interior_design\src\assets\home\images\Vector 289.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.home_rate_head3{
+    margin-top: 5%;
+    padding: 0rem 16rem;
+    text-align: center;
+}
+.home_rate_title3{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--robotofont-font-family);
+    color: var(--textcolor-color);
+}
+
+.home_rate_body3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    margin-top: 3.8%;
+}
+
+
+.home__rating3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 230px;
+    
+
+}
+
+.home_rating3_num {
+   
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: var(--robotofont-font-family);
+    line-height: 1;
+    color:#ffffffc8;
+}
+
+.home_rating3 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 5px;
+    text-align: center;
+    font-family: var(--lorafont-font-family);
+    color: var(--textcolor-color);
+}
+
+@media (min-width:1200px) {
+    .home_rate_head3{
+        width: 100%;
+        padding: 0rem 12rem;
+        /* background-color: red; */
+    }
+    .home_rate_title3{
+        font-size: 38px;
+
+    }
+    
+}
+
+@media (min-width:992px) and (max-width:1199.98px) {
+        .home_rate_head3{
+        width: 100%;
+        padding: 0rem 7rem;
+        margin-top: 7%;
+    }
+    .home_rate_title3{
+        font-size: 38px;
+
+    }
+    .home_rate_body3{
+        gap: 5%;
+        margin-top: 5%;
+    }
+    .home_rating3_num{
+        font-size: 4rem;
+    }
+    
+}
+
+
+@media (min-width:768px) and (max-width:991.98px) {
+            .home_rate_head3{
+        width: 100%;
+        padding: 0rem 8rem;
+        margin-top: 5%;
+    }
+    .home_rate_title3{
+        font-size: 36px;
+
+    }
+    .home_rate_body3{
+        gap: 5%;
+        margin-top: 7%;
+    }
+    .home_rating3_num{
+        font-size: 4rem;
+    }
+    .home_rating3 p{
+        font-size: 14px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+            .home_rate_head3{
+        width: 100%;
+        padding: 0rem 3rem;
+        margin-top: 5%;
+    }
+    .home_rate_title3{
+        font-size: 36px;
+
+    }
+    .home_rate_body3{
+        gap: 4%;
+        margin-top: 7%;
+    }
+    .home_rating3_num{
+        font-size: 3.3rem;
+    }
+    .home_rating3 p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:575px) {
+    .home_rate__con3{
+        height: 424px;
+    }
+        .home_rate_head3{
+        width: 100%;
+        padding: 1.5rem;
+        margin-top: 2%;
+    }
+    .home_rate_title3{
+        font-size: 20px;
+
+    }
+    .home_rate_body3{
+    flex-wrap: wrap;        
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5%;
+        gap: 5%;
+    }
+    .home_rating3_num{
+        font-size: 2.4rem;
+        margin-bottom: 15%;
+    }
+    .home_rating3 p{
+        font-size: 12px;
+        margin-bottom: 8%;
+    }
+}
+

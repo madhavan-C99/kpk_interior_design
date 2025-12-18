@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+:root{
+    --formbg-background-color:#3A2E27;
+    --text-color-:#ffff;
+    --buttonbg-background-color:#8D9B6A;
+    --robotofont-font-family:"Roboto Serif", serif;
+    --lorafont-font-family:"Lora" ,serif;
+}
+    /* main container */
+
+.design_process3{
+    /* width: 90vw; */
+    overflow-x: hidden;
+    /* margin: 10%; */
+    padding: 0;
+}
+
+.design_process_head3{
+    height: 400px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    /* content title */
+
+.design_process_head3 h1{
+    width: 66%;
+    /* font-size: 2.38rem; */
+    font-size: 44px;
+    text-align:center;
+    font-weight: 600;
+    line-height: 52px;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: var(--robotofont-font-family);
+}
+
+    /* content descrption */
+
+.design_process_head3 p{
+    width: 74%;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing:30%;
+    font-family: var(--lorafont-font-family);
+}
+
+    /* image section $ form overall div */
+
+.design_process_body3{
+    display: grid;
+    grid-template-columns:2.6fr 1fr;
+    gap: 1rem;
+    padding:0.9rem 2.5rem;
+}
+
+    /* image div */
+
+.design_draw3{
+    height: 565px;
+    width:100% ;
+    overflow: hidden;
+}
+
+
+
+
+.wrapper3 {
+
+  height: 100%;
+  display: grid;
+  overflow-y: hidden;
+  position: relative; 
+}
+
+/* Stacking the content sections to achieve the overlay comparison effect */
+.wrapper3 > * {
+  grid-area: 1 / -1;
+}
+
+.content3 {
+    height: 100%;
+  display: grid;
+    overflow: hidden;
+}
+
+.content__inner3{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image__style3 {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+/* --- Scrubber Handle Styling (Uses inline 'left' style) --- */
+.scrubber_handle_line3 {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%); /* Center the line */
+    height: 100%;
+    width: 50px; /* The vertical line */
+    /* background-color: white; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    z-index:99; 
+    pointer-events: none; 
+}
+
+.scrubber_handle_icon3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    /* background-color: rgb(50, 48, 48); */
+   background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px; /* Size for the Unicode arrow */
+    font-weight: 700;
+}
+
+.design_left_icon3,.design_right_icon3{
+    text-decoration: none;
+    color: black;
+}
+
+/* WebKit (Chrome, Safari) Thumb Style */
+input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none;  
+  appearance:none;
+  width: 2%;
+  color: #ffffff;
+  inline-size: 0.25em; 
+  block-size: 91svb; 
+  background-color: currentColor; /* The color of the divider line */
+}
+
+/* Mozilla (Firefox) Thumb Style */
+input[type="range"]::-moz-range-thumb {
+  appearance: none;
+  inline-size: 0.25em; /* Width of the divider line */
+  block-size: 102svb; /* Height of the divider line (viewport height) */
+  background-color: currentColor; /* The color of the divider line */
+}
+
+
+/* form sec */
+
+.design_form_body3{
+    line-height: 4.1rem;
+}
+
+.design_form3{
+    width: 100%;
+    background-color:var(--formbg-background-color);
+    padding: 2rem;
+    border-radius: 19px;
+    flex: 1;
+}
+
+
+.design_form3 h1{
+    width: 90%;
+font-size: 1.45rem;
+    font-weight: 500;
+    color: var(--text-color-);
+    margin-bottom:28px ;
+    font-family: var(--robotofont-font-family);
+}
+
+
+
+        /* input section */
+
+.design_form_input3{
+    width: 100%;
+    border: 1px solid white;
+    background-color: transparent;
+    padding:1rem;
+    border-radius: 7px;
+    font-family: var(--robotofont-font-family);
+    font-size: 1rem;
+}
+
+
+.design_form_button3 {
+  font-size: 1.26rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.5rem 3.9rem ;
+  color: var(--text-color-);
+  border: none;
+  background-color: var(--buttonbg-background-color);
+  border-radius: 7px;
+  font-family: var(--robotofont-font-family);
+
+}
+
+    /*  large laptop view  */
+
+@media (max-width:1200px) {
+    .design_form3 h1{
+    width: 90%;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.design_form_button3{
+    font-size: 1.04rem;
+}
+input[type="range"]::-webkit-slider-thumb {
+  block-size: 95svb; /* Height of the divider line (viewport height) */
+}
+input[type="range"]::-moz-range-thumb {
+    block-size: 95svb; /* Height of the divider line (viewport height) */
+}
+
+
+}
+
+    /* laptop view media */
+
+@media (min-width:992px) and (max-width:1199px) {
+    .design_process_head3 h1{
+        width: 80%;
+    }
+
+    .design_form3 h1{
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.design_form_button3{
+    font-size: 0.9rem;
+    padding: 0.5rem 2.5rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  block-size: 99svb; /* Height of the divider line (viewport height) */
+}
+input[type="range"]::-moz-range-thumb {
+    block-size: 99svb; /* Height of the divider line (viewport height) */
+}
+}
+
+            /* tablet view media */
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .design_process_head3 h1{
+        margin: 0;
+        height: 32%;
+        width: 83%;
+        font-size: 2rem;
+    }
+    .design_process_head3 p{
+        width: 83%;
+        height:40%;
+        font-size:1.3rem ;
+    }
+
+        .design_draw3{
+    height: 366px;
+    width:100% ;
+    overflow: hidden;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  block-size: 64svb; /* Height of the divider line (viewport height) */
+}
+input[type="range"]::-moz-range-thumb {
+    block-size: 64svb; /* Height of the divider line (viewport height) */
+}
+
+    .design_form3 h1{
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight: 500;
+}
+.design_form_button3{
+    font-size: 0.9rem;
+    padding: 0.3rem 1.6rem;
+}
+.design_form_input3{
+    width: 100%;
+    padding:0.5rem 0.5rem;
+    font-size: 0.7rem;
+}
+.design_form3{
+    width: 100%;
+    padding: 0;
+    padding:1rem ;
+ 
+}
+.design_form_body3{
+    line-height: 2.5rem;
+}
+
+
+
+}
+
+    /* small tablet view media; */
+
+@media (min-width:576px) and (max-width:767.9px) {
+  
+   .design_process_head3 h1{
+        height: 23%;
+        width: 83%;
+        font-size: 1.6rem;
+        line-height: 42px;
+        margin: 0;
+    }
+    .design_process_head3 p{
+        width: 83%;
+        height:60%;
+        font-size:1.3rem ;
+    }
+    
+    .design_process_body3{
+        margin-top: -5%;
+    }
+    .design_draw3{
+    height: 366px;
+    width:100% ;
+    overflow: hidden;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  block-size: 63svb; /* Height of the divider line (viewport height) */
+}
+input[type="range"]::-moz-range-thumb {
+    block-size: 63svb; /* Height of the divider line (viewport height) */
+}
+
+    .design_form3 h1{
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight: 500;
+}
+.design_form_button3{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 0.7rem;
+    padding: 0.3rem 1.6rem;
+}
+.design_form_input3{
+    width: 100%;
+    padding:0.5rem 0.5rem;
+    font-size: 0.6rem;
+}
+.design_form3{
+    width: 100%;
+    padding: 0;
+    padding:1rem ;
+ 
+}
+.design_form_body3{
+    line-height: 2.5rem;
+}
+
+}
+
+        /* mobile view media */
+
+@media (max-width:575px) {
+    
+       .design_process_head3{
+        height: 55%;
+    }
+   .design_process_head3 h1{
+        height: 18%;
+        width: 90%;
+        font-size: 1.2rem;
+        line-height: 32px;
+        margin: 0;
+    }
+    .design_process_head3 p{
+        width: 90%;
+        height:50%;
+        font-size:1rem ;
+        line-height: 30px;
+    }
+    .design_process_body3{
+        grid-template-columns: 1fr;
+        margin: 0;
+
+        overflow-x: hidden;
+    }
+    .design_draw3{
+    height: 325px;
+    width:100% ;
+    overflow: hidden;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    /* color: white; */
+  block-size: 57svb; /* Height of the divider line (viewport height) */
+}
+input[type="range"]::-moz-range-thumb {
+    block-size: 57svb; /* Height of the divider line (viewport height) */
+}
+    .design_form3{
+        max-width: 400px;
+    }
+
+    .design_form3 h1{
+    /* width: 80%;/ */
+    height: 30%;
+    font-size: 1.2rem;
+    line-height: 30px;
+    font-weight: 500;
+}
+.design_form_button3{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 0.74rem;
+    padding: 0.3rem 2.5rem;
+}
+.design_form_input3{
+    width: 100%;
+    padding:0.5rem 0.5rem;
+    font-size: 0.7rem;
+}
+.design_form3{
+    width: 60%;
+    padding: 0;
+    padding:1rem ;
+    margin: auto;
+ 
+}
+.design_form_body3{  
+    line-height: 2.5rem;
+}
+}

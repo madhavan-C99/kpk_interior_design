@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --roboto:"Roboto Serif",serif;
+    --lora:"Lora",serif;
+}
+
+.topcategory_container2{
+    margin: 4rem 0;
+    width: 100%;
+}
+
+.topcategory_textwrapper2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.topcategory_badge2{
+    margin: 1rem 0;
+    background-color: #8D9B6A;
+    width: 247px;
+    height: 37px;
+    color: white;
+    font-family: var(--lora);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 22px;
+    letter-spacing: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.topcategory_title2{
+    margin: 1rem 0;
+    width: 45%;
+    font-family: var(--roboto);
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 3%;
+    font-weight: 600;
+}
+
+.topcategory_desc2{
+    width: 70%;
+    margin: 1rem 0;
+    font-family: var(--lora);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 44px;
+    letter-spacing: 3%;
+}
+
+.topcategory_grid2{
+    margin: 2rem 4rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topcategory_card2{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.topcategory_img2{
+    height: 122px;
+    width: 126px;
+}
+
+.topcategory_cardtitle2{
+    font-family: var(--lora);
+    font-size: 24px;
+    font-weight: 700;
+    height: 31px;
+}
+
+.topcategory_carddesc2{
+    font-family: var(--lora);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    width: 80%;
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .topcategory_title2{
+        width: 55%;
+    }
+
+    .topcategory_desc2{
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .topcategory_badge2{
+        height: 26px;
+        width: 172px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .topcategory_title2{
+        width: 70%;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .topcategory_desc2{
+        font-size: 24px;
+        line-height: 40px;
+        width: 80%;
+    }
+
+    .topcategory_grid2{
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .topcategory_card2{
+        width: 30%;
+    }   
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .topcategory_badge2{
+        height: 26px;
+        width: 172px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .topcategory_title2{
+        width: 70%;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .topcategory_desc2{
+        font-size: 24px;
+        line-height: 40px;
+        width: 80%;
+    }
+
+    .topcategory_grid2{
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .topcategory_card2{
+        width: 29%;
+    } 
+
+    .topcategory_carddesc2{
+        width: 100%;
+    }
+}
+
+ @media (max-width: 575px) {
+    .topcategory_badge2{
+        height: 16px;
+        width: 87px;
+        font-size: 8px;
+        line-height: 8.7px;
+    }
+
+    .topcategory_title2{
+        width: 70%;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .topcategory_desc2{
+        font-size: 16px;
+        line-height: 24px;
+        width: 80%;
+    }  
+
+    .topcategory_grid2{
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .topcategory_card2{
+        width: 50%;
+        gap: 0.5rem;
+    } 
+
+    .topcategory_cardtitle2{
+        font-size: 20px;
+    }
+
+    .topcategory_carddesc2{
+        font-size: 16px;
+        line-height: 24px;
+        width: 90%;
+    }
+ }
+
+ @media (max-width: 375px){
+    .topcategory_title2{
+        width: 85%;
+    }
+
+    .topcategory_desc2{
+        width: 80%;
+    }     
+
+    .topcategory_card2{
+        width: 80%;
+        gap: 0.5rem;
+    } 
+
+    .topcategory_cardtitle2{
+        font-size: 20px;
+    }
+
+    .topcategory_carddesc2{
+        font-size: 16px;
+        line-height: 24px;
+        width: 90%;
+    }
+ }
+
+

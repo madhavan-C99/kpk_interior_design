@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --feedbg-background-color:#8D9B6A;
+    --text-color:#ffffff;
+    --robotofont-font-family:"Roboto Serif", serif;
+    --lorafont-font-family:"Lora" ,serif;}
+
+
+    /* feedback sec overall div */
+
+.feedback_sec3{
+    /* height: 1100px; */
+    overflow-x: hidden;
+
+}
+
+    /* feedback sec head */
+    
+.feedback_sec_head3{
+    height: 380px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+
+.feedback_sec_head3 h4{
+    text-align: center;
+    padding: 0.45rem 1.7rem;
+    font-weight: 600;
+    border-radius:50px;
+    color: var(--text-color);
+    background-color: var(--feedbg-background-color);
+    font-family: var(--robotofont-font-family);
+    margin-bottom: 20px;
+}
+
+    /* feedback sec title */
+
+.feedback_sec_head3 h1{
+    width:50% ;
+    /* font-size: 2.5rem; */
+    font-size: 44px;
+    font-weight: 600;
+    font-family: var(--robotofont-font-family);
+}
+.feedback_sec_head3 p{
+    width: 77%;
+    text-align: center;
+    margin-top: 20px;
+    word-spacing: 5px;
+    font-size:1.8rem ;
+    line-height: 40px;
+    font-family: var(--lorafont-font-family);
+}
+
+
+        /* image slider overall div */
+
+.main__container3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__title3 {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: var(--color-text-dark);
+    margin-bottom: 30px;
+}
+
+/* --- 2. Carousel Track and 3D Setup --- */
+
+.carousel__container3 {
+    position: relative;
+    width: 95vw;
+    max-width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;    
+}
+
+.carousel__track3 {
+/* 3D perspective for child elements */
+    perspective: 1200px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- 3. Card Base Appearance & Positioning --- */
+
+.carousel__card3 {
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    /* height: 480px;  */
+    
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    cursor: pointer;
+    
+    transition: all 0.7s ease-in-out;
+}
+
+
+/* Center Card (Front and Largest) */
+.center__card3 {
+    transform: translate3d(0, 0, 0) scale(1);
+    z-index: 20;
+    opacity: 1;
+}
+
+/* Left Card (Smaller, pushed back, translated left) */
+.left__card3 {
+    transform: translate3d(-60%, 0, -200px) scale(1); 
+    z-index: 10;
+    opacity: 0.8;
+}
+
+/* Right Card (Smaller, pushed back, translated right) */
+.right__card3 {
+    /* Scaled down (0.85), pushed back (-200px), moved right (+60%) */
+    transform: translate3d(60%, 0, -200px) scale(1); 
+    z-index: 10;
+    opacity: 0.8;
+}
+
+/* Hidden Card (Far back/invisible) */
+.hidden__card3 {
+    transform: translate3d(0, 0, -500px) scale(0.5);
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none; /* Disable clicks */
+}
+
+/* --- 5. Card Content Styles --- */
+
+.card__image3 {
+    height: 65%; 
+    width: 100%;
+    overflow: hidden;
+}
+
+.card__image3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card__text3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback__text3 {
+    font-family: var(--robotofont-font-family);
+    text-align: justify;
+    width: 79%;
+    line-height: 25px;
+    font-size: 1rem;
+    margin-top: 20px;
+
+}
+
+.client__name3 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight:700;
+    font-family: var(--robotofont-font-family);
+}
+
+.client__title3{
+    text-align: center;
+    color: #A6A4A4;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: var(--robotofont-font-family);
+    
+}
+
+/* --- 6. Navigation Styles (Dots) --- */
+
+.carousel-nav-dots {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    gap: 8px;
+    z-index: 30;
+}
+
+.dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, width 0.3s;
+}
+
+.dot.active {
+    background-color:black;
+    width: 10px;
+    border-radius: 50%;
+}
+
+
+    /* laptop view media */
+
+
+@media (min-width:992px) and (max-width:1199px) {
+    .feedback_sec_head3 h1{
+    width:50% ;
+    font-size: 2.4rem;
+}
+.carousel__card3{
+    max-width: 400px;
+}
+
+}
+    /* tablet view media */
+
+@media (min-width:768px) and (max-width:991px) {
+    .feedback_sec_head3 h1{
+    width:80% ;
+    font-size: 2.2rem;
+}
+
+.feedback_sec_head3 p{
+    width: 90%;
+    font-size: 1.5rem;
+}
+    .carousel__card3{
+    max-width: 400px;
+    min-height: 300px;
+}
+.feedback__text3{
+    font-size: 1rem;
+}
+}
+
+        /* small tablet view */
+
+@media (min-width:576px) and (max-width:767px) {
+        .feedback_sec_head3 h1{
+    width:80% ;
+    font-size: 2rem;
+}
+
+.feedback_sec_head3 p{
+    width: 90%;
+    font-size: 1.4rem;
+}
+    .carousel__card3{
+    max-width: 350px;
+}
+}
+
+        /* mobille view media */
+
+@media (max-width:575px) {
+.feedback_sec_head3 h4{
+    height: 10%;
+}
+    .feedback_sec_head3 h1{
+    width:90% ;
+    height: 23%;
+    font-size: 1.5rem;
+}
+
+.feedback_sec_head3 p{
+    width: 90%;
+    height: 70%;
+    line-height: 28px;
+    font-size: 1.1rem;
+}
+
+
+    .carousel__card3{
+    max-width: 250px;
+}
+.feedback__text3{
+    font-size: 0.7rem;
+}
+
+.client__title3{
+    font-size: 0.7rem;
+}
+}
