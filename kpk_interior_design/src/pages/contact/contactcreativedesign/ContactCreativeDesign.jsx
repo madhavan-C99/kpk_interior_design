@@ -1,124 +1,159 @@
 import React, { useState, useEffect } from "react";
 import './ContactCreativeDesign.css';
-import card1img from '../../../assets/home/images/Frame 1000012086.png';
-import card2img from '../../../assets/home/images/Frame 1000012086-1.png';
-import card3img from '../../../assets/home/images/Frame 1000012091.png';
-import card4img from '../../../assets/home/images/Frame 1000012091-1.png';
-import card5img from '../../../assets/home/images/Frame 1000012092.png';
-import card6img from '../../../assets/home/images/Frame 1000012092-1.png';
-import card7img from '../../../assets/home/images/Frame 1000012093.png';
-import card8img from '../../../assets/home/images/Frame 1000012093-1.png';
+import { useLocation } from "react-router-dom";
+// kitchen images
+import kitchen1img from '../../../assets/home/images/Frame 1000012086.png';
+import kitchen2img from '../../../assets/home/images/Frame 1000012086-1.png';
+import kitchen3img from '../../../assets/home/images/Frame 1000012091.png';
+import kitchen4img from '../../../assets/home/images/Frame 1000012091-1.png';
+import kitchen5img from '../../../assets/home/images/Frame 1000012092.png';
+import kitchen6img from '../../../assets/home/images/Frame 1000012092-1.png';
+import kitchen7img from '../../../assets/home/images/Frame 1000012093.png';
+import kitchen8img from '../../../assets/home/images/Frame 1000012093-1.png';
+import kitchen9img from '../../../assets/explore_image/Frame 1000012086.png';
+import kitchen10img from '../../../assets/explore_image/Frame 1000012091.png';
+import kitchen11img from '../../../assets/explore_image/Frame 1000012092.png';
+import kitchen12img from '../../../assets/explore_image/Frame 1000012093.png';
+import kitchen13img from '../../../assets/explore_image/Frame 10012092.png'
+
+// Wardrobe images
+import wardrobe1img from '../../../assets/services/images/Frame 1000012402.png'; 
+import wardrobe2img from '../../../assets/services/images/image 17125.png';
+import wardrobe3img from '../../../assets/services/images/Frame 1000012404.png';
+import wardrobe4img from '../../../assets/services/images/Frame 1000012403.png';
+import wardrobe5img from '../../../assets/services/images/Frame 100001242.png';
+import wardrobe6img from '../../../assets/services/images/Frame 100001240.png';
+import wardrobe7img from '../../../assets/services/images/Frame 10000122.png';
+import wardrobe8img from '../../../assets/services/images/Frame 10012402.png';
+
+// pooja images
+import pooja1img from '../../../assets/services/images/Frame 1000012931.png'
+import pooja2img from '../../../assets/services/images/Frame 1000012936.png'
+import pooja3img from '../../../assets/services/images/Frame 1000012938.png'
+import pooja4img from '../../../assets/services/images/Frame 1000012939.png'
+import pooja5img from '../../../assets/services/images/Frame 1000012942.png'
+import pooja6img from '../../../assets/services/images/Frame 1000012945.png'
+import pooja7img from '../../../assets/services/images/Frame 1000012949.png'
+import pooja8img from '../../../assets/services/images/Frame 1000012951.png'
+
+// tv images
+import tv1img from '../../../assets/services/images/tv1.png'
+import tv2img from '../../../assets/services/images/tv2.png'
+import tv3img from '../../../assets/services/images/tv3.png'
+import tv4img from '../../../assets/services/images/tv4.png'
+import tv5img from '../../../assets/services/images/tv5.png'
+import tv6img from '../../../assets/services/images/tv6.png'
 
 function ContactCreativeDesign() {
     const contactcategorydata = [
         {
             id: 1,
             label: 'modular Kitchen',
-            images: [
-                { id: 1, name: 'Sleek Soft-Touch Kitchen', img: card8img },
-                { id: 2, name: 'Bold Two-Texture Kitchen', img: card7img },
-                { id: 3, name: 'Hybrid Modular Workspace', img: card6img },
-                { id: 4, name: 'Minimal Navy And Grey Wall Colour', img: card5img },
-                { id: 5, name: 'Open-Shelf Modern Kitchen', img: card4img },
-                { id: 6, name: 'Underlit Counter Kitchen', img: card3img },
-                { id: 7, name: 'Multi-Functional Compact Layout', img: card2img },
-                { id: 8, name: 'Premium Stone-Top Modular Kitchen', img: card1img },
-                { id: 9, name: 'Modern Modular Kitchen Setup', img: card8img },
-                { id: 10, name: 'Premium Island Kitchen', img: card7img },
-                { id: 11, name: 'Compact Urban Kitchen', img: card6img },
-                { id: 12, name: 'Parallel Kitchen Layout', img: card5img },
-                { id: 13, name: 'Matte Finish Modern Kitchen', img: card4img },
-                { id: 14, name: 'Woodgrain Modular Design', img: card3img },
-                { id: 15, name: 'Smart Storage Kitchen System', img: card2img },
-                { id: 16, name: 'Contemporary High-Gloss Kitchen', img: card1img }
+           images: [
+                { id: 1, name: 'Sleek Soft-Touch Kitchen', img: kitchen1img },
+                { id: 2, name: 'Bold Two-Texture Kitchen', img: kitchen2img },
+                { id: 3, name: 'Hybrid Modular Workspace', img: kitchen3img },
+                { id: 4, name: 'Minimal Navy And Grey Wall Colour', img: kitchen4img },
+                { id: 5, name: 'Open-Shelf Modern Kitchen', img: kitchen5img },
+                { id: 6, name: 'Underlit Counter Kitchen', img: kitchen6img },
+                { id: 7, name: 'Multi-Functional Compact Layout', img: kitchen7img },
+                { id: 8, name: 'Premium Stone-Top Modular Kitchen', img: kitchen8img },
+                { id: 9, name: 'Modern Modular Kitchen Setup', img: kitchen9img },
+                { id: 10, name: 'Premium Island Kitchen', img: kitchen10img },
+                { id: 11, name: 'Compact Urban Kitchen', img: kitchen11img },
+                { id: 12, name: 'Parallel Kitchen Layout', img: kitchen12img },
+                { id: 13, name: 'Matte Finish Modern Kitchen', img: kitchen13img },
+                { id: 14, name: 'Woodgrain Modular Design', img: kitchen6img },
+                { id: 15, name: 'Smart Storage Kitchen System', img: kitchen7img },
+                { id: 16, name: 'Contemporary High-Gloss Kitchen', img: kitchen8img }
             ]
         },
         {
             id: 2,
             label: 'wardrobe',
             images: [
-                { id: 1, name: 'Sleek Soft-Touch Kitchen', img: card1img },
-                { id: 2, name: 'Bold Two-Texture Kitchen', img: card2img },
-                { id: 3, name: 'Hybrid Modular Workspace', img: card3img },
-                { id: 4, name: 'Minimal Navy And Grey Wall Colour', img: card4img },
-                { id: 5, name: 'Open-Shelf Modern Kitchen', img: card5img },
-                { id: 6, name: 'Underlit Counter Kitchen', img: card6img },
-                { id: 7, name: 'Multi-Functional Compact Layout', img: card7img },
-                { id: 8, name: 'Premium Stone-Top Modular Kitchen', img: card8img },
-                { id: 9, name: 'Modern Modular Kitchen Setup', img: card1img },
-                { id: 10, name: 'Premium Island Kitchen', img: card2img },
-                { id: 11, name: 'Compact Urban Kitchen', img: card3img },
-                { id: 12, name: 'Parallel Kitchen Layout', img: card4img },
-                { id: 13, name: 'Matte Finish Modern Kitchen', img: card5img },
-                { id: 14, name: 'Woodgrain Modular Design', img: card6img },
-                { id: 15, name: 'Smart Storage Kitchen System', img: card7img },
-                { id: 16, name: 'Contemporary High-Gloss Kitchen', img: card8img }
+                { id: 1, name: 'Tandem Drawers', img: wardrobe1img },
+                { id: 2, name: 'Cutlery Drawers', img: wardrobe2img },
+                { id: 3, name: 'Plain Drawers', img: wardrobe3img },
+                { id: 4, name: 'Thali Basket', img: wardrobe4img },
+                { id: 5, name: 'Oil Pullout', img: wardrobe5img },
+                { id: 6, name: 'Bottle Pullout', img: wardrobe6img },
+                { id: 7, name: 'Pantry Pullout', img: wardrobe7img },
+                { id: 8, name:  'Magic Corner', img: wardrobe8img },
+                { id: 9, name: 'Tandem Drawers', img: wardrobe1img },
+                { id: 10, name:  'Cutlery Drawers', img: wardrobe2img },
+                { id: 11, name:'Plain Drawers', img: wardrobe3img },
+                { id: 12, name:'Thali Basket', img: wardrobe4img },
+                { id: 13, name: 'Oil Pullout', img: wardrobe5img },
+                { id: 14, name:'Bottle Pullout', img: wardrobe6img },
+                { id: 15, name: 'Pantry Pullout', img: wardrobe7img },
+                { id: 16, name: 'Magic Corner', img: wardrobe8img }
             ]
         },
         {
             id: 3,
             label: 'pooja unit',
             images: [
-                { id: 1, name: 'Sleek Soft-Touch Kitchen', img: card8img },
-                { id: 2, name: 'Bold Two-Texture Kitchen', img: card7img },
-                { id: 3, name: 'Hybrid Modular Workspace', img: card6img },
-                { id: 4, name: 'Minimal Navy And Grey Wall Colour', img: card5img },
-                { id: 5, name: 'Open-Shelf Modern Kitchen', img: card4img },
-                { id: 6, name: 'Underlit Counter Kitchen', img: card3img },
-                { id: 7, name: 'Multi-Functional Compact Layout', img: card2img },
-                { id: 8, name: 'Premium Stone-Top Modular Kitchen', img: card1img },
-                { id: 9, name: 'Modern Modular Kitchen Setup', img: card8img },
-                { id: 10, name: 'Premium Island Kitchen', img: card7img },
-                { id: 11, name: 'Compact Urban Kitchen', img: card6img },
-                { id: 12, name: 'Parallel Kitchen Layout', img: card5img },
-                { id: 13, name: 'Matte Finish Modern Kitchen', img: card4img },
-                { id: 14, name: 'Woodgrain Modular Design', img: card3img },
-                { id: 15, name: 'Smart Storage Kitchen System', img: card2img },
-                { id: 16, name: 'Contemporary High-Gloss Kitchen', img: card1img }
+                { id: 1, name:'Traditional Carved Pooja Mandap', img: pooja8img },
+                { id: 2, name:'Backlit Meditation Niche', img: pooja7img },
+                { id: 3, name: 'Jaali Panel Pooja Space', img: pooja6img },
+                { id: 4, name:  'Compact Corner Pooja Setup', img: pooja5img },
+                { id: 5, name: 'Backlit Meditation Niche', img: pooja4img },
+                { id: 6, name:  'Modern Wall-Mounted Pooja Unit', img: pooja3img },
+                { id: 7, name:'Compact Corner Pooja Setup', img: pooja2img },
+                { id: 8, name:'Traditional Carved Pooja Mandap', img: pooja1img },
+                { id: 9, name: 'Traditional Carved Pooja Mandap', img: pooja8img },
+                { id: 10, name:'Backlit Meditation Niche', img: pooja7img },
+                { id: 11, name: 'Jaali Panel Pooja Space', img: pooja6img },
+                { id: 12, name: 'Compact Corner Pooja Setup', img: pooja5img },
+                { id: 13, name:'Backlit Meditation Niche', img: pooja4img },
+                { id: 14, name: 'Modern Wall-Mounted Pooja Unit', img: pooja3img },
+                { id: 15, name: 'Compact Corner Pooja Setup', img: pooja2img },
+                { id: 16, name:'Traditional Carved Pooja Mandap', img: pooja1img }
             ]
         },
         {
             id: 4,
             label: 'TV unit',
             images: [
-                { id: 1, name: 'Sleek Soft-Touch Kitchen', img: card1img },
-                { id: 2, name: 'Bold Two-Texture Kitchen', img: card2img },
-                { id: 3, name: 'Hybrid Modular Workspace', img: card3img },
-                { id: 4, name: 'Minimal Navy And Grey Wall Colour', img: card4img },
-                { id: 5, name: 'Open-Shelf Modern Kitchen', img: card5img },
-                { id: 6, name: 'Underlit Counter Kitchen', img: card6img },
-                { id: 7, name: 'Multi-Functional Compact Layout', img: card7img },
-                { id: 8, name: 'Premium Stone-Top Modular Kitchen', img: card8img },
-                { id: 9, name: 'Modern Modular Kitchen Setup', img: card1img },
-                { id: 10, name: 'Premium Island Kitchen', img: card2img },
-                { id: 11, name: 'Compact Urban Kitchen', img: card3img },
-                { id: 12, name: 'Parallel Kitchen Layout', img: card4img },
-                { id: 13, name: 'Matte Finish Modern Kitchen', img: card5img },
-                { id: 14, name: 'Woodgrain Modular Design', img: card6img },
-                { id: 15, name: 'Smart Storage Kitchen System', img: card7img },
-                { id: 16, name: 'Contemporary High-Gloss Kitchen', img: card8img }
+                { id: 1, name: 'Glossy Modern Entertainment Hub', img: tv1img },
+                { id: 2, name: 'Floating Panel Elegance', img: tv2img },
+                { id: 3, name: 'Dual-Tone Media Wall', img: tv3img },
+                { id: 4, name: 'Contemporary Storage Console', img: tv4img },
+                { id: 5, name:'Minimal Media Console', img: tv5img },
+                { id: 6, name: 'Designer TV Statement Panel', img: tv6img },
+                { id: 7, name: 'Glossy Modern Entertainment Hub', img: tv1img },
+                { id: 8, name: 'Floating Panel Elegance', img: tv2img },
+                { id: 9, name: 'Dual-Tone Media Wall', img: tv3img },
+                { id: 10, name: 'Contemporary Storage Console', img: tv4img },
+                { id: 11, name:'Minimal Media Console', img: tv5img },
+                { id: 12, name: 'Designer TV Statement Panel', img: tv6img },
+                { id: 13, name: 'Glossy Modern Entertainment Hub', img: tv1img },
+                { id: 14, name: 'Floating Panel Elegance', img: tv2img },
+                { id: 15, name: 'Dual-Tone Media Wall', img: tv3img },
+                { id: 16, name: 'Contemporary Storage Console', img: tv4img },
             ]
         },
         {
             id: 5,
             label: 'Study Table',
             images: [
-                { id: 1, name: 'Sleek Soft-Touch Kitchen', img: card8img },
-                { id: 2, name: 'Bold Two-Texture Kitchen', img: card7img },
-                { id: 3, name: 'Hybrid Modular Workspace', img: card6img },
-                { id: 4, name: 'Minimal Navy And Grey Wall Colour', img: card5img },
-                { id: 5, name: 'Open-Shelf Modern Kitchen', img: card4img },
-                { id: 6, name: 'Underlit Counter Kitchen', img: card3img },
-                { id: 7, name: 'Multi-Functional Compact Layout', img: card2img },
-                { id: 8, name: 'Premium Stone-Top Modular Kitchen', img: card1img },
-                { id: 9, name: 'Modern Modular Kitchen Setup', img: card8img },
-                { id: 10, name: 'Premium Island Kitchen', img: card7img },
-                { id: 11, name: 'Compact Urban Kitchen', img: card6img },
-                { id: 12, name: 'Parallel Kitchen Layout', img: card5img },
-                { id: 13, name: 'Matte Finish Modern Kitchen', img: card4img },
-                { id: 14, name: 'Woodgrain Modular Design', img: card3img },
-                { id: 15, name: 'Smart Storage Kitchen System', img: card2img },
-                { id: 16, name: 'Contemporary High-Gloss Kitchen', img: card1img }
+                { id: 1, name: 'Sleek Soft-Touch Kitchen', img: kitchen8img },
+                { id: 2, name: 'Bold Two-Texture Kitchen', img: kitchen7img },
+                { id: 3, name: 'Hybrid Modular Workspace', img: kitchen6img },
+                { id: 4, name: 'Minimal Navy And Grey Wall Colour', img: kitchen5img },
+                { id: 5, name: 'Open-Shelf Modern Kitchen', img: kitchen4img },
+                { id: 6, name: 'Underlit Counter Kitchen', img: kitchen3img },
+                { id: 7, name: 'Multi-Functional Compact Layout', img: kitchen2img },
+                { id: 8, name: 'Premium Stone-Top Modular Kitchen', img: kitchen1img },
+                { id: 9, name: 'Modern Modular Kitchen Setup', img: kitchen8img },
+                { id: 10, name: 'Premium Island Kitchen', img: kitchen7img },
+                { id: 11, name: 'Compact Urban Kitchen', img: kitchen6img },
+                { id: 12, name: 'Parallel Kitchen Layout', img: kitchen5img },
+                { id: 13, name: 'Matte Finish Modern Kitchen', img: kitchen4img },
+                { id: 14, name: 'Woodgrain Modular Design', img: kitchen3img },
+                { id: 15, name: 'Smart Storage Kitchen System', img: kitchen2img },
+                { id: 16, name: 'Contemporary High-Gloss Kitchen', img: kitchen1img }
             ]
         }
     ];
@@ -128,6 +163,12 @@ function ContactCreativeDesign() {
 //     console.log("Card clicked. Updating selected images.");
 //     setSelectedImages(imagesArray);
 //   };
+    // const location=useLocation();
+
+    // const initialCategory=location.state?.selectedCategory || "modular Kitchen";
+
+    // const [activeCategoryId, setActiveCategoryId] = useState(initialCategory);
+
 
 
     // State for Active Category
@@ -154,6 +195,8 @@ function ContactCreativeDesign() {
     // Logic: If mobile, show only 5 cards. Otherwise, show all.
     const displayImages = isMobile ? activeCategory.images.slice(0, 5) : activeCategory.images;
 
+
+    
     return (
         <div className="contactcreative_container2">
             <div className="contactcreative_textwrap2">
@@ -174,6 +217,11 @@ function ContactCreativeDesign() {
                     <button className={getButtonClass(3)} onClick={() => handleCategoryClick(3)}>Pooja Unit</button>
                     <button className={getButtonClass(4)} onClick={() => handleCategoryClick(4)}>Tv Unit</button>
                     <button className={getButtonClass(5)} onClick={() => handleCategoryClick(5)}>Study Table</button>
+                    {/* <button className={getButtonClass(1)} onClick={() => setActiveCategoryId("modular Kitchen")}>Modular Kitchen</button>
+                    <button className={getButtonClass(2)} onClick={() => setActiveCategoryId("wardrobe")}>Wardrobe</button>
+                    <button className={getButtonClass(3)} onClick={() => handleCategoryClick(3)}>Pooja Unit</button>
+                    <button className={getButtonClass(4)} onClick={() => handleCategoryClick(4)}>Tv Unit</button>
+                    <button className={getButtonClass(5)} onClick={() => handleCategoryClick(5)}>Study Table</button> */}
                 </div>
             </div>
 

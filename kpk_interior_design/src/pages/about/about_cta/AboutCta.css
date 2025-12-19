@@ -1,0 +1,308 @@
+/* Roboto Serif */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* ----------------about-happyclient-------------------- */
+/* .about-happyclient{
+    display: flex;
+    width: 100%;
+}
+.about-client-left{
+    height: 740px;
+    width: 740px;
+}
+.about-client-rigth{
+    background-color: rgba(58, 46, 39, 1);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+} */
+ .about-happyclient{
+    display: flex;
+    width: 100%;
+}
+
+.about-client-left{
+    width: 50%;
+    height: 740px;
+}
+
+.about-client-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-client-rigth{
+    width: 50%;
+    background-color: rgba(58, 46, 39, 1);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-client-rigth img{
+    /* margin: auto; */
+    height: 133px;
+    width: 133px;
+    margin: 10px 0px;
+
+}
+.about-client-rigth h2{
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: center;
+    
+
+}
+.about-client-rigth h2>span{
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 69px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+.about-client-rigth p{
+    font-family: Inter;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 24px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+/* .about-client-rigth{
+    align-items: center;
+} */
+.about-client-rigth button{
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    /* text-align: center; */
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(141, 155, 106, 1);
+    border: none;
+    /* width: 70%; */
+    height: 50px;
+    align-items: center;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 8px;
+    padding-top: 14px;
+    padding-right: 68px;
+    padding-bottom: 14px;
+    padding-left: 68px;
+    margin: 10px;
+
+}
+
+@media (max-width: 575.98px) {
+  .about-client-rigth img {
+    margin: auto;
+    height: 78.02127838134766px;
+    width: 78.02127838134766px;
+  }
+  .about-happyclient{
+    flex-direction: column;
+  }
+
+  .about-client-left,
+  .about-client-rigth{
+    width: 100%;
+  }
+
+  .about-client-left{
+    height: auto;
+  }
+
+  .about-client-left img{
+    height: 375px;
+  }
+
+  .about-client-rigth h2{
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .about-client-rigth h2 span{
+    font-size: 42px;
+  }
+
+  .about-client-rigth p{
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .about-client-rigth button{
+    font-size: 16px;
+    padding: 12px 32px;
+  }
+}
+/* ------------------------ */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-client-rigth p{
+        font-family: Inter;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+        .about-client-rigth h2 {
+        font-size: 30px;
+        font-size: 30px;
+        font-family: Roboto Serif;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 24px;
+        line-height: 35.2px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin: 20px 0px;
+                text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-client-rigth button{
+        font-size: 15.08px;
+        padding: 10px 20px;
+    }
+  .about-happyclient{
+    flex-direction: column;
+  }
+
+  .about-client-left,
+  .about-client-rigth{
+    width: 100%;
+    height: auto;
+  }
+
+  .about-client-left img{
+    height: 420px;
+  }
+
+  .about-client-rigth h2{
+    font-size: 30px;
+  }
+
+  .about-client-rigth p{
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+/* -------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+   /* NEW */
+  .about-client-left,
+  .about-client-rigth {
+    /* min-height: 480px; */
+    height: auto;
+    display: flex;
+  }
+
+  /* NEW */
+  .about-client-left img {
+    height: 100%;
+  }
+
+  .about-happyclient{
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .about-client-left,
+  .about-client-rigth{
+    width: 50%;
+  }
+
+  .about-client-left img{
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-client-rigth h2{
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .about-client-rigth p{
+        font-size: 16px;
+        line-height: 30px;
+  }
+  .about-client-rigth button {
+    font-size: 17px;
+        padding: 10px 20px;
+  }
+}
+
+/* --------------------------- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+      .about-client-rigth p {
+        font-size: 24px;
+        line-height: 50px;
+    }
+  .about-client-left,
+  .about-client-rigth {
+    min-height: 948px;
+  }
+  .about-client-left img {
+    width: 100%;
+    height: 948px;
+    object-fit: cover;
+}
+  .about-client-rigth button {
+    font-size: 20px;
+  }
+  .about-happyclient{
+    flex-direction: row;
+  }
+
+  .about-client-left,
+  .about-client-rigth{
+    width: 50%;
+    height: 948px;
+  }
+}
+
+/* --------------------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .about-client-rigth p {
+    line-height: 47px;
+  }
+  .about-happyclient{
+    flex-direction: row;
+  }
+  
+}
+
+/* ----------- */
+@media (min-width: 1400px) {
+  .about-happyclient{
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,464 @@
+
+/* ----------about-design-------------- */
+/* .about-design{
+   
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.about-design h2{
+     text-align: center;
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 56px;
+    
+}
+.about-design>p{
+    font-family: Lora;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: 30px;
+}
+.about-design_cycle-des>h4{
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 28.7px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.about-design_cycle_line{
+    width: 80%;
+    height: 10px;
+    background: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%);
+    position: absolute;
+    transform: translate(-0%,100%);
+    z-index: 3;
+
+}
+.about-design_cycle{
+    z-index: 5;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 100px;
+}
+.about-design_cycle_img{
+    text-align: center;
+    border-radius: 100%;
+    background-color: rgba(212, 188, 145, 1);
+    padding: 20px 20px 25px 20px;
+    height: 84.81159210205078px;
+    width: 84.81159210205078px;
+    margin: auto;
+}
+.about-design_cycle div img{
+    
+    height: 50px;
+    width: 50px;
+    
+}
+.about-design_cycle h4{
+    font-size: Roboto Serif;
+    font-size: 20px;
+    line-height: 28.7px;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    margin: 10px;
+}
+
+.about-design_cycle div p{
+    font-family: Lora;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+} */
+/* SIX DIFFERENT SCREEN SIZES FOR RESPONSIVENESS */
+
+/* X-Small (xs) - Mobile portrait and smaller devices */
+/* @media (max-width: 575.98px) {
+} */
+
+/* Small (sm) - Mobile landscape and larger phones */
+/* @media (min-width: 576px) and (max-width: 767.98px) {
+} */
+
+/* Medium (md) - Tablets and medium devices */
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+    .about-design_cycle_line {
+        transform: translate(10px, 31px);
+    }
+    .about-design_cycle h4 {
+    font-size: Roboto Serif;
+    font-size: 13.15px;
+    line-height: 18.86px;
+    font-weight: 600;
+    text-align: center;
+}
+.about-design_cycle div p {
+    font-family: Lora;
+    font-size: 9.2px;
+    line-height: 15.78px;
+    font-weight: 400;
+}
+.about-design_cycle {
+    padding: 20px 35px;
+}
+} */
+
+/* Large (lg) - Desktops and laptop screens */
+/* @media (min-width: 992px) and (max-width: 1199.98px) {
+    .about-design_cycle h4 {
+        font-size: 16px;
+    }
+    .about-design_cycle_line {
+        transform: translate(-0%, -66%)
+    }
+} */
+
+/* Extra Large (xl) - Large desktops */
+/* @media (min-width: 1200px) and (max-width: 1399.98px) {
+} */
+
+/* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
+/* @media (min-width: 1400px) {
+} */
+ /* Roboto Serif */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* ----------about-design-------------- */
+.about-design{
+   
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+.about-design h2{
+     text-align: center;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 56px;
+    
+}
+.about-design>p{
+    /* text-align: center; */
+    font-family: Lora;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: 30px;
+}
+.about-design_cycle-des>h4{
+    font-family: 'Roboto Serif', serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 28.7px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.about-design_cycle_line{
+    width: 80%;
+    height: 10px;
+    background: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%);
+    position: absolute;
+    transform: translate(-0%,100%);
+    z-index: 3;
+    /* background-color: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%); */
+    /* border: 10px solid #3A2E27; */
+
+/* border-image-source: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%); */
+
+
+}
+.about-design_cycle{
+    z-index: 5;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 100px;
+}
+.about-design_cycle_img{
+    text-align: center;
+    border-radius: 100%;
+    background-color: rgba(212, 188, 145, 1);
+    padding: 20px 20px 25px 20px;
+    height: 84.81159210205078px;
+    width: 84.81159210205078px;
+    margin: auto;
+}
+.about-design_cycle div img{
+    
+    /* height: 64.81159210205078px;
+    width: 64.81159210205078px; */
+    height: 50px;
+    width: 50px;
+    
+}
+.about-design_cycle h4{
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    line-height: 28.7px;
+    font-weight: 600;
+    /* width: 70%; */
+    text-align: center;
+    margin: auto;
+    margin: 10px;
+}
+
+.about-design_cycle div p{
+    font-family: Lora;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+/* SIX DIFFERENT SCREEN SIZES FOR RESPONSIVENESS */
+
+/* X-Small (xs) - Mobile portrait and smaller devices */
+@media (max-width: 575.98px) {
+    .about-design_cycle {
+        display: block;
+        padding: 20px 50px;
+    }
+    .about-design_cycle div {
+        display: flex;
+        margin: 10px 0px;
+    }
+    .about-design_cycle-res{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-design_cycle_line{
+    transform: rotate(90deg) translate(88px, 146px);
+    width: 102%;
+ }
+ .about-design h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .about-design>p {
+    font-family: Lora;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: 0px;
+    }
+    .about-design_cycle h4 {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    }
+    .about-design_cycle div p {
+        font-family: Lora;
+        font-size: 11px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+    /* .about-design_cycle_line {
+        transform: rotate(90deg) translate(44px, 87px);
+        width: 602px;
+    } */
+         .about-design_cycle_line {
+        /* top: 0; */
+        left: -209px;
+        transform: rotate(90deg);
+        width: 602px;
+    }
+}
+/* @media (min-width: 715px) and (max-width:767.98px) {
+    .about-design_cycle_line {
+        bottom: -4791px;
+        left: -155px;
+        transform: rotate(90deg);
+        width: 72%;
+    }
+}
+@media (min-width: 680px) and (max-width: 715px) {
+    .about-design_cycle_line {
+        bottom: -4840px;
+        left: -140px;
+        transform: rotate(90deg);
+        width: 81%;
+    }
+}
+@media (min-width: 669px) and (max-width: 680px) {
+    .about-design_cycle_line {
+        bottom: -4900px;
+        left: -127px;
+        transform: rotate(90deg);
+        width: 80%;
+    }
+}
+
+@media (min-width: 650px) and (max-width:669px) {
+    .about-design_cycle_line {
+        bottom: -4913px;
+        left: -100px;
+        transform: rotate(90deg);
+        width: 72%;
+    }
+}
+@media (min-width: 628px) and (max-width:650px) {
+    .about-design_cycle_line {
+        bottom: -4981px;
+        left: -134px;
+        transform: rotate(90deg);
+        width: 84%;
+    }
+}
+@media (min-width: 620px) and (max-width:628px) {
+    .about-design_cycle_line {
+        bottom: -4981px;
+        left: -134px;
+        transform: rotate(90deg);
+        width: 84%;
+    } */
+/* } */
+/* Small (sm) - Mobile landscape and larger phones */
+/* @media (min-width: 576px) and (max-width: 767.98px) {
+    .about-design_cycle {
+        display: block;
+    }
+    .about-design_cycle div {
+        display: flex;
+    }
+    .about-design_cycle-res{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-design_cycle_line{
+    transform: rotate(90deg);
+ }
+    
+} */
+ @media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* STACK ITEMS VERTICALLY */
+  .about-design_cycle {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding: 40px 30px;
+  }
+
+  .about-design_cycle > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+  }
+
+  /*  VERTICAL CENTER LINE (IMAGE LIKE) */
+  .about-design_cycle_line {
+    position: absolute;
+    top: 160px;
+    left: 12%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 75%;
+    background: linear-gradient(
+      180deg,
+      #D4BC91 0%,
+      #3A2E27 100%
+    );
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  /* ICONS ON LINE */
+  .about-design_cycle_img {
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* TEXT */
+  .about-design_cycle-res {
+    text-align: center;
+    width: 80%;
+  }
+
+  .about-design_cycle h4 {
+    font-size: 16px;
+    line-height: 22px;
+    font-size: Roboto Serif;
+  }
+
+  .about-design_cycle div p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+
+/* Medium (md) - Tablets and medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about-design_cycle_line {
+        transform: translate(10px, 31px);
+    }
+    .about-design_cycle h4 {
+    font-size: Roboto Serif;
+    font-size: 13.15px;
+    line-height: 18.86px;
+    font-weight: 600;
+    text-align: center;
+}
+.about-design_cycle div p {
+    font-family: Lora;
+    font-size: 9.2px;
+    line-height: 15.78px;
+    font-weight: 400;
+}
+.about-design_cycle {
+    padding: 20px 35px;
+}
+}
+
+/* Large (lg) - Desktops and laptop screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .about-design_cycle h4 {
+        font-size: 16px;
+    }
+    .about-design_cycle_line {
+        transform: translate(-0%, -66%)
+    }
+}
+
+/* Extra Large (xl) - Large desktops */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
+@media (min-width: 1400px) {
+}

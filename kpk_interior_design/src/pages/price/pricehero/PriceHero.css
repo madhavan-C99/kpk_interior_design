@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+::-webkit-scrollbar{
+  display: none;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.price-hero-container{
+  /* background-image: url(../../assets/Price_img/price-hero-price.png); */
+  /* background-size: cover;    FULL IMAGE COVER */
+    /* background-position: center;  */
+    /* background-color: #3A2E27; */
+    color: white;
+    /* width: 100%; */
+    margin-top: 250px;
+    border-radius: 32px;
+    margin-bottom: 120px;
+    border-radius: 32px;
+    background: #3A2E27;
+    /* width: 827; */
+    height: 340px;
+    top: 218px;
+    opacity: 1;
+    border-radius: 19.42px;
+    display: flex;
+    align-items: center;
+
+}
+.price-hero-title-1{
+    font-family: Roboto Serif ;
+    font-size: 55px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 76px;
+    width: 70%;
+    padding-left: 40px;
+}
+/* hero section image */
+.price-hero-image{
+    position: relative;
+    /* transform: translate(430%, 50%); */
+}
+.pricehero-img{
+     /* transform: translate(-252px, -245px); */
+    top: -250px;
+    right: 0;
+    bottom: 45px;
+    position: absolute;
+    align-items: end;
+    height: 421.181152px;
+    width: 335.386688px;
+}
+/* SIX DIFFERENT SCREEN SIZES FOR RESPONSIVENESS */
+
+/* X-Small (xs) - Mobile portrait and smaller devices */
+@media (max-width: 575.98px) {
+    .price-hero-title-1 {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .price-hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 450px;
+    }
+    .pricehero-img {
+        /* transform: translate(-252px, -245px); */
+        left: -116px;
+        /* right: 0; */
+        top: -457px;
+        bottom: -50;
+        position: absolute;
+        align-items: end;
+        height: 416.18115234375px;
+        width: 256.3866882324219px;
+        }
+    .price-hero-title-1 {
+        font-size: 20px;
+        padding: 0px 20px 15px 20px;
+        line-height: 40px;
+    }
+}
+
+/* Small (sm) - Mobile landscape and larger phones */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .price-hero-title-1 {
+        font-size: 26px;
+        padding: 0px 20px;
+        line-height: 40px;
+    }
+}
+
+/* Medium (md) - Tablets and medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .price-hero-title-1 {
+        font-size: 36px;
+        padding: 0px 20px;
+    }
+}
+
+/* Large (lg) - Desktops and laptop screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .price-hero-title-1 {
+        font-size: 46px;
+        padding: 0px 20px;
+    }
+}
+
+/* Extra Large (xl) - Large desktops */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
+@media (min-width: 1400px) {
+}

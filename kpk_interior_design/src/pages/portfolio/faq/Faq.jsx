@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
     //icons
-import {  FaCheckCircle, FaChevronDown,FaChevronUp } from "react-icons/fa";
-import { FaTimesCircle } from "react-icons/fa";
+    import {  FaCheckCircle, FaChevronDown,FaChevronUp } from "react-icons/fa";
+    import { FaTimesCircle } from "react-icons/fa";
 import '../faq/Faq.css'
 export default function Faq(){
     //   ----------------------------------------

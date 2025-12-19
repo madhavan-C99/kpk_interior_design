@@ -1,0 +1,157 @@
+
+
+/* ----------KPK enterprise animation-------------- */
+.about-kpk{
+    margin-top: 100px;
+}
+.about-kpk-text{
+    text-align: center;
+}
+.about-kpk-text_map{
+    /* font-size: 100px; */
+     text-align: center;
+     padding: 40px 45px;
+    
+    /* display: inline-block; */
+}
+.about-kpk-text_ani{
+    
+    font-family: sans-serif;
+    font-weight: 900;
+    font-style: Black;
+    line-height: 100%;
+   align-items: center;
+     font-size: 110px;
+    color: white;
+     display: inline;
+  -webkit-text-stroke: 1px rgba(141, 155, 106, 1);
+  
+
+}
+/* --------- */
+/* Root wrapper */
+.about-typewriter {
+  display: inline-block;
+  
+}
+
+/* Heading text */
+.about-typewriter__text {
+  font-family: Lora;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 100%;
+  /* color: rgba(141, 155, 106, 1); */
+  color: black;
+  margin: 0;
+  line-height: 1;
+      transform: translate(-30px, -80px);
+  /* position: absolute; */
+  /* transform: translate(100%,-200%); */
+}
+
+/* Base letter style */
+.ta-letter {
+  display: inline-block;
+  white-space: pre;
+  transform-origin: center bottom;
+  will-change: transform, opacity;
+}
+
+/* Typing animation */
+/* @keyframes ta-ascend { */
+  /* 0%   { transform: translateY(16px) scale(0.92); opacity: 0; filter: blur(2px); }
+  60%  { transform: translateY(-4px) scale(1.05); opacity: 1; filter: blur(0); }
+  100% { transform: translateY(0) scale(1); opacity: 1; } */
+/* } */
+
+/* Erasing animation */
+/* @keyframes ta-descend { */
+  /* 0%   { transform: translateY(0) rotateX(0deg); opacity: 1; }
+  60%  { transform: translateY(10px) rotateX(10deg); opacity: 0.6; }
+  100% { transform: translateY(22px) rotateX(20deg); opacity: 0; } */
+/* } */
+
+/* Classes applied */
+.ta-enter {
+  animation-name: ta-ascend;
+  animation-duration: 260ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.2, .9, .2, 1);
+}
+
+.ta-exit {
+  animation-name: ta-descend;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+/* Cursor */
+.ta-cursor {
+  display: inline-block;
+  margin-left: 6px;
+  animation: ta-blink 900ms steps(2, start) infinite;
+  font-weight: 600;
+}
+
+@keyframes ta-blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* SIX DIFFERENT SCREEN SIZES FOR RESPONSIVENESS */
+
+/* X-Small (xs) - Mobile portrait and smaller devices */
+@media (max-width: 575.98px) {
+  .about-kpk-text_ani {
+    font-size: 36.75px;
+  }
+  .about-typewriter__text {
+    font-family: Lora;
+    font-size: 15.31px;
+    font-weight: 900;
+    transform: translate(-30px, -30px);
+  }
+  
+}
+
+/* Small (sm) - Mobile landscape and larger phones */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-kpk-text_ani {
+    font-size: 48.75px;
+  }
+  .about-typewriter__text {
+    font-family: Lora;
+    font-size: 34.35px;
+    transform: translate(-30px, -47px);
+  }
+}
+
+/* Medium (md) - Tablets and medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about-kpk-text_ani {
+        font-size: 70.44px;
+    }
+    .about-typewriter__text {
+    font-family: Lora;
+    font-size: 34.35px;
+    transform: translate(-30px, -62px);
+    }
+}
+
+/* Large (lg) - Desktops and laptop screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .about-kpk-text_ani {
+        font-size: 95.44px;
+    }
+}
+
+/* Extra Large (xl) - Large desktops */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
+@media (min-width: 1400px) {
+
+}

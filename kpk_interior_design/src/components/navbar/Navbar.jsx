@@ -13,7 +13,7 @@ const navLinks = [
           {title:'Modular Kitchen',path:'/services/modular/kitchen'},
             { title: 'Wardrobe', path: '/services/wardrobe' },
             { title: 'TV Unit', path: '/services/tv_unit' },
-            { title: 'Poojai Unit', path: '/services/poojai_unit' },
+            { title: 'Poojai Unit', path: '/services/pooja_unit' },
         ]
     },
     { title: 'Portfolio', path: '/portfolio' },

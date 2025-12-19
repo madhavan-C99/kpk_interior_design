@@ -32,7 +32,7 @@ function Footer(){
       text: 'No false claims. You get what you see. Lowest Price Guaranteed on home interiors.' 
     }
   ]
-     const quicklinks = ['Home', 'About', 'Services', 'Portfolio', 'Pricing', 'Contact'];
+     const quicklinks = ['Home', 'About', 'Portfolio', 'Pricing', 'Contact'];
      const services = ['Modular Kitchen', 'Wardrobe', 'TV Unit', 'Pooja Unit'];
     return(
         <>
@@ -53,9 +53,7 @@ function Footer(){
                     </div>
                     <div className="footer_main_content2">
                         <div className="footer_contact_info2">
-                            <img src={kpklogo} alt="" />
-                            <p className="footer_tagline2">Thoughtfully designed interiors that 
-                                bring comfort, style, and trust into your home.</p>
+                            <img src={kpklogo} alt="KPK Interior Logo" />
                             <ul className="contact_details2">
                                 <li><img src={phoneicon} alt="" /> +91 87648 39262</li>
                                 <li><img src={messageicon} alt="" /> kpkenterprisespdy@gmail.com</li>

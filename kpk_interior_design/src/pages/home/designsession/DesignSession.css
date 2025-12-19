@@ -231,6 +231,12 @@
 }
 
 @media (max-width: 375px){
+    .steps_sectiongrid2{
+        margin: 2rem 10px;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
     .designsession_title2{
         width: 85%;
     }

@@ -8,11 +8,11 @@ import ContactHero from "./contacthero/ContactHero";
 export default function ContactView(){
     return(
         <>
-        <Navbar/>
+        {/* <Navbar/> */}
         <ContactHero/>
         <ContactCreativeDesign/>
         <FeedBack/>
-        <Footer/>
+        {/* <Footer/> */}
         </>
     )
 }

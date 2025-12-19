@@ -19,7 +19,7 @@ const Workflow = () => {
       progressWidth: '20%',
       content:{
         heading:'Meet Us',
-        body:"Let us know more about each other. We can meet over a cup of coffee or even online too. We'd like to know what you're looking for."
+        body:"Understand your lifestyle, requirements, and space goals."
       } },
     { id:2, 
       number: '02', 
@@ -29,7 +29,7 @@ const Workflow = () => {
       progressWidth: '50%',
       content:{
         heading:'Scope of work',
-        body:"We define the project requirements, finalize the budget, discuss timelines, and create a formal agreement to ensure clarity."
+        body:"We define layouts, materials, theme boards, and budgets."
       }},
     { id:3, 
       number: '03', 
@@ -39,7 +39,7 @@ const Workflow = () => {
       progressWidth: '75%',
       content:{
         heading:'Execution',
-        body:"Our team begins the design, procurement, and construction process, maintaining quality checks and keeping you updated every step of the way."
+        body:" Clean, coordinated, and professional implementation."
       }  },
     { id:4, 
       number: '04', 
@@ -49,7 +49,7 @@ const Workflow = () => {
       progressWidth: '100%',
       content:{
         heading:'Approval',
-        body:"The project is complete. We conduct a final walkthrough and hand over the keys to your beautifully finished, stress-free interior."
+        body:"Final inspection and perfect handover."
       } },
   ];
 

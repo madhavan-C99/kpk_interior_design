@@ -63,8 +63,8 @@
 }
 .prop_text2{
      font-family:var(--lora) ;
-     font-size: 8px; 
-     font-weight: 400; 
+     font-size: 9px; 
+     font-weight: 700; 
      line-height: 14px;
      letter-spacing: 0;
      width: 80%;
@@ -95,7 +95,7 @@
 .footer_contact_info2 img{
      transform: translateX(-20px); 
      height: auto; 
-     width: 129px;
+     width: 200px;
 }
 .footer_tagline2{
     margin-top: -1rem; 
@@ -136,16 +136,16 @@
 .links_heading2, .services_heading2, .address_heading2{
     font-family: var(--roboto);
     font-size: 24px; 
-    font-weight: 500;
+    font-weight: 600;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .footer_quicklinks2, .footer_services_list2{ 
      display: flex;
      flex-direction: column;
     list-style: none;
     padding-left: 0;
-    gap: 37px;
+    gap: 30px;
 }
 .footer_quicklinks2 li a, .footer_services_list2 li a{
     text-decoration: none;
@@ -251,7 +251,7 @@
     }
     .footer_contact_info2 img {
         transform: translateX(0);
-        width: 100px;
+        width: 170px;
         height: auto;
     }
     .footer_tagline2 {
@@ -277,11 +277,11 @@
 
     .links_heading2, .services_heading2, .address_heading2 {
         font-size: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
 
     .footer_quicklinks2, .footer_services_list2 { 
-        gap: 30px;
+        gap: 25px;
     }
 
     .footer_quicklinks2 li a, .footer_services_list2 li a {
@@ -375,7 +375,7 @@
     
     .footer_contact_info2 img {
         transform: translateX(0);
-        width: 129px;
+        width: 160px;
         height: auto;
     }
     
@@ -404,12 +404,11 @@
 
     .links_heading2, .services_heading2, .address_heading2 {
         font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 10px; 
+        margin-bottom: 15px; 
     }
 
     .footer_quicklinks2, .footer_services_list2 { 
-        gap: 20px;
+        gap: 15px;
     }
 
     .footer_quicklinks2 li a, .footer_services_list2 li a {
@@ -531,7 +530,7 @@
     
     .footer_contact_info2 img {
         transform: translateX(0);
-        width: 129px;
+        width: 160px;
         height: auto;
     }
     
@@ -589,6 +588,7 @@
     }
     
     .address_text2 {
+        margin-top: 8px;
         width: 100%; 
         font-size: 14px;
         line-height: 22px; 
@@ -628,7 +628,7 @@
     }
     
     .value_propcard_section2 {
-        margin: 0 1.5rem;
+        margin: 0 ;
         gap: 8px;
         flex-wrap: wrap; 
         justify-content: center; 
@@ -697,7 +697,7 @@
     }
     
     .footer_contact_info2 img {
-        width: 85px;
+        width: 140px;
         height: auto;
     }
     
@@ -782,6 +782,19 @@
         margin-top: 0;
         display: block; 
     }
+
+    .address_heading2{
+        order: 1;
+    }
+
+    .address_text2{
+        margin-top: 0;
+        order: 2;
+    }
+
+    .address_map2{
+        order: 3;
+    }
     
     .copyright_area2 {
         padding: 10px 0;
@@ -799,7 +812,17 @@
         width: 80%;
     }
 
+    .footer_contact_info2 img {
+        width: 140px;
+        height: auto;
+    }
+
     .address_text2 p{
         width: 80%;
+    }
+
+    .contact_details2,.footer_quicklinks2 li a, 
+    .footer_services_list2 li a{
+        font-size: 1rem;
     }
 }

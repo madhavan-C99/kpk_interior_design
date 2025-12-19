@@ -2,26 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 /* Lora */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-/* Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 
-.about-hero_viedo{
-    background-image: url(../../assets/../assets/about/hero-viedo.png);
-    height: 815px;
-
-}
-.about-hero_viedo div{
-    text-align: center;
-    transform: translate(0%,680%);
-}
-.about-hero_viedo div h2{
-    font-family: Roboto Serif;
-    font-weight: 500;
-    font-size: 45px;
-    line-height: 100%;
-    text-align: center;
-    color: white;
-}
+ /* --------------------------- */
+ /* Roboto Serif */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* *{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+} */
 /* ---------about-experts----------- */
 .about-experts{
     display: flex;
@@ -30,7 +26,7 @@
 }
 
 .about-experts-left img{
-    height: 605px;
+    height: 505px;
     width: 535.9149780273438px;
 }
 .about-experts-left{
@@ -45,17 +41,20 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 58px;
+    margin-bottom: 30px;
 }
 .about-experts-right div p{
     font-family: Lora;
     font-size: 28px;
     font-weight: 400;
     line-height: 44px;
+    padding: 10px;
 }
 /* count down box */
 .about-experts-right_num{
     display: flex;
      gap: 50px;
+     margin: 10px;
 
 }
 .about-experts-right_num div{
@@ -74,6 +73,7 @@
 }
 .about-experts-right_num div p{
     margin: 0px;
+    padding: 0px;
     font-family: Lora;
     font-size: 18px;
     font-weight: 500;
@@ -81,410 +81,211 @@
     text-align: center;
 }
 
-/* --------------Trusted Interior------------ */
-.about-trust {
-    /* display: flex; */
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-align-items: center;
-text-align: center;
-margin-top: 50px;
 
+/* SIX DIFFERENT SCREEN SIZES FOR RESPONSIVENESS */
 
-}
-.about-trust h2{
-    font-size: 44px;
-    font-weight: 600;
-    font-family: Roboto Serif;
-    line-height: 56px;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 40px;
-    
-}
-.about-trust p{
-    font-family: Lora;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 44px;
-    margin: auto;
-    width: 70%;
-    text-align: center;
-    letter-spacing: 3%;
-    padding-bottom: 80px;
-}
-.about-trust-box{
-   
-}
-.about-trust-box_row-1{
+/* X-Small (xs) - Mobile portrait and smaller devices */
+@media (max-width: 575.98px) {
+    /* image */
+        .about-experts-left img {
+        width: 300.00164794921875px;
+        height: 387.2176513671875px;
+        opacity: 1;
+    }
+    .about-experts-right_num {
     display: flex;
     gap: 20px;
-    padding: 10px 50px;
-}
-.about-trust-box_row-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 50px;
-}
-.about-trust-box_row-3{
-    display: flex;
-    gap: 20px;
-    padding: 10px 50px;
-}
-.about-trust_support{
-    padding: 20px 20px ;
-    background-color: rgba(209, 215, 195, 1);
-    border-radius: 25px;
-    width: 410px;
-    height: 137px;
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-
-}
-.about-trust_support h3{
-    font-size: 24px;
-    padding-top: 10px;
-    font-family: Inter;
-    font-weight: 700;
-    line-height: 100%;
-    font-style: Bold;
     margin: 0px;
-    text-align: center;
 }
-.about-trust_support p{
-    text-align: center;
+    .about-experts-right div h3 {
+        font-family: Roboto Serif;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 3%;
+        text-align: center;
+
+    }
+    .about-experts-right div p {
+    font-family: Lora;
     font-size: 16px;
-    font-weight: 500;
-    font-family: Inter;
-    line-height: 34px;
-    width: 100%;
-}
-.about-trust_support-img{
-    position: absolute;
-}
-.about-trust_support-img img{
-    height: 69px;
-    width: 69px;
-    position: relative;
-    transform: translate(470%,100%);
-}
-/* ----------KPK enterprise animation-------------- */
-.about-kpk{
-    margin-top: 100px;
-}
-.about-kpk-text_map{
-    /* font-size: 100px; */
-     text-align: center;
-     padding: 40px 45px;
-    
-    /* display: inline-block; */
-}
-.about-kpk-text_ani{
-    font-family: Lora;
-    font-weight: 900;
-    font-style: Black;
-    line-height: 100%;
-   align-items: center;
-     font-size: 110px;
-    color: white;
-     display: inline;
-  -webkit-text-stroke: 2px rgba(141, 155, 106, 1);
-  
-
-}
-/* --------- */
-/* Root wrapper */
-.about-typewriter {
-  display: inline-block;
-  
-}
-
-/* Heading text */
-.about-typewriter__text {
-  font-family: Lora;
-  font-size: 60px;
-  font-weight: 900;
-  line-height: 100%;
-  color: rgba(141, 155, 106, 1);
-  margin: 0;
-  line-height: 1;
-      transform: translate(520px, -120px);
-  /* position: absolute; */
-  /* transform: translate(100%,-200%); */
-}
-
-/* Base letter style */
-.ta-letter {
-  display: inline-block;
-  white-space: pre;
-  transform-origin: center bottom;
-  will-change: transform, opacity;
-}
-
-/* Typing animation */
-/* @keyframes ta-ascend { */
-  /* 0%   { transform: translateY(16px) scale(0.92); opacity: 0; filter: blur(2px); }
-  60%  { transform: translateY(-4px) scale(1.05); opacity: 1; filter: blur(0); }
-  100% { transform: translateY(0) scale(1); opacity: 1; } */
-/* } */
-
-/* Erasing animation */
-/* @keyframes ta-descend { */
-  /* 0%   { transform: translateY(0) rotateX(0deg); opacity: 1; }
-  60%  { transform: translateY(10px) rotateX(10deg); opacity: 0.6; }
-  100% { transform: translateY(22px) rotateX(20deg); opacity: 0; } */
-/* } */
-
-/* Classes applied */
-.ta-enter {
-  animation-name: ta-ascend;
-  animation-duration: 260ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(.2, .9, .2, 1);
-}
-
-.ta-exit {
-  animation-name: ta-descend;
-  animation-duration: 200ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
-}
-
-/* Cursor */
-.ta-cursor {
-  display: inline-block;
-  margin-left: 6px;
-  animation: ta-blink 900ms steps(2, start) infinite;
-  font-weight: 600;
-}
-
-@keyframes ta-blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-
-/* ----------about-design-------------- */
-.about-design{
-   
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-}
-.about-design h2{
-     text-align: center;
-    font-family: Roboto Serif;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 56px;
-    
-}
-.about-design p{
-    /* text-align: center; */
-    font-family: Lora;
-    font-size: 28px;
     font-weight: 400;
-    line-height: 44px;
-}
-.about-design_cycle_line{
-    width: 80%;
-    height: 10px;
-    background: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%);
-    position: absolute;
-    transform: translate(-0%,300%);
-    z-index: 3;
-    /* background-color: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%); */
-    /* border: 10px solid #3A2E27; */
-
-/* border-image-source: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%); */
-
-
-}
-.about-design_cycle{
-    z-index: 5;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px 100px;
-}
-.about-design_cycle_img{
-    text-align: center;
-    border-radius: 100%;
-    background-color: rgba(212, 188, 145, 1);
-    padding: 20px 20px 25px 20px;
-    height: 45px;
-    width: 45px;
-    margin: auto;
-}
-.about-design_cycle div img{
-    
-    /* height: 64.81159210205078px;
-    width: 64.81159210205078px; */
-    height: 50px;
-    width: 50px;
-    
-}
-.about-design_cycle h4{
-    font-size: Roboto Serif;
-    font-size: 20px;
-    line-height: 28.7px;
-    font-weight: 600;
-    width: 70%;
-    text-align: center;
-    margin: auto;
-}
-
-.about-design_cycle div p{
-    font-family: Lora;
-    font-size: 14px;
     line-height: 24px;
-    font-weight: 400;
+    padding: 10px;
 }
-/* ----------------about-happyclient-------------------- */
-.about-happyclient{
-    display: flex;
-}
-.about-client-left{
-    height: 740px;
-    width: 740px;
-}
-.about-client-rigth{
-    background-color: rgba(58, 46, 39, 1);
-    color: white;
-    padding: 40px;
+
+.about-experts {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 10px 20PX;
 }
-.about-client-rigth img{
-    margin: auto;
-    height: 133px;
-    width: 133px;
+.about-experts-right_num{
+    display: flex;
+    flex-direction: column;
+ }
+.about-experts-left {
+    width: fit-content;
+}
+.about-experts-right {
+    /* width: 50%; */
+    text-align: center;
+}
 
 }
-.about-client-rigth h2{
-    font-family: Roboto Serif;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 40px;
-    line-height: 60px;
-    letter-spacing: 0%;
+
+/* Small (sm) - Mobile landscape and larger phones */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .about-hero-viedo {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+    }
+    .about-experts-left img {
+        width: 343.00164794921875px;
+        height: 387.2176513671875px;
+        opacity: 1;
+
+    }
+    .about-experts-right div h3 {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .about-experts-right div p {
+        font-family: Lora;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 3%;
+        text-align: center;
+
+    }
+
+.about-experts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20PX;
+}
+.about-experts-right_num{
+    display: flex;
+    flex-direction: column;
+ }
+.about-experts-left {
+    width: fit-content;
+}
+.about-experts-right {
+    /* width: 50%; */
     text-align: center;
+}
+
+
     
-
 }
-.about-client-rigth h2>span{
+
+/* Medium (md) - Tablets and medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about-experts-right div h3 {
     font-family: Roboto Serif;
     font-weight: 600;
-    font-style: SemiBold;
-    font-size: 69px;
-    line-height: 60px;
-    letter-spacing: 0%;
-    text-align: center;
-
+    font-size: 25px;
+    line-height: 38px;
+    margin-bottom: 0px;
 }
-.about-client-rigth p{
+    .about-experts {
+        padding: 10px 20px;
+    }
+    .about-experts-right_num {
+        display: flex;
+        gap: 0px;
+    }
+    .about-experts-right_num div h4 {
+        height: 33.07px;
+    }
+    .about-experts-left img {
+            height: 447.816925px;
+        width: 336.272858px;
+}
+.about-experts-right div p {
+    font-family: Lora;
+    font-size: 16.84px;
+    font-weight: 400;
+    line-height: 26.46px;
+    padding: 10px;
+}
+}
+
+/* Large (lg) - Desktops and laptop screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+        
+    .about-experts-right div h3 {
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 0px;
+    }
+    .about-client-rigth p {
     font-family: Inter;
     font-weight: 300;
     font-style: Light;
-    font-size: 24px;
-    line-height: 56px;
-    letter-spacing: 0%;
-    text-align: center;
-}
-/* --------FAQ--------- */
-/* faq */
-.about-faq > div {
-    text-align: center;
-    margin-top: 130px;
-}
-
-.about-faq div p {
-    background-color: #8D9B6A;
-    text-align: center;
-    border-radius: 50px;
-    width: 145px;
-    font-size: 21px;
-    color: #FFFFFF;
-    font-family: Lora;
-    font-weight: 600;
-    line-height: 22px;
-    padding: 10px;
-    margin: auto;
-}
-
-.about-faq h2 {
-    font-size: 44px;
-    font-weight: 500;
-    font-family: Roboto Serif;
-}
-
-/* ------ */
-.about-faq-categories {
-    text-align: center;
-}
-
-.about-faq_active {
-    border: 2px solid rgba(141, 155, 106, 1);
-    border-radius: 7.24px;
-    padding: 13px 18px;
-    font-family: Roboto Serif;
-    font-size: 16px;
-    letter-spacing: 3%;
-    line-height: 22px;
-    font-weight: 600;
-    margin: 0px 10px 30px 10px;
-    align-items: center;
-}
-
-.about-faq_list {
-    width: 80%;
-    margin: auto;
-}
-
-.about-faq-box {
-    background-color: rgba(234, 241, 218, 1);
-    width: 100%;
-    margin: 20px 0px;
-    padding: 20px;
-    border-radius: 7.24px;
-}
-
-.about-faq-ques {
-    color: rgba(0, 0, 0, 1);
-    font-family: Roboto Serif;
-    font-weight: 600;
     font-size: 20px;
-    line-height: 22px;
-    letter-spacing: 3%;
-    display: flex;
-    justify-content: space-between;
+    }
+    .about-client-rigth h2 {
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 35px;
+    line-height: 49px
+    }
+    .about-client-rigth img {
+        margin: auto;
+        height: 100px;
+        width: 100px;
+    }
+    .about-client-rigth button {
+        font-size: 19px;
+    }
+    .about-experts-right div p {
+        font-size: 21.84px;
+        line-height: 30px;
+    }
+    .about-experts-left-img{
+        height: 495px !important;
+        width: 415.272858px !important;
+    }
 }
 
-.about-faq-ans {
-    background-color: rgba(234, 241, 218, 1);
-    text-align: left;
+/* Extra Large (xl) - Large desktops */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .about-experts-left img {
+        height: 495px;
+        width: 508.455658px;
+    }
+    .about-experts-right div p {
     font-family: Lora;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 3%;
+    font-size: 24px;
+    }
+    .about-experts-right div h3 {
+        font-family: Roboto Serif;
+        font-weight: 600;
+        font-size: 29px;
+        line-height: 58px;
+        /* margin-bottom: 30px; */
+    }
+    .about-trust h2 {
+        width: 70%;
+    }
+    .about-trust_support {
+        height: 200px;
+        width: 360px;
+    }
+    .about-trust_support-img img {
+        transform: translate(376%, 100%);
+    }
 }
 
-.about-faq_icon {
-    text-align: right;
-}
-
-.about-faq-ques,
-.about-faq-ans {
-    cursor: pointer;
+/* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
+@media (min-width: 1400px) {
 }

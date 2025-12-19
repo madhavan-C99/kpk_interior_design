@@ -16,7 +16,7 @@
 .contact_hero_con3{
     height: 780px;
     width: 100vw;
-    background-image: url('D:\codd99\kpk_interior_design\kpk_interior_design\src\assets\contact\images\Desktop - 155.png');
+    background-image: url('../../../assets/explore_image/Desktop - 155.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-top: 8%;
@@ -83,7 +83,7 @@
 
 @media (max-width:575px) {
     
-}
+
     .contact_hero_con3{
     height: 270px;
     width: 100vw;
@@ -95,4 +95,5 @@
     font-size: 14px;
     transform: translate(10% ,40%);
 
+}
 }
