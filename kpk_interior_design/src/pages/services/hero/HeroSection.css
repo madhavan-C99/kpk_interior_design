@@ -82,7 +82,8 @@
     height:720px;
     width: 100%;
     overflow: hidden;
-    background-color: red;
+    background-color: #ffffff;
+    /* background-color: red; */
 }
 
 #modularvid2 {

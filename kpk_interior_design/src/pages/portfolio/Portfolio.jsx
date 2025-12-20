@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import portfoliodata from "./PortfolioData";
 import PortfolioHero from "./portfolio_hero/PortfolioHero";
@@ -13,7 +12,7 @@ export default function Gallery() {
 
   const [selectedFormItem, setSelectedFormItem] = useState(null);
   const [relatedImages, setRelatedImages] = useState(null);
-  const [search, setSearch] = useState(""); // 🔥 SEARCH STATE
+  const [search, setSearch] = useState(""); // SEARCH STATE
 
   useEffect(() => {
     const firstTrack = trackRef.current;
@@ -22,7 +21,7 @@ export default function Gallery() {
     }
   }, []);
 
-  // 🔥 FILTER LOGIC (TITLE BASED)
+  // FILTER LOGIC (TITLE BASED)
   const filteredData = portfoliodata.filter((item) =>
     item.title.toLowerCase().includes(search.toLowerCase())
   );
@@ -120,6 +119,7 @@ export default function Gallery() {
             onClick={() => setRelatedImages(null)}
           >
             <div className="portfolio-overlay-fixed">
+              {/* <div style={{marginTop:"500px"}}></div> */}
                 <button
                 className="portfolio-close-btn-1"
                 onClick={() => setRelatedImages(null)}
@@ -140,29 +140,10 @@ export default function Gallery() {
                 />
               ))}
             </div>
-
-            {/* <button
-              className="portfolio-close-btn-1"
-              onClick={() => setRelatedImages(null)}
-            >
-              <FaTimes />
-            </button> */}
           </div>
         )}
       </section>
-
-      {/* JOURNEY SECTION */}
-      {/* <section className="portfolio-journey-background">
-        <h2>Get Your Interior Design Price Today</h2>
-        <p>
-          Access easy, transparent pricing for modular kitchen, wardrobe and home
-          interiors. Get accurate cost guidance and customized options for
-          Pondicherry & Cuddalore.
-        </p>
-        <button>Start My Interior Plan</button>
-      </section> */}
         <PortfolioCta/>
-      {/* <Faq /> */}
     </>
   );
 }

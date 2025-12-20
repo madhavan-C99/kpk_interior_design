@@ -95,8 +95,8 @@
                     margin-bottom: 0.75rem;
                 }
 
-                .dropdown-item {
-                }
+                /* .dropdown-item {
+                } */
 
                 .dropdown-item:last-child {
                     border-bottom: none;

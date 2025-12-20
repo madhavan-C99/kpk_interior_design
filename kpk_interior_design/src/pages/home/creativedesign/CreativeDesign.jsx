@@ -47,7 +47,7 @@ function CreativeDesign(){
             id:1,
             label:'modular Kitchen',
             images:[ { name: 'Sleek Soft-Touch Kitchen', img: kitchen1img },
-                    { name: 'Bold Two-Texture Kitchen', img: kitchen2img },
+                    { name: 'Bold Two-Texture Kitchen', img: kitchen5img },
                     { name: 'Hybrid Modular Workspace', img: kitchen3img },
                     {name: 'Minimal Navy And Grey Wall Colour', img: kitchen4img },
                     ]

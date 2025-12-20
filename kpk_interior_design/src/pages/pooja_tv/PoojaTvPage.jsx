@@ -12,6 +12,7 @@ import PoojaTvFaq from "../../components/pooja_tv_faq/PoojaTvFaq";
 
 
 export default function PoojaTvPage({ type }) {
+  console.log("tv-unit");
   const data = type === "pooja" ? PoojaUnitData : TvUnitData;
 
   return (

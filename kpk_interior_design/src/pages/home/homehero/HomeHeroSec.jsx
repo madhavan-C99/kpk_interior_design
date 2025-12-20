@@ -12,11 +12,11 @@ import './HomeHeroSec.css'
 
 // --- 2. Slide Data (Using placeholder images instead of local files) ---
 const slides = [
-  { id: 1, caption: "Best Interior Design in Pondicherry – KPK Enterprise", imageUrl:heroimg1,logo:grantielogo},
-  { id: 2, caption: "Best Interior Design in Pondicherry – KPK Enterprise", imageUrl:heroimg2,logo:grantielogo},
-  { id: 3,caption: "Best Interior Design in Pondicherry – KPK Enterprise", imageUrl:heroimg3 ,logo:grantielogo},
-  { id: 4, caption: "Best Interior Design in Pondicherry – KPK Enterprise", imageUrl:heroimg4,logo:grantielogo },
-  { id: 4, caption: "Best Interior Design in Pondicherry – KPK Enterprise", imageUrl:heroimg5 ,logo:grantielogo}
+  { id: 1, caption: "Best Interior Design in Pondicherry – KPK Enterprises", imageUrl:heroimg1,logo:grantielogo},
+  { id: 2, caption: "Best Interior Design in Pondicherry – KPK Enterprises", imageUrl:heroimg2,logo:grantielogo},
+  { id: 3,caption: "Best Interior Design in Pondicherry – KPK Enterprises", imageUrl:heroimg3 ,logo:grantielogo},
+  { id: 4, caption: "Best Interior Design in Pondicherry – KPK Enterprises", imageUrl:heroimg4,logo:grantielogo },
+  { id: 4, caption: "Best Interior Design in Pondicherry – KPK Enterprises", imageUrl:heroimg5 ,logo:grantielogo}
 
 ];
 
