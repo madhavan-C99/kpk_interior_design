@@ -96,8 +96,8 @@ export default function About(){
                         <div className="about-experts-right">
                         
                             <div>
-                                    <h3>About KPK Enterprise - Interior Experts</h3>
-                                    <p>KPK Enterprise, leading interior experts in Pondicherry & Cuddalore, has designed 1000+ homes over 4+ years, delivering creative, stylish, and functional interiors. Our focus on precision and quality ensures lasting beauty.</p>
+                                    <h3>About KPK Enterprises - Interior Experts</h3>
+                                    <p>KPK Enterprises, leading interior experts in Pondicherry & Cuddalore, has designed 1000+ homes over 4+ years, delivering creative, stylish, and functional interiors. Our focus on precision and quality ensures lasting beauty.</p>
                                     <p>With a 4.9 Google rating and exceptional client satisfaction, our professional designers provide personalized solutions, using premium materials and seamless execution, making every home elegant, modern, and comfortable.</p>
                                     {/* Count down Numbers */}
                                     <div className="about-experts-right_num">

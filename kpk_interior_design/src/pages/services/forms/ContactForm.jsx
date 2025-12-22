@@ -9,7 +9,7 @@ function ContactForm(){
                 <div className="detail_text_block2"> 
                     <h2 className="section_title2">Create the Perfect Modular Kitchen with Ideal Layouts</h2> 
                     <p className="detail_description2"> 
-                        If you’re looking for a luxurious kitchen, KPK Enterprise stands out as the 
+                        If you’re looking for a luxurious kitchen, KPK Enterprises stands out as the 
                         top choice for luxury modular kitchen design in Pondicherry. We craft 
                         stylish, ergonomic layouts, use premium materials, and deliver fully 
                         customized, functional kitchens for modern homes.

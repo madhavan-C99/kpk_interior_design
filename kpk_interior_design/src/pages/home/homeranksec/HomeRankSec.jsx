@@ -29,8 +29,8 @@ export default function HomeRankSec(){
         <section>
             <div className="home_rank__con3">
                 <div className="home_rank_head3">
-                    <h1 className="home_rank_tittle3">What Enables Every Beautiful Interior We Transform for You – KPK Enterprise</h1>
-                    <p className="home_rank_caption3">KPK Enterprise, the top, recognised interior brand, creates beauty through precision planning, expert detailing, and durable finishes, strengthening our position as professional interior designers in Pondicherry delivering high-value home and commercial spaces.</p>
+                    <h1 className="home_rank_tittle3">What Enables Every Beautiful Interior We Transform for You – KPK Enterprises</h1>
+                    <p className="home_rank_caption3">KPK Enterprises, the top, recognised interior brand, creates beauty through precision planning, expert detailing, and durable finishes, strengthening our position as professional interior designers in Pondicherry delivering high-value home and commercial spaces.</p>
                 </div>
                 <div className="home_rank_body3">
                     {carouselData.map((value,index)=>(

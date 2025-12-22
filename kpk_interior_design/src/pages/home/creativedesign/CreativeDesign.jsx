@@ -3,42 +3,29 @@ import { useState } from "react";
 import './CreativeDesign.css'
 import { useNavigate } from "react-router-dom";
 // kitchen images
-import kitchen1img from '../../../assets/home/images/Frame 1000012086.png'
-import kitchen2img from '../../../assets/home/images/Frame 1000012086-1.png'
-import kitchen3img from '../../../assets/home/images/Frame 1000012091.png'
-import kitchen4img from '../../../assets/home/images/Frame 1000012091-1.png'
-import kitchen5img from '../../../assets/home/images/Frame 1000012092.png'
-import kitchen6img from '../../../assets/home/images/Frame 1000012092-1.png'
-import kitchen7img from '../../../assets/home/images/Frame 1000012093.png'
-import kitchen8img from '../../../assets/home/images/Frame 1000012093-1.png'
+import kitchen1img from '../../../assets/home/images/Frame 1000012086.png';     
+import kitchen2img from '../../../assets/home/images/Frame 1000012091.png';  
+import kitchen3img from '../../../assets/home/images/Frame 1000012092.png'; 
+import kitchen4img from '../../../assets/home/images/Frame 1000012883.png'; 
 
 // Wardrobe images
-import wardrobe1img from '../../../assets/services/images/Frame 1000012402.png'; 
-import wardrobe2img from '../../../assets/services/images/image 17125.png';
-import wardrobe3img from '../../../assets/services/images/Frame 1000012404.png';
-import wardrobe4img from '../../../assets/services/images/Frame 1000012403.png';
-import wardrobe5img from '../../../assets/services/images/Frame 100001242.png';
-import wardrobe6img from '../../../assets/services/images/Frame 100001240.png';
-import wardrobe7img from '../../../assets/services/images/Frame 10000122.png';
-import wardrobe8img from '../../../assets/services/images/Frame 10012402.png';
+import wardrobe1img from '../../../assets/services/images/wardrobe9.png';
+import wardrobe2img from '../../../assets/services/images/wardrobe10.png';
+import wardrobe3img from '../../../assets/services/images/wardrobe13.png';
+import wardrobe4img from '../../../assets/services/images/wardrobe11.png';
+
 
 // pooja images
 import pooja1img from '../../../assets/services/images/Frame 1000012931.png'
 import pooja2img from '../../../assets/services/images/Frame 1000012936.png'
 import pooja3img from '../../../assets/services/images/Frame 1000012938.png'
 import pooja4img from '../../../assets/services/images/Frame 1000012939.png'
-import pooja5img from '../../../assets/services/images/Frame 1000012942.png'
-import pooja6img from '../../../assets/services/images/Frame 1000012945.png'
-import pooja7img from '../../../assets/services/images/Frame 1000012949.png'
-import pooja8img from '../../../assets/services/images/Frame 1000012951.png'
 
 // tv images
 import tv1img from '../../../assets/services/images/tv1.png'
 import tv2img from '../../../assets/services/images/tv2.png'
 import tv3img from '../../../assets/services/images/tv3.png'
 import tv4img from '../../../assets/services/images/tv4.png'
-import tv5img from '../../../assets/services/images/tv5.png'
-import tv6img from '../../../assets/services/images/tv6.png'
 
 function CreativeDesign(){
     const navigate = useNavigate();
@@ -47,7 +34,7 @@ function CreativeDesign(){
             id:1,
             label:'modular Kitchen',
             images:[ { name: 'Sleek Soft-Touch Kitchen', img: kitchen1img },
-                    { name: 'Bold Two-Texture Kitchen', img: kitchen5img },
+                    { name: 'Bold Two-Texture Kitchen', img: kitchen2img },
                     { name: 'Hybrid Modular Workspace', img: kitchen3img },
                     {name: 'Minimal Navy And Grey Wall Colour', img: kitchen4img },
                     ]
@@ -114,9 +101,10 @@ function CreativeDesign(){
                 behavior: "smooth",
             });
 
-        // console.log("check");
-        navigate("/image/expolre",{state:{selectedCategory:activeCategoryId}});
-        // console.log("check2");
+        console.log("check");
+        navigate("/image/expolre",{state: {selectedCategory:activeCategory}});
+        console.log("check2");
+        console.log(activeCategoryId)
 
     }
     return(
@@ -124,7 +112,7 @@ function CreativeDesign(){
             <div className="creativedesign_container2">
                 <div className="creativedesign_textwrap2">
                     <h2 className="creativedesign_title2">
-                        KPK Enterprise: Creative Design Ideas 
+                        KPK Enterprises: Creative Design Ideas 
                         for Every Corner of Your Home
                     </h2>
                     <p className="creativedesign_desc2">

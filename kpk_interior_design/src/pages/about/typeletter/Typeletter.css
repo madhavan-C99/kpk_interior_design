@@ -17,7 +17,7 @@
     font-family: sans-serif;
     font-weight: 900;
     font-style: Black;
-    line-height: 100%;
+    /* line-height: 100%; */
    align-items: center;
      font-size: 110px;
     color: white;
@@ -43,7 +43,8 @@
   color: black;
   margin: 0;
   line-height: 1;
-  transform: translate(-50%, -135%);
+  /* transform: translate(-50%, -135%); */
+  transform: translate(-68%, -177%);
   position: absolute;
 
 }
@@ -103,38 +104,45 @@
 /* X-Small (xs) - Mobile portrait and smaller devices */
 @media (max-width: 575.98px) {
   .about-kpk-text_ani {
-    font-size: 36.75px;
+    font-size: 30px;
   }
   .about-typewriter__text {
     font-family: Lora;
     font-size: 15.31px;
     font-weight: 900;
-    transform: translate(-30px, -30px);
+    transform: translate(-95px, -40px);
   }
   
 }
 
 /* Small (sm) - Mobile landscape and larger phones */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .about-kpk{
+    margin-top: 20px;
+}
   .about-kpk-text_ani {
     font-size: 48.75px;
   }
   .about-typewriter__text {
     font-family: Lora;
     font-size: 34.35px;
-    transform: translate(-30px, -47px);
+    /* transform: translate(-30px, -47px); */
+    transform: translate(-141px, -66px);
   }
 }
 
 /* Medium (md) - Tablets and medium devices */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .about-kpk {
+    margin-top: 50px;
+  }
     .about-kpk-text_ani {
         font-size: 70.44px;
     }
     .about-typewriter__text {
     font-family: Lora;
     font-size: 34.35px;
-    transform: translate(-30px, -62px);
+    transform: translate(-112px, -76px);
     }
 }
 
@@ -146,10 +154,10 @@
 }
 
 /* Extra Large (xl) - Large desktops */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-}
+/* @media (min-width: 1200px) and (max-width: 1399.98px) {
+} */
 
 /* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
 
-}
+} */

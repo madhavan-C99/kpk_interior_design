@@ -83,8 +83,10 @@ body {
 
 .detail_form_container2 {
     display: flex;
-    flex: 1.25;
-    padding: 80px 70px;
+    justify-content: center;
+    align-items: center;
+    flex: 1.4;
+    padding: 80px 50px;
     background-color: #EAF1DA;
     border-radius: 25px;
 }
@@ -100,8 +102,8 @@ body {
 
 .form_title2 {
     line-height: 52px;
-    width: 377px;
-    font-size: 27px;
+    width: 100%;
+    font-size: 26px;
     font-weight: 600;
     color: var(--color-text-dark);
     margin-top: 0;
@@ -389,5 +391,3 @@ body {
     width: 70%;
   }
 }
-
-

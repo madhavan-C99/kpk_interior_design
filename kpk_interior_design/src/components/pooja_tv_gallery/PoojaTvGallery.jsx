@@ -48,9 +48,15 @@ function ImageCard({ item }) {
       {/* Image wrapper */}
       <div className="pt-gallery-image">
         <div
-          className="pt-slide-track"
-          style={{ transform: `translateX(-${active * 100}%)` }}
-        >
+        className="pt-slide-track"
+        style={{
+        '--slides': item.images.length,
+        width: `${item.images.length * 100}%`,
+        transform: `translateX(-${active * (100 / item.images.length)}%)`
+  }}
+>
+
+
           {item.images.map((img, i) => (
             <img key={i} src={img} alt={item.title} />
           ))}

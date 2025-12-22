@@ -18,8 +18,8 @@ export default function AboutCta(){
                                 </div>
                                 <div className="about-client-rigth">
                                     <img src={CtaLeft}/>
-                                    <h2>Trusted by  <span>1000+</span>Happy Clients – KPK Enterprise   Satisfied Clients</h2>
-                                    <p>With over 1000 happy clients in Pondicherry, KPK Enterprise has earned a reputation for delivering stylish, functional, and client-focused interior solutions across homes and commercial spaces.</p>
+                                    <h2>Trusted by  <span>1000+</span>Happy Clients – KPK Enterprises   Satisfied Clients</h2>
+                                    <p>With over 1000 happy clients in Pondicherry, KPK Enterprises has earned a reputation for delivering stylish, functional, and client-focused interior solutions across homes and commercial spaces.</p>
                                     {/* <button>Build My Dream Interior</button> */}
                                     {/* BUTTON */}
                                     <button onClick={() => setShowForm(true)}>

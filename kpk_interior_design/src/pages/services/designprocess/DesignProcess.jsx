@@ -52,7 +52,7 @@ const dynamicStyles = {
             <div className='design_process3'>
                 <div className='design_process_head3'>
                     <h1>Redesign, Revamp, and Refresh Your Home Spaces Today</h1>
-                    <p>Transform your living spaces with KPK Enterprise, the best interior designers in Pondicherry. We deliver stylish, functional, and personalized interiors, revamping every corner with premium materials and expert design solutions.</p>
+                    <p>Transform your living spaces with KPK Enterprises, the best interior designers in Pondicherry. We deliver stylish, functional, and personalized interiors, revamping every corner with premium materials and expert design solutions.</p>
                 </div>
                 <div className='design_process_body3'>
                     <div className='design_draw3'>

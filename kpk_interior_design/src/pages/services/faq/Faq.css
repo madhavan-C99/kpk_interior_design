@@ -15,12 +15,12 @@
 
 
 /* faq */
-.price-faq>div {
+.price-faq3>div {
 text-align: center;
 margin-top: 100px;
 }
 
-.price-faq div p{
+.price-faq3 div p{
     background-color:var(--pricesbg-background-color);
     text-align: center;
     border-radius: 50px;
@@ -28,15 +28,15 @@ margin-top: 100px;
     font-size: 21px;
     color: #FFFFFF;
     font-family:var(--lorafont-font-family);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 22px;
-    padding: 10px;
+    padding:5px 10px;
     margin: auto;
 
 }
-.price-faq h2{
+.price-faq3 h2{
     font-size: 42px;
-    width: 40%;
+    width: 60%;
     margin:20px auto ;
     font-weight: 500;
     font-family:var(--robotofont-font-family);
@@ -73,7 +73,7 @@ margin-bottom: 7%;
     border-radius: 7.24px;
 
 }
-.price-faq-ques{
+.price-faq-ques3{
     color: rgba(0, 0, 0, 1);
     font-family:var(--robotofont-font-family);
     font-weight: 600;
@@ -91,7 +91,7 @@ margin-bottom: 7%;
 .price_faq_ques_card3{
     flex: 0.95;
 }
-.price-faq-ans{
+.price-faq-ans3{
     text-align: left;
     margin-top: 2%;
     font-family: var(--lorafont-font-family);
@@ -101,7 +101,7 @@ margin-bottom: 7%;
     letter-spacing: 3%;
     padding: 0rem 0.5rem;
 }
-.price-faq_icon{
+.price-faq_icon3{
     font-size: 1rem;
     height:10.45%;
     flex: 1;
@@ -117,7 +117,7 @@ margin-bottom: 7%;
 width: 90%;
 margin: auto;
 }
-.price-faq-ques{
+.price-faq-ques3{
     font-size: 16px;
      line-height: 20px;
 }
@@ -128,25 +128,25 @@ margin: auto;
 width: 90%;
 margin: auto;
 }
-.price-faq h2{
+.price-faq3 h2{
     font-size: 30px;
     width: 80%;
 }
-.price-faq-ques{
+.price-faq-ques3{
     font-size: 12px;
      line-height: 20px;
 }
 .price-faq-box{
     padding: 7px;
 }
-.price-faq-ans{
+.price-faq-ans3{
     font-size: 8px;
     line-height: 12px;
 }
 }
 
 @media (max-width:575.99px) {
-.price-faq h2{
+.price-faq3 h2{
     font-size: 20px;
     width: 80%;
 }
@@ -157,14 +157,14 @@ margin: auto;
 .price_faq_ques_card3{
     flex: 0.9;
 }
-.price-faq-ques{
-    font-size: 9px;
+.price-faq-ques3{
+    font-size: 12px;
      line-height: 20px;
 }
 .price-faq-box{
     padding: 5px;
 }
-.price-faq-ans{
+.price-faq-ans3{
     font-size: 8px;
     line-height: 12px;
 }

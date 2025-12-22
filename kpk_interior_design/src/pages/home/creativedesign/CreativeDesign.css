@@ -69,6 +69,7 @@
     height: 253px;
     width: 100%;
     max-width: 305px;
+    border-radius: 15px;
     overflow: hidden;
     position: relative;
 }

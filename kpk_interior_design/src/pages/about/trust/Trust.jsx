@@ -59,7 +59,7 @@ export default function Trust() {
     <section className="about-trust">
       <h2>Why We’re the Trusted Interior Design Choice in Pondicherry</h2>
       <p style={{paddingBottom:"50px"}}>
-        Discover elegant, trust-built interiors shaped with modern vision and thoughtful detailing, crafted with factory-finish precision by KPK Enterprise, specialising in innovative interior design in Pondicherry for meaningful, future-focused living.
+        Discover elegant, trust-built interiors shaped with modern vision and thoughtful detailing, crafted with factory-finish precision by KPK Enterprises, specialising in innovative interior design in Pondicherry for meaningful, future-focused living.
       </p>
 
       {/* ROW 1 - 3 CARDS */}

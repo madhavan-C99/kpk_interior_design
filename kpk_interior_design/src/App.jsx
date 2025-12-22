@@ -25,7 +25,7 @@ function App() {
   return (
 <>   
     {/* <BrowserRouter> */}
-    <Router>
+    {/* <Router> */}
       {/* <ContactView /> */}
       {/* <ImageShow/> */}
       <Navbar/>
@@ -42,7 +42,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio/>}/>
       </Routes> 
       <Footer/>
-    </Router>
+    {/* </Router> */}
     {/* </BrowserRouter> */}
 
 </>

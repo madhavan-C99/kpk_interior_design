@@ -45,7 +45,7 @@ function WhyChooseUs (){
                 <div className="wcutext_container2">
                     <p className="wcu_subtitle2">Why Choose Us</p>
                     <h2 className="wcu_maintitle2">Why We're the Preferred Interior Partner and Best Interior Designer in Pondicherry</h2>
-                    <p className="wcu_descrition2">KPK Enterprise is a leading and trusted name delivering premium solutions as the 
+                    <p className="wcu_descrition2">KPK Enterprises is a leading and trusted name delivering premium solutions as the 
                         best interior designer in Pondicherry.We offer professional, affordable, and luxury-ready interior designs 
                          crafted exclusively for modern Pondicherry homes.
                     </p>

@@ -8,7 +8,7 @@ export default function ContactHero()
         <section>
             <div className="contact_hero_con3">
                 <h1 className="contact_hero_head3">
-                    At KPK- Enterprise We Explore Our Work – Real Homes, Real Interior Designer in Pondicherry
+                    At KPK- Enterprises We Explore Our Work – Real Homes, Real Interior Designer in Pondicherry
                 </h1>
             </div>
         </section>

@@ -23,7 +23,7 @@ function ServiceSteps() {
                 <div className="utility_text_block2">
                     <h2 className="utility_title2">Smart Kitchen Layouts with Well-Planned Utility Zones</h2>
                     <p className="utility_description2">
-                        Design your dream kitchen with KPK Enterprise, offering smart kitchen 
+                        Design your dream kitchen with KPK Enterprises, offering smart kitchen 
                         layouts and well-planned utility zones in Pondicherry. Optimize space, 
                         workflow, and storage with our expert modular kitchen solutions.
                     </p>

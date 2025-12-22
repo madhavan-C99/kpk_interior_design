@@ -33,7 +33,7 @@ function WardrobeDesigns() {
                        These modern, functional wardrobe add-ons create 
                        smarter organization and easier access for homes 
                        in Pondicherry and Cuddalore, crafted with factory-finish 
-                       quality by KPK Enterprise, experts in customized wardrobe designs.
+                       quality by KPK Enterprises, experts in customized wardrobe designs.
                     </p>
                 </div>
                 <div className='accessories_grid2'>

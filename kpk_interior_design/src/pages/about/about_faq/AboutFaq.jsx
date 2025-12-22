@@ -17,91 +17,91 @@ export default function AboutFaq(){
          const faqs = {
              About: [
                          {
-                             q: "Who is KPK Enterprise?",
-                             a: "KPK Enterprise is a leading interior design company in Pondicherry, recognized for delivering stylish, functional, and premium home and commercial interiors. Their team of professional interior designers combines creativity, precision, and modern solutions to transform every space into a visually appealing and practical environment.",
+                             q: "Who is KPK Enterprises?",
+                             a: "KPK Enterprises is a leading interior design company in Pondicherry, recognized for delivering stylish, functional, and premium home and commercial interiors. Their team of professional interior designers combines creativity, precision, and modern solutions to transform every space into a visually appealing and practical environment.",
                          },
                          {
-                             q: "What is KPK Enterprise?",
-                             a: "KPK Enterprise is a trusted interior design service in Pondicherry and Cuddalore, providing end-to-end home interiors. Known for innovative modular kitchens, wardrobes, TV units, and pooja units, they deliver customized, high-quality designs that perfectly blend functionality with elegance.",
+                             q: "What is KPK Enterprises?",
+                             a: "KPK Enterprises is a trusted interior design service in Pondicherry and Cuddalore, providing end-to-end home interiors. Known for innovative modular kitchens, wardrobes, TV units, and pooja units, they deliver customized, high-quality designs that perfectly blend functionality with elegance.",
                          },
                          {
-                             q: "Why choose KPK Enterprise for Pondicherry interiors?",
-                             a: "Choosing KPK Enterprise ensures access to top-rated, professional interior designers in Pondicherry. They combine premium materials, creative designs, and timely execution to deliver personalized, functional, and elegant interiors for homes, offices, and commercial spaces, enhancing both style and comfort.",
+                             q: "Why choose KPK Enterprises for Pondicherry interiors?",
+                             a: "Choosing KPK Enterprises ensures access to top-rated, professional interior designers in Pondicherry. They combine premium materials, creative designs, and timely execution to deliver personalized, functional, and elegant interiors for homes, offices, and commercial spaces, enhancing both style and comfort.",
                          },
                          {
-                             q: "When should I hire KPK Enterprise for interior projects?",
-                             a: "Hiring KPK Enterprise early in your home or office project ensures seamless design execution. Engaging their Pondicherry interior designers at the planning stage allows for optimal layout, material selection, and customized solutions tailored to your lifestyle and functional needs.",
+                             q: "When should I hire KPK Enterprises for interior projects?",
+                             a: "Hiring KPK Enterprises early in your home or office project ensures seamless design execution. Engaging their Pondicherry interior designers at the planning stage allows for optimal layout, material selection, and customized solutions tailored to your lifestyle and functional needs.",
                          },
                          {
-                             q: "Which areas does KPK Enterprise serve locally?",
-                             a: "KPK Enterprise primarily serves Pondicherry and Cuddalore, providing specialized interior solutions for homes, apartments, offices, commercial spaces, and factories. Their local expertise ensures designs align with client expectations while adhering to regional aesthetic preferences and functional requirements.",
+                             q: "Which areas does KPK Enterprises serve locally?",
+                             a: "KPK Enterprises primarily serves Pondicherry and Cuddalore, providing specialized interior solutions for homes, apartments, offices, commercial spaces, and factories. Their local expertise ensures designs align with client expectations while adhering to regional aesthetic preferences and functional requirements.",
                          },
                          {
-                             q: "How long has KPK Enterprise been in business?",
-                             a: "With over 4 years of professional experience, KPK Enterprise has successfully completed more than 100 home and commercial interior projects in Pondicherry. Their consistent client satisfaction and 4.9 Google rating reflect their commitment to quality, creativity, and reliable service delivery.",
+                             q: "How long has KPK Enterprises been in business?",
+                             a: "With over 4 years of professional experience, KPK Enterprises has successfully completed more than 100 home and commercial interior projects in Pondicherry. Their consistent client satisfaction and 4.9 Google rating reflect their commitment to quality, creativity, and reliable service delivery.",
                          },
                          {
-                             q:"What makes KPK Enterprise stand out among interior designers in Pondicherry?",
-                             a:" KPK Enterprise stands out for its commitment to premium quality, creative design, and personalized solutions. Their team of top interior designers in Pondicherry ensures timely execution, functional layouts, and client-focused interiors that are both stylish and practical.",
+                             q:"What makes KPK Enterprises stand out among interior designers in Pondicherry?",
+                             a:" KPK Enterprises stands out for its commitment to premium quality, creative design, and personalized solutions. Their team of top interior designers in Pondicherry ensures timely execution, functional layouts, and client-focused interiors that are both stylish and practical.",
                          },
                          {
-                             q:"How many clients have KPK Enterprise served?",
-                             a:"KPK Enterprise has successfully delivered interior solutions to over 3000 happy clients in Pondicherry and Cuddalore. Their expertise in modular kitchens, wardrobes, TV units, pooja units, and study tables has earned them trust as one of the top-rated interior designers locally.",
+                             q:"How many clients have KPK Enterprises served?",
+                             a:"KPK Enterprises has successfully delivered interior solutions to over 3000 happy clients in Pondicherry and Cuddalore. Their expertise in modular kitchens, wardrobes, TV units, pooja units, and study tables has earned them trust as one of the top-rated interior designers locally.",
                          },
                          
                       ],
                  Services: [
                          {
-                             q:"What services does KPK Enterprise provide?",
-                             a:"KPK Enterprise offers comprehensive interior solutions, including modular kitchens, wardrobes, TV units, pooja units, study tables, and complete home interiors. Their Pondicherry-based team ensures every project is designed with meticulous planning, high-quality materials, and modern aesthetics tailored to client preferences.",
+                             q:"What services does KPK Enterprises provide?",
+                             a:"KPK Enterprises offers comprehensive interior solutions, including modular kitchens, wardrobes, TV units, pooja units, study tables, and complete home interiors. Their Pondicherry-based team ensures every project is designed with meticulous planning, high-quality materials, and modern aesthetics tailored to client preferences.",
                          },
                          {
-                             q:"How does KPK Enterprise design modular kitchens?",
-                             a:" KPK Enterprise creates modern, space-efficient modular kitchens in Pondicherry that maximize storage and usability while reflecting contemporary aesthetics. Their designers consider workflow, ergonomics, and style, ensuring kitchens are not only functional but also visually appealing and easy to maintain.",
+                             q:"How does KPK Enterprises design modular kitchens?",
+                             a:" KPK Enterprises creates modern, space-efficient modular kitchens in Pondicherry that maximize storage and usability while reflecting contemporary aesthetics. Their designers consider workflow, ergonomics, and style, ensuring kitchens are not only functional but also visually appealing and easy to maintain.",
                          },
                          {
-                             q:"Are KPK Enterprise interiors affordable?",
-                             a:"Yes, KPK Enterprise offers interior solutions that balance luxury and affordability. Their Pondicherry and Cuddalore clients benefit from customized designs, premium materials, and expert execution at competitive pricing, making stylish and functional home interiors accessible without compromising quality.",
+                             q:"Are KPK Enterprises interiors affordable?",
+                             a:"Yes, KPK Enterprises offers interior solutions that balance luxury and affordability. Their Pondicherry and Cuddalore clients benefit from customized designs, premium materials, and expert execution at competitive pricing, making stylish and functional home interiors accessible without compromising quality.",
                          },
                          {
-                             q:"Can KPK Enterprise design pooja units?",
-                             a:"Yes, KPK Enterprise specializes in designing pooja units in Pondicherry that combine elegance, functionality, and spiritual aesthetics. Their professional interior designers create serene, organized prayer spaces that seamlessly integrate with the home’s overall style while respecting traditional and modern design elements.",
+                             q:"Can KPK Enterprises design pooja units?",
+                             a:"Yes, KPK Enterprises specializes in designing pooja units in Pondicherry that combine elegance, functionality, and spiritual aesthetics. Their professional interior designers create serene, organized prayer spaces that seamlessly integrate with the home’s overall style while respecting traditional and modern design elements.",
                          },
                          {
-                             q:"How does KPK Enterprise ensure quality materials?",
-                             a:"KPK Enterprise sources premium, durable materials for all interior projects in Pondicherry and Cuddalore. They emphasize material quality, longevity, and aesthetic appeal, ensuring that every wardrobe, modular kitchen, TV unit, and pooja unit meets high standards of durability and elegance.",
+                             q:"How does KPK Enterprises ensure quality materials?",
+                             a:"KPK Enterprises sources premium, durable materials for all interior projects in Pondicherry and Cuddalore. They emphasize material quality, longevity, and aesthetic appeal, ensuring that every wardrobe, modular kitchen, TV unit, and pooja unit meets high standards of durability and elegance.",
                          },
                          {
-                             q:"Are KPK Enterprise interiors suitable for commercial spaces?",
-                             a:"Yes, KPK Enterprise designs offices, retail shops, corporate interiors, and industrial spaces in Pondicherry and Cuddalore. Their functional, modern, and stylish commercial solutions enhance productivity, brand image, and aesthetic appeal while meeting practical requirements for businesses and employees.",
+                             q:"Are KPK Enterprises interiors suitable for commercial spaces?",
+                             a:"Yes, KPK Enterprises designs offices, retail shops, corporate interiors, and industrial spaces in Pondicherry and Cuddalore. Their functional, modern, and stylish commercial solutions enhance productivity, brand image, and aesthetic appeal while meeting practical requirements for businesses and employees.",
                          },
                          {
-                             q: "How does KPK Enterprise customize interiors?",
-                             a: "KPK Enterprise personalizes every project by understanding client preferences, lifestyle, and space constraints. Their Pondicherry interior designers create tailored layouts, color schemes, and furniture solutions for modular kitchens, wardrobes, pooja units, and TV units that reflect individuality and practical needs.",
+                             q: "How does KPK Enterprises customize interiors?",
+                             a: "KPK Enterprises personalizes every project by understanding client preferences, lifestyle, and space constraints. Their Pondicherry interior designers create tailored layouts, color schemes, and furniture solutions for modular kitchens, wardrobes, pooja units, and TV units that reflect individuality and practical needs.",
                          },
                          {
-                             q: "Does KPK Enterprise provide design consultations?",
-                             a: "Yes, KPK Enterprise offers personalized interior design consultations in Pondicherry and Cuddalore. Their professional designers guide clients through modular kitchen layouts, wardrobe planning, pooja units, TV units, and study tables, ensuring every interior solution is functional, stylish, and tailored to specific requirements.",
+                             q: "Does KPK Enterprises provide design consultations?",
+                             a: "Yes, KPK Enterprises offers personalized interior design consultations in Pondicherry and Cuddalore. Their professional designers guide clients through modular kitchen layouts, wardrobe planning, pooja units, TV units, and study tables, ensuring every interior solution is functional, stylish, and tailored to specific requirements.",
                          },
                          {
-                             q: "Are KPK Enterprise interiors modern or traditional?",
-                             a: "KPK Enterprise caters to both modern and traditional interior preferences. Their Pondicherry-based interior designers blend contemporary aesthetics with classic design elements to create balanced, functional, and visually appealing interiors suitable for homes, offices, and commercial spaces.",
+                             q: "Are KPK Enterprises interiors modern or traditional?",
+                             a: "KPK Enterprises caters to both modern and traditional interior preferences. Their Pondicherry-based interior designers blend contemporary aesthetics with classic design elements to create balanced, functional, and visually appealing interiors suitable for homes, offices, and commercial spaces.",
                          },
                          {
-                             q: "Can KPK Enterprise handle large-scale interior projects?",
-                             a: "Yes, KPK Enterprise manages both residential and large-scale commercial projects in Pondicherry and Cuddalore. From villas and apartments to corporate offices and factories, their professional interior designers deliver functional, stylish, and high-quality interiors, ensuring timely execution and client satisfaction.",
+                             q: "Can KPK Enterprises handle large-scale interior projects?",
+                             a: "Yes, KPK Enterprises manages both residential and large-scale commercial projects in Pondicherry and Cuddalore. From villas and apartments to corporate offices and factories, their professional interior designers deliver functional, stylish, and high-quality interiors, ensuring timely execution and client satisfaction.",
                          },
                          
                       ],
              Process: [
                          
                          {
-                             q: "Does KPK Enterprise provide post-completion support?",
-                             a: "Absolutely. KPK Enterprise ensures ongoing support after project completion in Pondicherry and Cuddalore. Their team addresses maintenance queries, ensures durability, and provides expert guidance for long-term care, giving clients peace of mind and sustained satisfaction with their interiors.",
+                             q: "Does KPK Enterprises provide post-completion support?",
+                             a: "Absolutely. KPK Enterprises ensures ongoing support after project completion in Pondicherry and Cuddalore. Their team addresses maintenance queries, ensures durability, and provides expert guidance for long-term care, giving clients peace of mind and sustained satisfaction with their interiors.",
                          },
                          {
-                             q: "What is the project delivery process at KPK Enterprise? ",
-                             a: "KPK Enterprise follows a structured project flow in Pondicherry, including initial consultation, design planning, material selection, execution, and post-completion support. Their transparent and guided process ensures clients experience seamless communication, timely delivery, and high-quality interior transformations.",
+                             q: "What is the project delivery process at KPK Enterprises? ",
+                             a: "KPK Enterprises follows a structured project flow in Pondicherry, including initial consultation, design planning, material selection, execution, and post-completion support. Their transparent and guided process ensures clients experience seamless communication, timely delivery, and high-quality interior transformations.",
                          },
                      ],
              };

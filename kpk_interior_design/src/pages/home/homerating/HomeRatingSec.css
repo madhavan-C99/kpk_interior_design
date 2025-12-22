@@ -21,13 +21,17 @@
     border: 1px solid;
     margin-top: 4%;
     background-color: #3A2E27;
-    background-image: url('D:\codd99\kpk_interior_design\kpk_interior_design\src\assets\home\images\Vector 289.png');
+    background-image: url('../../../assets/home/images/Vector 289.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 8px;
 }
 
 .home_rate_head3{
-    margin-top: 5%;
+    /* margin-top: 5%; */
     padding: 0rem 16rem;
     text-align: center;
 }
@@ -43,7 +47,6 @@
     justify-content: center;
     align-items: center;
     gap: 7%;
-    margin-top: 3.8%;
 }
 
 
@@ -68,7 +71,6 @@
 .home_rating3 p {
     font-size: 1.5rem;
     font-weight: 400;
-    margin-top: 5px;
     text-align: center;
     font-family: var(--lorafont-font-family);
     color: var(--textcolor-color);
@@ -78,7 +80,6 @@
     .home_rate_head3{
         width: 100%;
         padding: 0rem 12rem;
-        /* background-color: red; */
     }
     .home_rate_title3{
         font-size: 38px;
@@ -91,7 +92,6 @@
         .home_rate_head3{
         width: 100%;
         padding: 0rem 7rem;
-        margin-top: 7%;
     }
     .home_rate_title3{
         font-size: 38px;
@@ -99,7 +99,6 @@
     }
     .home_rate_body3{
         gap: 5%;
-        margin-top: 5%;
     }
     .home_rating3_num{
         font-size: 4rem;
@@ -112,7 +111,6 @@
             .home_rate_head3{
         width: 100%;
         padding: 0rem 8rem;
-        margin-top: 5%;
     }
     .home_rate_title3{
         font-size: 36px;
@@ -120,7 +118,6 @@
     }
     .home_rate_body3{
         gap: 5%;
-        margin-top: 7%;
     }
     .home_rating3_num{
         font-size: 4rem;
@@ -134,7 +131,6 @@
             .home_rate_head3{
         width: 100%;
         padding: 0rem 3rem;
-        margin-top: 5%;
     }
     .home_rate_title3{
         font-size: 36px;
@@ -142,7 +138,6 @@
     }
     .home_rate_body3{
         gap: 4%;
-        margin-top: 7%;
     }
     .home_rating3_num{
         font-size: 3.3rem;
@@ -159,7 +154,6 @@
         .home_rate_head3{
         width: 100%;
         padding: 1.5rem;
-        margin-top: 2%;
     }
     .home_rate_title3{
         font-size: 20px;
@@ -169,7 +163,6 @@
     flex-wrap: wrap;        
         flex-direction: column;
         text-align: center;
-        margin-top: 5%;
         gap: 5%;
     }
     .home_rating3_num{
@@ -181,4 +174,3 @@
         margin-bottom: 8%;
     }
 }
-

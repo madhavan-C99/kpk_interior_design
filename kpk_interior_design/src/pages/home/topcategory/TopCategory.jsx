@@ -44,7 +44,7 @@ function TopCategory(){
                         Specialized Interior Solutions for Every Segment
                     </h2>
                     <p className="topcategory_desc2">
-                        At KPK Enterprise, we deliver specialized interior 
+                        At KPK Enterprises, we deliver specialized interior 
                         solutions for every segment in Pondicherry. From 
                         residential homes and apartments to commercial offices, 
                         corporate spaces, and factories, we ensure stylish, functional, 

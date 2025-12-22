@@ -1,138 +1,4 @@
-
-/* ----------about-design-------------- */
-/* .about-design{
-   
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-}
-.about-design h2{
-     text-align: center;
-    font-family: Roboto Serif;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 56px;
-    
-}
-.about-design>p{
-    font-family: Lora;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 44px;
-    margin: 30px;
-}
-.about-design_cycle-des>h4{
-    font-family: Roboto Serif;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 20px;
-    line-height: 28.7px;
-    letter-spacing: 0%;
-    text-align: center;
-}
-.about-design_cycle_line{
-    width: 80%;
-    height: 10px;
-    background: linear-gradient(90deg, #D4BC91 10.44%, #3A2E27 95.39%);
-    position: absolute;
-    transform: translate(-0%,100%);
-    z-index: 3;
-
-}
-.about-design_cycle{
-    z-index: 5;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px 100px;
-}
-.about-design_cycle_img{
-    text-align: center;
-    border-radius: 100%;
-    background-color: rgba(212, 188, 145, 1);
-    padding: 20px 20px 25px 20px;
-    height: 84.81159210205078px;
-    width: 84.81159210205078px;
-    margin: auto;
-}
-.about-design_cycle div img{
-    
-    height: 50px;
-    width: 50px;
-    
-}
-.about-design_cycle h4{
-    font-size: Roboto Serif;
-    font-size: 20px;
-    line-height: 28.7px;
-    font-weight: 600;
-    text-align: center;
-    margin: auto;
-    margin: 10px;
-}
-
-.about-design_cycle div p{
-    font-family: Lora;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-} */
-/* SIX DIFFERENT SCREEN SIZES FOR RESPONSIVENESS */
-
-/* X-Small (xs) - Mobile portrait and smaller devices */
-/* @media (max-width: 575.98px) {
-} */
-
-/* Small (sm) - Mobile landscape and larger phones */
-/* @media (min-width: 576px) and (max-width: 767.98px) {
-} */
-
-/* Medium (md) - Tablets and medium devices */
-/* @media (min-width: 768px) and (max-width: 991.98px) {
-    .about-design_cycle_line {
-        transform: translate(10px, 31px);
-    }
-    .about-design_cycle h4 {
-    font-size: Roboto Serif;
-    font-size: 13.15px;
-    line-height: 18.86px;
-    font-weight: 600;
-    text-align: center;
-}
-.about-design_cycle div p {
-    font-family: Lora;
-    font-size: 9.2px;
-    line-height: 15.78px;
-    font-weight: 400;
-}
-.about-design_cycle {
-    padding: 20px 35px;
-}
-} */
-
-/* Large (lg) - Desktops and laptop screens */
-/* @media (min-width: 992px) and (max-width: 1199.98px) {
-    .about-design_cycle h4 {
-        font-size: 16px;
-    }
-    .about-design_cycle_line {
-        transform: translate(-0%, -66%)
-    }
-} */
-
-/* Extra Large (xl) - Large desktops */
-/* @media (min-width: 1200px) and (max-width: 1399.98px) {
-} */
-
-/* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
-/* @media (min-width: 1400px) {
-} */
- /* Roboto Serif */
+/* Roboto Serif */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 /* Lora */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
@@ -241,7 +107,7 @@
 @media (max-width: 575.98px) {
     .about-design_cycle {
         display: block;
-        padding: 20px 50px;
+        padding: 20px 20px;
     }
     .about-design_cycle div {
         display: flex;
@@ -253,10 +119,10 @@
         align-items: center;
         justify-content: center;
     }
-    .about-design_cycle_line{
+    /* .about-design_cycle_line{
     transform: rotate(90deg) translate(88px, 146px);
     width: 102%;
- }
+ } */
  .about-design h2 {
     font-size: 20px;
     line-height: 28px;
@@ -288,9 +154,10 @@
     } */
          .about-design_cycle_line {
         /* top: 0; */
-        left: -209px;
+        left: -240px;
         transform: rotate(90deg);
         width: 602px;
+        margin-top: 4   0px;
     }
 }
 /* @media (min-width: 715px) and (max-width:767.98px) {

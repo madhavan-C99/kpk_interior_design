@@ -24,7 +24,7 @@ export default function WardoorKeyFeatures(){
             <div className='key_feature3'>
                 <div className='key_feature_head3'>
                     <h1>Modern Wardrobe Planning & Layout Designs</h1>
-                    <p>Our templates showcase stylish, space-efficient wardrobe planning and layout designs, crafted with modern detailing and factory-finish precision at KPK Enterprise, specialising in custom wardrobe designs in Pondicherry and Cuddalore</p>
+                    <p>Our templates showcase stylish, space-efficient wardrobe planning and layout designs, crafted with modern detailing and factory-finish precision at KPK Enterprises, specialising in custom wardrobe designs in Pondicherry and Cuddalore</p>
                 </div>
                 <div className='key_feature_body3'>
 

@@ -48,7 +48,7 @@ const PoojaUnitData = {
 
 // hero section
   hero: {
-    title: "Best Pooja Unit Designer in Pondicherry – KPK Enterprise",
+    title: "Best Pooja Unit Designer in Pondicherry – KPK Enterprises",
     subtitle: "Elegant, spiritual, functional pooja setups",
     // Place image in public/images/pooja/hero.jpg
     image: PoojaHeroBg,
@@ -59,7 +59,7 @@ const PoojaUnitData = {
 // what we offer section
   offer: {
   description:
-    "KPK Enterprise is the best pooja unit designer in Pondicherry, creating elegant, functional, and customized pooja units for homes. Every design reflects style, tradition, and premium craftsmanship for lasting beauty.",
+    "KPK Enterprises is the best pooja unit designer in Pondicherry, creating elegant, functional, and customized pooja units for homes. Every design reflects style, tradition, and premium craftsmanship for lasting beauty.",
 
   title: "What We Offer",
 
@@ -82,7 +82,7 @@ const PoojaUnitData = {
 gallery: {
   heading: "Your Home’s Spiritual Heart, Beautifully Designed",
   description:
-    "If you’re seeking luxury pooja unit interiors in Pondicherry, KPK Enterprise stands out. Our designs feature premium finishes, modular layouts, and handcrafted details. With expert designers and 1000+ happy clients, we create elegant, functional spiritual spaces.",
+    "If you’re seeking luxury pooja unit interiors in Pondicherry, KPK Enterprises stands out. Our designs feature premium finishes, modular layouts, and handcrafted details. With expert designers and 1000+ happy clients, we create elegant, functional spiritual spaces.",
 
   items: [
     {
@@ -156,9 +156,9 @@ gallery: {
 // feedback section
 feedback: {
   tag: "Feedback",
-  heading: "What Our Clients Say About KPK Enterprise",
+  heading: "What Our Clients Say About KPK Enterprises",
   description:
-    "Our clients in Pondicherry love how KPK Enterprise brings their interiors to life. From modular kitchens and wardrobes to TV units, pooja units, and study tables, every space is crafted with care, style, and functionality.",
+    "Our clients in Pondicherry love how KPK Enterprises brings their interiors to life. From modular kitchens and wardrobes to TV units, pooja units, and study tables, every space is crafted with care, style, and functionality.",
 
   items: [
   { 
@@ -200,7 +200,7 @@ feedback: {
 cta: {
   heading: "Begin Your Custom Luxury Pooja Unit Design Today",
   description:
-    "Start your luxury pooja unit design with KPK Enterprise in Pondicherry. Expert designers create elegant, functional, and personalized spiritual spaces.",
+    "Start your luxury pooja unit design with KPK Enterprises in Pondicherry. Expert designers create elegant, functional, and personalized spiritual spaces.",
   buttonText: "Start My Interior Plan",
   image: PoojaTvCta_Image
 },
@@ -215,90 +215,90 @@ faq: {
   data: {
     Designs: [
       {
-        q: "What makes KPK Enterprise the top pooja unit designer in Pondicherry?",
-        a: "KPK Enterprise is recognized as a leading pooja unit designer in Pondicherry, delivering elegant, functional, and personalized spiritual spaces. Our expert designers specialize in modular pooja units, custom layouts, and modern interiors, creating luxurious yet practical prayer areas for every home."
+        q: "What makes KPK Enterprises the top pooja unit designer in Pondicherry?",
+        a: "KPK Enterprises is recognized as a leading pooja unit designer in Pondicherry, delivering elegant, functional, and personalized spiritual spaces. Our expert designers specialize in modular pooja units, custom layouts, and modern interiors, creating luxurious yet practical prayer areas for every home."
       },
       {
         q: "Why should I choose the best pooja unit designer in Pondicherry?",
-        a: "Choosing the best pooja unit designer in Pondicherry ensures a combination of aesthetics, tradition, and functionality. KPK Enterprise provides luxury pooja unit interiors with premium materials, modular designs, and ambient lighting, helping homeowners create serene, spiritually enriching spaces that last for years."
+        a: "Choosing the best pooja unit designer in Pondicherry ensures a combination of aesthetics, tradition, and functionality. KPK Enterprises provides luxury pooja unit interiors with premium materials, modular designs, and ambient lighting, helping homeowners create serene, spiritually enriching spaces that last for years."
       },
       {
         q: "How do custom pooja unit designers in Pondicherry personalize interiors?",
-        a: "Custom pooja unit designers in Pondicherry at KPK Enterprise craft personalized prayer spaces tailored to your home’s layout and style. From traditional mandapams to modern pooja alcoves, every design integrates storage, lighting, and premium finishes, ensuring functional, elegant, and culturally resonant interiors."
+        a: "Custom pooja unit designers in Pondicherry at KPK Enterprises craft personalized prayer spaces tailored to your home’s layout and style. From traditional mandapams to modern pooja alcoves, every design integrates storage, lighting, and premium finishes, ensuring functional, elegant, and culturally resonant interiors."
       },
       {
         q: "What are the benefits of modular pooja units in Pondicherry?",
-        a: "Modular pooja units in Pondicherry from KPK Enterprise maximize space efficiency while offering flexibility and modern elegance. Our designers incorporate sliding doors, smart storage, and contemporary finishes, delivering practical, stylish, and long-lasting pooja unit interiors that fit any home layout."
+        a: "Modular pooja units in Pondicherry from KPK Enterprises maximize space efficiency while offering flexibility and modern elegance. Our designers incorporate sliding doors, smart storage, and contemporary finishes, delivering practical, stylish, and long-lasting pooja unit interiors that fit any home layout."
       },
       {
         q: "How do luxury pooja unit interiors in Pondicherry enhance homes?",
-        a: "Luxury pooja unit interiors in Pondicherry by KPK Enterprise elevate the spiritual and aesthetic appeal of homes. Using premium materials, ambient lighting, and bespoke modular designs, our professional designers create serene, elegant, and culturally inspired prayer spaces that reflect sophistication and devotion."
+        a: "Luxury pooja unit interiors in Pondicherry by KPK Enterprises elevate the spiritual and aesthetic appeal of homes. Using premium materials, ambient lighting, and bespoke modular designs, our professional designers create serene, elegant, and culturally inspired prayer spaces that reflect sophistication and devotion."
       },
       {
         q: "Why are traditional pooja unit designers in Pondicherry important for cultural homes?",
-        a: "Traditional pooja unit designers in Pondicherry at KPK Enterprise ensure that spiritual spaces honor cultural practices. Our experts integrate mandapams, classic carvings, and traditional layouts while maintaining modern functionality, creating pooja unit interiors that preserve heritage and provide serene, elegant home sanctuaries."
+        a: "Traditional pooja unit designers in Pondicherry at KPK Enterprises ensure that spiritual spaces honor cultural practices. Our experts integrate mandapams, classic carvings, and traditional layouts while maintaining modern functionality, creating pooja unit interiors that preserve heritage and provide serene, elegant home sanctuaries."
       },
       {
         q: "How do modern pooja unit interiors in Pondicherry differ from traditional designs?",
-        a: "Modern pooja unit interiors in Pondicherry focus on minimalism, modular layouts, and contemporary finishes. KPK Enterprise blends functionality, ambient lighting, and smart storage with aesthetic elegance, allowing homeowners to enjoy spiritual spaces that fit seamlessly into modern interiors without sacrificing cultural significance."
+        a: "Modern pooja unit interiors in Pondicherry focus on minimalism, modular layouts, and contemporary finishes. KPK Enterprises blends functionality, ambient lighting, and smart storage with aesthetic elegance, allowing homeowners to enjoy spiritual spaces that fit seamlessly into modern interiors without sacrificing cultural significance."
       },
       {
         q: "What makes the best pooja unit designer in Cuddalore stand out?",
-        a: "The best pooja unit designer in Cuddalore combines creativity, cultural sensitivity, and functionality. KPK Enterprise delivers luxury pooja unit interiors with modular layouts, ambient lighting, and premium finishes, ensuring spiritually enriching and visually stunning prayer spaces for every home."
+        a: "The best pooja unit designer in Cuddalore combines creativity, cultural sensitivity, and functionality. KPK Enterprises delivers luxury pooja unit interiors with modular layouts, ambient lighting, and premium finishes, ensuring spiritually enriching and visually stunning prayer spaces for every home."
       },
       {
         q: "How do custom pooja unit designers in Cuddalore personalize interiors?",
-        a: " Custom pooja unit designers in Cuddalore at KPK Enterprise tailor each space to the home’s architecture, personal taste, and spiritual needs. From modular shelves to ambient lighting and traditional carvings, our designers create elegant, functional, and serene pooja unit interiors."
+        a: " Custom pooja unit designers in Cuddalore at KPK Enterprises tailor each space to the home’s architecture, personal taste, and spiritual needs. From modular shelves to ambient lighting and traditional carvings, our designers create elegant, functional, and serene pooja unit interiors."
       },
       {
         q: "What are the advantages of modular pooja units in Cuddalore?",
-        a: "Modular pooja units in Cuddalore maximize storage, adaptability, and elegance. KPK Enterprise provides expertly designed interiors with sliding doors, compartments, and premium finishes, creating functional and stylish pooja spaces suitable for modern and traditional Cuddalore homes."
+        a: "Modular pooja units in Cuddalore maximize storage, adaptability, and elegance. KPK Enterprises provides expertly designed interiors with sliding doors, compartments, and premium finishes, creating functional and stylish pooja spaces suitable for modern and traditional Cuddalore homes."
       },
       {
         q: "How do luxury pooja unit interiors in Cuddalore elevate homes?",
-        a: "Luxury pooja unit interiors in Cuddalore by KPK Enterprise combine opulent materials, modular designs, and ambient lighting to enhance home interiors. Our expert designers craft elegant, serene, and culturally resonant prayer spaces that inspire devotion and elevate aesthetic appeal."
+        a: "Luxury pooja unit interiors in Cuddalore by KPK Enterprises combine opulent materials, modular designs, and ambient lighting to enhance home interiors. Our expert designers craft elegant, serene, and culturally resonant prayer spaces that inspire devotion and elevate aesthetic appeal."
       },
       {
         q: "Why choose traditional pooja unit designers in Cuddalore?",
-        a: "Traditional pooja unit designers in Cuddalore at KPK Enterprise preserve heritage and spiritual integrity. We integrate classic mandapams, cultural motifs, and traditional layouts with modern functionality, creating sacred spaces that honor rituals while maintaining elegance and practicality."
+        a: "Traditional pooja unit designers in Cuddalore at KPK Enterprises preserve heritage and spiritual integrity. We integrate classic mandapams, cultural motifs, and traditional layouts with modern functionality, creating sacred spaces that honor rituals while maintaining elegance and practicality."
       },
       {
         q: "How do modern pooja unit interiors in Cuddalore blend style and function?",
-        a: "Modern pooja unit interiors in Cuddalore focus on minimalist design, smart storage, and sleek finishes. KPK Enterprise combines aesthetic appeal, functionality, and ambient lighting to create serene, contemporary, and practical pooja spaces suitable for every home."
+        a: "Modern pooja unit interiors in Cuddalore focus on minimalist design, smart storage, and sleek finishes. KPK Enterprises combines aesthetic appeal, functionality, and ambient lighting to create serene, contemporary, and practical pooja spaces suitable for every home."
       },
       {
-        q: "How does KPK Enterprise integrate elegance and functionality in pooja units?",
-        a: "KPK Enterprise pooja unit designers in Pondicherry and Cuddalore blend style, functionality, and spiritual significance. From modular layouts to traditional mandapams and ambient lighting, every design reflects elegance, cultural reverence, and practical usability for modern homes."
+        q: "How does KPK Enterprises integrate elegance and functionality in pooja units?",
+        a: "KPK Enterprises pooja unit designers in Pondicherry and Cuddalore blend style, functionality, and spiritual significance. From modular layouts to traditional mandapams and ambient lighting, every design reflects elegance, cultural reverence, and practical usability for modern homes."
       },
 
     ],
     Services: [
       {
         q: "Can affordable pooja unit designers in Pondicherry provide quality solutions?",
-        a: "Yes. KPK Enterprise offers affordable pooja unit designers in Pondicherry who deliver professional, stylish, and functional prayer spaces without compromising quality. Each modular or custom pooja unit is carefully crafted to balance cost-effectiveness, durability, and modern design aesthetics for homeowners."
+        a: "Yes. KPK Enterprises offers affordable pooja unit designers in Pondicherry who deliver professional, stylish, and functional prayer spaces without compromising quality. Each modular or custom pooja unit is carefully crafted to balance cost-effectiveness, durability, and modern design aesthetics for homeowners."
       },
       {
         q: "Are pooja unit designers in Cuddalore available for home projects?",
-        a: "Yes. KPK Enterprise provides expert pooja unit designers in Cuddalore, delivering custom, modular, and modern pooja unit interiors. Our team ensures premium craftsmanship, functional storage, and elegant design solutions tailored to enhance the spiritual ambiance of every Cuddalore home."
+        a: "Yes. KPK Enterprises provides expert pooja unit designers in Cuddalore, delivering custom, modular, and modern pooja unit interiors. Our team ensures premium craftsmanship, functional storage, and elegant design solutions tailored to enhance the spiritual ambiance of every Cuddalore home."
       },
       {
         q: "Can affordable pooja unit designers in Cuddalore deliver premium results?",
-        a: "Absolutely. KPK Enterprise’s affordable pooja unit designers in Cuddalore create functional, elegant, and modular interiors without compromising quality. Using durable materials, efficient layouts, and smart storage solutions, homeowners receive high-value pooja units that reflect style and spiritual significance."
+        a: "Absolutely. KPK Enterprises’s affordable pooja unit designers in Cuddalore create functional, elegant, and modular interiors without compromising quality. Using durable materials, efficient layouts, and smart storage solutions, homeowners receive high-value pooja units that reflect style and spiritual significance."
       },
       {
-        q: "Can KPK Enterprise handle both Pondicherry and Cuddalore pooja projects simultaneously?",
-        a: "Yes. KPK Enterprise offers expert pooja unit designers across Pondicherry and Cuddalore. Our team delivers modular, custom, traditional, and modern interiors with premium finishes, ensuring every spiritual space is functional, elegant, and tailored to the homeowner’s needs."
+        q: "Can KPK Enterprises handle both Pondicherry and Cuddalore pooja projects simultaneously?",
+        a: "Yes. KPK Enterprises offers expert pooja unit designers across Pondicherry and Cuddalore. Our team delivers modular, custom, traditional, and modern interiors with premium finishes, ensuring every spiritual space is functional, elegant, and tailored to the homeowner’s needs."
       },
 
     ],
     Support: [
       {
         q: "Do pooja unit designers in Pondicherry provide post-installation support?",
-        a: "Yes. KPK Enterprise ensures continued support for pooja unit interiors in Pondicherry. Our team offers maintenance guidance, adjustments, and quality checks, guaranteeing functional, durable, and aesthetically beautiful prayer spaces long after installation."
+        a: "Yes. KPK Enterprises ensures continued support for pooja unit interiors in Pondicherry. Our team offers maintenance guidance, adjustments, and quality checks, guaranteeing functional, durable, and aesthetically beautiful prayer spaces long after installation."
       },
       {
         q: "How long does it take to complete pooja unit interiors in Pondicherry?",
-        a: "Project timelines vary based on design complexity, but KPK Enterprise ensures efficient execution for pooja unit interiors in Pondicherry. Our expert designers manage every step, from custom layouts to modular installations, delivering luxury and traditional interiors within agreed timelines."
+        a: "Project timelines vary based on design complexity, but KPK Enterprises ensures efficient execution for pooja unit interiors in Pondicherry. Our expert designers manage every step, from custom layouts to modular installations, delivering luxury and traditional interiors within agreed timelines."
       },
 
     ]

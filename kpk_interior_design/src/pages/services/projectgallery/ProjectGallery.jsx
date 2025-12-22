@@ -55,9 +55,9 @@ function ProjectGallery() {
         <>
             <div className='comparison_container2'>
                 <div className="table_header_content2">
-                    <h2 className="comparison_main_title2">L-Shape, U-Shape & Parallel Modular Kitchen Comparison At KPK Enterprise</h2>
+                    <h2 className="comparison_main_title2">L-Shape, U-Shape & Parallel Modular Kitchen Comparison At KPK Enterprises</h2>
                     <p className="comparison_subtitle2">
-                        Recognized for precision and innovation, KPK Enterprise provides the best 
+                        Recognized for precision and innovation, KPK Enterprises provides the best 
                         affordable modular kitchen designers in Pondicherry. We create functional 
                         L-shape, U-shape, and parallel kitchens tailored for style, efficiency, and durability.
                     </p>

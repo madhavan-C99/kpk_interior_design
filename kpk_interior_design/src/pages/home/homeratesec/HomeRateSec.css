@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -20,7 +19,7 @@
 
 .home_rate_sec__con3{
     /* height:400px ; */
-    background-image: url('D:\codd99\kpk_interior_design\kpk_interior_design\src\assets\home\images\Frame 1000012608.png');
+    background-image: url('../../../src/assets/home/images/Frame 1000012608.png');
     background-size: 100%  100%;
     background-repeat: no-repeat;
     background-color: #3A2E27;
@@ -88,7 +87,8 @@
 
 @media  (max-width:575.98px) {
     .home_rate_sec__con3{
-        height: 470px;
+        height: 490px;
+        margin-top: 5%;
     }
     .home_rate_sec__con3 h1{
         font-size: 28px;

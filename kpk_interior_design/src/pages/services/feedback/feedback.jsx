@@ -42,7 +42,7 @@ const CARD_DATA = [
 ];
     const originalFeedback = [
         { "feedimg": feedimg1, "desc": "“I had the pleasure of working with vibrant spaces. Their team of designers exceeded all expectations from our initial meetings to the final designs of my home.”", "name": "MR. NAMRA", "company": "MD- Aysha Construction Solutions" },
-        { "feedimg": feedimg3, "desc": "“The quality of the execution was exceptional. KPK Enterprise is truly a master of interior design.”", "name": "MS. CHLOE", "company": "Global Solutions Ltd." },
+        { "feedimg": feedimg3, "desc": "“The quality of the execution was exceptional. KPK Enterprises is truly a master of interior design.”", "name": "MS. CHLOE", "company": "Global Solutions Ltd." },
         { "feedimg": feedimg2, "desc": "“Highly recommend their services for anyone looking for modern and functional home interiors in Pondicherry.”", "name": "MR. FRANK", "company": "Pondi Builders" },
         { "feedimg": feedimg1, "desc": "“Every space is crafted with care, style, and functionality. We are extremely satisfied.”", "name": "MS. EVE", "company": "Creative Spaces Inc." },
     ];
@@ -111,8 +111,8 @@ const CARD_DATA = [
             <div className="feedback_sec3">
                 <div className="feedback_sec_head3">
                     <h4>Feedback</h4>
-                    <h1>What Our Clients Say About KPK Enterprise</h1>
-                    <p>Our clients in Pondicherry love, how KPK Enterprise brings their interiors to life. From modular kitchens and wardrobes to TV units, pooja units, and study tables, every space is crafted with care, style, and functionality.</p>
+                    <h1>What Our Clients Say About KPK Enterprises</h1>
+                    <p>Our clients in Pondicherry love, how KPK Enterprises brings their interiors to life. From modular kitchens and wardrobes to TV units, pooja units, and study tables, every space is crafted with care, style, and functionality.</p>
                 </div>
                 
                 <div className="main__container3">      
@@ -227,8 +227,8 @@ const CARD_DATA = [
 //                 <div className="feedback_sec3">
 //                     <div className="feedback_sec_head3">
 //                         <h4>FeedBack</h4>
-//                         <h1>What Our Clients Say About KPK Enterprise</h1>
-//                         <p>Our clients in Pondicherry love, how KPK Enterprise brings their interiors to life. From modular kitchens and wardrobes to TV units, pooja units, and study tables, every space is crafted with care, style, and functionality.</p>
+//                         <h1>What Our Clients Say About KPK Enterprises</h1>
+//                         <p>Our clients in Pondicherry love, how KPK Enterprises brings their interiors to life. From modular kitchens and wardrobes to TV units, pooja units, and study tables, every space is crafted with care, style, and functionality.</p>
 //                     </div>
 //                     <div className="feedback_sec_body3">
 //                         <div className="carousal_slide3">

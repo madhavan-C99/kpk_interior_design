@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -77,23 +76,19 @@
 
 }
 
-/*hero  image sec */
+/*hero  video sec */
 .hero_img3{
     height:720px;
-    width: 100%;
+    width: 52.5vw;
     overflow: hidden;
-    background-color: #ffffff;
-    /* background-color: red; */
+    object-fit: fill;
 }
 
-#modularvid2 {
-  width:100%;
-  height:100%;
-}
 
-.hero_img3 img{
-    height: 100%;
-    width: 100%;
+#modularvid2{
+    height:100%;
+    object-fit: fill;
+    width:100%;
 }
 
 
@@ -180,6 +175,8 @@
     .hero_inner3{
         grid-template-columns: 1fr;
         height: 100%;
+        width: 100vw;
+
     }   
 
     
@@ -209,7 +206,14 @@
         margin-bottom: 15%;
     }
 
-    .hero_img3{
+   .hero_img3{
         height:375px;
+        width: 100vw;
+            overflow: hidden;
+    object-fit: fill;
     }
+    #modularvid2{
+    object-fit: fill;
+    width:100vw;
+}
 }

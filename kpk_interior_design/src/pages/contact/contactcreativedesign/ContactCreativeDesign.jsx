@@ -1,20 +1,24 @@
 import React, { useState, useEffect } from "react";
 import './ContactCreativeDesign.css';
 import { useLocation } from "react-router-dom";
+
 // kitchen images
-import kitchen1img from '../../../assets/home/images/Frame 1000012086.png';
-import kitchen2img from '../../../assets/home/images/Frame 1000012086-1.png';
-import kitchen3img from '../../../assets/home/images/Frame 1000012091.png';
-import kitchen4img from '../../../assets/home/images/Frame 1000012091-1.png';
-import kitchen5img from '../../../assets/home/images/Frame 1000012092.png';
-import kitchen6img from '../../../assets/home/images/Frame 1000012092-1.png';
+import kitchen1img from '../../../assets/home/images/Frame 1000012086.png';     
+import kitchen2img from '../../../assets/home/images/Frame 1000012091.png';  
+import kitchen3img from '../../../assets/home/images/Frame 1000012092.png'; 
+import kitchen4img from '../../../assets/home/images/Frame 1000012883.png'; 
+import kitchen5img from '../../../assets/home/images/Frame 1000012884.png'; 
+import kitchen6img from '../../../assets/home/images/Frame 1000012885.png'; 
 import kitchen7img from '../../../assets/home/images/Frame 1000012093.png';
-import kitchen8img from '../../../assets/home/images/Frame 1000012093-1.png';
-import kitchen9img from '../../../assets/explore_image/Frame 1000012086.png';
-import kitchen10img from '../../../assets/explore_image/Frame 1000012091.png';
-import kitchen11img from '../../../assets/explore_image/Frame 1000012092.png';
-import kitchen12img from '../../../assets/explore_image/Frame 1000012093.png';
-import kitchen13img from '../../../assets/explore_image/Frame 10012092.png'
+import kitchen8img from '../../../assets/home/images/Frame 1000012886.png'; 
+import kitchen9img from '../../../assets/home/images/Frame 100001286.png'; 
+import kitchen10img from '../../../assets/home/images/Frame 1000012887.png';
+import kitchen11img from '../../../assets/home/images/Frame 1000012888.png'; 
+import kitchen12img from '../../../assets/home/images/Frame 1000012889.png';
+import kitchen13img from '../../../assets/home/images/Frame 1000012890.png';
+import kitchen14img from '../../../assets/home/images/Frame 1000012891.png'
+import kitchen15img from '../../../assets/explore_image/Frame 1000012092.png'
+import kitchen16img from '../../../assets/home/images/Frame 1000012892.png'
 
 // Wardrobe images
 import wardrobe1img from '../../../assets/services/images/Frame 1000012402.png'; 
@@ -25,6 +29,11 @@ import wardrobe5img from '../../../assets/services/images/Frame 100001242.png';
 import wardrobe6img from '../../../assets/services/images/Frame 100001240.png';
 import wardrobe7img from '../../../assets/services/images/Frame 10000122.png';
 import wardrobe8img from '../../../assets/services/images/Frame 10012402.png';
+import wardrobe9img from '../../../assets/services/images/wardrobe9.png';
+import wardrobe10img from '../../../assets/services/images/wardrobe10.png';
+import wardrobe11img from '../../../assets/services/images/wardrobe13.png';
+import wardrobe12img from '../../../assets/services/images/wardrobe11.png';
+import wardrobe13img from '../../../assets/services/images/wardrobe12.png';
 
 // pooja images
 import pooja1img from '../../../assets/services/images/Frame 1000012931.png'
@@ -63,31 +72,31 @@ function ContactCreativeDesign() {
                 { id: 11, name: 'Compact Urban Kitchen', img: kitchen11img },
                 { id: 12, name: 'Parallel Kitchen Layout', img: kitchen12img },
                 { id: 13, name: 'Matte Finish Modern Kitchen', img: kitchen13img },
-                { id: 14, name: 'Woodgrain Modular Design', img: kitchen6img },
-                { id: 15, name: 'Smart Storage Kitchen System', img: kitchen7img },
-                { id: 16, name: 'Contemporary High-Gloss Kitchen', img: kitchen8img }
+                { id: 14, name: 'Woodgrain Modular Design', img: kitchen14img },
+                { id: 15, name: 'Smart Storage Kitchen System', img: kitchen15img },
+                { id: 16, name: 'Contemporary High-Gloss Kitchen', img: kitchen16img }
             ]
         },
         {
             id: 2,
             label: 'wardrobe',
             images: [
-                { id: 1, name: 'Tandem Drawers', img: wardrobe1img },
-                { id: 2, name: 'Cutlery Drawers', img: wardrobe2img },
-                { id: 3, name: 'Plain Drawers', img: wardrobe3img },
-                { id: 4, name: 'Thali Basket', img: wardrobe4img },
-                { id: 5, name: 'Oil Pullout', img: wardrobe5img },
-                { id: 6, name: 'Bottle Pullout', img: wardrobe6img },
-                { id: 7, name: 'Pantry Pullout', img: wardrobe7img },
-                { id: 8, name:  'Magic Corner', img: wardrobe8img },
-                { id: 9, name: 'Tandem Drawers', img: wardrobe1img },
-                { id: 10, name:  'Cutlery Drawers', img: wardrobe2img },
-                { id: 11, name:'Plain Drawers', img: wardrobe3img },
-                { id: 12, name:'Thali Basket', img: wardrobe4img },
-                { id: 13, name: 'Oil Pullout', img: wardrobe5img },
-                { id: 14, name:'Bottle Pullout', img: wardrobe6img },
-                { id: 15, name: 'Pantry Pullout', img: wardrobe7img },
-                { id: 16, name: 'Magic Corner', img: wardrobe8img }
+                // { id: 1, name: 'Tandem Drawers', img: wardrobe1img },
+                // { id: 2, name: 'Cutlery Drawers', img: wardrobe2img },
+                // { id: 3, name: 'Plain Drawers', img: wardrobe3img },
+                // { id: 4, name: 'Thali Basket', img: wardrobe4img },
+                // { id: 5, name: 'Oil Pullout', img: wardrobe5img },
+                // { id: 6, name: 'Bottle Pullout', img: wardrobe6img },
+                // { id: 7, name: 'Pantry Pullout', img: wardrobe7img },
+                // { id: 8, name:  'Magic Corner', img: wardrobe8img },
+                { id: 9, name: 'Tandem Drawers', img: wardrobe9img },
+                { id: 10, name:  'Cutlery Drawers', img: wardrobe10img },
+                { id: 11, name:'Plain Drawers', img: wardrobe11img },
+                { id: 12, name:'Thali Basket', img: wardrobe12img },
+                { id: 13, name: 'Oil Pullout', img: wardrobe13img },
+                // { id: 14, name:'Bottle Pullout', img: wardrobe6img },
+                // { id: 15, name: 'Pantry Pullout', img: wardrobe7img },
+                // { id: 16, name: 'Magic Corner', img: wardrobe8img }
             ]
         },
         {
@@ -102,14 +111,14 @@ function ContactCreativeDesign() {
                 { id: 6, name:  'Modern Wall-Mounted Pooja Unit', img: pooja3img },
                 { id: 7, name:'Compact Corner Pooja Setup', img: pooja2img },
                 { id: 8, name:'Traditional Carved Pooja Mandap', img: pooja1img },
-                { id: 9, name: 'Traditional Carved Pooja Mandap', img: pooja8img },
-                { id: 10, name:'Backlit Meditation Niche', img: pooja7img },
-                { id: 11, name: 'Jaali Panel Pooja Space', img: pooja6img },
-                { id: 12, name: 'Compact Corner Pooja Setup', img: pooja5img },
-                { id: 13, name:'Backlit Meditation Niche', img: pooja4img },
-                { id: 14, name: 'Modern Wall-Mounted Pooja Unit', img: pooja3img },
-                { id: 15, name: 'Compact Corner Pooja Setup', img: pooja2img },
-                { id: 16, name:'Traditional Carved Pooja Mandap', img: pooja1img }
+                // { id: 9, name: 'Traditional Carved Pooja Mandap', img: pooja8img },
+                // { id: 10, name:'Backlit Meditation Niche', img: pooja7img },
+                // { id: 11, name: 'Jaali Panel Pooja Space', img: pooja6img },
+                // { id: 12, name: 'Compact Corner Pooja Setup', img: pooja5img },
+                // { id: 13, name:'Backlit Meditation Niche', img: pooja4img },
+                // { id: 14, name: 'Modern Wall-Mounted Pooja Unit', img: pooja3img },
+                // { id: 15, name: 'Compact Corner Pooja Setup', img: pooja2img },
+                // { id: 16, name:'Traditional Carved Pooja Mandap', img: pooja1img }
             ]
         },
         {
@@ -122,16 +131,16 @@ function ContactCreativeDesign() {
                 { id: 4, name: 'Contemporary Storage Console', img: tv4img },
                 { id: 5, name:'Minimal Media Console', img: tv5img },
                 { id: 6, name: 'Designer TV Statement Panel', img: tv6img },
-                { id: 7, name: 'Glossy Modern Entertainment Hub', img: tv1img },
-                { id: 8, name: 'Floating Panel Elegance', img: tv2img },
-                { id: 9, name: 'Dual-Tone Media Wall', img: tv3img },
-                { id: 10, name: 'Contemporary Storage Console', img: tv4img },
-                { id: 11, name:'Minimal Media Console', img: tv5img },
-                { id: 12, name: 'Designer TV Statement Panel', img: tv6img },
-                { id: 13, name: 'Glossy Modern Entertainment Hub', img: tv1img },
-                { id: 14, name: 'Floating Panel Elegance', img: tv2img },
-                { id: 15, name: 'Dual-Tone Media Wall', img: tv3img },
-                { id: 16, name: 'Contemporary Storage Console', img: tv4img },
+                // { id: 7, name: 'Glossy Modern Entertainment Hub', img: tv1img },
+                // { id: 8, name: 'Floating Panel Elegance', img: tv2img },
+                // { id: 9, name: 'Dual-Tone Media Wall', img: tv3img },
+                // { id: 10, name: 'Contemporary Storage Console', img: tv4img },
+                // { id: 11, name:'Minimal Media Console', img: tv5img },
+                // { id: 12, name: 'Designer TV Statement Panel', img: tv6img },
+                // { id: 13, name: 'Glossy Modern Entertainment Hub', img: tv1img },
+                // { id: 14, name: 'Floating Panel Elegance', img: tv2img },
+                // { id: 15, name: 'Dual-Tone Media Wall', img: tv3img },
+                // { id: 16, name: 'Contemporary Storage Console', img: tv4img },
             ]
         },
         {
@@ -170,9 +179,16 @@ function ContactCreativeDesign() {
     // const [activeCategoryId, setActiveCategoryId] = useState(initialCategory);
 
 
-
+    const location = useLocation();
+    const incomingId=location.state?.selectedCategory?.id || 1;
     // State for Active Category
-    const [activeCategoryId, setActiveCategoryId] = useState(contactcategorydata[0].id);
+    const [activeCategoryId, setActiveCategoryId] = useState(incomingId);
+
+    useEffect(() => {
+        if (location.state?.selectedCategory?.id) {
+            setActiveCategoryId(location.state.selectedCategory.id);
+        }
+    }, [location.state]);
     
     // State for Mobile Detection (Breakpoint 575px)
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 575);
@@ -201,7 +217,7 @@ function ContactCreativeDesign() {
         <div className="contactcreative_container2">
             <div className="contactcreative_textwrap2">
                 <h2 className="contactcreative_title2">
-                    KPK Enterprise: Creative Design Ideas 
+                    KPK Enterprises: Creative Design Ideas 
                     for Every Corner of Your Home
                 </h2>
                 <p className="contactcreative_desc2">

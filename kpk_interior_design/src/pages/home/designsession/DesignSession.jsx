@@ -35,7 +35,7 @@ function DesignSession(){
                         Design Consultations by Professional Designers in Pondicherry 
                     </h2>
                     <p className="designsession_des2">
-                        KPK Enterprise, a top interior design brand in Pondicherry, 
+                        KPK Enterprises, a top interior design brand in Pondicherry, 
                         delivers tailored consultations. We help homeowners and businesses 
                         plan modular kitchens, wardrobes, TV units, pooja units, and study 
                         tables with precision, creativity, and lasting quality.

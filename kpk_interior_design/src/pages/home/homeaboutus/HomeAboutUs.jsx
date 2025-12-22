@@ -35,8 +35,8 @@ export default function HomeAboutUs(){
 
                 <div className="home_about__body3">
                     <h4 className='home_about_body_title3'>About Us</h4>
-                    <h1 className='home_about_title_head3'>KPK Enterprise: Leading Interior Designers in Pondicherry</h1>
-                    <p className='home_about_title_caption3'>KPK Enterprise is a leading interior design company in Pondicherry, offering end-to-end home interiors. As top interior designers in Pondicherry, we deliver premium, affordable, and professional interior solutions.</p>
+                    <h1 className='home_about_title_head3'>KPK Enterprises: Leading Interior Designers in Pondicherry</h1>
+                    <p className='home_about_title_caption3'>KPK Enterprises is a leading interior design company in Pondicherry, offering end-to-end home interiors. As top interior designers in Pondicherry, we deliver premium, affordable, and professional interior solutions.</p>
                     <div className='home_about_icon_con3'>
                     {data.map((value,index)=>(
                         <div key={index} className='home_about_icon__card3'>
@@ -46,7 +46,7 @@ export default function HomeAboutUs(){
 
                     ))}
                     </div>
-                    <p className='home_about_title_desc3'>KPK Enterprise is trusted by homeowners and businesses for our design accuracy, durable workmanship, and seamless execution.</p>
+                    <p className='home_about_title_desc3'>KPK Enterprises is trusted by homeowners and businesses for our design accuracy, durable workmanship, and seamless execution.</p>
                     <button className='home_about_title_btn3'>Know More About US</button>
                 </div>
             </div>

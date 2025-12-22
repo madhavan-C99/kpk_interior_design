@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
 import './KitchenDesigns.css'
-import sleektouch from '../../../assets/services/images/Frame 1000012428.png'
-import boldtwostructure from '../../../assets/services/images/Frame 1000028.png'
-import hybridmodular from '../../../assets/services/images/Frame 1000012429.png'
-import openshelf from '../../../assets/services/images/Frame 1000012430.png'
-import multifunction from '../../../assets/services/images/Frame 10000128.png'
-import premiumstone from '../../../assets/services/images/Frame 10012428.png'
+import sleektouch1 from '../../../assets/services/images/kitsl1.png'
+import sleektouch11 from '../../../assets/services/images/kitsl11.png'
+import boldtwostructure2 from '../../../assets/services/images/kitsl2.png'
+import boldtwostructure22 from '../../../assets/services/images/kitsl22.png'
+import hybridmodular3 from '../../../assets/services/images/kitsl3.png'
+import hybridmodular33 from '../../../assets/services/images/kitsl33.png'
+import openshelf4 from '../../../assets/services/images/kitsl4.png'
+import openshelf44 from '../../../assets/services/images/kitsl44.png'
+import multifunction5 from '../../../assets/services/images/kitsl5.png'
+import multifunction55 from '../../../assets/services/images/kitsl55.png'
+import premiumstone6 from '../../../assets/services/images/kitsl6.png'
+import premiumstone66 from '../../../assets/services/images/kitsl66.png'
 import ImageHeroSec from "../../imageview/imageherosec/ImageHeroSec";
 import ImageShow from "../../imageview/ImageShow";
 
@@ -15,37 +21,37 @@ function KitchenDesigns(){
     const designdata = [
     { 
       id: 1, 
-      image: [sleektouch,boldtwostructure],
+      image: [sleektouch1,sleektouch11],
       title: 'Sleek Soft-Touch Kitchen', 
       description: 'Blends matte surfaces crafted for a calm cooking experience.' 
     },
     { 
       id: 2, 
-      image: [boldtwostructure,hybridmodular], 
+      image: [boldtwostructure2,boldtwostructure22], 
       title: 'Bold Two-Texture Kitchen', 
       description: 'Striking blend of textures that define instant character.' 
     },
     { 
       id: 3, 
-      image: [hybridmodular,openshelf], 
+      image: [hybridmodular3,hybridmodular33], 
       title: 'Hybrid Modular Workspace', 
       description: 'Perfect blend of prep zones and smart storage flow.' 
     },
     { 
       id: 4, 
-      image: [openshelf,multifunction], 
+      image: [openshelf4,openshelf44], 
       title: 'Open-Shelf Modern Kitchen', 
       description: 'A light, airy design with easy-access open storage.' 
     },
     { 
       id: 5, 
-      image: [multifunction,premiumstone], 
+      image: [multifunction5,multifunction55], 
       title: 'Multi-Functional Compact Layout', 
       description: 'Designed to do more in less space without losing style.' 
     },
     { 
       id: 6, 
-      image: [premiumstone,multifunction], 
+      image: [premiumstone6,premiumstone66], 
       title: 'Premium Stone-Top Modular Kitchen', 
       description: 'A rich stone counter that blends luxury with durability.' 
     }]
@@ -86,7 +92,7 @@ function KitchenDesigns(){
                         Top Modular Kitchen Design Ideas for Every Space
                     </h2>
                     <p className="design_content2">
-                        If you're looking for luxury modular kitchen design in Pondicherry, KPK Enterprise stands out. 
+                        If you're looking for luxury modular kitchen design in Pondicherry, KPK Enterprises stands out. 
                         Their designs include ergonomic layouts, premium materials, and smart storage solutions, 
                         making every kitchen functional, stylish, and personalized.
                     </p>
@@ -117,5 +123,3 @@ function KitchenDesigns(){
 }
 
 export default KitchenDesigns
-
-              

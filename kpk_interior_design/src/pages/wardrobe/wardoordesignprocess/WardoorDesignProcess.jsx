@@ -52,7 +52,7 @@ const dynamicStyles = {
             <div className='design_process3'>
                 <div className='design_process_head3'>
                     <h1>Wardrobe Space Revamp & Interior Upgrades</h1>
-                    <p>KPK Enterprise offers space-optimised, modern wardrobe revamps featuring smart storage upgrades and seamless interior detailing, specialising in factory-finish customised wardrobe designs for Pondicherry and Cuddalore homes.</p>
+                    <p>KPK Enterprises offers space-optimised, modern wardrobe revamps featuring smart storage upgrades and seamless interior detailing, specialising in factory-finish customised wardrobe designs for Pondicherry and Cuddalore homes.</p>
                 </div>
                 <div className='design_process_body3'>
                     <div className='design_draw3'>

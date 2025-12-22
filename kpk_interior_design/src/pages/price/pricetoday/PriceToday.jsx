@@ -35,7 +35,7 @@ export default function PriceToday() {
 
         <p>
           Start your Best luxury pooja unit design <br />
-          with KPK Enterprise in Pondicherry. <br />
+          with KPK Enterprises in Pondicherry. <br />
           Expert designers create elegant, <br />
           functional, and personalized spiritual <br />
           spaces.

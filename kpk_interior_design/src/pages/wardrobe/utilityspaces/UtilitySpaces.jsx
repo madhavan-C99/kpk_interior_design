@@ -24,7 +24,7 @@ function UtilitySpaces() {
                     <h2 className="utility_title2">Built-In Utility Spaces for Easy Organisation</h2>
                     <p className="utility_description2">
                        Our modern built-in utility spaces bring effortless organization through smart 
-                       layouts, hidden storage and factory-finish detailing. Created by KPK Enterprise, 
+                       layouts, hidden storage and factory-finish detailing. Created by KPK Enterprises, 
                        we specialize in custom interiors design in Pondicherry and Cuddalore homes.
                     </p>
                 </div>

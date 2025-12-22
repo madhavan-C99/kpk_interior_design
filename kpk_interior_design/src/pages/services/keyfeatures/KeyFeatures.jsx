@@ -21,7 +21,7 @@ export default function KeyFeatures(){
             <div className='key_feature3'>
                 <div className='key_feature_head3'>
                     <h1>Efficient Modular Kitchen Layouts – Ideas for You</h1>
-                    <p>KPK Enterprise creates efficient modular kitchen layouts that maximize space and improve workflow. Our L-shape, U-shape, and parallel designs offer smart storage, smooth movement, and stylish functionality for modern Pondicherry homes.</p>
+                    <p>KPK Enterprises creates efficient modular kitchen layouts that maximize space and improve workflow. Our L-shape, U-shape, and parallel designs offer smart storage, smooth movement, and stylish functionality for modern Pondicherry homes.</p>
                 </div>
                 <div className='key_feature_body3'>
 

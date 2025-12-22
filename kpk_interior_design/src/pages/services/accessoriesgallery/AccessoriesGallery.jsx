@@ -30,7 +30,7 @@ function AccessoriesGallery() {
                         Upgrade Your Kitchen with Stylish and Functional Accessories
                     </h2>
                     <p className="accessories_subtitle2">
-                        The most trusted modular kitchen designers in Pondicherry, KPK Enterprise offers stylish and functional kitchen accessories. From modular organizers to premium hardware, every addition enhances efficiency, aesthetics, and convenience — perfect for homeowners seeking a luxurious, well-organized kitchen.
+                        The most trusted modular kitchen designers in Pondicherry, KPK Enterprises offers stylish and functional kitchen accessories. From modular organizers to premium hardware, every addition enhances efficiency, aesthetics, and convenience — perfect for homeowners seeking a luxurious, well-organized kitchen.
                     </p>
                 </div>
                 <div className='accessories_grid2'>

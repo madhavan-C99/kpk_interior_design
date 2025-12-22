@@ -10,8 +10,8 @@ export default function HeroSection(){
         <section className="herosection3">
             <div className="hero_inner3">
                 <div className="hero_content3">
-                    <h1>KPK Enterprise - Trusted Best Modular Kitchen in Pondicherry</h1>
-                    <p>Transform Your Space with KPK Enterprise, the trusted best modular kitchen in Pondicherry. We deliver smart designs, premium materials, fair pricing, and on-time execution to create beautiful, functional kitchens for every home</p>
+                    <h1>KPK Enterprises - Trusted Best Modular Kitchen in Pondicherry</h1>
+                    <p>Transform Your Space with KPK Enterprises, the trusted best modular kitchen in Pondicherry. We deliver smart designs, premium materials, fair pricing, and on-time execution to create beautiful, functional kitchens for every home</p>
                     <button>Start My Interior Plan </button>
                 </div>
                 <div className="hero_img3">
