@@ -86,6 +86,7 @@ gallery: {
 
   items: [
     {
+      id: "pooja-001",
       type: "image",
       title: "Modern Wall-Mounted Pooja Unit",
       description:

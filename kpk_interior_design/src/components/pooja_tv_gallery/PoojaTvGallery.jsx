@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "../pooja_tv_gallery/PoojaTvGallery.css";
+import { useNavigate } from "react-router-dom";
+
 
 export default function PoojaTvGallery({ gallery }) {
   return (
@@ -33,6 +35,7 @@ export default function PoojaTvGallery({ gallery }) {
 
 function ImageCard({ item }) {
   const [active, setActive] = useState(0);
+  const navigate = useNavigate();
 
   // auto slide
   useEffect(() => {
@@ -82,7 +85,14 @@ function ImageCard({ item }) {
 
       <hr />
 
-      <button className="pt-gallery-btn">Get This Design</button>
+      <button
+        className="pt-gallery-btn"
+         onClick={() =>
+         navigate(`/design/${item.id}`, {
+         state: { fromLabel: "pooja-unit" }
+    })}> Get This Design
+</button>
+
     </div>
   );
 }

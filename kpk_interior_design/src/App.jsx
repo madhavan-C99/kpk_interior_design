@@ -7,6 +7,7 @@ import Wardrobe from './pages/wardrobe/Wardrobe'
 import Footer from './components/footer/Footer'
 import ContactView from './pages/contact/ContactView'
 import ImageShow from './pages/imageview/ImageShow'
+import ImageDesignDetail from "./pages/design_detail/ImageDesignDetail";
 // pooja and tv unit
 
 import PoojaTvPage from "./pages/pooja_tv/PoojaTvPage";
@@ -40,6 +41,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio/>}/>
+
+        <Route path="/design/:id" element={<ImageDesignDetail />} />
+
+
       </Routes> 
       <Footer/>
     {/* </Router> */}

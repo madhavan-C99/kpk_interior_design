@@ -1,0 +1,86 @@
+.image-design-detail {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 5%;
+}
+
+/* Breadcrumb */
+.image-breadcrumb-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.back-arrow {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Image Viewer */
+.image-viewer-main img {
+  width: 65%;
+  border-radius: 14px;
+  height: 600px;
+}
+
+.image-viewer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.image-viewer-grid img {
+  cursor: pointer;
+  border-radius: 8px;
+  opacity: 0.6;
+}
+
+.image-viewer-grid img.active {
+  opacity: 1;
+  outline: 2px solid #3A2E27;
+}
+
+/* Action */
+.image-design-action {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.image-design-action button {
+  padding: 12px 36px;
+  font-size: 18px;
+  border: none;
+  background: #3A2E27;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Related */
+.image-related-wrapper {
+  margin-top: 60px;
+}
+
+.image-related-carousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-related-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  flex: 1;
+}
+
+.image-related-card {
+  cursor: pointer;
+}
+
+.image-related-card img {
+  width: 100%;
+  border-radius: 10px;
+}
