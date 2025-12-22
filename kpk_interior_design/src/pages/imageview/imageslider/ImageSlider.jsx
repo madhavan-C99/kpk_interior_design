@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./ImageSlider.css";
 
-import card1img from "../../../assets/home/images/Frame 1000012086.png";
-import card2img from "../../../assets/home/images/Frame 1000012086-1.png";
-import card3img from "../../../assets/home/images/Frame 1000012091.png";
-import card4img from "../../../assets/home/images/Frame 1000012091-1.png";
-import card5img from "../../../assets/home/images/Frame 1000012092.png";
-import card6img from "../../../assets/home/images/Frame 1000012092-1.png";
-import card7img from "../../../assets/home/images/Frame 1000012093.png";
-import card8img from "../../../assets/home/images/Frame 1000012093-1.png";
+import card1img from "../../../assets/home/images/kitchen1.png";
+import card2img from "../../../assets/home/images/kitchen5.png";
+import card3img from "../../../assets/home/images/kitchen2.png";
+import card4img from "../../../assets/home/images/kitchen6.png";
+import card5img from "../../../assets/home/images/kitchen3.png";
+import card6img from "../../../assets/home/images/kitchen7.png";
+import card7img from "../../../assets/home/images/kitchen4.png";
+import card8img from "../../../assets/home/images/kitchen8.png";
 
 const MOBILE_BREAKPOINT = 575;
 const TABLET_BREAKPOINT = 991;

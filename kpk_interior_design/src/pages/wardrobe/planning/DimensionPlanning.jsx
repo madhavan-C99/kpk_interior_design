@@ -1,5 +1,5 @@
 import React from "react";
-import dimn_img from '../../../assets/services/images/Frame 1000012894.png'
+import dimn_img from '../../../assets/services/images/Frame1000012894.png'
 import '../../services/forms/ContactForm.css'
 
 function DimensionPlanning(){

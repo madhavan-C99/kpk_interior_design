@@ -1,9 +1,9 @@
 import React from "react";
 import './DesignSession.css'
-import office from '../../../assets/home/images/Frame 1000012976.png'
-import home from '../../../assets/home/images/Frame 1000012853.png'
-import laptop from '../../../assets/home/images/Frame 1000012854.png'
-import tablet from '../../../assets/home/images/Frame 1000012855.png'
+import office from '../../../assets/home/images/designsess1.png'
+import home from '../../../assets/home/images/designsess2.png'
+import laptop from '../../../assets/home/images/designsess3.png'
+import tablet from '../../../assets/home/images/designsess4.png'
 
 function DesignSession(){
    const steps = [{

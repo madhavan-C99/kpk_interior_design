@@ -1,10 +1,10 @@
 import React from "react";
 import './TopCategory.css'
-import homeimg from '../../../assets/home/images/Frame 1000012638.png'
-import apartmentimg from '../../../assets/home/images/Frame 1000012639.png'
-import shopimg from '../../../assets/home/images/Frame 1000012640.png'
-import businessimg from '../../../assets/home/images/Frame 1000012641.png'
-import factoryimg from '../../../assets/home/images/Frame 1000012642.png'
+import homeimg from '../../../assets/home/images/topcatimg1.png'
+import apartmentimg from '../../../assets/home/images/topcatimg2.png'
+import shopimg from '../../../assets/home/images/topcatimg3.png'
+import businessimg from '../../../assets/home/images/topcatimg4.png'
+import factoryimg from '../../../assets/home/images/topcatimg5.png'
 
 function TopCategory(){
 

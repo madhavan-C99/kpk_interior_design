@@ -1,6 +1,6 @@
 import React from "react";
 import '../../services/sections/ServiceSteps.css'
-import shelfimg from '../../../assets/services/images/Group 5139990.png'
+import shelfimg from '../../../assets/services/images/Group5139990.png'
 import hangingspace from '../../../assets/services/images/icon-park-solid_hanger-two.png'
 import shelf from '../../../assets/services/images/shelfimg.png'
 import pull_out from '../../../assets/services/images/fluent_drawer-20-filled.png'

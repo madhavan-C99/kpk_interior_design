@@ -1,11 +1,11 @@
 import React from "react";
 import './whychooseus.css'
 
-import homeicon from '../../../assets/home/images/Frame 1000012609.png'
-import srchicon from '../../../assets/home/images/Frame 1000012610.png'
-import badgeicon from '../../../assets/home/images/Frame 1000012611.png'
-import vanicon from '../../../assets/home/images/Frame 1000012612.png'
-import handicon from '../../../assets/home/images/Frame 1000012613.png'
+import homeicon from '../../../assets/home/images/whyimg1.png'
+import srchicon from '../../../assets/home/images/whyimg2.png'
+import badgeicon from '../../../assets/home/images/whyimg3.png'
+import vanicon from '../../../assets/home/images/whyimg4.png'
+import handicon from '../../../assets/home/images/whyimg5.png'
 
 function WhyChooseUs (){
     const reasonsdata = [

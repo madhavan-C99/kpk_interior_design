@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import './Workflow.css'
-import stroke1stimg from '../../../assets/home/images/Frame 1000012615.png'
-import fill1stimg from '../../../assets/home/images/Frame 1000012619.png'
-import stroke2ndimg from '../../../assets/home/images/Frame 1000012620.png'
-import fill2ndimg from '../../../assets/home/images/Frame 1000012621.png'
-import stroke3rdimg from '../../../assets/home/images/Frame 1000012622.png'
-import fill3rdimg from '../../../assets/home/images/Frame 1000012623.png'
-import stroke4thimg from '../../../assets/home/images/Frame 1000012624.png'
-import fill4thimg from '../../../assets/home/images/Frame 1000012625.png'
+import stroke1stimg from '../../../assets/home/images/stroke1.png'
+import fill1stimg from '../../../assets/home/images/fill1.png'
+import stroke2ndimg from '../../../assets/home/images/stroke2.png'
+import fill2ndimg from '../../../assets/home/images/fill2.png'
+import stroke3rdimg from '../../../assets/home/images/stroke3.png'
+import fill3rdimg from '../../../assets/home/images/fill3.png'
+import stroke4thimg from '../../../assets/home/images/stroke4.png'
+import fill4thimg from '../../../assets/home/images/fill4.png'
 
 const Workflow = () => {
   const steps = [

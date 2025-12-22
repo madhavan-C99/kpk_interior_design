@@ -3,29 +3,35 @@ import { useState } from "react";
 import './CreativeDesign.css'
 import { useNavigate } from "react-router-dom";
 // kitchen images
-import kitchen1img from '../../../assets/home/images/Frame 1000012086.png';     
-import kitchen2img from '../../../assets/home/images/Frame 1000012091.png';  
-import kitchen3img from '../../../assets/home/images/Frame 1000012092.png'; 
-import kitchen4img from '../../../assets/home/images/Frame 1000012883.png'; 
+import kitchen1img from '../../../assets/home/images/kitchen1.png';     
+import kitchen2img from '../../../assets/home/images/kitchen2.png';  
+import kitchen3img from '../../../assets/home/images/kitchen3.png'; 
+import kitchen4img from '../../../assets/home/images/kitchen4.png'; 
 
 // Wardrobe images
-import wardrobe1img from '../../../assets/services/images/wardrobe9.png';
-import wardrobe2img from '../../../assets/services/images/wardrobe10.png';
-import wardrobe3img from '../../../assets/services/images/wardrobe13.png';
-import wardrobe4img from '../../../assets/services/images/wardrobe11.png';
+import wardrobe1img from '../../../assets/services/images/wardrobe1.png';
+import wardrobe2img from '../../../assets/services/images/wardrobe2.png';
+import wardrobe3img from '../../../assets/services/images/wardrobe3.png';
+import wardrobe4img from '../../../assets/services/images/wardrobe4.png';
 
 
 // pooja images
-import pooja1img from '../../../assets/services/images/Frame 1000012931.png'
-import pooja2img from '../../../assets/services/images/Frame 1000012936.png'
-import pooja3img from '../../../assets/services/images/Frame 1000012938.png'
-import pooja4img from '../../../assets/services/images/Frame 1000012939.png'
+import pooja1img from '../../../assets/services/images/pooja1.png'
+import pooja2img from '../../../assets/services/images/pooja2.png'
+import pooja3img from '../../../assets/services/images/pooja3.png'
+import pooja4img from '../../../assets/services/images/pooja4.png'
 
 // tv images
 import tv1img from '../../../assets/services/images/tv1.png'
 import tv2img from '../../../assets/services/images/tv2.png'
 import tv3img from '../../../assets/services/images/tv3.png'
 import tv4img from '../../../assets/services/images/tv4.png'
+
+// study table
+import studytb1 from '../../../assets/services/images/studytb1.png'
+import studytb2 from '../../../assets/services/images/studytb2.png'
+import studytb3 from '../../../assets/services/images/studytb3.png'
+import studytb4 from '../../../assets/services/images/studytb4.png'
 
 function CreativeDesign(){
     const navigate = useNavigate();
@@ -70,10 +76,10 @@ function CreativeDesign(){
         {
             id:5,
             label:'Study Table',
-            images:[ { name: 'Sleek Soft-Touch Kitchen', img: kitchen1img },
-                    { name: 'Bold Two-Texture Kitchen', img: kitchen2img },
-                    { name: 'Hybrid Modular Workspace', img: kitchen3img },
-                    {name: 'Minimal Navy And Grey Wall Colour', img: kitchen4img },
+            images:[ { name: 'Sleek Soft-Touch Kitchen', img: studytb1 },
+                    { name: 'Bold Two-Texture Kitchen', img: studytb2 },
+                    { name: 'Hybrid Modular Workspace', img: studytb3 },
+                    {name: 'Minimal Navy And Grey Wall Colour', img: studytb4 },
                 ]
         }
 ]

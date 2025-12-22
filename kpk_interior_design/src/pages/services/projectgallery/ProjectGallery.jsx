@@ -1,9 +1,9 @@
 import React from 'react'
 import './ProjectGallery.css'
-import spacelogo from '../../../assets/services/images/Group 5139966.png' 
-import thumblogo from '../../../assets/services/images/Group 5139964.png' 
+import spacelogo from '../../../assets/services/images/projectimg1.png' 
+import thumblogo from '../../../assets/services/images/projectimg2.png' 
 import workflowlogo from '../../../assets/services/images/tdesign_money.png' 
-import storagelogo from '../../../assets/services/images/Vector 351.png' 
+import storagelogo from '../../../assets/services/images/Vector351.png' 
 import drawbacklogo from '../../../assets/services/images/ion_accessibility-outline.png' 
 
 

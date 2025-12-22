@@ -1,14 +1,14 @@
 import React from 'react';
 import './AccessoriesGallery.css';
 
-import tandemDrawerImage from '../../../assets/services/images/Frame 1000012402.png'; 
-import cutleryDrawerImage from '../../../assets/services/images/image 17125.png';
-import plainDrawerImage from '../../../assets/services/images/Frame 1000012404.png';
-import thaliBasketImage from '../../../assets/services/images/Frame 1000012403.png';
-import oilPulloutImage from '../../../assets/services/images/Frame 100001242.png';
-import bottlePulloutImage from '../../../assets/services/images/Frame 100001240.png';
-import pantryPulloutImage from '../../../assets/services/images/Frame 10000122.png';
-import magicCornerImage from '../../../assets/services/images/Frame 10012402.png';
+import tandemDrawerImage from '../../../assets/services/images/accessory1.png'; 
+import cutleryDrawerImage from '../../../assets/services/images/accessory2.png';
+import plainDrawerImage from '../../../assets/services/images/accessory3.png';
+import thaliBasketImage from '../../../assets/services/images/accessory4.png';
+import oilPulloutImage from '../../../assets/services/images/accessory5.png';
+import bottlePulloutImage from '../../../assets/services/images/accessory6.png';
+import pantryPulloutImage from '../../../assets/services/images/accessory7.png';
+import magicCornerImage from '../../../assets/services/images/accessory8.png';
 
 function AccessoriesGallery() {
     const accessoriesdata = [

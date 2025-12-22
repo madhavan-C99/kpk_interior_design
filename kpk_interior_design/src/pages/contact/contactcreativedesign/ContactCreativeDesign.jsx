@@ -3,47 +3,39 @@ import './ContactCreativeDesign.css';
 import { useLocation } from "react-router-dom";
 
 // kitchen images
-import kitchen1img from '../../../assets/home/images/Frame 1000012086.png';     
-import kitchen2img from '../../../assets/home/images/Frame 1000012091.png';  
-import kitchen3img from '../../../assets/home/images/Frame 1000012092.png'; 
-import kitchen4img from '../../../assets/home/images/Frame 1000012883.png'; 
-import kitchen5img from '../../../assets/home/images/Frame 1000012884.png'; 
-import kitchen6img from '../../../assets/home/images/Frame 1000012885.png'; 
-import kitchen7img from '../../../assets/home/images/Frame 1000012093.png';
-import kitchen8img from '../../../assets/home/images/Frame 1000012886.png'; 
-import kitchen9img from '../../../assets/home/images/Frame 100001286.png'; 
-import kitchen10img from '../../../assets/home/images/Frame 1000012887.png';
-import kitchen11img from '../../../assets/home/images/Frame 1000012888.png'; 
-import kitchen12img from '../../../assets/home/images/Frame 1000012889.png';
-import kitchen13img from '../../../assets/home/images/Frame 1000012890.png';
-import kitchen14img from '../../../assets/home/images/Frame 1000012891.png'
-import kitchen15img from '../../../assets/explore_image/Frame 1000012092.png'
-import kitchen16img from '../../../assets/home/images/Frame 1000012892.png'
+import kitchen1img from '../../../assets/home/images/kitchen1.png';     
+import kitchen2img from '../../../assets/home/images/kitchen2.png';  
+import kitchen3img from '../../../assets/home/images/kitchen3.png'; 
+import kitchen4img from '../../../assets/home/images/kitchen4.png'; 
+import kitchen5img from '../../../assets/home/images/kitchen9.png'; 
+import kitchen6img from '../../../assets/home/images/kitchen10.png'; 
+import kitchen7img from '../../../assets/home/images/kitchen11.png';
+import kitchen8img from '../../../assets/home/images/kitchen12.png'; 
+import kitchen9img from '../../../assets/home/images/kitchen13.png'; 
+import kitchen10img from '../../../assets/home/images/kitchen14.png';
+import kitchen11img from '../../../assets/home/images/kitchen15.png'; 
+import kitchen12img from '../../../assets/home/images/kitchen16.png';
+import kitchen13img from '../../../assets/home/images/kitchen17.png';
+import kitchen14img from '../../../assets/home/images/kitchen18.png'
+import kitchen15img from '../../../assets/home/images/kitchen19.png'
+import kitchen16img from '../../../assets/home/images/kitchen20.png'
 
 // Wardrobe images
-import wardrobe1img from '../../../assets/services/images/Frame 1000012402.png'; 
-import wardrobe2img from '../../../assets/services/images/image 17125.png';
-import wardrobe3img from '../../../assets/services/images/Frame 1000012404.png';
-import wardrobe4img from '../../../assets/services/images/Frame 1000012403.png';
-import wardrobe5img from '../../../assets/services/images/Frame 100001242.png';
-import wardrobe6img from '../../../assets/services/images/Frame 100001240.png';
-import wardrobe7img from '../../../assets/services/images/Frame 10000122.png';
-import wardrobe8img from '../../../assets/services/images/Frame 10012402.png';
-import wardrobe9img from '../../../assets/services/images/wardrobe9.png';
-import wardrobe10img from '../../../assets/services/images/wardrobe10.png';
-import wardrobe11img from '../../../assets/services/images/wardrobe13.png';
-import wardrobe12img from '../../../assets/services/images/wardrobe11.png';
-import wardrobe13img from '../../../assets/services/images/wardrobe12.png';
+import wardrobe1img from '../../../assets/services/images/wardrobe1.png';
+import wardrobe2img from '../../../assets/services/images/wardrobe2.png';
+import wardrobe3img from '../../../assets/services/images/wardrobe3.png';
+import wardrobe4img from '../../../assets/services/images/wardrobe4.png';
+import wardrobe5img from '../../../assets/services/images/wardrobe5.png';
 
 // pooja images
-import pooja1img from '../../../assets/services/images/Frame 1000012931.png'
-import pooja2img from '../../../assets/services/images/Frame 1000012936.png'
-import pooja3img from '../../../assets/services/images/Frame 1000012938.png'
-import pooja4img from '../../../assets/services/images/Frame 1000012939.png'
-import pooja5img from '../../../assets/services/images/Frame 1000012942.png'
-import pooja6img from '../../../assets/services/images/Frame 1000012945.png'
-import pooja7img from '../../../assets/services/images/Frame 1000012949.png'
-import pooja8img from '../../../assets/services/images/Frame 1000012951.png'
+import pooja1img from '../../../assets/services/images/pooja1.png'
+import pooja2img from '../../../assets/services/images/pooja2.png'
+import pooja3img from '../../../assets/services/images/pooja3.png'
+import pooja4img from '../../../assets/services/images/pooja4.png'
+import pooja5img from '../../../assets/services/images/pooja5.png'
+import pooja6img from '../../../assets/services/images/pooja6.png'
+import pooja7img from '../../../assets/services/images/pooja7.png'
+import pooja8img from '../../../assets/services/images/pooja8.png'
 
 // tv images
 import tv1img from '../../../assets/services/images/tv1.png'
@@ -52,6 +44,13 @@ import tv3img from '../../../assets/services/images/tv3.png'
 import tv4img from '../../../assets/services/images/tv4.png'
 import tv5img from '../../../assets/services/images/tv5.png'
 import tv6img from '../../../assets/services/images/tv6.png'
+
+// study table
+import studytb1 from '../../../assets/services/images/studytb1.png'
+import studytb2 from '../../../assets/services/images/studytb2.png'
+import studytb3 from '../../../assets/services/images/studytb3.png'
+import studytb4 from '../../../assets/services/images/studytb4.png'
+
 
 function ContactCreativeDesign() {
     const contactcategorydata = [
@@ -89,11 +88,11 @@ function ContactCreativeDesign() {
                 // { id: 6, name: 'Bottle Pullout', img: wardrobe6img },
                 // { id: 7, name: 'Pantry Pullout', img: wardrobe7img },
                 // { id: 8, name:  'Magic Corner', img: wardrobe8img },
-                { id: 9, name: 'Tandem Drawers', img: wardrobe9img },
-                { id: 10, name:  'Cutlery Drawers', img: wardrobe10img },
-                { id: 11, name:'Plain Drawers', img: wardrobe11img },
-                { id: 12, name:'Thali Basket', img: wardrobe12img },
-                { id: 13, name: 'Oil Pullout', img: wardrobe13img },
+                { id: 9, name: 'Tandem Drawers', img: wardrobe1img },
+                { id: 10, name:  'Cutlery Drawers', img: wardrobe2img },
+                { id: 11, name:'Plain Drawers', img: wardrobe3img },
+                { id: 12, name:'Thali Basket', img: wardrobe4img },
+                { id: 13, name: 'Oil Pullout', img: wardrobe5img },
                 // { id: 14, name:'Bottle Pullout', img: wardrobe6img },
                 // { id: 15, name: 'Pantry Pullout', img: wardrobe7img },
                 // { id: 16, name: 'Magic Corner', img: wardrobe8img }
@@ -147,22 +146,10 @@ function ContactCreativeDesign() {
             id: 5,
             label: 'Study Table',
             images: [
-                { id: 1, name: 'Sleek Soft-Touch Kitchen', img: kitchen8img },
-                { id: 2, name: 'Bold Two-Texture Kitchen', img: kitchen7img },
-                { id: 3, name: 'Hybrid Modular Workspace', img: kitchen6img },
-                { id: 4, name: 'Minimal Navy And Grey Wall Colour', img: kitchen5img },
-                { id: 5, name: 'Open-Shelf Modern Kitchen', img: kitchen4img },
-                { id: 6, name: 'Underlit Counter Kitchen', img: kitchen3img },
-                { id: 7, name: 'Multi-Functional Compact Layout', img: kitchen2img },
-                { id: 8, name: 'Premium Stone-Top Modular Kitchen', img: kitchen1img },
-                { id: 9, name: 'Modern Modular Kitchen Setup', img: kitchen8img },
-                { id: 10, name: 'Premium Island Kitchen', img: kitchen7img },
-                { id: 11, name: 'Compact Urban Kitchen', img: kitchen6img },
-                { id: 12, name: 'Parallel Kitchen Layout', img: kitchen5img },
-                { id: 13, name: 'Matte Finish Modern Kitchen', img: kitchen4img },
-                { id: 14, name: 'Woodgrain Modular Design', img: kitchen3img },
-                { id: 15, name: 'Smart Storage Kitchen System', img: kitchen2img },
-                { id: 16, name: 'Contemporary High-Gloss Kitchen', img: kitchen1img }
+                { id: 1, name: 'Sleek Soft-Touch Kitchen', img: studytb1 },
+                { id: 2, name: 'Bold Two-Texture Kitchen', img: studytb2 },
+                { id: 3, name: 'Hybrid Modular Workspace', img: studytb3 },
+                { id: 4, name: 'Minimal Navy And Grey Wall Colour', img: studytb4 },
             ]
         }
     ];

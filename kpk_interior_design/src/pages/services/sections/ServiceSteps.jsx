@@ -1,11 +1,11 @@
 import React from "react";
 import './ServiceSteps.css'
 import kitchendesk from '../../../assets/services/images/kitchendesk.png'
-import jar from '../../../assets/services/images/Group 5139928.png'
-import plate from '../../../assets/services/images/Group 5139929.png'
-import coffeecup from '../../../assets/services/images/Group 5139930.png'
-import cooker from '../../../assets/services/images/Vector 344.png'
-import knife from '../../../assets/services/images/Vector 348.png'
+import jar from '../../../assets/services/images/jarimg.png'
+import plate from '../../../assets/services/images/plateimg.png'
+import coffeecup from '../../../assets/services/images/cupimg.png'
+import cooker from '../../../assets/services/images/cookerimg.png'
+import knife from '../../../assets/services/images/knifeimg.png'
 
 
 function ServiceSteps() {
