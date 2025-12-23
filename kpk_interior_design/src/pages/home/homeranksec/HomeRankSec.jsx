@@ -1,5 +1,5 @@
 import './HomeRankSec.css'
-import hand_icon from '../../../assets/home/images/Group 5140002.png'
+import hand_icon from '../../../assets/home/images/Group5140002.png'
 import handshake from '../../../assets/home/images/ph_handshake-fill.png'
 import support from '../../../assets/home/images/mdi_support.png'
 import verified from '../../../assets/home/images/material-symbols_verified-outline.png'

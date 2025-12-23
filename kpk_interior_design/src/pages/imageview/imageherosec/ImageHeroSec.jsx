@@ -1,11 +1,11 @@
 
 import "./ImageHeroSec.css";
 
-import mainImg from "../../../assets/imageview/image/Frame 1000012086.png";
-import thumb1 from "../../../assets/imageview/image/Frame 1000012473.png";
-import thumb2 from "../../../assets/imageview/image/Frame 1000012474.png";
-import thumb3 from "../../../assets/imageview/image/Frame 1000012477.png";
-import thumb4 from "../../../assets/imageview/image/Frame 1000012475.png"
+import mainImg from "../../../assets/imageview/image/Frame1000012086.png";
+import thumb1 from "../../../assets/imageview/image/Frame1000012473.png";
+import thumb2 from "../../../assets/imageview/image/Frame1000012474.png";
+import thumb3 from "../../../assets/imageview/image/Frame1000012477.png";
+import thumb4 from "../../../assets/imageview/image/Frame1000012475.png"
 
 import React, { useState, useMemo } from "react";
 

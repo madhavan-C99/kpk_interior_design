@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import heroimg1 from '../../../assets/home/images/Frame 1000012972.png'
-import heroimg2 from '../../../assets/home/images/Frame 1000012974.png'
-import heroimg3 from '../../../assets/home/images/Frame 1000012972-1.png'
-import heroimg4 from '../../../assets/home/images/Frame 1000012975.png'
-import heroimg5 from '../../../assets/home/images/Frame 1000012973.png'
-import grantielogo from '../../../assets/home/images/Frame 1000012606.png'
+import heroimg1 from '../../../assets/home/images/Frame1000012972.png'
+import heroimg2 from '../../../assets/home/images/Frame1000012974.png'
+import heroimg3 from '../../../assets/home/images/Frame1000012972-1.png'
+import heroimg4 from '../../../assets/home/images/Frame1000012975.png'
+import heroimg5 from '../../../assets/home/images/Frame1000012973.png'
+import grantielogo from '../../../assets/home/images/Frame1000012606.png'
 
 
 import './HomeHeroSec.css'

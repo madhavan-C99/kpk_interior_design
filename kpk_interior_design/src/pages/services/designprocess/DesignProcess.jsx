@@ -1,5 +1,5 @@
-import design1 from '../../../assets/services/images/image 80.png'
-import design2 from '../../../assets/services/images/Mask group.png'
+import design1 from '../../../assets/services/images/image80.png'
+import design2 from '../../../assets/services/images/Maskgroup.png'
 import './DesignProcess.css'
 import React, { useState, useEffect, useRef } from 'react';
 

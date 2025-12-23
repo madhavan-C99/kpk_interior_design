@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 
 // Assuming these imports are correct based on your file structure
-import feedimg1 from '../../../assets/services/images/Frame 1000012306.png';
-import feedimg2 from '../../../assets/services/images/Frame 1000012871.png';
-import feedimg3 from '../../../assets/services/images/Frame 1000012872.png';
+import feedimg1 from '../../../assets/services/images/Frame1000012306.png';
+import feedimg2 from '../../../assets/services/images/Frame1000012871.png';
+import feedimg3 from '../../../assets/services/images/Frame1000012872.png';
 
 import './feedback.css';
 

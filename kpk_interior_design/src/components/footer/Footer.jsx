@@ -1,9 +1,9 @@
 import React from "react";
 import './Footer.css'
-import lowestprice from '../../assets/footer/images/Frame 1000012646.png'
-import builtontrust from '../../assets/footer/images/Frame 1000012645.png'
-import qualitystands from '../../assets/footer/images/Frame 1000012644.png'
-import kpklogo from '../../assets/footer/images/3DPNG 1.png'
+import lowestprice from '../../assets/footer/images/Frame1000012646.png'
+import builtontrust from '../../assets/footer/images/Frame1000012645.png'
+import qualitystands from '../../assets/footer/images/Frame1000012644.png'
+import kpklogo from '../../assets/footer/images/3DPNG1.png'
 import phoneicon from '../../assets/footer/images/ic_round-call.png'
 import instaicon from '../../assets/footer/images/mingcute_instagram-fill.png'
 import messageicon from '../../assets/footer/images/material-symbols_mail.png'

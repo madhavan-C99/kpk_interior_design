@@ -1,7 +1,7 @@
-import  group1 from '../../../assets/services/images/Group 5139922.png'
-import  group2 from '../../../assets/services/images/Group 5139923.png'
-import  group3 from '../../../assets/services/images/Group 5139924.png'
-import  group4 from '../../../assets/services/images/Group 51399231.png'
+import  group1 from '../../../assets/services/images/Group5139922.png'
+import  group2 from '../../../assets/services/images/Group5139923.png'
+import  group3 from '../../../assets/services/images/Group5139924.png'
+import  group4 from '../../../assets/services/images/Group51399231.png'
 import './KeyFeatures.css'
 
 

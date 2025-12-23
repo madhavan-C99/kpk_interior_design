@@ -1,12 +1,12 @@
 import './HomeAboutUs.css'
 
-import dotimg from '../../../assets/home/images/Frame 1000012034.png'
-import smallimg from '../../../assets/home/images/Frame 1000012022.png'
-import largeimg from '../../../assets/home/images/Frame 1000012021.png'
-import eyeicon from '../../../assets/home/images/Frame 1000012036-eye.png'
-import priemiumicon from '../../../assets/home/images/Frame 1000012036.png'
-import deliveryicon from '../../../assets/home/images/Frame 1000012036-truck.png'
-import exporticon from '../../../assets/home/images/Frame 1000012036-export.png'
+import dotimg from '../../../assets/home/images/home_dot_img.png'
+import smallimg from '../../../assets/home/images/Frame1000012022.png'
+import largeimg from '../../../assets/home/images/Frame1000012021.png'
+import eyeicon from '../../../assets/home/images/Frame1000012036-eye.png'
+import priemiumicon from '../../../assets/home/images/Frame1000012036.png'
+import deliveryicon from '../../../assets/home/images/Frame1000012036-truck.png'
+import exporticon from '../../../assets/home/images/Frame1000012036-export.png'
 
 
 export default function HomeAboutUs(){

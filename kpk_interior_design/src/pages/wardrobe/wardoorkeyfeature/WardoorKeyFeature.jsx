@@ -1,8 +1,8 @@
-import  group1 from '../../../assets/services/images/Frame 1000012889.png'
-import  group2 from '../../../assets/services/images/Frame 1000012890.png'
-import  group3 from '../../../assets/services/images/Frame 1000012891.png'
-import  group4 from '../../../assets/services/images/Frame 1000012892.png'
-import  group5 from '../../../assets/services/images/Frame 1000012893.png'
+import  group1 from '../../../assets/services/images/Frame1000012889.png'
+import  group2 from '../../../assets/services/images/Frame1000012890.png'
+import  group3 from '../../../assets/services/images/Frame1000012891.png'
+import  group4 from '../../../assets/services/images/Frame1000012892.png'
+import  group5 from '../../../assets/services/images/Frame1000012893.png'
 
 import '../../services/keyfeatures/KeyFeatures.css'
 

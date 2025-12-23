@@ -1,5 +1,5 @@
-import client_img from '../../../assets/services/images/Frame 1000012388.png'
-import home_icon from '../../../assets/services/images/Frame 1000012229.png'
+import client_img from '../../../assets/services/images/Frame1000012388.png'
+import home_icon from '../../../assets/services/images/Frame1000012229.png'
 import '../../services/happyclient/HappyClients.css'
 export default function WardoorHappyClients(){
 
