@@ -1,16 +1,32 @@
 export default function ImageBreadcrumbBar({
   title,
   category,
-  fromLabel,
+  source,
+  subcategory,
   onBack,
 }) {
-  const readableCategory = category.replace("-", " ");
+  let breadcrumbText = "";
+
+  if (source === "services") {
+    breadcrumbText = `Services | ${subcategory || category} | `;
+  } 
+  else if (source === "home") {
+    breadcrumbText = "Home | ";
+  } 
+  else if (source === "ideas") {
+    breadcrumbText = "Home | Interior Design Ideas | ";
+  } 
+  else {
+    // SEO / refresh fallback
+    breadcrumbText = `Home | ${category.replace("-", " ")} | `;
+  }
 
   return (
     <div className="image-breadcrumb-bar">
       <span className="back-arrow" onClick={onBack}>←</span>
       <p>
-        Home | {fromLabel || readableCategory} | <strong>{title}</strong>
+        {breadcrumbText}
+        <strong>{title}</strong>
       </p>
     </div>
   );

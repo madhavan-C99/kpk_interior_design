@@ -3,12 +3,32 @@ import TvHeroBg from "../assets/pooja_tv_hero_images/TvHeroBg.png";
 import PoojaTvCta_Image from "../assets/pooja_tv_cta_images/PoojaTvCta_Image.png";
 
 // importing gallery images
-import TvGallery_1 from "../assets/pooja_tv_gallery_images/TvGallery_1.png";
-import TvGallery_2 from "../assets/pooja_tv_gallery_images/TvGallery_2.png";
-import TvGallery_3 from "../assets/pooja_tv_gallery_images/TvGallery_3.png";
-import TvGallery_4 from "../assets/pooja_tv_gallery_images/TvGallery_4.png";
-import TvGallery_5 from "../assets/pooja_tv_gallery_images/TvGallery_5.png";
-import TvGallery_6 from "../assets/pooja_tv_gallery_images/TvGallery_6.png";
+import TvGallery_1_1 from "../assets/pooja_tv_gallery_images/TvGallery_1.1.png";
+import TvGallery_1_2 from "../assets/pooja_tv_gallery_images/TvGallery_1.2.png";
+
+import TvGallery_2_1 from "../assets/pooja_tv_gallery_images/TvGallery_2.1.png";
+import TvGallery_2_2 from "../assets/pooja_tv_gallery_images/TvGallery_2.2.png";
+import TvGallery_2_3 from "../assets/pooja_tv_gallery_images/TvGallery_2.3.png";
+import TvGallery_2_4 from "../assets/pooja_tv_gallery_images/TvGallery_2.4.png";
+
+import TvGallery_3_1 from "../assets/pooja_tv_gallery_images/TvGallery_3.1.png";
+import TvGallery_3_2 from "../assets/pooja_tv_gallery_images/TvGallery_3.2.png";
+
+import TvGallery_4_1 from "../assets/pooja_tv_gallery_images/TvGallery_4.1.png";
+import TvGallery_4_2 from "../assets/pooja_tv_gallery_images/TvGallery_4.2.png";
+import TvGallery_4_3 from "../assets/pooja_tv_gallery_images/TvGallery_4.3.png";
+import TvGallery_4_4 from "../assets/pooja_tv_gallery_images/TvGallery_4.4.png";
+
+import TvGallery_5_1 from "../assets/pooja_tv_gallery_images/TvGallery_5.1.png";
+import TvGallery_5_2 from "../assets/pooja_tv_gallery_images/TvGallery_5.2.png";
+import TvGallery_5_3 from "../assets/pooja_tv_gallery_images/TvGallery_5.3.png";
+
+import TvGallery_6_1 from "../assets/pooja_tv_gallery_images/TvGallery_6.1.png";
+import TvGallery_6_2 from "../assets/pooja_tv_gallery_images/TvGallery_6.2.png";
+import TvGallery_6_3 from "../assets/pooja_tv_gallery_images/TvGallery_6.3.png";
+import TvGallery_6_4 from "../assets/pooja_tv_gallery_images/TvGallery_6.4.png";
+
+
 
 // importing feedback images
 import PoojaTvFeedback_1 from "../assets/pooja_tv_feedback_images/PoojaTvFeedback_1.png";
@@ -63,11 +83,12 @@ gallery: {
 
   items: [
     {
+      id: "Tv-001",
       type: "image",
       title: "Glossy Modern Entertainment Hub",
       description:
         "Smooth, modern finishes that blend beautifully with bedroom A high-gloss finish that enhances the room’s contemporary feel.",
-      images: [TvGallery_1, TvGallery_2, TvGallery_3]
+      images: [TvGallery_1_1, TvGallery_1_2,]
     },
 
     {
@@ -76,11 +97,12 @@ gallery: {
     },
 
     {
+      id: "Tv-002",
       type: "image",
       title: "Floating Panel Elegance",
       description:
         " A sleek wall-mounted TV panel crafted for a modern, clutter-free look.",
-      images: [TvGallery_4, TvGallery_5, TvGallery_6]
+      images: [TvGallery_2_1, TvGallery_2_2, TvGallery_2_3, TvGallery_2_4]
     },
 
     {
@@ -89,35 +111,39 @@ gallery: {
     },
 
     {
+      id: "Tv-003",
       type: "image",
       title: "Dual-Tone Media Wall",
       description:
         "Contrasting finishes add character and strong visual appeal.",
-      images: [TvGallery_1, TvGallery_2, TvGallery_3]
+      images: [TvGallery_3_1, TvGallery_3_2]
     },
 
     {
+      id: "Tv-004",
       type: "image",
       title: "Minimal Media Console",
       description:
-        "Clean lines and balanced storage bring harmony to your living room.  ",
-      images: [TvGallery_4, TvGallery_5, TvGallery_6]
+        "Clean lines and balanced storage bring harmony to your living room.",
+      images: [TvGallery_4_1, TvGallery_4_2, TvGallery_4_3, TvGallery_4_4]
     },
 
     {
+      id: "Tv-005",
       type: "image",
       title: "Contemporary Storage Console",
       description:
         "A perfect blend of open shelves and closed cabinets for neat organization",
-      images: [TvGallery_1, TvGallery_2, TvGallery_3]
+      images: [TvGallery_5_1, TvGallery_5_2, TvGallery_5_3]
     },
 
     {
+      id: "Tv-006",
       type: "image",
       title: "Designer TV Statement Panel",
       description:
         "Crafted to stand out with bold textures and precise detailing",
-      images: [TvGallery_4, TvGallery_5, TvGallery_6]
+      images: [TvGallery_6_1, TvGallery_6_2, TvGallery_6_3, TvGallery_6_4]
     },
 
     {

@@ -3,7 +3,7 @@ import "../pooja_tv_gallery/PoojaTvGallery.css";
 import { useNavigate } from "react-router-dom";
 
 
-export default function PoojaTvGallery({ gallery }) {
+export default function PoojaTvGallery({ gallery, subcategory }) {
   return (
     <section className="pt-gallery">
 
@@ -24,7 +24,7 @@ export default function PoojaTvGallery({ gallery }) {
             );
           }
 
-          return <ImageCard key={index} item={item} />;
+          return <ImageCard key={index} item={item} subcategory={subcategory} />;
         })}
       </div>
     </section>
@@ -33,7 +33,7 @@ export default function PoojaTvGallery({ gallery }) {
 
 /* ---------------- IMAGE CARD ---------------- */
 
-function ImageCard({ item }) {
+function ImageCard({ item, subcategory }) {
   const [active, setActive] = useState(0);
   const navigate = useNavigate();
 
@@ -86,12 +86,15 @@ function ImageCard({ item }) {
       <hr />
 
       <button
-        className="pt-gallery-btn"
-         onClick={() =>
-         navigate(`/design/${item.id}`, {
-         state: { fromLabel: "pooja-unit" }
-    })}> Get This Design
-</button>
+      className="pt-gallery-btn"
+      onClick={() =>
+      navigate(`/design/${item.id}`, {
+      state: {
+        source: "services",
+        subcategory: subcategory
+      }
+      })}> Get This Design </button>
+
 
     </div>
   );

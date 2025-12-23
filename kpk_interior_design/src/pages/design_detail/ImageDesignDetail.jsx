@@ -39,7 +39,8 @@ export default function ImageDesignDetail() {
       <ImageBreadcrumbBar
         title={design.title}
         category={design.category}
-        fromLabel={location.state?.fromLabel}
+        source={location.state?.source}
+        subcategory={location.state?.subcategory}
         onBack={() => navigate(-1)}
       />
 

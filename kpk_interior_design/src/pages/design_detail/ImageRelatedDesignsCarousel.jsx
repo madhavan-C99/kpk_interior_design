@@ -41,7 +41,7 @@ export default function ImageRelatedDesignsCarousel({
               className="image-related-card"
               onClick={() =>
                 navigate(`/design/${item.id}`, {
-                  state: { fromLabel: "Interior Design Ideas" },
+                  state: {source: "Design Inspiration",},
                 })
               }
             >

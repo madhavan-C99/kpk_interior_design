@@ -13,7 +13,9 @@ import PoojaTvFaq from "../../components/pooja_tv_faq/PoojaTvFaq";
 
 export default function PoojaTvPage({ type }) {
   console.log("tv-unit");
+
   const data = type === "pooja" ? PoojaUnitData : TvUnitData;
+  const subcategory = type === "pooja" ? "Pooja-unit" : "TV-unit";
 
   return (
     <>
@@ -37,7 +39,7 @@ export default function PoojaTvPage({ type }) {
 
 
     {/* gallery section  */}
-     <PoojaTvGallery gallery={data.gallery} /> 
+     <PoojaTvGallery gallery={data.gallery} subcategory={subcategory} /> 
 
 
      {/* feedback section  */}

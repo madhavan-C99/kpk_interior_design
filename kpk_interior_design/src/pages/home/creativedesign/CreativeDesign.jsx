@@ -48,10 +48,10 @@ function CreativeDesign(){
         {
             id:2,
             label:'wardrobe',
-            images:[ { name: 'Tandem Drawers', img: wardrobe1img},
-                    { name: 'Cutlery Drawers', img: wardrobe2img },
-                    { name: 'Plain Drawers', img: wardrobe3img },
-                    {name: 'Thali Basket', img: wardrobe4img },
+            images:[ { name: 'Sleek Sliding Wardrobe', img: wardrobe1img},
+                    { name: 'Premium Walk-In Closet', img: wardrobe2img },
+                    { name: 'Matte Finish Wardrobe', img: wardrobe3img },
+                    {name: 'Glass-Front Closet Style', img: wardrobe4img },
                     ]
         },
         {
@@ -76,10 +76,10 @@ function CreativeDesign(){
         {
             id:5,
             label:'Study Table',
-            images:[ { name: 'Sleek Soft-Touch Kitchen', img: studytb1 },
-                    { name: 'Bold Two-Texture Kitchen', img: studytb2 },
-                    { name: 'Hybrid Modular Workspace', img: studytb3 },
-                    {name: 'Minimal Navy And Grey Wall Colour', img: studytb4 },
+            images:[{ id: 1, name: 'Integrated Storage with Study', img: studytb1 },
+                    { id: 2, name: 'Compact Storage Study Unit', img: studytb2 },
+                    { id: 3, name: 'Modern Storage Workstation', img: studytb3 },
+                    { id: 4, name: 'Built-In Study Storage Design', img: studytb4 },
                 ]
         }
 ]

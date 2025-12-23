@@ -100,6 +100,7 @@ gallery: {
     },
 
     {
+      id: "pooja-002",
       type: "image",
       title: "Compact Corner Pooja Setup",
       description:
@@ -113,6 +114,7 @@ gallery: {
     },
 
     {
+      id: "pooja-003",
       type: "image",
       title: "Backlit Meditation Niche",
       description:
@@ -121,6 +123,7 @@ gallery: {
     },
 
     {
+      id: "pooja-004",
       type: "image",
       title: "Traditional Carved Pooja Mandap",
       description:
@@ -129,6 +132,7 @@ gallery: {
     },
 
     {
+      id: "pooja-005",
       type: "image",
       title: "Jaali Panel Pooja Space",
       description:
@@ -137,6 +141,7 @@ gallery: {
     },
 
     {
+      id: "pooja-006",
       type: "image",
       title: "Compact Corner Pooja Setup",
       description:

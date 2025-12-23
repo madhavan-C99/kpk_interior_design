@@ -26,6 +26,13 @@ import wardrobe2img from '../../../assets/services/images/wardrobe2.png';
 import wardrobe3img from '../../../assets/services/images/wardrobe3.png';
 import wardrobe4img from '../../../assets/services/images/wardrobe4.png';
 import wardrobe5img from '../../../assets/services/images/wardrobe5.png';
+import wardrobe6img from '../../../assets/services/images/wardrobe6.png';
+import wardrobe7img from '../../../assets/services/images/wardrobe7.png';
+import wardrobe8img from '../../../assets/services/images/wardrobe8.png';
+import wardrobe9img from '../../../assets/services/images/wardrobe9.png';
+import wardrobe10img from '../../../assets/services/images/wardrobe10.png';
+import wardrobe11img from '../../../assets/services/images/wardrobe11.png';
+import wardrobe12img from '../../../assets/services/images/wardrobe12.png';
 
 // pooja images
 import pooja1img from '../../../assets/services/images/pooja1.png'
@@ -44,6 +51,8 @@ import tv3img from '../../../assets/services/images/tv3.png'
 import tv4img from '../../../assets/services/images/tv4.png'
 import tv5img from '../../../assets/services/images/tv5.png'
 import tv6img from '../../../assets/services/images/tv6.png'
+import tv7img from '../../../assets/services/images/tv7.png'
+import tv8img from '../../../assets/services/images/tv8.png'
 
 // study table
 import studytb1 from '../../../assets/services/images/studytb1.png'
@@ -80,44 +89,32 @@ function ContactCreativeDesign() {
             id: 2,
             label: 'wardrobe',
             images: [
-                // { id: 1, name: 'Tandem Drawers', img: wardrobe1img },
-                // { id: 2, name: 'Cutlery Drawers', img: wardrobe2img },
-                // { id: 3, name: 'Plain Drawers', img: wardrobe3img },
-                // { id: 4, name: 'Thali Basket', img: wardrobe4img },
-                // { id: 5, name: 'Oil Pullout', img: wardrobe5img },
-                // { id: 6, name: 'Bottle Pullout', img: wardrobe6img },
-                // { id: 7, name: 'Pantry Pullout', img: wardrobe7img },
-                // { id: 8, name:  'Magic Corner', img: wardrobe8img },
-                { id: 9, name: 'Tandem Drawers', img: wardrobe1img },
-                { id: 10, name:  'Cutlery Drawers', img: wardrobe2img },
-                { id: 11, name:'Plain Drawers', img: wardrobe3img },
-                { id: 12, name:'Thali Basket', img: wardrobe4img },
-                { id: 13, name: 'Oil Pullout', img: wardrobe5img },
-                // { id: 14, name:'Bottle Pullout', img: wardrobe6img },
-                // { id: 15, name: 'Pantry Pullout', img: wardrobe7img },
-                // { id: 16, name: 'Magic Corner', img: wardrobe8img }
+                 { name: 'Sleek Sliding Wardrobe', img: wardrobe1img},
+                { name: 'Premium Walk-In Closet', img: wardrobe2img },
+                { name: 'Matte Finish Wardrobe', img: wardrobe3img },
+                {name: 'Glass-Front Closet Style', img: wardrobe4img },
+                { id: 5, name: 'Minimal Open Wardrobe', img: wardrobe5img },
+                { id: 6, name: 'Neutral Tone Closet', img: wardrobe6img },
+                { id: 7, name: 'Curved Panel Wardrobe', img: wardrobe7img },
+                { id: 8, name:  'Patterned Door Wardrobe', img: wardrobe8img },
+                { id: 9, name:  'Dual Panel Wardrobe', img: wardrobe9img },
+                { id: 10, name:  'Matte Finish Closet', img: wardrobe10img },
+                { id: 11, name:  'Chevron Style Wardrobe', img: wardrobe11img },
+                { id: 12, name:  'Full Height Wardrobe', img: wardrobe12img },
             ]
         },
         {
             id: 3,
             label: 'pooja unit',
             images: [
-                { id: 1, name:'Traditional Carved Pooja Mandap', img: pooja8img },
-                { id: 2, name:'Backlit Meditation Niche', img: pooja7img },
-                { id: 3, name: 'Jaali Panel Pooja Space', img: pooja6img },
-                { id: 4, name:  'Compact Corner Pooja Setup', img: pooja5img },
-                { id: 5, name: 'Backlit Meditation Niche', img: pooja4img },
-                { id: 6, name:  'Modern Wall-Mounted Pooja Unit', img: pooja3img },
-                { id: 7, name:'Compact Corner Pooja Setup', img: pooja2img },
-                { id: 8, name:'Traditional Carved Pooja Mandap', img: pooja1img },
-                // { id: 9, name: 'Traditional Carved Pooja Mandap', img: pooja8img },
-                // { id: 10, name:'Backlit Meditation Niche', img: pooja7img },
-                // { id: 11, name: 'Jaali Panel Pooja Space', img: pooja6img },
-                // { id: 12, name: 'Compact Corner Pooja Setup', img: pooja5img },
-                // { id: 13, name:'Backlit Meditation Niche', img: pooja4img },
-                // { id: 14, name: 'Modern Wall-Mounted Pooja Unit', img: pooja3img },
-                // { id: 15, name: 'Compact Corner Pooja Setup', img: pooja2img },
-                // { id: 16, name:'Traditional Carved Pooja Mandap', img: pooja1img }
+                { id: 1, name:'Traditional Carved Pooja Mandap', img: pooja1img },
+                { id: 2, name:'Backlit Meditation Niche', img: pooja2img },
+                { id: 3, name: 'Jaali Panel Pooja Space', img: pooja3img },
+                { id: 4, name:  'Compact Corner Pooja Setup', img: pooja4img },
+                { id: 5, name: 'Backlit Meditation Niche', img: pooja5img },
+                { id: 6, name:  'Modern Wall-Mounted Pooja Unit', img: pooja6img },
+                { id: 7, name:'Compact Corner Pooja Setup', img: pooja7img },
+                { id: 8, name:'Traditional Carved Pooja Mandap', img: pooja8img },
             ]
         },
         {
@@ -128,42 +125,24 @@ function ContactCreativeDesign() {
                 { id: 2, name: 'Floating Panel Elegance', img: tv2img },
                 { id: 3, name: 'Dual-Tone Media Wall', img: tv3img },
                 { id: 4, name: 'Contemporary Storage Console', img: tv4img },
-                { id: 5, name:'Minimal Media Console', img: tv5img },
+                { id: 5, name:'Modern Wooden TV Unit', img: tv5img },
                 { id: 6, name: 'Designer TV Statement Panel', img: tv6img },
-                // { id: 7, name: 'Glossy Modern Entertainment Hub', img: tv1img },
-                // { id: 8, name: 'Floating Panel Elegance', img: tv2img },
-                // { id: 9, name: 'Dual-Tone Media Wall', img: tv3img },
-                // { id: 10, name: 'Contemporary Storage Console', img: tv4img },
-                // { id: 11, name:'Minimal Media Console', img: tv5img },
-                // { id: 12, name: 'Designer TV Statement Panel', img: tv6img },
-                // { id: 13, name: 'Glossy Modern Entertainment Hub', img: tv1img },
-                // { id: 14, name: 'Floating Panel Elegance', img: tv2img },
-                // { id: 15, name: 'Dual-Tone Media Wall', img: tv3img },
-                // { id: 16, name: 'Contemporary Storage Console', img: tv4img },
+                { id: 7, name:'Minimal TV Storage Unit', img: tv7img },
+                { id: 8, name: 'Compact TV Display Unit', img: tv8img },
+
             ]
         },
         {
             id: 5,
             label: 'Study Table',
             images: [
-                { id: 1, name: 'Sleek Soft-Touch Kitchen', img: studytb1 },
-                { id: 2, name: 'Bold Two-Texture Kitchen', img: studytb2 },
-                { id: 3, name: 'Hybrid Modular Workspace', img: studytb3 },
-                { id: 4, name: 'Minimal Navy And Grey Wall Colour', img: studytb4 },
+                { id: 1, name: 'Integrated Storage with Study', img: studytb1 },
+                { id: 2, name: 'Compact Storage Study Unit', img: studytb2 },
+                { id: 3, name: 'Modern Storage Workstation', img: studytb3 },
+                { id: 4, name: 'Built-In Study Storage Design', img: studytb4 },
             ]
         }
     ];
-// const [selectedImages, setSelectedImages] = useState(DESIGN_IDEAS[0].images);
-//   // 2. Function to update the state when a card is clicked
-//   const handleCardClick = (imagesArray) => {
-//     console.log("Card clicked. Updating selected images.");
-//     setSelectedImages(imagesArray);
-//   };
-    // const location=useLocation();
-
-    // const initialCategory=location.state?.selectedCategory || "modular Kitchen";
-
-    // const [activeCategoryId, setActiveCategoryId] = useState(initialCategory);
 
 
     const location = useLocation();
@@ -177,15 +156,6 @@ function ContactCreativeDesign() {
         }
     }, [location.state]);
     
-    // State for Mobile Detection (Breakpoint 575px)
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 575);
-
-    useEffect(() => {
-        const handleResize = () => setIsMobile(window.innerWidth <= 575);
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
     const activeCategory = contactcategorydata.find(item => item.id === activeCategoryId);
 
     const handleCategoryClick = (id) => {
@@ -194,9 +164,6 @@ function ContactCreativeDesign() {
 
     // Class toggle for buttons
     const getButtonClass = (id) => id === activeCategoryId ? 'category_button2 active' : 'contactcreative_catbtn2';
-
-    // Logic: If mobile, show only 5 cards. Otherwise, show all.
-    const displayImages = isMobile ? activeCategory.images.slice(0, 5) : activeCategory.images;
 
 
     
@@ -220,16 +187,11 @@ function ContactCreativeDesign() {
                     <button className={getButtonClass(3)} onClick={() => handleCategoryClick(3)}>Pooja Unit</button>
                     <button className={getButtonClass(4)} onClick={() => handleCategoryClick(4)}>Tv Unit</button>
                     <button className={getButtonClass(5)} onClick={() => handleCategoryClick(5)}>Study Table</button>
-                    {/* <button className={getButtonClass(1)} onClick={() => setActiveCategoryId("modular Kitchen")}>Modular Kitchen</button>
-                    <button className={getButtonClass(2)} onClick={() => setActiveCategoryId("wardrobe")}>Wardrobe</button>
-                    <button className={getButtonClass(3)} onClick={() => handleCategoryClick(3)}>Pooja Unit</button>
-                    <button className={getButtonClass(4)} onClick={() => handleCategoryClick(4)}>Tv Unit</button>
-                    <button className={getButtonClass(5)} onClick={() => handleCategoryClick(5)}>Study Table</button> */}
                 </div>
             </div>
 
             <div className="contactcreative_grid2">
-                {displayImages.map(data => (
+                {activeCategory.images.map(data => (
                     <div className="contactcreative_card2" key={data.id}>
                         <img src={data.img} alt={data.name} className="contactcreative_img2" />
                         <p className="contactcreative_cardtitle2">{data.name}</p>
