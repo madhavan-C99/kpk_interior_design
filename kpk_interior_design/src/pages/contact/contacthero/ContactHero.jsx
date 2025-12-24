@@ -1,4 +1,4 @@
-import image from '../../../assets/explore_image/Desktop-155.png'
+// import image from '../../../assets/explore_image/Desktop-155.png'
 import './ContactHero.css'
 
 export default function ContactHero()
