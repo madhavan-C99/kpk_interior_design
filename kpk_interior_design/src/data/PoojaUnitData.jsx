@@ -32,7 +32,7 @@ import PoojaGallery_6_3 from "../assets/pooja_tv_gallery_images/PoojaGallery_6.3
 
 // importing feedback images
 import PoojaTvFeedback_1 from "../assets/pooja_tv_feedback_images/PoojaTvFeedback_1.png";
-import PoojaTvFeedback_2 from "../assets/pooja_tv_feedback_images/PoojaTvFeedback_2.png";
+import PoojaTvFeedback_2 from "../assets/pooja_tv_feedback_images/PoojaTvFeedBack_2.png";
 import PoojaTvFeedback_3 from "../assets/pooja_tv_feedback_images/PoojaTvFeedback_3.png";
 
 const PoojaUnitData = {
