@@ -1,7 +1,7 @@
 
 import React from "react";
 import { useState, useEffect } from "react";
-import '../typeletter/TypeLetter.css'
+import '../typeletter/Typeletter.css'
  
 export default function TypeLetter(){
     const Letters=["KPK ENTERPRISES"]
