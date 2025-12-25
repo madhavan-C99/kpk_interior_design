@@ -32,7 +32,7 @@ import TvGallery_6_4 from "../assets/pooja_tv_gallery_images/TvGallery_6.4.png";
 
 // importing feedback images
 import PoojaTvFeedback_1 from "../assets/pooja_tv_feedback_images/PoojaTvFeedback_1.png";
-import PoojaTvFeedback_2 from "../assets/pooja_tv_feedback_images/PoojaTvFeedback_2.png";
+import PoojaTvFeedback_2 from "../assets/pooja_tv_feedback_images/PoojaTvFeedBack_2.png";
 import PoojaTvFeedback_3 from "../assets/pooja_tv_feedback_images/PoojaTvFeedback_3.png";
 
 
