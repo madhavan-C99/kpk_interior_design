@@ -1,9 +1,9 @@
 import React from "react";
-import Ribbon from '../../../assets/price_img/ion_ribbon-outline.png';
-import Calendar from '../../../assets/price_img/uil_calender.png';
-import Vector from'../../../assets/price_img/Vector.png';
-import Service from '../../../assets/price_img/mdi_account-service-outline.png';
-import Formimg from '../../../assets/price_img/num-rel-three(1).png'
+import Ribbon from '../../../assets/Price_img/ion_ribbon-outline.png';
+import Calendar from '../../../assets/Price_img/uil_calender.png';
+import Vector from'../../../assets/Price_img/Vector.png';
+import Service from '../../../assets/Price_img/mdi_account-service-outline.png';
+import Formimg from '../../../assets/Price_img/num-rel-three(1).png'
 import '../priceform/PriceForm.css';
 
 export default function PriceForm({ closeForm }) {
