@@ -1,3 +1,28 @@
+:root{
+    --desk_head_tag:16px;
+    --desk_head_tag_padd:1px 18px;
+    --desk_title:32px;
+    --desk_title_lineheight:56px;
+    --desk_desc:24px;
+    --desk_btn_font:16px;
+    --desk_btn_padd:8px 16px;
+    
+    --tablet_head_tag:12px;
+    --tablet_head_tag_padd:1px 14px;    
+    --tablet_title:26px;
+  --tablet_title_lineheight:37px;
+    --tablet_desc:20px;
+     --tablet_btn_font:9px;
+    --tablet_btn_padd:6.43px 12.21px;
+
+   --mobile_head_tag:8px;
+    --mobile_head_tag_padd:1px 10px;    
+    --mobile_title:20px;
+  --mobile_title_lineheight:30px;
+    --mobile_desc:16px;
+     --mobile_btn_font:8px;
+    --mobile_btn_padd:6.43px 12.21px;
+}
 
 :root{
     --robotofont-font-family:"Roboto Serif", serif;
@@ -6,20 +31,23 @@
 }
 body{
   overflow-x: hidden;
+  margin: 0;
 }
 
 /* Reset and Box Sizing */
-* {box-sizing: border-box}
+* {box-sizing: border-box;
+  margin: 0;
+}
 
 /* Slideshow container - MODIFIED FOR FULL SCREEN */
 .home_slideshow__container3 {
   max-width: 100%; /* Use full viewport width */
-  height: 750px;
+  height: 630px;
   position: relative;
   border-radius: 0; 
   overflow: hidden;
   box-shadow: none; 
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 /* Individual Slides */
@@ -30,6 +58,9 @@ body{
   width: 100vw;
   height: 100%;
   transition: opacity 1.5s ease; /* Fading transition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home_mySlides3 .home_slide_img3 {
   width:100%;
@@ -42,7 +73,7 @@ body{
 .home_prev3, .home_next3 {
   cursor: pointer;
   position: absolute;
-  top: 43%;
+  top: 47%;
   height:40px;
   width:40px;
   padding:7px 13px;
@@ -74,31 +105,33 @@ body{
 /* Caption text */
 .home_hero_title3 {
   color: #f2f2f2;
-  font-size: 70px; /* Increased size for full screen */
+  font-size: 41px; /* Increased size for full screen */
   padding: 1rem 2rem;
   position: absolute;
-  bottom: 15%;
-  width: 100%;
+  top:55%;
+  width: 60%;
+  height: 30%;
   font-weight: 600;
   font-family: var(--robotofont-font-family);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home_hero_button3{
     color: #f2f2f2;
-  font-size: 30px;
+  font-size: var(--desk_btn_font);
   border: none;
-  padding: 8px 6%;
+  padding:var(--desk_btn_padd);
   font-weight: 530;
-  border-radius: 10px;
+  border-radius: 7px;
   position: absolute;
-  left: 35%;
+  bottom: 13%;
   font-family: var(--robotofont-font-family);
-  bottom: 8%;
   text-align: center;
   background: var(--btnbg-background-color);
-  /* display: flex;
-  justify-content: center; */
+
 
 }
 
@@ -106,8 +139,8 @@ body{
   position: absolute;
   top: 16.5%;
   right: 10%;
-  height: 230px;
-  width: 250px;
+  height: 143px;
+  width: 154px;
 }
 
 /* The dots/bullets/indicators container */
@@ -116,7 +149,7 @@ body{
     padding: 10px 0;
     position: absolute; /* Fixed position at the bottom of the screen */
     /* bottom: 100px;  */
-    bottom: 2%;
+    bottom: 5%;
     width: 100%;
     z-index: 15;
 }
@@ -139,32 +172,22 @@ body{
 @media (min-width:992px) and (max-width:1199.99px){
   .home_slideshow__container3{
     height: 600px;
-    margin-top: 5%;
+    margin-top: 8%;
   }
     .home_hero_title3{
-      font-size: 50px;
-      bottom: 18%;
-      left: 6%;
-      width: 90%;
-    }
-
-    .home_hero_button3{
-      font-size: 28px;
-      bottom:8.5%;
-      left: 33%;
+  width: 80%;
     }
 
     .home_grantie_logo3{
         top: 17.5%;
-        right: 10%;
-        height: 180px;
-        width: 200px;
+        right: 12%;
+  
     }
     .home_prev3, .home_next3 {
-      top: 55%;
+      top: 50%;
     }
     .home_dot_container3{
-      bottom:1%;
+      bottom:3%;
     }
   
 }
@@ -172,31 +195,32 @@ body{
 
 @media (min-width:768px) and (max-width:991.99px) {
     .home_slideshow__container3{
-    height: 540px;
-    margin-top: 5%;
+    height: 450px;
+  margin-top: 10%;
   }
       .home_hero_title3{
-      font-size: 40px;
-      bottom: 20%;
-      left: 5%;
-      width: 90%;
+      font-size: var(--tablet_title);
+      width: 75%;
 
     }
 
     .home_hero_button3{
-      font-size: 20px;
-      bottom:13%;
-      left: 31%;
+      font-size:var(--tablet_btn_font);
+      padding: var(--tablet_btn_padd);
     }
 
     .home_grantie_logo3{
-        top: 8%;
-        right: 10%;
-        height: 148px;
-        width: 159px;
+        top: 23%;
+        height: 100px;
+        width: 107px;
+        right: 16%; 
     }
     .home_prev3, .home_next3 {
-      top: 45%;
+      top: 50%;
+    }
+    .home_dot3{
+      height: 10px;
+      width: 10px;
     }
     .home_dot_container3{
       bottom: 2%;
@@ -206,32 +230,33 @@ body{
 
 @media (min-width:576px) and (max-width:767.98px) {
   .home_slideshow__container3{
-    height: 420px;
-    margin-top: 15%;
+    height: 400px;
+    margin-top: 12%;
   }
       .home_hero_title3{
-      font-size: 30px;
-      bottom:20%;
-      left: 4.5%;
-      width: 90%;
+      font-size: var(--tablet_title);
+      width: 80%;
 
     }
 
     .home_hero_button3{
-      font-size: 20px;
-      bottom:15%;
-      left: 30%;
-      padding: 4px 4%;
+      font-size:var(--tablet_btn_font);
+      padding: var(--tablet_btn_padd);
+
     }
 
     .home_grantie_logo3{
-        top: 8%;
-        right: 10%;
-        height: 128px;
-        width: 149px;
+        top: 23%;
+        height: 100px;
+        width: 107px;
+        right: 16%; 
     }
     .home_prev3, .home_next3 {
-      top: 45%;
+      top: 48%;
+    }
+        .home_dot3{
+      height: 10px;
+      width: 10px;
     }
     .home_dot_container3{
       bottom:4%;
@@ -241,32 +266,37 @@ body{
 @media (max-width:575.98px) {
     .home_slideshow__container3{
     height: 300px;
-    margin-top: 25%;
+    margin-top: 17%;
   }
       .home_hero_title3{
-      font-size: 20px;
+      font-size: 18px;
+      width: 100%;
       bottom:20%;
 
     }
 
     .home_hero_button3{
-      font-size: 16px;
-      bottom:13%;
-      left: 15%;
-      padding: 4px 15%;
+      font-size: var(--mobile_head_tag);
+      line-height: 1rem;
+      padding:var(--mobile_head_tag_padd) ;
+
+
     }
 
     .home_grantie_logo3{
-        top: 8%;
-        right: 10%;
+        top: 30%;
+        /* right: 10%; */
         height: 78px;
         width: 85px;
     }
     .home_prev3, .home_next3 {
       display: none;
     }
+            .home_dot3{
+      height: 10px;
+      width: 10px;
+    }
     .home_dot_container3{
-      bottom:2%;
+      bottom:1%;
     }
 }
-

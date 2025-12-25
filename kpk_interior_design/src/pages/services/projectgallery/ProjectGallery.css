@@ -33,14 +33,14 @@ body{
     font-family: var(--roboto);
     width: 949px;
     font-weight: 600;
-    font-size: 44px;
-    line-height: 56px;
+    font-size: var(--desk_title);
+    line-height: var(--desk_title_lineheight);
 }
 
 .comparison_subtitle2{
     margin-top: 1rem;
     font-family: var(--lora);
-    font-size: 28px;
+    font-size: var(--desk_desc);
     font-weight: 400;
     line-height: 44px;
     letter-spacing: 3%;
@@ -171,14 +171,18 @@ tbody tr:last-child td:last-child {
 
 
 @media (min-width: 768px) and (max-width: 991.98px){
+    .comparison_container2{
+        margin-top: 2rem;
+    }
+
     .comparison_main_title2{
-        font-size: 32px;
+        font-size: var(--tablet_title);
         line-height: 48px;
         width: 70%;
     }
 
     .comparison_subtitle2{
-        font-size: 24px;
+        font-size: var(--tablet_desc);
         line-height: 40px;
         width: 72%;
     }
@@ -216,14 +220,18 @@ tbody tr:last-child td:last-child {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){
+    .comparison_container2{
+        margin-top: 1rem;
+    }
+
     .comparison_main_title2{
-        font-size: 32px;
+        font-size: var(--tablet_title);
         line-height: 48px;
         width: 70%;
     }
 
     .comparison_subtitle2{
-        font-size: 24px;
+        font-size: var(--tablet_desc);
         line-height: 40px;
         width: 72%;
     }
@@ -268,16 +276,16 @@ tbody tr:last-child td:last-child {
         margin-top: 3rem;
     }
     .comparison_main_title2{
-        font-size: 20px;
+        font-size: var(--mobile_title);
         line-height: 28px;
-        width: 55%;
+        width: 80%;
         min-width: 75%;
     }
 
     .comparison_subtitle2{
-        font-size: 16px;
+        font-size: var(--mobile_desc);
         line-height: 24px;
-        width: 75%;
+        width: 80%;
     }
 
     .kitchen_comparison_table2{

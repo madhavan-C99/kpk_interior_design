@@ -1,4 +1,3 @@
-
 :root{
     --roboto:"Roboto Serif",serif;
     --lora:"Lora",serif;
@@ -44,26 +43,29 @@
     color: white;
     font-family: var(--meri);
     font-weight: 700;
-    font-size: 40px;
+    font-size:var(--desk_title);
     line-height: 56px;
 }
 
 .consult_destext2{
     margin:1rem 0 ;
     font-family: var(--meri);
-    font-size: 24px;
+    font-size: var(--desk_desc);
     font-weight: 400;
     color: white;
+    line-height: 36px;
+    text-align: center;
 }
 
 .consult_btn2{
     margin: 1rem 0;
     font-family: var(--roboto);
-    font-size: 32px;
+    font-size: var(--desk_btn_font);
     font-weight: 600;
-    height: 60px;
-    width: 440px;
+    /* height: 60px; */
+    /* width: 440px; */
     border: none;
+    padding: var(--desk_btn_padd);
     background-color: #8D9B6A;
     color: white;
     border-radius: 10px;
@@ -76,7 +78,8 @@
     }
 
     .consult_destext2{
-        font-size: 17px;
+    font-size: var(--tablet_title);
+        line-height: var(--tablet_title_lineheight);
     }
 
     #consult_video2{
@@ -90,8 +93,8 @@
     }
 
     .consult_titletext2{
-        font-size: 23px;
-        line-height: 32.5px;
+        font-size: var(--tablet_title);
+        line-height: var(--tablet_title_lineheight);
     }
 
     #consult_video2{
@@ -99,12 +102,12 @@
     }
 
     .consult_destext2{
-        font-size: 14px;
+        font-size: var(--tablet_desc);
     }
 
     .consult_btn2{
         width: 296px;
-        font-size: 18.5px;
+        font-size: var(--desk_btn_font);
     }
 }
 
@@ -115,12 +118,15 @@
 
     .consult_titletext2{
         width: 70%;
-        font-size: 23px;
-        line-height: 32.5px;
+        font-size: var(--tablet_title);
+        line-height:var(--tablet_title_lineheight);
     }
 
     .consult_destext2{
-        font-size: 14px;
+        font-size: var(--tablet_desc);
+        width: 70%;
+        margin: auto;
+        text-align: center;
     }
 
     #consult_video2{
@@ -133,21 +139,23 @@
     }   
 }
 
- @media (max-width: 575px) {
+ @media (max-width: 575.98px) {
     .consultation_wrapper2{
+        margin: 2rem 0;
         gap: 2rem;
         text-align: center;
-        height: 667px;
+        height: 567px;
     }
 
     .consult_titletext2{
-        font-size: 20px;
-        line-height: 40px;
+        width: 80%;
+        font-size: var(--mobile_title);
+        line-height:var(--mobile_title_lineheight);
     }
 
     .consult_destext2{
         margin: auto;
-        width: 60%;
+        width: 80%;
         font-size: 16px;
         line-height: 32px;
     }
@@ -158,8 +166,8 @@
 
     .consult_btn2{
         width: 100%;
-        padding: 0 50px;
-        font-size: 20px;
+        /* padding: 0 50px; */
+        /* font-size: 20px; */
     }
  }
 
@@ -176,6 +184,3 @@
         padding: 0 25px;
     }
  }
-
-
-

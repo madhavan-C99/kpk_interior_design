@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --color-text-dark: #000000;
@@ -15,6 +18,7 @@
 }
 
 .contact_overall_container2{
+  margin-top: 2rem;
   width: 100%;
 }
 
@@ -40,17 +44,17 @@ body {
 .section_title2 {
     font-family:var(--roboto);
     max-width: 780px;
-    font-size: 2.8rem;
+    font-size: var(--desk_title);
     font-weight: 600;
     color:var(--color-text-dark);
     margin-bottom: 0.5rem;
-    line-height: 56px;
+    line-height: var(--desk_title_lineheight);
 }
 
 .detail_description2 {
     font-family: var(--lora);
     max-width: 67rem;
-    font-size: 28px;
+    font-size: var(--desk_desc);
     font-weight: 400;
     text-align: center;
     line-height: 44px;
@@ -117,6 +121,7 @@ body {
     border-radius: 8px;
     font-size: 1rem;
     box-sizing: border-box;
+    display: block;
 }
 
 .form_input2::placeholder {
@@ -124,6 +129,22 @@ body {
     font-weight: 400;
     font-size: 18px;
     color: #a4a4a4;
+}
+
+.form_input2:focus{
+    outline: none;
+    border:1px solid black;
+  }
+
+.error_message2 {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    padding-left: 5px;
 }
 
 .connect_cta2 {
@@ -145,9 +166,9 @@ body {
   }
 
   .form_title2{
-    font-size: 17px;
+    font-size: var(--desk_title);
     line-height: 30px;
-    width: 90%;
+    width: 80%;
     height: 90px;
     margin: 0px;
   }
@@ -168,13 +189,13 @@ body {
 @media (min-width: 768px) and (max-width: 991.98px){
   .section_title2{
     width: 90%;
-    font-size: 32px;
+    font-size: var(--tablet_title);
     line-height: 48px;
   }
 
   .detail_description2{
     width: 95%;
-    font-size: 24px;
+    font-size: var(--tablet_desc);
     line-height: 40px;
   }
 
@@ -213,6 +234,10 @@ body {
     font-size: 11.98px;
   }
 
+  .error_message2{
+    font-size: 9px;
+  }
+
   .connect_cta2{
     height: 30px;
     font-size: 12.31px;
@@ -225,13 +250,13 @@ body {
 @media (min-width: 576px) and (max-width: 767.98px){
   .section_title2{
     width: 90%;
-    font-size: 32px;
+    font-size: var(--tablet_title);
     line-height: 48px;
   }
 
   .detail_description2{
     width: 95%;
-    font-size: 24px;
+    font-size: var(--tablet_desc);
     line-height: 40px;
   }
 
@@ -263,6 +288,10 @@ body {
   .form_input2{
     padding: 7px;
     margin: 0 0 11.98px;
+  }
+
+  .error_message2{
+    font-size: 8px;
   }
 
   .form_input2::placeholder{
@@ -312,13 +341,13 @@ body {
 
  .section_title2{
     max-width: 343px;
-    font-size: 20px;
+    font-size: var(--mobile_title);
     line-height: 28px;
     margin-bottom: 0.5rem;
   }
 
   .detail_description2{
-    font-size: 16px;
+    font-size: var(--mobile_desc);
     font-weight: 400;
     line-height: 24px;
     max-width: 373px;
@@ -375,6 +404,11 @@ body {
 
   .form_input2::placeholder{
     font-size: 0.75rem;
+  }
+
+  .error_message2{
+    font-size: 8px;
+    margin-bottom: 0px;
   }
 
   .connect_cta2{

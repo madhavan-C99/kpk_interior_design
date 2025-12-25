@@ -1,3 +1,28 @@
+:root{
+    --desk_head_tag:16px;
+    --desk_head_tag_padd:1px 18px;
+    --desk_title:32px;
+    --desk_title_lineheight:56px;
+    --desk_desc:24px;
+    --desk_btn_font:16px;
+    --desk_btn_padd:8px 16px;
+    
+    --tablet_head_tag:12px;
+    --tablet_head_tag_padd:1px 14px;    
+    --tablet_title:26px;
+    --tablet_title_lineheight:37px;
+    --tablet_desc:20px;
+     --tablet_btn_font:9px;
+    --tablet_btn_padd:6.43px 12.21px;
+
+   --mobile_head_tag:8px;
+    --mobile_head_tag_padd:1px 10px;    
+    --mobile_title:20px;
+    --mobile_title_lineheight:30px;
+    --mobile_desc:16px;
+     --mobile_btn_font:8px;
+    --mobile_btn_padd:6.43px 12.21px;
+}
 
 *{
   margin:0;
@@ -72,8 +97,8 @@ Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors
 .about-hero_viedo div h2{
     font-family: Roboto Serif;
     font-weight: 500;
-    font-size: 45px;
-    line-height: 100%;
+    font-size: 41px;
+    line-height:32px;
     text-align: center;
     color: white;
 }
@@ -84,7 +109,7 @@ Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors
     .about-hero-viedo {
     width: 100%;
     object-fit: cover;
-    height: 700px;
+    height: 500px;
 }
     .about-hero_viedo {
      height: 700px;
@@ -92,7 +117,7 @@ Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors
     .about-hero_viedo div {
         text-align: center;
         /* transform: translate(0%, 1030%); */
-        transform: translate(0%, 600px);
+        transform: translate(0%, 400px);
     }
     .about-hero_viedo div h2 {
         font-family: Roboto Serif;
@@ -145,8 +170,4 @@ Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors
         text-align: center;
         transform: translate(0%,650%);
     }
-}
-
-/* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
-@media (min-width: 1400px) {
 }

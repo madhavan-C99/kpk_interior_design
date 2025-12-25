@@ -20,7 +20,7 @@
     display: flex;
     width: 100vw;
     flex-wrap: wrap;
-    margin-top:60px;
+    margin-top:0;
     overflow: hidden;
 
 }
@@ -60,9 +60,9 @@
 
 .happyclients_head3 h1{
     color: var(--text-color);
-    font-size: 2.5rem;
+    font-size: var(--desk_title);
     width: 70%;
-    line-height: 55px;
+    line-height: var(--desk_title_lineheight);
     text-align: center;
     margin-bottom: 20px;
     font-family: var(--robotofont-font-family);
@@ -80,7 +80,7 @@
 
 .happyclients_head3 p{
     color: var(--text-color);
-    font-size: 1.3rem;
+    font-size: var(--desk_desc);
     width: 75%;
     font-weight: 100;
     text-align: center;
@@ -154,7 +154,7 @@
 } 
     .happyclients_head3 h1{
         width: 85%;
-        font-size: 1.3rem;
+        font-size: var(--tablet_title);
         line-height: 40px;
     }
     .happyclients_head3 h1 span{
@@ -163,7 +163,7 @@
 
     .happyclients_head3 p{
         margin-top: 0;
-      font-size: 0.93rem;
+      font-size: var(--tablet_desc);
      line-height: 31px;
      width: 85%;
     }
@@ -199,7 +199,7 @@
 } 
     .happyclients_head3 h1{
         width: 95%;
-        font-size: 1.3rem;
+        font-size: var(--tablet_title);
         line-height: 38px;
     }
     .happyclients_head3 h1 span{
@@ -208,7 +208,7 @@
 
     .happyclients_head3 p{
         margin-top: 0;
-      font-size: 0.93rem;
+      font-size: var(--tablet_desc);
      line-height: 31px;
      width: 85%;
     }
@@ -252,7 +252,7 @@
 } 
     .happyclients_head3 h1{
         width: 80%;
-        font-size: 1.3rem;
+        font-size: var(--mobile_title);
         height:45%;
         line-height: 38px;
     }
@@ -262,7 +262,7 @@
 
     .happyclients_head3 p{
         margin-top: 0;
-      font-size: 0.93rem;
+      font-size: var(--mobile_desc);
      line-height: 30px;
      width: 88%;
      height:46%;
@@ -270,7 +270,7 @@
     .happyclients_head3 button{
         font-size: 1rem;
         width: 70%;
-        height:13%;
+       height:13%;
         padding:0.5rem 0.5rem;
         margin-bottom: 10%;
     }

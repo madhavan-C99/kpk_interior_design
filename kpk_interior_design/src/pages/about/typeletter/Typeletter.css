@@ -103,6 +103,9 @@
 
 /* X-Small (xs) - Mobile portrait and smaller devices */
 @media (max-width: 575.98px) {
+  .about-kpk {
+    margin-top: 0px;
+  }
   .about-kpk-text_ani {
     font-size: 30px;
   }
@@ -110,7 +113,7 @@
     font-family: Lora;
     font-size: 15.31px;
     font-weight: 900;
-    transform: translate(-95px, -40px);
+    transform: translate(-64px, -43px);
   }
   
 }
@@ -142,22 +145,25 @@
     .about-typewriter__text {
     font-family: Lora;
     font-size: 34.35px;
-    transform: translate(-112px, -76px);
+    transform: translate(-122px, -81px);
     }
 }
 
 /* Large (lg) - Desktops and laptop screens */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .about-kpk-text_ani {
-        font-size: 95.44px;
+        font-size: 90.44px;
+    }
+    .about-typewriter__text {
+          transform: translate(-68%, -164%);
     }
 }
 
 /* Extra Large (xl) - Large desktops */
-/* @media (min-width: 1200px) and (max-width: 1399.98px) {
-} */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
 
 /* Extra Extra Large (xxl) - Very large screens, TVs, or ultra-wide monitors */
-/* @media (min-width: 1400px) {
+@media (min-width: 1400px) {
 
-} */
+}

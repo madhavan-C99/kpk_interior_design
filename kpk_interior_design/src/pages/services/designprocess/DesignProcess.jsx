@@ -46,13 +46,96 @@ const dynamicStyles = {
   const handleRangeChange = (event) => {
     setSliderPos(event.target.value);
   };
+
+  const [form, setForm] = useState({
+      fullname: "",
+      mobilenumber: "",
+      location: "",
+      purpose: "",
+    });
+  
+    const [errors, setErrors] = useState({});
+  
+  // Update input values
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+  
+      // NAME: allow only letters
+      if (name === "fullname") {
+        if (!/^[a-zA-Z\s]*$/.test(value)) {
+          setErrors({ ...errors, fullname: "Only characters are allowed" });
+          return;
+        }
+      }
+  
+      // MOBILE: allow only numbers
+      if (name === "mobilenumber") {
+        if (!/^[0-9]*$/.test(value)) {
+          setErrors({ ...errors, mobilenumber: "Only numbers are allowed" });
+          return;
+        }
+      }
+  
+      setForm({ ...form, [name]: value });
+      setErrors({ ...errors, [name]: "" });
+    };
+  
+  
+    // Validate field when user leaves input
+    const handleBlur = (e) => {
+      const { name, value } = e.target;
+      let error = "";
+  
+      if (name === "fullname" && value.trim().length < 3) {
+        error = "Name must be at least 3 letters";
+      }
+  
+      if (name === "mobilenumber" && value.length !== 10) {
+        error = "Mobile number must be 10 digits";
+      }
+  
+      if (name === "location" && value.trim() === "") {
+        error = "Location is required";
+      }
+  
+      if (name === "purpose" && value.trim() === "") {
+        error = "Purpose is required";
+      }
+  
+      setErrors({
+        ...errors,
+        [name]: error,
+      });
+    };
+  
+    // Submit form
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      if (
+        !form.fullname ||
+        !form.mobilenumber ||
+        !form.location ||
+        !form.purpose ||
+        errors.fullname ||
+        errors.mobilenumber ||
+        errors.location ||
+        errors.purpose
+      ) {
+        alert("Please fill all the fields");
+        return;
+      }
+  
+      alert("Form submitted successfully!");
+    };
+    
     return(
         <>
         <section>
             <div className='design_process3'>
                 <div className='design_process_head3'>
                     <h1>Redesign, Revamp, and Refresh Your Home Spaces Today</h1>
-                    <p>Transform your living spaces with KPK Enterprises, the best interior designers in Pondicherry. We deliver stylish, functional, and personalized interiors, revamping every corner with premium materials and expert design solutions.</p>
+                    <p>Transform your living spaces with KPK Enterprise, the best interior designers in Pondicherry. We deliver stylish, functional, and personalized interiors, revamping every corner with premium materials and expert design solutions.</p>
                 </div>
                 <div className='design_process_body3'>
                     <div className='design_draw3'>
@@ -116,10 +199,18 @@ const dynamicStyles = {
                             <h1>Design for Every Budget</h1>
                         </div>
                         <form action="" className='design_form_body3' >
-                                <input type="text" placeholder='Full Name' name='fullname' className='design_form_input3'/>
-                                <input type="number"  name="number" placeholder='Mobile Number'  className='design_form_input3'/>
-                                <input type="text"  name="text" placeholder='Location'  className='design_form_input3'/>
-                                <input type="text"  name="text" placeholder='Purpose'  className='design_form_input3'/>
+                                <input type="text" placeholder='Full Name' name='fullname' className='design_form_input3' value={form.fullname} onChange={handleChange} onBlur={handleBlur}/>
+                                {errors.fullname && <span className="error_message3">{errors.fullname}</span>}
+
+                                <input type="text"  name="mobilenumber" placeholder='Mobile Number'  className='design_form_input3' value={form.mobilenumber} onChange={handleChange} onBlur={handleBlur}/>
+                                {errors.mobilenumber && <span className="error_message3">{errors.mobilenumber}</span>}
+
+                                <input type="text"  name="location" placeholder='Location'  className='design_form_input3' value={form.location} onChange={handleChange} onBlur={handleBlur}/>
+                                {errors.location && <span className="error_message3">{errors.location}</span>}
+
+                                <input type="text"  name="purpose" placeholder='Purpose'  className='design_form_input3' value={form.purpose} onChange={handleChange} onBlur={handleBlur}/>
+                                {errors.purpose && <span className="error_message3">{errors.purpose}</span>}
+
                                 <button className='design_form_button3'>Let's Connect</button>
                         </form>
                     </div>
@@ -130,143 +221,3 @@ const dynamicStyles = {
         </>
     )
 }
-
- 
-
-
-
-// import React, { useState } from 'react';
-// // import './ToggleSwitch.css'; // Import the CSS file
-
-// const ToggleSwitch = ({ initialChecked = false, onChange, label }) => {
-//   const [isChecked, setIsChecked] = useState(initialChecked);
-
-//   const handleToggle = () => {
-//     const newState = !isChecked;
-//     setIsChecked(newState);
-//     // Notify the parent component (DrawingApp) of the change
-//     onChange(newState);
-//   };
-
-//   return (
-//     <div className="toggle-container">
-//       {label && <span className="toggle-label">{label}:</span>}
-//       <label className="switch">
-//         <input 
-//           type="checkbox" 
-//           checked={isChecked} 
-//           onChange={handleToggle} 
-//         />
-//         <span className="slider round"></span>
-//       </label>
-//     </div>
-//   );
-// };
-
-// export {ToggleSwitch};
-
-
-
-// import React, { useState, useRef } from 'react';
-// // import ToggleSwitch from './ToggleSwitch';
-// // NOTE: Make sure to import or define the image source
-// import demoImage from '../../../assets/services/images/Main.png'; 
-
-// const DrawingApp = () => {
-//   // State to control drawing ability (ON/OFF)
-//   const [isDrawingEnabled, setIsDrawingEnabled] = useState(false);
-  
-//   // State to track if the mouse button is currently pressed down
-//   const [isDrawing, setIsDrawing] = useState(false);
-  
-//   const canvasRef = useRef(null);
-  
-//   // 1. Handler passed to the ToggleSwitch
-//   const handleToggleChange = (isEnabled) => {
-//     setIsDrawingEnabled(isEnabled);
-//     // console.log("Drawing is now":{ ${isEnabled ? 'ON' : 'OFF'}});
-//   };
-
-//   // 2. Start Drawing function (Mouse Down)
-//   const startDrawing = (e) => {
-//     // ONLY start drawing if the switch is ON
-//     if (!isDrawingEnabled) return; 
-
-//     setIsDrawing(true);
-//     // Move the pen to the starting point
-//     const canvas = canvasRef.current;
-//     const ctx = canvas.getContext('2d');
-    
-//     const rect = canvas.getBoundingClientRect();
-//     const x = e.clientX - rect.left;
-//     const y = e.clientY - rect.top;
-
-//     ctx.beginPath();
-//     ctx.moveTo(x, y);
-//   };
-
-//   // 3. Draw function (Mouse Move)
-//   const draw = (e) => {
-//     // ONLY draw if the switch is ON AND the mouse button is down
-//     if (!isDrawingEnabled || !isDrawing) return; 
-
-//     const canvas = canvasRef.current;
-//     const ctx = canvas.getContext('2d');
-    
-//     const rect = canvas.getBoundingClientRect();
-//     const x = e.clientX - rect.left;
-//     const y = e.clientY - rect.top;
-
-//     ctx.lineTo(x, y);
-//     ctx.stroke(); // Draw the line segment
-//   };
-
-//   // 4. Stop Drawing function (Mouse Up or Leave)
-//   const stopDrawing = () => {
-//     setIsDrawing(false);
-//   };
-  
-//   return (
-//     <div style={{ padding: '20px', textAlign: 'center' }}>
-//       <h1>Image Drawing Toggle</h1>
-      
-//       <div style={{ marginBottom: '20px' }}>
-//         <ToggleSwitch 
-//           onChange={handleToggleChange} 
-//           label="Enable Drawing" 
-//         />
-//         <p>Current Status: <strong>{isDrawingEnabled ? 'DRAWING ENABLED' : 'DISABLED'}</strong></p>
-//       </div>
-
-//       <div style={{ position: 'relative', display: 'inline-block' }}>
-//         {/* The background image */}
-//         <img 
-//           src={demoImage} 
-//           alt="Drawing Area"
-//           style={{ width: '600px', height: 'auto', display: 'block' }}
-//         />
-
-//         {/* The overlay canvas */}
-//         <canvas
-//           ref={canvasRef}
-//           width={600} 
-//           height={400} // Set dimensions to match image area
-//           style={{
-//             position: 'absolute',
-//             top: 0,
-//             left: 0,
-//             cursor: isDrawingEnabled ? 'crosshair' : 'default', // Change cursor based on state
-//             border: '1px solid #ddd'
-//           }}
-//           // Event handlers
-//           onMouseDown={startDrawing}
-//           onMouseMove={draw}
-//           onMouseUp={stopDrawing}
-//           onMouseLeave={stopDrawing}
-//         />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export { DrawingApp};

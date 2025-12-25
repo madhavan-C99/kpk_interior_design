@@ -44,7 +44,7 @@ export default function PoojaTvFaq({ faq }) {
           >
             <div className="pt-faq-question">
               <span>{item.q}</span>
-              {openIndex === index ? <FaChevronDown /> : <FaChevronUp />}
+              {openIndex === index ?  <FaChevronUp /> : <FaChevronDown />}
             </div>
 
             {openIndex === index && (

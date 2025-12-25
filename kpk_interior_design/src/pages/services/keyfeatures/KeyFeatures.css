@@ -1,5 +1,4 @@
 
-
 *{
     padding: 0;
     margin:0;
@@ -27,10 +26,10 @@
 
 .key_feature_head3 h1{
     width: 50%;
-    font-size: 2.5rem;
+    font-size: var(--desk_title);
     text-align:center;
     font-weight: 600;
-    line-height: 58px;
+    line-height: var( --desk_title_lineheight);
     margin-top: 60px;
     margin-bottom: 13px;
     font-family: var(--robotofont-font-family);
@@ -40,7 +39,7 @@
 
 .key_feature_head3 p{
     width:75%;
-    font-size: 28px;
+    font-size: var(--desk_desc);
     text-align: center;
     line-height: 41px;
     letter-spacing:30%;
@@ -102,13 +101,13 @@
         height: fit-content;
     }
         .key_feature_head3 h1{
-        font-size:2.6rem;
+        font-size:var( --desk_title);
         width: 90%;
-        line-height: 50px;
+        line-height: var(--desk_title_lineheight);
     }
     .key_feature_head3 p{
         width: 80%;
-        font-size: 1.5rem;
+        font-size: var(--desk_desc);
         line-height: 36px;
     }
     .key_feature_body3 {
@@ -129,14 +128,14 @@
         height: fit-content;
     }
     .key_feature_head3 h1{
-        font-size:2rem;
+        font-size:var(--tablet_title);
         /* font-size: 24px; */
         width: 80%;
         line-height: 50px;
     }
     .key_feature_head3 p{
         width: 83%;
-        font-size: 1.3rem;
+        font-size: var(--tablet_desc);
         line-height: 31px;
     }
     .key_feature_body3 {
@@ -152,7 +151,7 @@
 
 @media (min-width:576px) and (max-width:767.99px) {
     .key_feature_head3 h1{
-        font-size: 32px;
+        font-size:var(--tablet_title);
         width: 80%;
         height: 30%;
         line-height: 40px;
@@ -160,7 +159,7 @@
         .key_feature_head3 p{
         width: 80%;
         height: 80%;
-        font-size: 1.3rem;
+        font-size: var(--tablet_desc);
         line-height: 28px;
     }    
     .key_feature_body3{
@@ -178,7 +177,7 @@
         height: 40%;
     }
         .key_feature_head3 h1{
-        font-size: 20px;
+        font-size: var(--mobile_title);
         width: 80%;
         height: 15%;
         line-height: 30px;
@@ -186,7 +185,7 @@
         .key_feature_head3 p{
         width: 90%;
         height: 60%;
-        font-size: 1.1rem;
+        font-size: var(--mobile_desc);
         line-height: 30px;
     } 
 

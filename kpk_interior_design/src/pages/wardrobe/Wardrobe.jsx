@@ -13,6 +13,7 @@ import ModernInteriorDesign from "./moderninteriordesign/ModernInteriorDesign";
 export default function Wardrobe(){
     return(
         <>
+        {console.log("wardrobe")}
         <WardoorHero/>
         <WardoorKeyFeatures/>
         <WardoorDesignProcess/>
@@ -23,6 +24,7 @@ export default function Wardrobe(){
         <FeedBack/>
         <WardoorHappyClients/>
         <WardoorFaq/>
+        {console.log("done")}
         </>
     )
 }

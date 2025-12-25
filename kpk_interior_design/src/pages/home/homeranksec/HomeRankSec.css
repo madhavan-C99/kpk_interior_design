@@ -1,6 +1,3 @@
-
-
-
 * {
     padding: 0;
     margin: 0;
@@ -16,7 +13,7 @@
 
 /* --- Container & Header Styles --- */
 .home_rank__con3 {
-    margin-top: 5%;
+    margin-top: 3%;
     width: 100vw;
     min-height: 540px;
     padding: 50px 0;
@@ -34,16 +31,16 @@
 }
 
 .home_rank_tittle3{
-    font-size: 40px;
+    font-size: var(--desk_title);
     width: 70%;
     font-weight: 600;
     font-family: var(--robotofont-font-family);
-    line-height: 50px;
+    line-height: 56px;
 }
 
 .home_rank_caption3{
-    width: 90%;
-    font-size: 28px;
+    width: 80%;
+    font-size: var(--desk_desc);
     font-weight: 400;
     font-family: var(--lorafont-font-family);
     line-height: 42px;
@@ -118,7 +115,7 @@
 }
 
 .home_rank__card3 h4 {
-    font-size: 1.2rem;
+    font-size:18px;
     font-weight: 600;
     font-family: var(--lorafont-font-family);
     color: #333;
@@ -137,13 +134,13 @@
 }
 
 @media (min-width: 768px) and (max-width:991px) {
-    .home_rank_tittle3 
-    { font-size: 32px; 
+    .home_rank_tittle3 {
+    font-size:var(--tablet_title); 
     line-height: 1.2; 
     width: 95%;}
 
     .home_rank_caption3 {
-         font-size: 24px;
+         font-size: var(--tablet_desc);
           line-height:40px; 
         width: 100%;}
     .home_rank__card3 
@@ -160,17 +157,18 @@
 
 @media (min-width:576px) and (max-width:767.98px) {
       .home_rank_tittle3 
-    { font-size: 32px; 
+    {    font-size:var(--tablet_title);  
     line-height: 1.2; 
     width: 95%;}
 
     .home_rank_caption3 {
-    font-size: 24px;
+     font-size: var(--tablet_desc);
     line-height:40px; 
     width: 100%;}
     .home_rank__card3 
      { min-width: 250px;
-     max-width: 250px; } /* Slightly smaller cards */
+     max-width: 250px;
+     min-height: 180px; } /* Slightly smaller cards */
     
     /* Recalculate animation based on smaller size */
     @keyframes infinite-scroll {
@@ -182,20 +180,21 @@
 
 @media (max-width:575px) {
     .home_rank_tittle3 
-    { font-size: 20px; 
+    {font-size: var(--mobile_title);
     line-height: 1.2; 
     width: 95%;}
 
     .home_rank_caption3 {
-    font-size: 16px;
+    font-size: var(--mobile_desc);
     line-height:24px; 
     width: 100%;}
     .home_rank__card3 
-     { min-width: 150px;
-     max-width: 145px; } /* Slightly smaller cards */
+     { min-width: 120px;
+     max-width: 125px; 
+    min-height: 120px;} /* Slightly smaller cards */
     
     .home_rank__card3 h4{
-        font-size: 16px;
+        font-size: 12px;
     }
     /* Recalculate animation based on smaller size */
     @keyframes infinite-scroll {

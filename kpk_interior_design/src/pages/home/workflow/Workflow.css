@@ -209,7 +209,7 @@
     
     .workflow_title2{
         width: 70%;
-        font-size: 32px;
+        font-size: var(--tablet_title);
         line-height: 48px;
     }
 
@@ -264,7 +264,7 @@
     
     .workflow_title2{
         width: 100%;
-        font-size: 32px;
+        font-size: var(--tablet_title);
         line-height: 48px;
     }
 
@@ -304,7 +304,7 @@
     }
 
     .content_heading2{
-        font-size: 24px;
+        font-size: 22px;
         line-height: 31.2px;
     }
 

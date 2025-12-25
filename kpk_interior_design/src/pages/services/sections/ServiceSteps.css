@@ -30,15 +30,15 @@ body{
 
 .utility_title2{
     font-family: var(--roboto);
-    font-size: 44px;
+    font-size: var(--desk_title);
     font-weight: 600;
-    line-height: 56px;
+    line-height: var(--desk_title_lineheight);
     width: 60%;
 }
 
 .utility_description2{
     font-family: var(--lora);
-    font-size: 28px;
+    font-size: var(--desk_desc);
     color: #222222;
     line-height: 44px;
     font-weight: 400;
@@ -132,13 +132,13 @@ body{
 
 @media (min-width: 768px) and (max-width: 991.98px){
    .utility_title2{
-    font-size: 32px;
+    font-size: var(--tablet_title);
     line-height: 48px;
    }   
 
    .utility_description2{
     width: 88%;
-    font-size: 24px;
+    font-size: var(--tablet_desc);
     line-height: 40px;
    }
 
@@ -170,19 +170,23 @@ body{
 
 
 @media (min-width: 576px) and (max-width: 767.98px){
+    .utility_zone_section2{
+        margin-top: 0rem;
+    }
+
     .utility_text_block2{
-        margin: 1rem auto;
+        margin: 0rem auto;
     }
 
    .utility_title2{
-    font-size: 32px;
+    font-size: var(--tablet_title);
     line-height: 48px;
     width: 70%;
    } 
 
    .utility_description2{
     width: 88%;
-    font-size: 24px;
+    font-size: var(--tablet_desc);
     line-height: 40px;
    }
 
@@ -228,15 +232,15 @@ body{
     }
 
     .utility_title2{
-        width: 59%;
-        font-size: 20px;
+        width: 75%;
+        font-size: var(--mobile_title);
         line-height: 28px;
         letter-spacing: 3%;
     }
 
     .utility_description2{
         width: 80%;
-        font-size: 16px;
+        font-size: var(--mobile_desc);
         line-height: 24px;
     }
 
@@ -286,13 +290,12 @@ body{
 
 @media (max-width: 375px){
     .utility_title2{
-        font-size: 17px;
+        font-size: var(--mobile_title);
         width: 80%;
     }
 
     .utility_description2{
         width: 83%;
-        font-size: 13px;
+        font-size: var(--mobile_desc);
     }
 }
-

@@ -1,7 +1,33 @@
 
+
+/* :root{
+
+} */
+
 :root{
     --roboto:"Roboto Serif",serif;
     --lora:"Lora",serif;
+    --desk_head_tag:16px;
+    --desk_head_tag_padd:1px 18px;
+    --desk_title:32px;
+    --desk_title_lineheight:56px;
+    --desk_desc:24px;
+    --desk_btn_font:16px;
+    --desk_btn_padd:8px 16px;
+    
+    --tablet_head_tag:12px;
+    --tablet_head_tag_padd:1px 14px;    
+    --tablet_title:26px;
+    --tablet_desc:20px;
+     --tablet_btn_font:9px;
+    --tablet_btn_padd:6.43px 12.21px;
+
+   --mobile_head_tag:8px;
+    --mobile_head_tag_padd:1px 10px;    
+    --mobile_title:20px;
+    --mobile_desc:16px;
+     --mobile_btn_font:8px;
+    --mobile_btn_padd:6.43px 12.21px;
 }
 
 *{
@@ -29,9 +55,9 @@ body{
 .accessories_main_title2{
     font-family: var(--roboto);
     width: 54rem;
-    font-size: 44px;
+    font-size: var(--desk_title);
     font-weight: 600;
-    line-height: 56px;
+    line-height: var(--desk_title_lineheight);
     text-align: center;
 }
 
@@ -40,7 +66,7 @@ body{
     font-family: var(--lora);
     color: #222222;
     width: 63rem;
-    font-size: 28px;
+    font-size: var(--desk_desc);
     font-weight: 400;
     line-height: 44px;
     text-align: center;
@@ -72,7 +98,7 @@ body{
 .accessory_name2{
     font-family: var(--roboto);
     color: #000000;
-    font-size: 22px;
+    font-size: var(--tablet_desc);
     font-weight: 400;
 }
 
@@ -84,13 +110,13 @@ body{
 
 @media (min-width: 992px) and (max-width: 1200px){
     .accessories_main_title2{
-        font-size: 32px;
+        font-size: var(--desk_title);
         line-height: 48px;
         width: 82%;
     }
 
     .accessories_subtitle2{
-        font-size: 23px;
+        font-size: var(--desk_desc);
         line-height: 40px;
         width: 90%;
     } 
@@ -120,14 +146,18 @@ body{
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){
+    .accessories_section_container2{
+        margin-top: 2rem;
+    }
+
     .accessories_main_title2{
-        font-size: 32px;
+        font-size: var(--tablet_title);
         line-height: 48px;
         width: 82%;
     }
 
     .accessories_subtitle2{
-        font-size: 23px;
+        font-size: var(--tablet_desc);
         line-height: 40px;
         width: 90%;
     } 
@@ -160,13 +190,13 @@ body{
 
 @media (min-width: 576px) and (max-width: 767.98px){
     .accessories_main_title2{
-        font-size: 32px;
+        font-size: var(--tablet_title);
         line-height: 48px;
         width: 82%;
     }
 
     .accessories_subtitle2{
-        font-size: 23px;
+        font-size: var(--tablet_desc);
         line-height: 40px;
         width: 90%;
     }
@@ -205,13 +235,13 @@ body{
     }
 
     .accessories_main_title2{
-        font-size: 20px;
+        font-size: var(--mobile_title);
         line-height: 28px;
-        width: 343px;
+        width: 85%;
     }
 
     .accessories_subtitle2{
-        font-size: 16px;
+        font-size: var(--mobile_desc);
         line-height: 24px;
         width: 90%;
     }
