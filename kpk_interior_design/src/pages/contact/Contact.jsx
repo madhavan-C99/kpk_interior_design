@@ -10,8 +10,8 @@ import {  FaCheckCircle, FaChevronDown,FaChevronUp,FaTimesCircle  ,FaPhone, FaIn
 
 
 //state
-import { useState } from 'react';
-import ContactFaq from './faq/contactfaq';
+// import { useState } from 'react';
+// import ContactFaq from './faq/contactfaq';
 
 export default function Contact() {
    
