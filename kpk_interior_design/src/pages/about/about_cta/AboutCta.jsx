@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Image from '../../../assets/about/cta-img.png'
-import '../../about/about_cta/aboutCta.css'
+import '../../about/about_cta/AboutCta.css'
 //images
 import CtaLeft from '../../../assets/about/cta-right.png'
 import CtaRight from '../../../assets/about/cta-left.png'
