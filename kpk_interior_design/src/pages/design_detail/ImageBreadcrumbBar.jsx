@@ -1,3 +1,5 @@
+import "./ImageBreadcrumbBar.css"
+
 export default function ImageBreadcrumbBar({
   title,
   category,

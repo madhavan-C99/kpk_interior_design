@@ -47,13 +47,13 @@ function ModernInteriorDesign(){
     { 
       id: "Wardrobe-005", 
       image: [cornerfit5,cornerfit55], 
-      title: 'Neutral Tone Closet', 
+      title: 'Neutral Tone Closet ', 
       description: 'Corner fit wardrobe maximizing unused space with storage' 
     },
     { 
       id: "Wardrobe-006", 
       image: [dualtone6,dualtone66], 
-      title: 'Minimal Open Wardrobe', 
+      title: 'Minimal Open Wardrobe ', 
       description: 'Dual tone closet design blending contrast style balance' 
     }]
 
@@ -92,6 +92,7 @@ function ModernInteriorDesign(){
                                     state: { source: "services", subcategory: "Wardrobe-unit"}})}>
                                         Design Preview
                                         </button>
+
 
                         </div>
                     ))}

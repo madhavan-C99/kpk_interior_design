@@ -9,19 +9,6 @@ import ImageRelatedDesignsCarousel from "./ImageRelatedDesignsCarousel";
 import "./ImageDesignDetail.css";
 
 
-// export default function ImageDesignDetail() {
-//   console.log("ImageDesignDetail mounted");
-
-//   return (
-//     <div style={{ padding: "40px", background: "red", color: "white" }}>
-//       TEST DESIGN DETAIL PAGE
-//     </div>
-//   );
-// }
-
-
-
-
 
 export default function ImageDesignDetail() {
   const { id } = useParams();

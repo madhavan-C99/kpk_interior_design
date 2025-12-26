@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { ImagegalleryMasterData } from "../../data/ImagegalleryMasterData";
+
+import "./ImageRelatedDesignsCarousel.css";
 
 export default function ImageRelatedDesignsCarousel({
   currentId,
@@ -8,6 +10,22 @@ export default function ImageRelatedDesignsCarousel({
 }) {
   const navigate = useNavigate();
   const [startIndex, setStartIndex] = useState(0);
+  const [visibleCount, setVisibleCount] = useState(4);
+
+  // 🔹 responsive visible count
+  useEffect(() => {
+    const updateVisibleCount = () => {
+      const width = window.innerWidth;
+      if (width < 575) setVisibleCount(1);
+      else if (width < 768) setVisibleCount(2);
+      else if (width < 992) setVisibleCount(3);
+      else setVisibleCount(4);
+    };
+
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
 
   const sameCategory = ImagegalleryMasterData.filter(
     item => item.category === currentCategory && item.id !== currentId
@@ -18,17 +36,21 @@ export default function ImageRelatedDesignsCarousel({
   );
 
   const related = [...sameCategory, ...otherCategory].slice(0, 8);
-  const visible = related.slice(startIndex, startIndex + 4);
+
+  const canPrev = startIndex > 0;
+  const canNext = startIndex + visibleCount < related.length;
+
+  const visible = related.slice(startIndex, startIndex + visibleCount);
 
   return (
     <div className="image-related-wrapper">
       <h3>Design Inspiration</h3>
 
       <div className="image-related-carousel">
-        {startIndex > 0 && (
+        {canPrev && (
           <button
             className="arrow left"
-            onClick={() => setStartIndex(0)}
+            onClick={() => setStartIndex(prev => prev - 1)}
           >
             ←
           </button>
@@ -41,7 +63,7 @@ export default function ImageRelatedDesignsCarousel({
               className="image-related-card"
               onClick={() =>
                 navigate(`/design/${item.id}`, {
-                  state: {source: "Design Inspiration",},
+                  state: { source: "Design Inspiration" },
                 })
               }
             >
@@ -51,10 +73,10 @@ export default function ImageRelatedDesignsCarousel({
           ))}
         </div>
 
-        {startIndex + 4 < related.length && (
+        {canNext && (
           <button
             className="arrow right"
-            onClick={() => setStartIndex(4)}
+            onClick={() => setStartIndex(prev => prev + 1)}
           >
             →
           </button>

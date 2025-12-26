@@ -1,0 +1,115 @@
+/* ---------------- BREADCRUMB BASE ---------------- */
+
+.image-breadcrumb-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #3A2E27;
+}
+
+.image-breadcrumb-bar p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.image-breadcrumb-bar strong {
+  font-weight: 600;
+}
+
+.back-arrow {
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  user-select: none;
+}
+
+/* ---------------- X-SMALL (xs) ---------------- */
+/* Mobile portrait */
+
+@media (max-width: 575.98px) {
+  .image-breadcrumb-bar {
+    margin-top: 16px;
+    gap: 10px;
+    font-size: 14px;
+    align-items: flex-start;
+    margin-top: 7%;
+  }
+
+  .image-breadcrumb-bar p {
+    white-space: normal;
+    line-height: 1.5;
+  }
+
+  .back-arrow {
+    font-size: 22px;
+    padding-top: 2px;
+  }
+}
+
+/* ---------------- SMALL (sm) ---------------- */
+/* Mobile landscape */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .image-breadcrumb-bar {
+    font-size: 15px;
+    gap: 10px;
+    margin-top: 6%;
+  }
+
+  .image-breadcrumb-bar p {
+    white-space: normal;
+  }
+
+  .back-arrow {
+    font-size: 22px;
+  }
+}
+
+/* ---------------- MEDIUM (md) ---------------- */
+/* Tablets */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .image-breadcrumb-bar {
+    font-size: 15.5px;
+    gap: 12px;
+    margin-top: 5%;
+  }
+
+  .image-breadcrumb-bar p {
+    white-space: nowrap;
+  }
+}
+
+/* ---------------- LARGE (lg) ---------------- */
+/* Laptops */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .image-breadcrumb-bar {
+    font-size: 16px;
+    gap: 12px;
+  }
+}
+
+/* ---------------- EXTRA LARGE (xl) ---------------- */
+/* Large desktops */
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .image-breadcrumb-bar {
+    font-size: 16.5px;
+    gap: 14px;
+  }
+}
+
+/* ---------------- EXTRA EXTRA LARGE (xxl) ---------------- */
+/* Ultra-wide screens */
+
+@media (min-width: 1400px) {
+  .image-breadcrumb-bar {
+    font-size: 17px;
+    gap: 16px;
+  }
+}

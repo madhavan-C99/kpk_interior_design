@@ -93,7 +93,7 @@ function ImageCard({ item, subcategory }) {
         source: "services",
         subcategory: subcategory
       }
-      })}> Get This Design </button>
+      })}> Design Preview </button>
 
 
     </div>

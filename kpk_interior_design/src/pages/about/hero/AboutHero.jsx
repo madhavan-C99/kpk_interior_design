@@ -12,7 +12,7 @@ export default function AboutHero(){
                             <h2>KPK Enterprises – Best Interior Designers in Cuddalore & Pondicherry</h2>
                         </div>
                     </div>
-                    <video autoPlay loop muted playsInline>
+                    <video autoPlay loop muted playsInline className="about-hero-viedo">
                         <source src={aboutHeroVideo} type="video/mp4"/>
                     </video>
             </section>

@@ -3,81 +3,14 @@
   max-width: 1400px;
   margin: auto;
   padding: 20px;
-  margin-top: 7%;
+  padding-top: 90px; /* matches navbar height */
 }
 
 
+/* ---------------- ACTION SLOT BASE ---------------- */
 
-
-
-
-
-
-
-
-/* Breadcrumb section */
-.image-breadcrumb-bar {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 12px;
-  margin-top: 2%;
-  margin-bottom: 20px;
-  
-}
-
-.back-arrow {
-  cursor: pointer;
-  font-size: 20px;
-  /* font-weight: bolder; */
-}
-
-
-
-
-
-
-
-
-
-
-/* Image Viewer section */
-.image-viewer-main img {
-  width: 65%;
-  border-radius: 14px;
-  height: 600px;
-}
-
-.image-viewer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-top: 12px;
-}
-
-.image-viewer-grid img {
-  cursor: pointer;
-  border-radius: 8px;
-  opacity: 0.6;
-}
-
-.image-viewer-grid img.active {
-  opacity: 1;
-  outline: 2px solid #3A2E27;
-}
-
-
-
-
-
-
-
-
-
-
-/* Action */
 .image-design-action {
-  margin: 40px 0;
+  margin-top: 5%;
   text-align: center;
 }
 
@@ -85,13 +18,123 @@
   padding: 12px 36px;
   font-size: 18px;
   border: none;
-  background: #3A2E27;
+  background: #8D9B6A;
   color: white;
   border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: bold;
 }
 
+.image-design-action button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------------- X-SMALL (xs) ---------------- */
+/* Mobile portrait */
+
+@media (max-width: 575.98px) {
+  .image-design-action {
+    margin-top: 32px;
+  }
+
+  .image-design-action button {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
+
+/* ---------------- SMALL (sm) ---------------- */
+/* Mobile landscape */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .image-design-action {
+    margin-top: 36px;
+  }
+
+  .image-design-action button {
+    width: 100%;
+    max-width: 320px;
+    padding: 14px 0;
+    font-size: 17px;
+  }
+}
+
+/* ---------------- MEDIUM (md) ---------------- */
+/* Tablets */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .image-design-action {
+    margin-top: 40px;
+  }
+
+  .image-design-action button {
+    padding: 14px 40px;
+    font-size: 18px;
+  }
+}
+
+/* ---------------- LARGE (lg) ---------------- */
+/* Laptops */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .image-design-action {
+    margin-top: 48px;
+  }
+
+  .image-design-action button {
+    padding: 14px 44px;
+    font-size: 18px;
+  }
+}
+
+/* ---------------- EXTRA LARGE (xl) ---------------- */
+/* Large desktops */
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .image-design-action {
+    margin-top: 56px;
+  }
+
+  .image-design-action button {
+    padding: 16px 52px;
+    font-size: 19px;
+  }
+}
+
+/* ---------------- EXTRA EXTRA LARGE (xxl) ---------------- */
+/* Ultra-wide screens */
+
+@media (min-width: 1400px) {
+  .image-design-action {
+    margin-top: 64px;
+  }
+
+  .image-design-action button {
+    padding: 18px 60px;
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Related */
-.image-related-wrapper {
+/* .image-related-wrapper {
   margin-top: 60px;
 }
 
@@ -115,4 +158,4 @@
 .image-related-card img {
   width: 100%;
   border-radius: 10px;
-}
+} */

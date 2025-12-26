@@ -8,6 +8,7 @@ import Footer from './components/footer/Footer'
 import ContactView from './pages/contact/ContactView'
 import ImageShow from './pages/imageview/ImageShow'
 import ImageDesignDetail from "./pages/design_detail/ImageDesignDetail";
+
 // pooja and tv unit
 
 import PoojaTvPage from "./pages/pooja_tv/PoojaTvPage";

@@ -1,0 +1,150 @@
+/* ---------------- MAIN IMAGE ---------------- */
+
+.image-viewer {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.image-viewer-main {
+  display: flex;
+  justify-content: center;
+}
+
+.image-viewer-main img {
+  width: 100%;
+  height: 600px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* ---------------- FILM STRIP ---------------- */
+
+.image-viewer-strip {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.image-viewer-window {
+  overflow: hidden;
+  width: 65%;
+}
+
+.image-viewer-track {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.image-viewer-track img {
+  flex: 0 0 calc(100% / 3);
+  padding: 0 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  opacity: 0.6;
+  transition: all 0.25s ease;
+}
+
+.image-viewer-track img.active {
+  opacity: 1;
+  outline: 2px solid #3A2E27;
+  transform: translateY(-3px);
+}
+
+/* ---------------- ARROWS ---------------- */
+
+.thumb-arrow {
+  background: rgba(58, 46, 39, 0.85);
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s ease;
+}
+
+.thumb-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* X-Small (xs) */
+@media (max-width: 575.98px) {
+  .image-viewer-main img {
+    width: 100%;
+    height: 360px;
+  }
+
+  .image-viewer-window {
+    width: 100%;
+  }
+
+  .thumb-arrow {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Small (sm) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .image-viewer-main img {
+    width: 100%;
+    height: 420px;
+  }
+
+  .image-viewer-window {
+    width: 100%;
+  }
+
+  .thumb-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+}
+
+/* Medium (md) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .image-viewer-main img {
+    width: 80%;
+    height: 520px;
+  }
+
+  .image-viewer-window {
+    width: 80%;
+  }
+}
+
+/* Large (lg) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .image-viewer-main img,
+  .image-viewer-window {
+    width: 70%;
+  }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .image-viewer-main img,
+  .image-viewer-window {
+    width: 70%;
+  }
+}
+
+/* Extra Extra Large (xxl) */
+@media (min-width: 1400px) {
+  .image-viewer-main img,
+  .image-viewer-window {
+    width: 70%;
+  }
+}
