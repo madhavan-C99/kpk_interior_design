@@ -360,7 +360,7 @@
 .home_about_us_head3{
     margin-top: 10px;
     height: 450px;
-    background-color: aqua;
+    /* background-color: aqua; */
         position: relative;
 }
     .home_about_large_card3{
