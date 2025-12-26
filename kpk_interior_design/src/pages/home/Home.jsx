@@ -16,23 +16,23 @@ import WhyChooseUs from "./whychooseus/whychooseus";
 import Workflow from "./workflow/Workflow";
 
 
-export default function Home(){
+export default function Home({openForm}){
     return(
         <>
-    <HomeHeroSec/>
+    <HomeHeroSec openForm={openForm}/>
      <HomeRankSec/>
     <HomeRatingSec/>
-   <HomeOurService/>
+   <HomeOurService openForm={openForm}/>
     <HomeAboutUs/>
     <HomeRateSec/>
     <WhyChooseUs/>
    <CraftingSpace/>
     <Workflow/>
-    <DesignSession/>
-    <Consultation/>
+    <DesignSession openForm={openForm}/>
+    <Consultation  openForm={openForm}/>
     <CreativeDesign/>
     <TopCategory/>
-    <HappyClients/>
+    <HappyClients openForm={openForm}/>
      <HomeFaq/>
         </>
     )

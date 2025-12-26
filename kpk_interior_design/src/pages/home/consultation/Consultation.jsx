@@ -3,7 +3,7 @@ import './Consultation.css'
 import consultationvideo from '../../../assets/home/videos/consultation_video.mp4'
 
 
-function Consultation(){
+function Consultation({openForm}){
     return(
         <>
             <div className="consultation_wrapper2">
@@ -20,7 +20,7 @@ function Consultation(){
                         </p>
                     </div>
                     <div className="consultation_btnwrap2">
-                        <button className="consult_btn2">Build My Dream Interior</button>
+                        <button className="consult_btn2" onClick={openForm}>Build My Dream Interior</button>
                     </div>
                 </div>
             </div>

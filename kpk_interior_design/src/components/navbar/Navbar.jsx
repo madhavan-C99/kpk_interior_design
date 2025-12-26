@@ -147,7 +147,7 @@ export const handClick = () => {
                 
         }
 
-function Navbar() {
+function Navbar({openForm}) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
 
@@ -202,7 +202,7 @@ function Navbar() {
           </nav>
 
           <div className="navbar-right">
-            <button className="primary-outline-btn">Upgrade Today</button>
+            <button className="primary-outline-btn" onClick={openForm}  >Upgrade Today</button>
 
             <button
               className="hamburger"

@@ -5,7 +5,7 @@ import home from '../../../assets/home/images/designsess2.png'
 import laptop from '../../../assets/home/images/designsess3.png'
 import tablet from '../../../assets/home/images/designsess4.png'
 
-function DesignSession(){
+function DesignSession({openForm}){
    const steps = [{
       id:1,
       img: office,
@@ -50,7 +50,7 @@ function DesignSession(){
                     ))}
                 </div>
                 <div className="session_btnwrapper2">
-                    <button className="session_btn2">Connect With Design Experts</button>
+                    <button className="session_btn2" onClick={openForm}>Connect With Design Experts</button>
                 </div>
             </div>
         </>

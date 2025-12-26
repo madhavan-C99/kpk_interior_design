@@ -1,6 +1,6 @@
 import "./PoojaTvCta.css";
 
-export default function PoojaTvCta({ heading, description, buttonText, image }) {
+export default function PoojaTvCta({ heading, description, buttonText, image, openForm }) {
   return (
     <section className="pt-cta-section">
       
@@ -8,7 +8,7 @@ export default function PoojaTvCta({ heading, description, buttonText, image }) 
       <div className="pt-cta-content">
         <h2>{heading}</h2>
         <p>{description}</p>
-        <button>{buttonText}</button>
+        <button onClick={openForm}>{buttonText}</button>
       </div>
 
       {/* Right Image */}

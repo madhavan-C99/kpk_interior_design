@@ -62,13 +62,16 @@
     .price-hero-container {
         display: flex;
         flex-direction: column-reverse;
-        height: 450px;
+        height: 440px;
     }
     .pricehero-img {
-        left: auto;
+        /* left: auto;
         right: 45px;
         top: 100px;
-        bottom: -50;
+        bottom: -50; */
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -55%);
         position: absolute;
         align-items: end;
         height: 416.18115234375px;

@@ -1,0 +1,356 @@
+/* ===== MODAL ===== */
+.userform-budget-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.userform-budget-box {
+  display: flex;
+  width: 95%;
+  max-width: 1100px;
+  background: #2f211b;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* ===== LEFT ===== */
+.userform-budget-left {
+  width: 55%;
+}
+
+.userform-budget-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== RIGHT ===== */
+.userform-userform-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* when user typed */
+.input-box.filled {
+  border-color: white;
+}
+
+/* focus */
+.input-box:focus, .input-box:active {
+  /* border-color: white; */
+  border: 2px solid #2f211b;
+}
+.userform-budget-right {
+  width: 45%;
+  padding: 28px;
+  color: #fff;
+  position: relative;
+}
+
+.userform-close-btn {
+  position: absolute;
+  right: 18px;
+  top: 14px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.userform-submit-btn:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+
+.userform-budget-right h2 {
+    margin-bottom: 16px;
+    font-family: Roboto Serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    /* line-height: 25.6px; */
+    letter-spacing: 0%;
+
+}
+
+/* ===== ICON ROW ===== */
+.userform-icon-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  font-size: 13px;
+  margin: 30px 5px;
+}
+
+.userform-icon-row div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.userform-icon-row img {
+    height: 40px;
+  width: 40px;
+}
+.userform-icon-row p {
+    font-family: Roboto Serif;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0%;
+    text-align: center;
+
+
+}
+/* ===== FORM ===== */
+.userform-budget-right input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: transparent;
+  color: #fff;
+  /* margin-bottom: 8px; */
+}
+.userform-budget-right input:focus, .userform-budget-right input:active{
+  border: 2px solid white;  
+}
+
+.userform-budget-right input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.userform-mobile-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.userform-mobile-field span {
+  padding: 0px 5px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  width: 20%;
+height: 38.909759521484375px;
+
+
+}
+.userform-down-arrow-icon{
+    margin: auto;
+    padding-left: 5px;
+}
+
+.userform-submit-btn {
+  margin-top: 14px;
+  width: 100%;
+  padding: 14px;
+  background: #7b8f63;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: Roboto Serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.userform-submit-btn:hover {
+  opacity: 0.9;
+}
+
+.userform-policy {
+  font-size: 11px;
+  margin-top: 10px;
+  opacity: 0.8;
+  font-family: Roboto Serif;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 14px;
+    line-height: 24.57px;
+    letter-spacing: 0%;
+
+}
+
+.userform-policy span {
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: Roboto Serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    line-height: 24.57px;
+    letter-spacing: 0%;
+
+}
+
+.userform-error {
+  color: #ffb3b3;
+  font-size: 12px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:576px){
+      .userform-budget-box {
+        height: 398px;
+    }
+        .userform-budget-box {
+        height: 410px;
+    }
+  
+  .userform-policy, .userform-policy span {
+    font-size: 8.84px;
+    margin-top: 0px;
+  }
+      .userform-budget-left {
+        height: 220px;
+        display: none;
+    }
+    .userform-budget-right input {
+    width: 100%;
+    padding: 8px 14px;
+    }
+    .userform-userform-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .budget-right {
+        height: 479.034393px;
+        width: 100%;
+    }
+    
+  .userform-budget-right h2 {
+    font-family: Roboto Serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 10.02px;
+    letter-spacing: 0%;
+    margin-top: 0px;
+
+  }
+  .userform-budget-right {
+    width: 100%;
+    padding: 10px;
+  }
+  .userform-icon-row {
+    margin: 10px 5px;
+  }
+  .userform-icon-row p{
+    font-size: 8px;
+  }
+  .userform-mobile-field span {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .userform-mobile-india{
+    width: 20.242477px;
+    height: 20.242477px;
+  }
+  .userform-down-arrow-icon {
+    margin: inherit;
+    padding-left: 5px;
+}
+  .userform-submit-btn {
+      font-family: Roboto Serif;
+      font-weight: 600;
+      font-size: 10.02px;
+      line-height: 100%;
+
+  }
+  .userform-icon-row img {
+    height: 26.973024368286133px;
+    width: 26.973024368286133px;
+  }
+}
+@media (max-width: 767px) {
+  .userform-budget-box {
+        height: auto;
+    }
+
+  .userform-budget-left {
+    display: none;
+  }
+  .userform-icon-row {
+    margin: 10px 5px;
+  }
+  .userform-userform-form {
+    gap: 10px;
+  }
+  .userform-budget-box {
+    flex-direction: column;
+  }
+
+  .userform-budget-left,
+  .userform-budget-right {
+    width: 100%;
+  }
+
+  .userform-budget-left {
+    height: 220px;
+  }
+}   
+  @media (min-width: 768px) and (max-width: 991px){
+    .userform-budget-box {
+    height: auto;
+    }
+  }
+@media (max-width: 1200px){
+  
+
+  .userform-icon-row {
+    margin: 10px 5px;
+  }
+  .userform-userform-form {
+  
+    gap: 10px;
+  }
+  
+
+  .userform-budget-left,
+  .userform-budget-right {
+    width: 100%;
+  }
+   
+
+  .userform-budget-left {
+    height: auto;
+  }
+  .userform-budget-right {
+    padding: 15px;
+  }
+  .userform-submit-btn ,.userform-policy{
+    margin-top: 0px;
+  }
+  .userform-icon-row img {
+    height: 30px;
+    width: 30px;
+  }
+  .userform-budget-right h2 {
+    font-size: 28px;
+  }
+}

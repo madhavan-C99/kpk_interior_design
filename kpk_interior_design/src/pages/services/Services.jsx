@@ -11,10 +11,10 @@ import ProjectGallery from "./projectgallery/ProjectGallery";
 import ServiceSteps from "./sections/ServiceSteps";
 
 
-export default function Services(){
+export default function Services({openForm}){
     return(
         <>
-        <HeroSection/>
+        <HeroSection openForm={openForm}/>
         <KeyFeatures/>
         <DesignProcess/>
         <ContactForm/>
@@ -23,7 +23,7 @@ export default function Services(){
         <AccessoriesGallery/>
         <KitchenDesigns/>
         <FeedBack/>
-        <HappyClients/>
+        <HappyClients openForm={openForm}/>
         <Faq/>             
         </>
     )

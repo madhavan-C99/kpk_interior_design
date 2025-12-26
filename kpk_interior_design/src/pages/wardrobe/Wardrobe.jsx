@@ -10,11 +10,11 @@ import WardrobeDesigns from "./wardrobedesigns/WardrobeDesigns";
 import ModernInteriorDesign from "./moderninteriordesign/ModernInteriorDesign";
 
 
-export default function Wardrobe(){
+export default function Wardrobe({openForm}){
     return(
         <>
         {console.log("wardrobe")}
-        <WardoorHero/>
+        <WardoorHero openForm={openForm}/>
         <WardoorKeyFeatures/>
         <WardoorDesignProcess/>
         <DimensionPlanning/>
@@ -22,7 +22,7 @@ export default function Wardrobe(){
         <WardrobeDesigns/>
         <ModernInteriorDesign/>
         <FeedBack/>
-        <WardoorHappyClients/>
+        <WardoorHappyClients openForm={openForm}/>
         <WardoorFaq/>
         {console.log("done")}
         </>

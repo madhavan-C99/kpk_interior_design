@@ -11,7 +11,7 @@ import PoojaTvCta from "../../components/pooja_tv_cta/PoojaTvCta";
 import PoojaTvFaq from "../../components/pooja_tv_faq/PoojaTvFaq";
 
 
-export default function PoojaTvPage({ type }) {
+export default function PoojaTvPage({ type, openForm }) {
   console.log("tv-unit");
 
   const data = type === "pooja" ? PoojaUnitData : TvUnitData;
@@ -29,7 +29,7 @@ export default function PoojaTvPage({ type }) {
 
     
     {/* hero section */}
-      <PoojaTvHero title={data.hero.title} image={data.hero.image} />
+      <PoojaTvHero title={data.hero.title} image={data.hero.image} openForm={openForm} />
 
     {/* what we offer section */}
       <PoojaTvOffer 
@@ -51,6 +51,7 @@ export default function PoojaTvPage({ type }) {
       description={data.cta.description}
       buttonText={data.cta.buttonText}
       image={data.cta.image}
+      openForm={openForm}
       />
 
 

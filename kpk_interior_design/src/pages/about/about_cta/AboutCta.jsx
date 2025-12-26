@@ -7,7 +7,7 @@ import CtaLeft from '../../../assets/about/cta-right.png'
 import CtaRight from '../../../assets/about/cta-left.png'
 // import Form from "../../portfolio/form/Form";
 import AboutForm from '../aboutform/AboutForm'
-export default function AboutCta(){
+export default function AboutCta({openForm}){
     const [showForm, setShowForm] = useState(false);
     return(
     <>
@@ -22,7 +22,7 @@ export default function AboutCta(){
                                     <p>With over 1000 happy clients in Pondicherry, KPK Enterprises has earned a reputation for delivering stylish, functional, and client-focused interior solutions across homes and commercial spaces.</p>
                                     {/* <button>Build My Dream Interior</button> */}
                                     {/* BUTTON */}
-                                    <button onClick={() => setShowForm(true)}>
+                                    <button onClick={openForm}>
                                         Build My Dream Interior
                                     </button>
                                 </div>

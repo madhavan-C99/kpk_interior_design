@@ -1,6 +1,6 @@
 import "./PoojaTvHero.css";
 
-export default function PoojaTvHero({ title, image }) {
+export default function PoojaTvHero({ title, image, openForm }) {
   return (
     <section
       className="pooja-tv-hero"
@@ -9,7 +9,7 @@ export default function PoojaTvHero({ title, image }) {
       <div className="pooja-tv-hero-overlay">
         <h1 className="pooja-tv-hero-title">{title}</h1>
 
-        <button className="pooja-tv-hero-btn">
+        <button className="pooja-tv-hero-btn" onClick={openForm}>
           Start My Interior Plan
         </button>
       </div>

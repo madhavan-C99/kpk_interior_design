@@ -7,9 +7,19 @@ import eyeicon from '../../../assets/home/images/Frame1000012036-eye.png'
 import priemiumicon from '../../../assets/home/images/Frame1000012036.png'
 import deliveryicon from '../../../assets/home/images/Frame1000012036-truck.png'
 import exporticon from '../../../assets/home/images/Frame1000012036-export.png'
-
+import { useNavigate } from 'react-router-dom'
 
 export default function HomeAboutUs(){
+    //navigate to about page
+    const navigate = useNavigate();
+    
+    const handleNavigate = () => {
+  navigate("/about");
+  window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            })
+        }
     const data=[{id:1,icon:eyeicon,caption:"Creative Vision",},
                 {id:2,icon:priemiumicon,caption:"Premium Quality",},
                 {id:3,icon:deliveryicon,caption:"On-Time Delivery",},
@@ -47,7 +57,7 @@ export default function HomeAboutUs(){
                     ))}
                     </div>
                     <p className='home_about_title_desc3'>KPK Enterprises is trusted by homeowners and businesses for our design accuracy, durable workmanship, and seamless execution.</p>
-                    <button className='home_about_title_btn3'>Know More About US</button>
+                    <button className='home_about_title_btn3' onClick={handleNavigate}>Know More About US</button>
                 </div>
             </div>
         </section>

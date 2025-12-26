@@ -11,7 +11,7 @@ import studyfront from '../../../assets/home/images/STUDYUNITFILL.png'
 import studyback from '../../../assets/home/images/STUDYUNITFILL-3.png'
 
 
-export default function HomeOurService(){
+export default function HomeOurService({openForm}){
     const data =[{id:1,frontimg:kitchenfront,backimg:kitchenback,caption:'Modular Kitchen'},
                 {id:2,frontimg:warfront,backimg:warback,caption:'Wardrobe'},
                 {id:3,frontimg:poojaifront,backimg:poojaiback,caption:'Pooja Unit'},
@@ -39,7 +39,7 @@ export default function HomeOurService(){
                     ))}
                 </div>
                 <div className='home_our_foot3'>
-                   <button className='home_our_button3'>Bulid My Dream Interior</button>
+                   <button className='home_our_button3'onClick={openForm}>Bulid My Dream Interior</button>
                 </div>
 
             </div>

@@ -21,7 +21,7 @@ const slides = [
 ];
 
 // --- 3. React Component Logic (Now includes Auto-Play/Infinite Scroll) ---
-export default function HomeHeroSec ({autoPlayInterval = 3000} ) {
+export default function HomeHeroSec ({autoPlayInterval = 3000, openForm} ) {
   const [slideIndex, setSlideIndex] = useState(0); 
   const totalSlides = slides.length;
 
@@ -69,7 +69,7 @@ export default function HomeHeroSec ({autoPlayInterval = 3000} ) {
           
           {/* Caption text */}
           <div className="home_hero_title3">{slide.caption}</div>
-          <button className='home_hero_button3'>Start My Interior Plan</button>
+          <button className='home_hero_button3' onClick={openForm}>Start My Interior Plan</button>
         </div>
       ))}
 

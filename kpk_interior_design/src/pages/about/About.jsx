@@ -21,7 +21,7 @@ import AboutCta from "./about_cta/AboutCta";
 import AboutFaq from "./about_faq/AboutFaq";
 
 
-export default function About(){
+export default function About({openForm}){
     // -------------------------------------
     
     
@@ -120,7 +120,7 @@ export default function About(){
                    <Trust/>
                     <TypeLetter/>
                    <Journey/>
-                   <AboutCta/>
+                   <AboutCta openForm={openForm}/>
                    <AboutFaq/>
                     {/* ----------------------------Happy Client-------------------------------- */}
                     
