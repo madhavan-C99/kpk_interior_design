@@ -9,7 +9,7 @@
 /* ---------about-experts----------- */
 .about-experts{
     display: flex;
-    align-items: end;
+    align-items:center;
     padding: 50px;
 }
 

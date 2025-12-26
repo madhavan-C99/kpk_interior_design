@@ -1,8 +1,3 @@
-
-/* Roboto Serif */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-/* Lora */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 *{
   margin:0;
   padding:0;
@@ -16,7 +11,7 @@
   background-color: #3A2E27;
   /* padding: 80px 60px; */
   box-sizing: border-box;   
-  margin: 100px 0px 100px 0px;
+  margin-top: 70px;
 }
 
 /* Left content */
@@ -84,7 +79,7 @@
 @media (max-width: 575.98px) {
   .portfolio-cta-section {
     flex-direction: column;
-    margin-top: 60px;
+    /* margin: 30px 0px; */
   }
 
   .portfolio-cta-content {
@@ -119,7 +114,7 @@
   }
 
   .portfolio-cta-image img {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -129,6 +124,7 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   .portfolio-cta-section {
     flex-direction: column;
+    /* margin: 40px 0px; */
   }
 
   .portfolio-cta-content {
@@ -162,7 +158,7 @@
   }
 
   .portfolio-cta-image img {
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -170,6 +166,12 @@
    Medium (md) – 768px–991.98px
 ===================================== */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .portfolio-cta-section {
+    height: 445px;
+  }
+      .portfolio-cta-content,.portfolio-cta-image{
+        height: 100%;
+      }
   .portfolio-cta-content {
     width: 50%;
     padding-left: 4%;

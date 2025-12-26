@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useState } from "react";
 import './CreativeDesign.css'
 import { useNavigate } from "react-router-dom";
@@ -39,47 +40,47 @@ function CreativeDesign(){
         {
             id:1,
             label:'modular Kitchen',
-            images:[ { name: 'Sleek Soft-Touch Kitchen', img: kitchen1img },
-                    { name: 'Bold Two-Texture Kitchen', img: kitchen2img },
-                    { name: 'Hybrid Modular Workspace', img: kitchen3img },
-                    {name: 'Minimal Navy And Grey Wall Colour', img: kitchen4img },
+            images:[{ id: "Home-Modular-Kitchen-001", name: 'Sleek Soft-Touch Kitchen', img: kitchen1img },
+                    { id: "Home-Modular-Kitchen-002", name: 'Bold Two-Texture Kitchen', img: kitchen2img },
+                    { id: "Home-Modular-Kitchen-003", name: 'Hybrid Modular Workspace', img: kitchen3img },
+                    { id: "Home-Modular-Kitchen-004", name: 'Minimal Navy And Grey Wall Colour', img: kitchen4img },
                     ]
         },
         {
             id:2,
             label:'wardrobe',
-            images:[ { name: 'Sleek Sliding Wardrobe', img: wardrobe1img},
-                    { name: 'Premium Walk-In Closet', img: wardrobe2img },
-                    { name: 'Matte Finish Wardrobe', img: wardrobe3img },
-                    {name: 'Glass-Front Closet Style', img: wardrobe4img },
+            images:[{ id: "Home-Wardrobe-001", name: 'Sleek Sliding Wardrobe', img: wardrobe1img},
+                    { id: "Home-Wardrobe-002", name: 'Premium Walk-In Closet', img: wardrobe2img },
+                    { id: "Home-Wardrobe-003", name: 'Matte Finish Wardrobe', img: wardrobe3img },
+                    { id: "Home-Wardrobe-004", name: 'Glass-Front Closet Style', img: wardrobe4img },
                     ]
         },
         {
             id:3,
             label:'pooja unit',
-           images:[ { name: 'Traditional Carved Pooja Mandap', img: pooja1img },
-                    { name: 'Compact Corner Pooja Setup', img: pooja2img },
-                    { name: 'Modern Wall-Mounted Pooja Unit', img: pooja3img },
-                    {name: 'Backlit Meditation Niche', img: pooja4img },
+           images:[ { id: "Home-Pooja-001", name: 'Traditional Carved Pooja Mandap', img: pooja1img },
+                    { id: "Home-Pooja-002", name: 'Compact Corner Pooja Setup', img: pooja2img },
+                    { id: "Home-Pooja-003", name: 'Modern Wall-Mounted Pooja Unit', img: pooja3img },
+                    { id: "Home-Pooja-004", name: 'Backlit Meditation Niche', img: pooja4img },
                 ]
         },
         {
             id:4,
             label:'TV unit',
-           images:[ { name: 'Glossy Modern Entertainment Hub', img: tv1img },
-                    { name: 'Floating Panel Elegance', img: tv2img },
-                    { name: 'Dual-Tone Media Wall', img: tv3img },
-                    {name: 'Contemporary Storage Console', img: tv4img },
+           images:[ { id: "Home-Tv-001", name: 'Glossy Modern Entertainment Hub', img: tv1img },
+                    { id: "Home-Tv-002", name: 'Floating Panel Elegance', img: tv2img },
+                    { id: "Home-Tv-003", name: 'Dual-Tone Media Wall', img: tv3img },
+                    { id: "Home-Tv-004", name: 'Contemporary Storage Console', img: tv4img },
 
                 ]
         },
         {
             id:5,
             label:'Study Table',
-            images:[{ id: 1, name: 'Integrated Storage with Study', img: studytb1 },
-                    { id: 2, name: 'Compact Storage Study Unit', img: studytb2 },
-                    { id: 3, name: 'Modern Storage Workstation', img: studytb3 },
-                    { id: 4, name: 'Built-In Study Storage Design', img: studytb4 },
+            images:[{ id: "Home-Study-Table-001", name: 'Integrated Storage with Study', img: studytb1 },
+                    { id: "Home-Study-Table-002", name: 'Compact Storage Study Unit', img: studytb2 },
+                    { id: "Home-Study-Table-003", name: 'Modern Storage Workstation', img: studytb3 },
+                    { id: "Home-Study-Table-004", name: 'Built-In Study Storage Design', img: studytb4 },
                 ]
         }
 ]
@@ -139,7 +140,11 @@ function CreativeDesign(){
                 <div className="creativedesign_grid2">
                     {activeCategory.images.map(data=>(
                         <div className="creativedesign_card2">
-                            <img src={data.img} alt="" className="creativedesign_img2" />
+
+                            <img src={data.img} alt="" className="creativedesign_img2" 
+                            onClick={() => navigate(`/design/${data.id}`, 
+                                { state: {source: "home", subcategory: activeCategory.label }})} />
+
                             <p className="creativedesign_cardtitle2">{data.name}</p>
                         </div>
                     ))}

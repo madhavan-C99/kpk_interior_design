@@ -46,13 +46,96 @@ const dynamicStyles = {
   const handleRangeChange = (event) => {
     setSliderPos(event.target.value);
   };
+
+  const [form, setForm] = useState({
+      fullname: "",
+      mobilenumber: "",
+      location: "",
+      purpose: "",
+    });
+  
+    const [errors, setErrors] = useState({});
+  
+  // Update input values
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+  
+      // NAME: allow only letters
+      if (name === "fullname") {
+        if (!/^[a-zA-Z\s]*$/.test(value)) {
+          setErrors({ ...errors, fullname: "Only characters are allowed" });
+          return;
+        }
+      }
+  
+      // MOBILE: allow only numbers
+      if (name === "mobilenumber") {
+        if (!/^[0-9]*$/.test(value)) {
+          setErrors({ ...errors, mobilenumber: "Only numbers are allowed" });
+          return;
+        }
+      }
+  
+      setForm({ ...form, [name]: value });
+      setErrors({ ...errors, [name]: "" });
+    };
+  
+  
+    // Validate field when user leaves input
+    const handleBlur = (e) => {
+      const { name, value } = e.target;
+      let error = "";
+  
+      if (name === "fullname" && value.trim().length < 3) {
+        error = "Name must be at least 3 letters";
+      }
+  
+      if (name === "mobilenumber" && value.length !== 10) {
+        error = "Mobile number must be 10 digits";
+      }
+  
+      if (name === "location" && value.trim() === "") {
+        error = "Location is required";
+      }
+  
+      if (name === "purpose" && value.trim() === "") {
+        error = "Purpose is required";
+      }
+  
+      setErrors({
+        ...errors,
+        [name]: error,
+      });
+    };
+  
+    // Submit form
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      if (
+        !form.fullname ||
+        !form.mobilenumber ||
+        !form.location ||
+        !form.purpose ||
+        errors.fullname ||
+        errors.mobilenumber ||
+        errors.location ||
+        errors.purpose
+      ) {
+        alert("Please fill all the fields");
+        return;
+      }
+  
+      alert("Form submitted successfully!");
+    };
+    
     return(
         <>
         <section>
             <div className='design_process3'>
                 <div className='design_process_head3'>
                     <h1>Wardrobe Space Revamp & Interior Upgrades</h1>
-                    <p>KPK Enterprises offers space-optimised, modern wardrobe revamps featuring smart storage upgrades and seamless interior detailing, specialising in factory-finish customised wardrobe designs for Pondicherry and Cuddalore homes.</p>
+                    <p>KPK Enterprise offers space-optimised, modern wardrobe revamps featuring smart storage upgrades and seamless interior detailing, specialising in factory-finish customised wardrobe designs for Pondicherry and Cuddalore homes.</p>
                 </div>
                 <div className='design_process_body3'>
                     <div className='design_draw3'>
@@ -115,11 +198,19 @@ const dynamicStyles = {
                         <div className='design_from_head3'>
                             <h1>Design for Every Budget</h1>
                         </div>
-                        <form action="" className='design_form_body3' >
-                                <input type="text" placeholder='Full Name' name='fullname' className='design_form_input3'/>
-                                <input type="number"  name="number" placeholder='Mobile Number'  className='design_form_input3'/>
-                                <input type="text"  name="text" placeholder='Location'  className='design_form_input3'/>
-                                <input type="text"  name="text" placeholder='Purpose'  className='design_form_input3'/>
+                        <form action="" onSubmit={handleSubmit} className='design_form_body3' >
+                                <input type="text" placeholder='Full Name' name='fullname' className='design_form_input3' value={form.fullname} onChange={handleChange} onBlur={handleBlur}/>
+                                {errors.fullname && <span className="error_message3">{errors.fullname}</span>}
+
+                                <input type="text"  name="mobilenumber" placeholder='Mobile Number'  className='design_form_input3' value={form.mobilenumber} onChange={handleChange} onBlur={handleBlur}/>
+                                {errors.mobilenumber && <span className="error_message3">{errors.mobilenumber}</span>}
+
+                                <input type="text"  name="location" placeholder='Location'  className='design_form_input3' value={form.location} onChange={handleChange} onBlur={handleBlur}/>
+                                {errors.location && <span className="error_message3">{errors.location}</span>}
+
+                                <input type="text"  name="purpose" placeholder='Purpose'  className='design_form_input3' value={form.purpose} onChange={handleChange} onBlur={handleBlur}/>
+                                {errors.purpose && <span className="error_message3">{errors.purpose}</span>}
+
                                 <button className='design_form_button3'>Let's Connect</button>
                         </form>
                     </div>
@@ -130,7 +221,3 @@ const dynamicStyles = {
         </>
     )
 }
-
- 
-
-

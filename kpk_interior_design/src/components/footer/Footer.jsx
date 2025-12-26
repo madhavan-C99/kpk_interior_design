@@ -121,26 +121,28 @@ function Footer(){
                 top: 0,
                 behavior: "smooth",
             });}
-    const valueprops = [
+
+   const valueprops = [
     { 
       id: 1, 
-      icon: lowestprice, 
-      title: 'LOWEST PRICE GUARANTEED', 
-      text: 'No false claims. You get what you see. Lowest Price Guaranteed on home interiors.' 
+      icon:qualitystands , 
+      title: 'BEST INTERIOR VALUE', 
+      text: 'Get the best interiors with honest pricing, trusted quality, and guaranteed on-time delivery for your home.' 
     },
     { 
       id: 2, 
       icon: builtontrust, 
-      title: 'BUILT ON TRUST', 
-      text: 'We handle your interiors with honesty, clarity, and a commitment you can feel.' 
+      title: 'BEST PRICE PROMISE', 
+      text: 'Enjoy stylish interiors at the best price with smooth work, clear updates, and timely delivery always.' 
     },
     { 
       id: 3, 
-      icon: qualitystands, 
-      title: 'QUALITY THAT STANDS STRONG', 
-      text: 'No false claims. You get what you see. Lowest Price Guaranteed on home interiors.' 
-    }
-  ]
+      icon: lowestprice, 
+      title: 'ON-TIME INTERIORS', 
+      text: 'We create beautiful interiors with fair pricing, trusted service, and delivery exactly on the promised date.' 
+    }]
+
+
     //  const quicklinks = ['Home', 'About', 'Portfolio', 'Pricing', 'Contact'];
     const quicklinks = [
   { title: 'Home', path: '/' },

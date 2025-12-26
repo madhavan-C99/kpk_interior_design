@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import "./PortfolioHero.css";
 
@@ -79,7 +78,7 @@ export default function PortfolioHero() {
     const t = setTimeout(() => {
       stepIndex.current++;
 
-      // 🔥 animation finished → clean reset
+      // animation finished → clean reset
       if (stepIndex.current >= timeline.length) {
         stepIndex.current = 0;
 
@@ -137,7 +136,6 @@ export default function PortfolioHero() {
             </span>
             <div className="portfolio-hero-item_des">
               <h4>{titles[i]}</h4>
-              {/* <p>EVERY TUESDAY | 6PM</p> */}
               <p>{para[i]}</p>
             </div>
           </div>
