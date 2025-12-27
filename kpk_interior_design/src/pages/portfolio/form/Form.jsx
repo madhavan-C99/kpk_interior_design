@@ -3,52 +3,74 @@ import Ribbon from '../../../assets/portfolio/ion_ribbon-outline.png';
 import Calendar from '../../../assets/portfolio/uil_calender.png';
 import Vector from'../../../assets/portfolio/Vector.png';
 import Service from '../../../assets/portfolio/mdi_account-service-outline.png';
-import '../../../pages/portfolio/form/Form.css';
-import {useState} from 'react'
+import { useState } from "react";
+import './Form.css';
 
 export default function Form({ item, closePopup }) {
   if (!item) return null;
 
   const imageToShow = item.selectedImage || item.Img1 || item.images?.[0] || "";
 
-  const [name, setName] = useState("");
-  const [mobile, setMobile] = useState("");
-  const [errors, setErrors] = useState({});
-
-  /* VALIDATION FUNCTION */
-  const validateForm = () => {
-    let newErrors = {};
-
+    const [value, setValue] = useState("");
+    const [form, setForm] = useState({
+      name: "",
+      mobile: "",
+      location: "",
+      purpose: "",
+    });
+  
+    const [errors, setErrors] = useState({});
+  
+    /* ================= REAL-TIME VALIDATION ================= */
+   const validateField = (name, value) => {
+    let error = "";
+  
     // NAME VALIDATION
-    if (!name.trim()) {
-      newErrors.name = "Name is required";
-    } else if (!/^[A-Za-z\s]+$/.test(name)) {
-      newErrors.name = "Only letters & spaces allowed";
-    } else if (name.trim().length < 3) {
-      newErrors.name = "Minimum 3 characters required";
+    if (name === "name") {
+      if (!value.trim()) {
+        error = "Name is required";
+      } else if (!/^[A-Za-z ]+$/.test(value)) {
+        error = "Only letters and spaces allowed";
+      } else if (value.trim().length < 3) {
+        error = "Name must be at least 3 characters";
+      }
     }
-
+  
     // MOBILE VALIDATION
-    if (!mobile.trim()) {
-      newErrors.mobile = "Mobile number is required";
-    } else if (!/^\d{10}$/.test(mobile)) {
-      newErrors.mobile = "Enter valid 10 digit mobile number";
+    if (name === "mobile") {
+      if (!value.trim()) {
+        error = "Mobile number is required";
+      } else if (!/^[0-9]+$/.test(value)) {
+        error = "Only numbers allowed";
+      } else if (value.length !== 10) {
+        error = "Mobile number must be 10 digits";
+      }
     }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
+  
+    setErrors((prev) => ({ ...prev, [name]: error }));
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validateForm()) {
-      alert("Form submitted successfully ✅");
-    }
+  
+  
+    /* ================= HANDLE CHANGE ================= */
+    const handleChange = (e) => {
+    const { name, value } = e.target;
+  
+    // BLOCK non-numbers in mobile
+    if (name === "mobile" && !/^[0-9]*$/.test(value)) return;
+  
+    // LIMIT mobile to 10 digits
+    if (name === "mobile" && value.length > 10) return;
+  
+    setForm({ ...form, [name]: value });
+    validateField(name, value);
   };
+  
 
   return (
     <section className="portfolio-form-sect" onClick={closePopup}>
-      <div className="portfolio-form-box" onClick={(e) => e.stopPropagation()}>
+      <div className="portfolio-form-box"
+       onClick={(e) => e.stopPropagation()}
+       >
 
         {/* LEFT IMAGE */}
         <div className="portfolio-form-left">
@@ -57,10 +79,6 @@ export default function Form({ item, closePopup }) {
           ) : (
             <div className="portfolio-left-placeholder">No image</div>
           )}
-          {/* <div className="image-dots">
-            <span className="dot" />
-            <span className="dot" />
-          </div> */}
         </div>
 
         {/* RIGHT PANEL */}
@@ -90,20 +108,18 @@ export default function Form({ item, closePopup }) {
           </div>
 
           {/* FORM */}
-          <form className="portfolio-form-fields" onSubmit={handleSubmit}>
+          <form className="portfolio-form-fields" 
+          // onSubmit={handleSubmit}
+          >
 
             {/* NAME */}
             <input
                 className="text-input"
                 type="text"
                 placeholder="Name"
-                value={name}
-                onChange={(e) => {
-                  const value = e.target.value;
-                  if (/^[A-Za-z\s]*$/.test(value)) {
-                    setName(value);
-                  }
-                }}
+                value={form.name}
+                onChange={handleChange}
+                name="name"
               />
               {errors.name && <small className="error-text">{errors.name}</small>}
 
@@ -117,18 +133,33 @@ export default function Form({ item, closePopup }) {
               <input
                 className="text-input"
                 type="tel"
+                name="mobile"
                 placeholder="Mobile Number"
-                value={mobile}
+                value={form.mobile}
                 maxLength={10}
-                onChange={(e) =>
-                  setMobile(e.target.value.replace(/[^0-9]/g, ""))
-                }
+                onChange={handleChange}
               />
             </div>
             {errors.mobile && <small className="error-text">{errors.mobile}</small>}
-
-            <input className="text-input" type="text" placeholder="Location" />
-            <input className="text-input" type="text" placeholder="Purpose" />
+            {/* LOCATION*/}
+            <input 
+              className="text-input" 
+              type="text" 
+              placeholder="Location"
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+              name="location"
+              // value={form.location}
+              />
+              {/* PURPOSE */}
+            <input 
+              className="text-input" 
+              type="text" 
+              placeholder="Purpose"
+              value={form.purpose}
+              onChange={handleChange}
+              name="purpose"
+              />
 
             <button className="cta-btn">Start My Interior Plan</button>
 

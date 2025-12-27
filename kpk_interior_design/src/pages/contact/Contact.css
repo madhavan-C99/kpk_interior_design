@@ -1,5 +1,8 @@
-
-    
+    /* font family */
+    /* Roboto Serif */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+    /* Lora */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
     *{
     margin:0;
     padding:0;
@@ -32,9 +35,17 @@
         padding: 200px 50px;
         border: 4px solid white;
         margin-top: 150px;
-        
+    }.contact-error-text {
+  display: block;        /* VERY IMPORTANT */
+  margin-top: 4px;
+  font-size: 15px;
+  color: #ff4d4f;        /* red */
+  font-weight: 500;
+  width: 50%;
+  padding: 5px;
+  background-color: white;
+}
 
-    }
     .contact-form_details{
         display: flex;
         margin: auto;
@@ -47,9 +58,6 @@
         /* border-image-source: linear-gradient(177.68deg, #FFFFFF -7.2%, #999999 96.67%); */
         width: 95%;
         height: 720px;
-        
-        
-
     }
     .contact-form_det{
         background: rgba(57, 58, 62, 0.3);
@@ -132,10 +140,12 @@
     .contact-form-des form div input{
         /* border-bottom: 2px solid rgba(255, 255, 255, 1); */
         border: none;
+        font-size: 15px;
         background: transparent;
         border-bottom: 2px solid rgba(255, 255, 255, 1);
         padding: 10px 8px 8px 0px;
         width: 90%;
+        font-size: 18px;
     }
 
     .contact-form-des div button{
@@ -155,8 +165,40 @@
         transform: translate(-97px, 10px);
 
     }
-    /* -----------------responsive------------------- */
-    /* SIX DIFFERENT SCREEN SIZES FOR RESPONSIVENESS */
+    .contact-input-focus:focus{
+        border: none;
+    }
+.contact-form-des input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+  border-bottom: 2px solid #ffffff; /* white underline */
+}
+
+/* Normal state */
+.contact-form-des input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+}
+/* ===================================== */
+
+/* Label error */
+.error-label-name,.error-label-mobile,.error-label-email, .error-label-purpose, .error-label-location{
+  color: #ff4d4f !important;
+}
+
+/* Input error underline */
+.error-input-name,.error-input-mobile, .error-input-email, .error-input-purpose, .error-input-location {
+  border-bottom: 2px solid #ff4d4f !important;
+}
+
+/* Focus maintain red */
+.error-input:focus {
+  border-bottom: 2px solid #ff4d4f !important;
+}
+/* ===================================== */
 
     /* X-Small (xs) - Mobile portrait and smaller devices */
     @media (max-width: 575.98px) {
@@ -164,6 +206,10 @@
     .contact-hero_page h2 {
         font-size: 35.06px;
     } 
+    .contact-error-text{
+        width: 90%;
+        font-size: 10px;
+    }
     .contact-hero_img {
         width: 340.7453918457031px;
         height: 182.33494567871094px;
@@ -183,13 +229,20 @@
     .contact-form_det{
         width: 100%;
         padding: 10px;
-        height: 460px;
+        height: 610px;
+        padding: 29px 10px 10px 10px;
     }
     .contact-form-des{
         width: 100%;
+        padding: 20px;
+        height: 780px;
+    }
+    .contact-form-des form div input {
+        font-size: 12px;
     }
     .contact-form_det-set {
         margin-top: 20px;
+        gap: 5px;
     }
     .contact-form_det-set div {
             gap: 5px;
@@ -201,30 +254,23 @@
         padding-top: 5px;
         font-size: 24px;
     }
-    /* icon */
-    /* .contact-form_det-set-icon{ */
-        /* width: 20.532958984375px; */
-        /* width: 30%;
-        height: 20.532958984375px;
-        opacity: 1;
-
-    } */
+    
     .contact-form_det-set div p{
         font-family: 'Lora';
         font-size: 16px;
-        /* width: 70%; */
+        width: 90%;
     }
     .contact-form-des form div label{
         font-family: Lora;
         font-size: 15px;
     }
     .contact-form-des div button{
-        font-size: 10.95px;
-        /* margin-top: 20px; */
+        font-size: 14.95px;
+        padding: 14px 35px;
     }
     .contact-form_arrow{
-    width: 150.84874725341797px;
-    height: 200.31595611572266px;
+        width: 110.848747px;
+        height: 129.315956px;
 
     }
     }
@@ -236,7 +282,7 @@
         width: 100%;
     }
         .contact-form_det h2 {
-            font-size: 37px;
+            font-size: 35px;
     }    .contact-hero_page h2{
         font-family: Roboto Serif;
         font-weight: 500;
@@ -276,6 +322,7 @@
     }
     .contact-form_det{
         width: 100%;
+        
     }
     .contact-form-des{
         width: 100%;
@@ -286,17 +333,24 @@
     }
     .contact-form_arrow{
             width: 267.04248046875px;
-            height: 224.23602294921875px;
+            height: 264.23602294921875px;
             opacity: 1;
+    }
+    .contact-form_arrow {
+        transform: translate(-97px, -1px);
     }
     }
 
     /* Medium (md) - Tablets and medium devices */
     @media (min-width: 768px) and (max-width: 991.98px) {
+        .contact-hero_img {
+        height: 417.01171875px;
+        width: 100%;
+    }
     /* images */
     .contact-img_set {
             margin: auto;
-            padding: 60px;
+            padding: 30px;
     }
     /*form  */
     .contact-form_sect{
@@ -529,6 +583,7 @@
         border-bottom: 2px solid rgba(255, 255, 255, 1);
         padding: 10px 8px 8px 0px;
         width: 90%;
+        font-size: 18px;
     }
 
     .contact-form-des div button{

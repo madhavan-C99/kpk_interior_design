@@ -39,6 +39,12 @@
 }
 
 /* WhatsApp */
+/* ========== */
+.icon-whatsapp{
+  width: 80px;
+  height: 80px;
+}
+/* ============== */
 .whatsapp {
   background-color: #25d366;
 }
@@ -47,12 +53,16 @@
 }
 
 /* Phone */
+.icon-phone{
+  color: #8D9B6A;
+}
 .phone {
-  background-color: #0a58ca;
+  background-color: #FFFFFF;
   animation-delay: 0.4s;
 }
 .phone::after {
-  background-color: rgba(10, 88, 202, 0.4);
+  /* background-color: rgba(10, 88, 202, 0.4); */
+  background-color: white;
   animation-delay: 0.6s;
 }
 

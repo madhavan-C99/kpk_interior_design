@@ -165,6 +165,12 @@
    Medium (md) – 768px–991.98px
 ===================================== */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .price-cta-section {
+    height: 550px;
+  }
+      .price-cta-content,.price-cta-image{
+        height: 100%;
+      }
   .price-cta-content {
     width: 50%;
     padding-left: 4%;
@@ -196,6 +202,12 @@
    Large (lg) – 992px–1199.98px
 ===================================== */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .price-cta-section {
+    height: 550px;
+  }
+      .price-cta-content,.price-cta-image{
+        height: 100%;
+      }
   .price-cta-content h2 {
     font-size: 38px;
     line-height: 60px;
