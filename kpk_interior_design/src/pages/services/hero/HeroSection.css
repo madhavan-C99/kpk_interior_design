@@ -74,7 +74,7 @@
 }
 
 /*hero  video sec */
-.hero_img3{
+/* .hero_img3{
     height:720px;
     width: 52.5vw;
     overflow: hidden;
@@ -86,8 +86,26 @@
     height:100%;
     object-fit: fill;
     width:100%;
+} */
+
+
+/* new */
+.hero_img3 {
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  overflow: hidden;
 }
 
+#modularvid2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/*  */
 
 
 /* laptop view media */
